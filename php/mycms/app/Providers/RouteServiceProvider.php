@@ -30,8 +30,14 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
-
+        /**
+         * 把分页设置为 1~9 的范围，
+         * 当超过范围时，由于路由不匹配，所以会返回 404 页面
+         */
+        Route::pattern('pid', '[1-9]');// 全局路由参数过滤，pid 为分页 id，分页只有 1~9 个位数
+        Route::pattern('cid', '[0-9]+');// 全局路由参数过滤，cid 为分类 id
+        Route::pattern('aid', '[0-9]+');// 全局路由参数过滤，aid 为内容 id
+        Route::pattern('tid', '[0-9]+');// 全局路由参数过滤，tid 为标签 id
         parent::boot();
     }
 
@@ -59,8 +65,8 @@ class RouteServiceProvider extends ServiceProvider
     protected function mapWebRoutes()
     {
         Route::middleware('web')
-             ->namespace($this->namespace)
-             ->group(base_path('routes/web.php'));
+            ->namespace($this->namespace)
+            ->group(base_path('routes/web.php'));
     }
 
     /**
@@ -73,8 +79,8 @@ class RouteServiceProvider extends ServiceProvider
     protected function mapApiRoutes()
     {
         Route::prefix('api')
-             ->middleware('api')
-             ->namespace($this->namespace)
-             ->group(base_path('routes/api.php'));
+            ->middleware('api')
+            ->namespace($this->namespace)
+            ->group(base_path('routes/api.php'));
     }
 }
