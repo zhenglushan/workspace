@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 单个文件不要超过5M，多个XML文件请提交sitemap格式 -->
+<!-- XML里如果非必填字段为空，请保留空标签，数据置空。如quality字段为空，则保留标签：<quality/>-->
+<urlset content_method="full">
+<!-- urlset，urlset用来标记整个文档的开头，最少出现1次 最多出现1次 -->
+<!-- 属性content_method，XML全量、增量还是删除，可选，类型为字符串，有效值为：full、inc、dec -->
+	<url><!--url标记每条信息的开始和结束 必填   最少出现1次 最多出现10000次-->
+	<loc><![CDATA[http://www.**.com/]]></loc><!--该条数据的页面url，和group_url字段保持一致。接口里唯一。类型为URL地址，最小长度1个字符 最大长度256个字符 必须符合正则表达式(https?://)(.+) 类型:url 必填   最少出现1次 最多出现1次 类型:url 必填   最少出现1次 最多出现1次-->
+	<lastmod><![CDATA[2017-01-01]]></lastmod><!--指该条数据的最新一次更新时间，类型为日期或日期时间，格式为YYYY-MM-DD的日期或者格式为YYYY-MM-DDThh:mm:ss的日期时间（请注意日期与时间之间以“T”分隔） 类型:string 最少出现0次 最多出现1次-->
+	<changefreq><![CDATA[always]]></changefreq><!--指该条数据的更新频率，有效值为：always、hourly、daily、weekly、monthly、yearly、never 类型:string 最少出现0次 最多出现1次-->
+	<priority><![CDATA[1.0]]></priority><!--用来指定此链接相对于其他链接的优先权比值，此值定于0.0-1.0之间。类型为小数，最小值为（包含）0.0 最大值为（包含）1.0 类型:string 最少出现0次 最多出现1次-->
+	<data><!--数据内容 必填   最少出现1次 最多出现1次-->
+		<display><!--数据内容 必填   最少出现1次 最多出现1次-->
+			<group_id><![CDATA[文本内容]]></group_id><!--id，用来识别组图在此xml中的唯一值，可以按日期编码“年月日”，或英文,或数字 类型:string 必填   最少出现1次 最多出现1次-->
+			<group_url><![CDATA[文本内容]]></group_url><!--首张图片的页面url 类型:string 必填   最少出现1次 最多出现1次-->
+			<group_chanel><![CDATA[文本内容]]></group_chanel><!--原网站频道或分类,如：“设计”“素材”“壁纸” 类型:string 必填   最少出现1次 最多出现1次-->
+			<group_class><![CDATA[文本内容]]></group_class><!--二级分类，例：设计素材，多个二级分类之间用$$分隔， 类型:string 必填   最少出现1次 最多出现1次-->
+			<group_categ><![CDATA[文本内容]]></group_categ><!--三级分类，属于二级分类的子分类 例：页面元素材，多个三级分类之间用$$分隔， 类型:string 可为空   最少出现1次 最多出现1次-->
+			<group_tag><![CDATA[文本内容]]></group_tag><!--四级分类，属于三级分类的子分类 例：icon，多个四级分类之间用$$分隔， 注：如果有四级分类必须有对应的三级分类 类型:string 可为空   最少出现1次 最多出现1次-->
+			<group_title><![CDATA[文本内容]]></group_title><!--标题，如“光脚丫子的女孩” 类型:string 必填   最少出现1次 最多出现1次-->
+			<group_score><![CDATA[文本内容]]></group_score><!--【没有为“0”】组图在原网站的热度值,组图在原网站的热度值, （例如将浏览量、收藏、赞、评论数、分享数等的加权之合），但是资源方提供的分值必须在0-100之间，此值将被参考用于图片的在360图片初始权重排序 类型:string 必填   最少出现1次 最多出现1次-->
+			<group_desc><![CDATA[文本内容]]></group_desc><!--组图摘要或正文简介，而非大段的正文,如果没有请与group_title中的内容一致 类型:string 必填   最少出现1次 最多出现1次-->
+			<update_time><![CDATA[文本内容]]></update_time><!--图片在本网站的生成时间，格式：yyyymmddhhmm 如:201301012359 类型:string 必填   最少出现1次 最多出现1次-->
+			<pic_item><!--组图中的单图字段信息.组图里的单图个数不限制 必填   最少出现1次 最多出现5000次-->
+				<pic_id><![CDATA[文本内容]]></pic_id><!--单图的位置顺序，建议为：1、2、3等 类型:string 必填   最少出现1次 最多出现1次-->
+				<pic_url><![CDATA[文本内容]]></pic_url><!--单图的图片url，优先提供https地址 类型:string 必填   最少出现1次 最多出现1次-->
+				<pic_from_url><![CDATA[文本内容]]></pic_from_url><!--单图网页url（如首图、或多张单图在同一网页这两种情况，则与组图group_url一致） 类型:string 必填   最少出现1次 最多出现1次-->
+				<pic_title><![CDATA[文本内容]]></pic_title><!--单图标题（如与组图一致，则与组图标题相同） 类型:string 必填   最少出现1次 最多出现1次-->
+				<pic_desc><![CDATA[文本内容]]></pic_desc><!--单图描述【没有则于title相同或为空】 类型:string 必填   最少出现1次 最多出现1次-->
+				<pic_label><![CDATA[文本内容]]></pic_label><!--图片标签,例：新颖、时尚、模板标签之间用$$分隔，tag按相关程度降序排列 类型:string 必填   最少出现1次 最多出现100次-->
+				<pic_age><![CDATA[文本内容]]></pic_age><!--人物年龄 类型:string 可为空 婴儿为“1”，儿童为“5”，少年为“10”，20-29为“20”，30-39为"30”，40-49为“40” ,50-59为“50” ，60-70为“60”，70以上为“70” 最少出现0次 最多出现1次-->
+				<pic_gender><![CDATA[文本内容]]></pic_gender><!--图片中人物性别 男为“1” 女为“2”,如图片中同时包含“男女”可全部列出之间用$$分隔 类型:string 可为空   最少出现0次 最多出现1次-->
+				<pic_race><![CDATA[文本内容]]></pic_race><!--图片中人物种族 亚洲人为“1”，黑人为“2”，白人为“3”，中东人为“4”，混血儿为“5”，东方人为“6”，中国人为“7”，东南亚人为“8”，拉美西班牙裔为“9”,如图片中同时包含“亚洲人、黑人、白人”多个种族，可全部列出之间用$$分隔 类型:string 可为空   最少出现0次 最多出现1次-->
+				<pic_graphtype><![CDATA[文本内容]]></pic_graphtype><!--图片类别 矢量图为“1” 位图为“2” 类型:string 可为空   最少出现1次 最多出现1次-->
+			</pic_item>
+			<provider><!--内容提供方信息 必填   最少出现1次 最多出现1次-->
+				<site_name><![CDATA[花瓣网]]></site_name><!--站点中文名 类型:string 必填   最少出现1次 最多出现1次-->
+				<show_site><![CDATA[www.huaban.com]]></show_site><!--站点主域，showurl 类型:string 必填   最少出现1次 最多出现1次-->
+				<site_logo><![CDATA[www.huaban.com]]></site_logo><!--站点logo，logourl，正方形图，最小尺寸30*30px 类型:string 必填   最少出现1次 最多出现1次-->
+				<site_copyright><![CDATA[文本内容]]></site_copyright><!--站点版权，如所提供站点数据为版权数据为“1”，站点数据为非版权数据为“0” 类型:string 必填   最少出现1次 最多出现1次-->
+			</provider>
+		</display>
+	</data>
+	</url>
+</urlset>

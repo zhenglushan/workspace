@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 单个文件不要超过5M，多个XML文件请提交sitemap格式 -->
+<!-- XML里如果非必填字段为空，请保留空标签，数据置空。如quality字段为空，则保留标签：<quality/>-->
+<urlset content_method="full">
+<!-- urlset，urlset用来标记整个文档的开头，最少出现1次 最多出现1次 -->
+<!-- 属性content_method，XML全量、增量还是删除，可选，类型为字符串，有效值为：full、inc、dec -->
+<url><!--url标记每条信息的开始和结束 必填   最少出现1次 最多出现1000次-->
+	<loc><![CDATA[http://www.**.com/]]></loc><!--该条数据的页面url，和pic_from_url保持一致。接口里唯一。类型为URL地址，最小长度1个字符 最大长度256个字符 必须符合正则表达式(https?://)(.+) 类型:url 必填   最少出现1次 最多出现1次-->
+	<lastmod><![CDATA[2017-01-01]]></lastmod><!--指该条数据的最新一次更新时间，类型为日期或日期时间，格式为YYYY-MM-DD的日期或者格式为YYYY-MM-DDThh:mm:ss的日期时间（请注意日期与时间之间以“T”分隔） 类型:string 最少出现0次 最多出现1次-->
+	<changefreq><![CDATA[always]]></changefreq><!--指该条数据的更新频率，有效值为：always、hourly、daily、weekly、monthly、yearly、never 类型:string 最少出现0次 最多出现1次-->
+	<priority><![CDATA[1.0]]></priority><!--用来指定此链接相对于其他链接的优先权比值，此值定于0.0-1.0之间。类型为小数，最小值为（包含）0.0 最大值为（包含）1.0 类型:string 最少出现0次 最多出现1次-->
+	<data><!--数据内容 必填   最少出现1次 最多出现1次-->
+		<display><!--数据内容 必填   最少出现1次 最多出现1次-->
+			<pic_item><!--单图详细内容 必填   最少出现1次 最多出现1000次-->
+				<pic_url><![CDATA[http://***.jpg]]></pic_url><!--图片url 类型:imgsrc 必填   最少出现1次 最多出现1次 图片地址必须为http形式-->
+				<pic_from_url><![CDATA[http://www.**.com/]]></pic_from_url><!--单图网页url（如首图、或多张单图在同一网页这两种情况，则与组图group_url一致） 类型:url 必填   最少出现1次 最多出现1次-->
+				<pic_title><![CDATA[文本内容]]></pic_title><!--图片标题 类型:string 必填   最少出现1次 最多出现1次-->
+				<pic_type><![CDATA[文本内容]]></pic_type><!--图片的频道或分类（如 美女，摄影，美食...） 类型:string 必填   最少出现1次 最多出现1次-->
+				<pic_tag><![CDATA[美女@100|摄影@90]]></pic_tag><!-- 类型:string 最少出现0次 最多出现1次, 格式 tag@分值|tag@分值，分值使用整型，取值1-100-->
+				<pic_score><![CDATA[文本内容]]></pic_score><!--图片热度 (0 - 100） 类型:string 必填   最少出现1次 最多出现1次-->
+				<pic_desc><![CDATA[文本内容]]></pic_desc><!--图片描述文本 类型:string 必填   最少出现1次 最多出现1次-->
+				<update_time><![CDATA[1037483647]]></update_time><!--在本网站的生成时间，时间戳 类型:string 必填   最少出现1次 最多出现1次-->
+			</pic_item>
+		<!--多个pic_item循环，展示url里全部图片信息-->	
+			<provider><!--内容提供方信息 必填   最少出现1次 最多出现1次-->
+				<site_name><![CDATA[花瓣网]]></site_name><!--站点中文名 类型:string 必填   最少出现1次 最多出现1次-->
+				<show_site><![CDATA[www.huaban.com]]></show_site><!--站点主域，showurl 类型:string 必填   最少出现1次 最多出现1次-->
+			</provider>
+		</display>
+	</data>
+</url>
+</urlset>

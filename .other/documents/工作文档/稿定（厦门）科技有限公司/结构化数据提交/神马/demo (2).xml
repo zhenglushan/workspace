@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<document>
+<webName><!-- 网站名，必选 --><![CDATA[梦幻西游手游版]]></webName>
+<hostName><!-- host，必选 --><![CDATA[xys.17173.com]]></hostName>
+<datalist>
+<item>
+
+<url><!-- 网页链接，必选字段 --><![CDATA[http://xys.17173.com/news/12312014/151111542.shtml]]></url>
+<title><!-- 网页标题，必选字段 --><![CDATA[小道消息梦幻西游手游体验爆料 是真是假]]></title>
+<summary><!-- 网页摘要，可选但强烈建议 --><![CDATA[梦幻西游手游官方在放出了一月份删档封测的消息后，便没有透露一点关于游戏内容的消息，对广大同胞们来说，可是莫大的折磨。挽歌也从网上不少地方获得了一些关于游戏内容爆料的小道消息，具体是真是假，大家一起来鉴赏!]]></summary>
+<publishDate><!-- 发表时间，必选字段 --><![CDATA[2013-08-18 14:26:00]]></publishDate>
+<contentType><!-- 网页内容形态，必选，1表示纯文本资讯、2表示图文资讯、3表示视频资讯  --><![CDATA[2]]></contentType>
+<pageView><!-- 页面浏览量，可选但强烈建议 --><![CDATA[3233]]></pageView>
+<img1><!-- 正文图片链接1，可选但强烈建议 --><![CDATA[http://xys.17173.com/bmiddle/001tcRD8zy6O4fORj2O92&690]]></img1>
+<img2><!-- 正文图片链接2，可选 --><![CDATA[http://xys.17173.com/bmiddle/001tcRD8zy6O4fORj2O92&691]]></img2>
+<img3><!-- 可选 --><![CDATA[http://xys.17173.com/bmiddle/001tcRD8zy6O4fORj2O92&692]]></img3>
+<img4><!-- 可选 --><![CDATA[http://xys.17173.com/bmiddle/001tcRD8zy6O4fORj2O92&691]]></img4>
+<img5><!-- 可选 --><![CDATA[http://xys.17173.com/bmiddle/001tcRD8zy6O4fORj2O92&692]]></img5>
+<video><!-- 视频地址，可选，视频资讯页面填写 --><![CDATA[]]></video>  
+<videoSnapshot><!-- 视频缩略图地址，可选，视频资讯页面填写 --><![CDATA[]]></videoSnapshot>
+<channel1><!-- 可选，一级目录 --><![CDATA[游戏]]></channel1>  
+<channel2><!-- 可选，二级目录 --><![CDATA[手机游戏]]></channel2>
+<channel3><!-- 可选，三级目录 --><![CDATA[益智游戏]]></channel3>
+<tags><!-- 关键字或主题词，可选 --><![CDATA[Dota指令、梦幻西游]]></tags>
+</item>
+</datalist>
+</document>

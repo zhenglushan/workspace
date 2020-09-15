@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DOCUMENT>
+    <item>
+        <key><![CDATA[文章ID]]></key><!-- 修改 -->
+       <display>
+            <aliaskey>老年痴呆预防方法</aliaskey><!-- 修改, 必填, 可写多个 aliaskey -->
+            <type>technologydigital</type><!-- 固定 -->
+            <subtype><![CDATA[qa_video]]></subtype><!-- 修改 -->
+            <!--展示体裁, 纯文本qa_text，图文article、短视频qa_video、音频qa_audio-->
+            <url><![CDATA[文章 M 端链接]]></url><!-- 修改 -->
+			<!--搜索结果页展示内容-->
+            <title><![CDATA[文章标题]]></title><!-- 修改 -->
+            <cover_img>文章封面图</cover_img><!-- 修改, 图文和视频数据需填写 -->
+            <video_url>媒体地址</video_url><!-- 修改, 视频/音频类必填-->
+            <duration>媒体播放时长, 具体秒数</duration><!-- 修改, 视频/音频类必填-->
+            <abs><![CDATA[文章第二段, 前 80 字。]]></abs><!-- 修改 -->
+            <abs><![CDATA[文章第三段, 前 80 字。]]></abs><!-- 修改 -->
+            <text>文章正文内容</text><!-- 修改, 换行统一使用 ||| 分隔 -->
+            <source><![CDATA[稿定设计]]></source><!-- 固定 -->
+            <source_url>https://m.gaoding.com/</source_url><!-- 固定 -->
+            <source_img>https://cdn.dancf.com/gaoding/static/wap/image/logo-new_fbb00d11.png</source_img><!-- 固定, 网站 logo 图片 -->
+            <tag>文章标签</tag><!-- 修改, 可写多个 tag -->
+            <tag>文章标签</tag>
+            <create_time>文章发布的时间戳</create_time><!-- 修改 -->
+            <modify_time>文章最后更新的时间戳</modify_time><!-- 修改 -->
+            <specialized><![CDATA[common]]></specialized><!-- 固定 -->
+            <authorize><![CDATA[Y]]></authorize><!-- 固定 -->
+            <best_doc><![CDATA[Y]]></best_doc><!-- 固定 -->
+        </display>
+    </item>
+</DOCUMENT>
