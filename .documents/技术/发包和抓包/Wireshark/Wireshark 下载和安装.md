@@ -1,0 +1,49 @@
+# Wireshark 下载和安装
+
+## Wireshark 下载
+
+打开 https://www.wireshark.org/download.html 网页，然后找到 `Windows Installer (64-bit)` 进行下载，如下图所示：
+
+![image-20200117152815044](images/image-20200117152815044.png)
+
+## Wireshark 安装
+
+双击 ==Wireshark-win64-3.2.1.exe== 进行安装，如下安装过程：
+
+![image-20200117154639409](images/image-20200117154639409.png)
+
+![image-20200117154649387](images/image-20200117154649387.png)
+
+![image-20200117154706234](images/image-20200117154706234.png)
+
+![image-20200117154727490](images/image-20200117154727490.png)
+
+![image-20200117154746186](images/image-20200117154746186.png)
+
+![image-20200117154804386](images/image-20200117154804386.png)
+
+![image-20200117154858474](images/image-20200117154858474.png)
+
+![image-20200117154937130](images/image-20200117154937130.png)
+
+![image-20200117155009698](images/image-20200117155009698.png)
+
+![image-20200117155031690](images/image-20200117155031690.png)
+
+![image-20200117155046578](images/image-20200117155046578.png)
+
+![image-20200117155105066](images/image-20200117155105066.png)
+
+![image-20200117155114106](images/image-20200117155114106.png)
+
+![image-20200117155122737](images/image-20200117155122737.png)
+
+![image-20200117155136233](images/image-20200117155136233.png)
+
+![image-20200117155149914](images/image-20200117155149914.png)
+
+![image-20200117155205194](images/image-20200117155205194.png)
+
+![image-20200117155217210](images/image-20200117155217210.png)
+
+安装完成之后，重启电脑。

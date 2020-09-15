@@ -1,0 +1,69 @@
+sudo pacman -S i3-gaps
+→ logout
+→ 选择 i3 登录
+→ Win + Enter
+→
+sudo pacman -S xorg-xinit
+sudo pacman -S mate-terminal # 提供终端
+sudo pacman -S compton # 提供窗口透明支持 升级版 picom
+sudo pacman -S polybar # 状态条
+sudo pacman -S rofi # 快捷程序启动
+sudo pacman -S feh # 设置墙纸
+sudo pacman -S mate-utils # 提供截图功能
+
+总的安装命令:
+sudo pacman -S xorg-xinit mate-terminal compton polybar rofi feh mate-utils
+→
+------------------------------------------------------------
+xinitrc 配置不起作用:
+cp /etc/X11/xinit/xinitrc ~/.xinitrc
+vim ~/.xinitrc
+	```shell
+		exec compton -b &
+		exec fcitx &
+		exec i3 -V >> ~/.config/i3/log/i3log-$(date +'%F-%k-%M-%S') 2>&1
+	```
+------------------------------------------------------------
+vim ~/.config/polybar/launch.sh
+sudo chmod +x ~/.config/polybar/launch.sh
+	```shell
+		#!/bin/bash
+		killall -q polybar
+		while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
+		polybar mybar &
+		echo "polybar launched..."
+	```
+
+cp /usr/share/doc/polybar/config ~/.config/polybar/
+vim ~/.config/polybar/config
+	```shell
+	把 [bar/example] 修改为 [bar/mybar]
+	```
+
+注意:
+launch.sh 的 polybar mybar 中的 mybar
+与 config 中的 [bar/mybar](由 [bar/example] 修改而来) 的 mybar 一致
+------------------------------------------------------------
+vim ~/.config/i3/config
+```shell
+	exec_always --no-startup-id picom
+```
+→
+
+更换随机背景命令：
+feh --bg-fill --random ~/Pictures/ChaoQing
+
+参考:
+https://blog.csdn.net/r8l8q8/article/details/103889972
+https://blog.csdn.net/weixin_42826353/article/details/107986788
+https://segmentfault.com/a/1190000008280278?utm_source=tag-newest
+https://blog.csdn.net/qq_33215865/article/details/90288997
+https://www.jianshu.com/p/e1184c26794b
+https://www.yuque.com/sunhl/mvumc2/rq64vb
+https://guyueshui.github.io/post/polybar-%E7%9A%84%E9%85%8D%E7%BD%AE%E7%AC%94%E8%AE%B0/
+
+
+
+picom 设置透明参考：
+https://blog.csdn.net/weixin_43372529/article/details/106730897
+

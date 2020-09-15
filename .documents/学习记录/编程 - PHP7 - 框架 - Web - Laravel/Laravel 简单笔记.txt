@@ -1,0 +1,65 @@
+
+php artisan help serve
+
+php artisan migrate:install
+
+文章模块
+如何匹配 Route::put
+```
+method=='post'
+<input type="hidden" name="_method" value="put"/>
+=> {{ method_field('put') }}
+```
+
+1、文章的增删改查：列表页、详情页、创建文章、编辑文章、删除文章
+	a、先把文章的增删改查的所有路由先定义下来；可以防止模块丢失操作；
+	b、然后在控制器中先定义各种方法的格式代码，如下所示；
+		public function show()
+		{
+			return view('post.detail');
+		}
+	c、然后再创建各个方法所需要的视图文件空模板；
+	d、编写控制器方法的具体的代码逻辑；
+	e、编写视图文件的具体的代码逻辑；
+
+2、给视图传递参数时，建议使用 compact 方法，减少代码量；
+
+3、页面公共部分的模板代码提取、继承
+	如何判断模板文件是否存在？
+
+php artisan tinker → 进入 Laravel 交互界面
+
+配置时区
+
+.env → timezone → Asia/Shanghai
+
+
+页面渲染
+时间格式 http://carbon.nesbot.com/docs/
+数据填充 https://github.com/fzaninotto/Faker/
+字符截断
+分页伪静态
+
+
+路由参数的全局限定 → app Providers RouteServiceProvider.php boot → 
+Route::pattern('id'=>'[0-9]+'); 在 web.php 中定义相同参数的路由规则的优先级比全局路由的优先级高。
+
+where('id','.*') → 匹配任意路径
+
+
+多媒体尺寸:
+
+< 576px  col
+
+≥ 576px  col-sm  small
+
+≥ 768px  col-md  medium
+
+≥ 992px  col-lg  large 
+
+≥ 1200px col-xl  extra large
+
+
+
+
+

@@ -1,0 +1,126 @@
+系统下载:
+https://www.archlinux.org/ →
+Download →
+tuna.tsinghua.edu.cn →
+https://mirrors.tuna.tsinghua.edu.cn/archlinux/iso/2020.09.01/
+
+官网安装参考:
+https://wiki.archlinux.org/index.php/Installation_guide_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#%E5%BB%BA%E7%AB%8B%E7%A1%AC%E7%9B%98%E5%88%86%E5%8C%BA
+
+验证启动模式:
+ls /sys/firmware/efi/efivars
+没有文件或目录，则是 BIOS，没有错误则为 EFI
+设置: 编辑虚拟机设置 → 选项 → 高级 → 固件类型 → UEFI
+
+查看硬盘情况:
+fdisk -l 查看硬盘情况
+
+使用自带的 cfdisk 进行分区:
+cfdick /dev/sda
+或者
+fdisk /dev/sda
+
+选择 gpt
+
+/dev/sda1 1G → boot
+/dev/sda1 1G → EFI
+/dev/sda2 1G → Linux swap
+/dev/sda3 剩余 → Linux filesystem
+
+write
+yes
+quit
+
+格式化分区:
+mkfs.fat -F32 /dev/sda1
+
+mkswap /dev/sda2
+swapon /dev/sda2
+
+mkfs.ext4 /dev/sda3
+
+挂载各分区:
+mount /dev/sda3 /mnt
+
+mkdir /mnt/boot
+mount /dev/sda1 /mnt/boot
+
+
+
+
+配置镜像源: (系统里面已经配置好镜像源了)
+vim /etc/pacman.d/mirrorlist
+# 在最上面添加:
+Server = https://mirrors.163.com/archlinux/$repo/os/$arch
+Server = https://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch
+  
+pacstrap /mnt base base-devel linux linux-firmware dhcpcd nano vim openssh xfsprogs man net-tools // 安装 Arch Linux
+
+genfstab -U /mnt >> /mnt/etc/fstab // 设置 Arch Linux
+
+切换到新系统:
+arch-chroot /mnt
+
+
+注意: 启动盘有 vim 命令，但是新系统不一定有 vim 命令，所以在新系统中应该安装网络、编辑器之类的软件，然后再考虑重启，否则极有可能在新系统中无法连接网络和编辑操作。
+
+配置上网:
+虚拟机自动可以上网。但是，这是由启动盘提供的，新系统并没有，所以需要安装网络管理工具。
+systemctl enable dhcpcd
+
+
+创建 grub EFI 引导信息:
+pacman -S grub efibootmgr
+grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
+grub-mkconfig -o /boot/grub/grub.cfg
+
+创建 BIOS 引导信息:
+pacman -S grub
+grub-install --target=i386-pc /dev/sda
+grub-mkconfig -o /boot/grub/grub.cfg
+
+设置 root 密码:
+passwd
+
+配置网络:
+vim /etc/hostname 		  //编辑网络名字文件  
+  sh       						   //取网络名字arch
+vim /etc/hosts				  //网络设置
+  127.0.0.1   localhost
+  ::1	      localhost
+  127.0.1.1	  sh.localdomain   sh
+
+
+1. 启动网络接口
+ip link set ens33 up → 启用网络接口
+ip link show dev ens33 → 检查网络接口状态, UP 表示启动
+2. 配置 DHCP 动态 IP 地址
+
+
+
+
+设置时区:
+ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime → 设置时区
+hwclock --systohc → 同步系统时间
+
+本地化设置:
+
+
+
+创建用户和用户组并添加 sudo 权限:
+useradd -m shan
+passwd shan
+
+vim /etc/sudoers
+shan ALL=(ALL:A::) ALL
+
+
+
+重启系统:
+exit
+reboot
+
+配置新系统:
+
+
+https://www.linuxprobe.com/vm-install-archlinux.html

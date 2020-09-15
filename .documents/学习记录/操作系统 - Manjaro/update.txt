@@ -1,0 +1,184 @@
+update system
+
+系统更新：
+执行如下命令
+sudo nano /etc/pacman.conf
+添加如下代码：
+[archlinuxcn]
+SigLevel = Never 
+Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch
+
+sudo pacman-mirrors -c China
+sudo pacman-mirrors -i -c China -m rank
+sudo pacman -Syu (Syyu)
+reboot
+
+sudo pacman -S simplescreenrecorder
+sudo pacman -S screenkey
+sudo pacman -S code
+sudo pacman -S google-chrome
+
+
+sudo fdisk -l
+sudo mkdir /dpan
+sudo mount /dev/sda1 /dpan
+df -h
+
+sudo pacman -S fcitx fcitx-im fcitx-configtool
+sudo pacman -S fcitx-googlepinyin wu sogoupinyin
+code ~/.xprofile
+	export GTK_IM_MODULE=fcitx
+	export QT_IM_MODULE=fcitx
+	export XMODIFIERS="@im=fcitx"
+reboot
+
+安装拼音输入法
+sudo pacman -S fcitx fcitx-im fcitx-configtool
+googlepinyin
+
+sudo nano ~/.xprofile
+
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS="@im=fcitx"
+
+reboot
+
+安装 NeoVim
+sudo pacman -S neovim
+
+安装Typora
+
+设置系统快捷键
+	settings - 键盘快捷键
+
+视频播放器
+sudo pacman -S celluloid
+
+安装 QQ 和 TIM
+sudo pacman -S deepin.com.qq.im deepin.com.qq.office
+
+sudo pacman -S yaourt
+
+安装 Typora
+sudo yaourt typora 然后选择 1 回车即可。
+
+安装 VirtualBox
+~ >>> uname -r                                                                 
+5.6.19-2-MANJARO
+
+sudo pacman -S virtualbox
+	选择 linux56-virtualbox-host-modules
+sudo pacman -Ss virtualbox-ext-oracle
+sudo modprobe vboxdrv
+reboot
+
+---
+teamviewer
+yay -S teamviewer如果一直显示未连接，则请退出teamviewer，执行sudo teamviewer --daemon enable 再打开试试
+304 511 905
+717evb
+
+---
+未知的公共密匙 5DECDBA89270E723
+gpg --keyserver keyserver.ubuntu.com --recv 5DECDBA89270E723
+---
+https://aur.archlinux.org/
+------------------------------------------------------------------------------
+Could not open /dev/vmmon: No such file or directory. Please make sure that the kernel module 'vmmon' is loaded.”
+
+解决办法：
+1、加载 vmmon 模块，命令：sudo modprobe -a vmw_vmci vmmon
+
+2、如果出现如下警告：
+	modprobe: WARNING: Module vmmon not found in directory /lib/modules/4.18.16-arch1-1-ARCH
+
+3、确认linux内核的版本
+	uname -r
+	→ 5.7.14-1-MANJARO
+4、安装依赖linux-headers，命令：sudo pacman -S linux-headers
+	→ 然后选择 linux57-headers 进行安装。
+
+5、再执行加载 vmmon 模块命令，该故障排除。
+
+
+
+------------------------------------------------------------------------------
+manjaro linux 使用 vmware 时 NAT 无法联网问题解决
+报错如下：
+
+Could not connect 'Ethernet0' to virtual network '/dev/vmnet8'. More information can be found in the vmware.log file.
+
+处理方法：
+
+sudo touch /etc/vmware/x
+sudo vmware-networks --migrate-network-settings /etc/vmware/x
+sudo rm /etc/vmware/x
+
+# 使用下面的命令添加vmnet8，选择为nat
+vmware-netcfg
+
+然后执行
+sudo modprobe vmnet
+sudo vmware-networks --start
+
+------------------------------------------------------------------------------
+Manjaro 安装 VMware Tools
+
+1、卸载 open-vm-tools
+sudo pacman -R open-vm-tools
+
+2、下载 vmwaretools 补丁
+git clone https://github.com/rasa/vmware-tools-patches.git
+
+3、进入vmware-tools-patches目录
+cd vmware-tools-patches
+
+4、运行补丁
+sudo ./patched-open-vm-tools.sh
+
+5、重启
+reboot
+
+------------------------------------------------------------------------------
+安装 WPS 软件
+	安装软件
+	sudo pacman -S wps-office
+	安装缺失字体
+	sudo pacman -S ttf-wps-fonts
+	解决无法输入中文问题
+	sudo vim /usr/bin/wps，在第一行（#!/bin/bash）下面添加：
+		export XMODIFIERS="@im=fcitx"
+		export QT_IM_MODULE="fcitx"
+	安装 WPS 中文语言包
+	sudo pacman -S wps-office-mui-zh-cn
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+
+
+
+
+yaourt -S debtap
+
+sudo debtap -u
+
+debtap xxx.deb
+
+baidunetdisk
+
+GPL
+
+edit
+
+
+
+
+
+
+

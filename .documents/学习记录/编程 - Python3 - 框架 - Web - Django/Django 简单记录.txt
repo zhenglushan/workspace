@@ -1,0 +1,57 @@
+一般流程：
+创建应用 → 注册应用 → 编写模型 → 数据迁移 → 注册管理 → 创建应用路由 → 创建视图函数 → 配置访问路由 → 创建空模板 → 编写视图函数 → 编写模板代码。
+
+配置 settings.py 文件：
+1、配置数据库
+2、修改语言
+3、修改时区
+4、配置模板文件路径
+5、配置静态文件物理路径
+
+创建超级用户
+
+CSRF 使用条件：凡是查询之外的增、删、改都要配置 CSRF 字段。
+
+RESTFul 框架：https://www.django-rest-framework.org/
+
+ASGI 异步操作。
+
+中间件
+异步
+缓存
+SQL 优化
+分页
+验证码
+邮件
+日志
+搜索
+国际化
+
+Django 常用命令：
+
+	安装Django： pip install django  指定版本 pip3 install django==2.0
+
+	新建项目： django-admin.py startproject mysite
+
+	新建APP : python manage.py startapp blog
+
+	启动：python manage.py runserver 8080
+
+	同步或者更改生成 数据库：
+
+	python manage.py makemigrations
+
+	python manage.py migrate
+
+	清空数据库： python manage.py flush
+
+	创建管理员： python manage.py createsuperuser
+
+	修改用户密码： python manage.py changepassword username
+
+	Django项目环境终端： python manage.py shell
+
+	这个命令和 直接运行 python 进入 shell 的区别是：你可以在这个 shell 里面调用当前项目的 models.py 中的 API，对于操作数据的测试非常方便。
+
+	更多关于Django的命令在终端输入：python manage.py 查看
+

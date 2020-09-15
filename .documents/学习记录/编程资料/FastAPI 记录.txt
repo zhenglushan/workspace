@@ -1,0 +1,45 @@
+mkvirtualenv ForFastAPI
+workon ForFastAPI
+
+安装库文件:
+pip install -i https://pypi.doubanio.com/simple/ fastapi → FastAPI 库
+pip install -i https://pypi.doubanio.com/simple/ unicorn → FastAPI 服务器
+pip install -i https://pypi.doubanio.com/simple/ jinja2 → FastAPI 模板渲染
+pip install -i https://pypi.doubanio.com/simple/ pydantic → 配置文件合法性验证
+pip install -i https://pypi.doubanio.com/simple/ python-multipart → 支持表单数据交互
+pip install -i https://pypi.doubanio.com/simple/ aiofiles → 配置静态文件
+
+参考教程:
+https://blog.csdn.net/vanexph/category_9198379.html
+https://blog.csdn.net/wgpython?t=1
+https://www.pythonf.cn/category51?page=9
+
+jinja2 代码提示？
+1、右键单击 templates 文件夹 → Mark Directory as → Template Folder
+	此时，弹出 Template Language Not Configured → Yes
+2、Settings → Languages & Frameworks → Python Template Languages → 项目名称 → Template language: Jinja2 → Template file types: HTML
+
+https://www.cnblogs.com/noKing/p/8117461.html
+
+多个 app 共享变量？
+
+FastAPI 多个 Py 文件？
+https://blog.csdn.net/xuqingskywolf/article/details/106609228
+
+连接 Redis:
+https://blog.csdn.net/wgPython/article/details/107668521
+未测试的方式: 使用常规的 Python Redis 插件即可。
+
+连接 ElasticSearch:
+未测试的方式: 使用常规的 Python ElasticSearch 插件即可。
+
+官网:
+https://fastapi.tiangolo.com/
+
+中文文档:
+https://fastapi.tiangolo.com/zh/tutorial/
+
+视频教程:
+https://search.bilibili.com/all?keyword=FastAPI
+
+

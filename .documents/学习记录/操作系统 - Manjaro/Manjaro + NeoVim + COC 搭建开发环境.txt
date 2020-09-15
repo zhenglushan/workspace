@@ -1,0 +1,231 @@
+==================== 起始部分 ====================
+Manjaro 国内下载地址:
+https://mirrors.huaweicloud.com/manjaro-cd/
+https://mirrors.tuna.tsinghua.edu.cn/osdn/storage/g/m/ma/manjaro/
+
+==================== 第一部分 ====================
+1、更换系统镜像源
+sudo pacman-mirrors -i -c China -m rank
+2、更新系统并添加秘钥
+sudo pacman -Syy && sudo pacman -S archlinuxcn-keyring
+3、安装 AUR 支持
+sudo pacman -S yay
+4、重启系统
+reboot
+
+==================== 第二部分 ====================
+安装 zsh 和 oh-my-zsh
+插件列表 https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins-Overview
+主题列表 https://github.com/ohmyzsh/ohmyzsh/wiki/themes
+
+1、安装 zsh
+sudo pacman -S zsh
+验证安装结果: 
+zsh --version
+
+2、安装 oh-my-zsh
+下载 https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh 文件，并另存为 oh-my-zsh.sh 文件。
+权限 chmod -R 777 oh-my-zsh.sh
+安装 ~/oh-my-zsh.sh
+
+3、修改主题配置
+主题目录 ~/.oh-my-zsh/custom/themes/
+修改 ~/.zshrc 配置文件，配置该主题
+ZSH_THEME="agnoster"
+
+4、安装插件
+cd ~/.oh-my-zsh/custom/plugins
+
+git clone https://github.com/zsh-users/zsh-autosuggestions.git
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+git clone https://github.com/zsh-users/zsh-completions.git
+git clone https://github.com/thetic/extract.git
+git clone https://github.com/sinetoami/web-search.git
+git clone https://github.com/rupa/z.git
+
+5、修改插件配置
+# 注意：zsh-syntax-highlighting 必须放在最后面(官方推荐)
+# git 默认已安装，这里做个配置
+# 找到 plugins=(git) 修改成如下： 修改 ~/.zshrc 配置文件，配置安装的插件
+plugins=(git extract web-search z zsh-autosuggestions zsh-completions zsh-syntax-highlighting)
+
+6、重新加载配置
+source ~/.zshrc
+
+7、卸载
+uninstall_oh_my_zsh
+rm -rf ~/.oh-my-zsh/
+rm -rf ~/.zshrc
+sudo pacman -R zsh
+-------------------------------------------------
+sudo pacman -S fish
+
+sudo nano /etc/passwd
+
+sudo curl -L https://get.oh-my.fish | fish
+
+==================== 第三部分 ====================
+0、配置代理
+http://xiaomi-lab.huanleguang.cn/hlg.pac.php
+
+1、安装 NeoVim
+官网地址:
+https://github.com/neovim/neovim/wiki/Installing-Neovim
+
+安装命令:
+```shell
+sudo pacman -S neovim
+```
+
+配置文件地址: ~/.config/nvim/init.vim (需要手工创建)
+mkdir ~/.config/nvim
+touch ~/.config/nvim/init.vim
+
+2、安装 vim-plug
+https://github.com/junegunn/vim-plug
+
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+
+```shell
+call plug#begin('~/.config/nvim/plugged')
+
+call plug#end()
+```
+在 init.vim 添加如上插件，才能在 Vim 中使用 vim-plug 的相关命令。
+
+3、安装 coc.nvim
+sudo pacman -S nodejs
+sudo pacman -S npm
+sudo pacman -S yarn
+
+https://github.com/neoclide/coc.nvim
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+:PlugInstall
+
+回车之后，会通过 yarn 下载 source code 进行相关插件的安装。重启之后，会创建 ~/.config/coc 目录，用于保存 coc 安装的相关代码提示插件。
+
+然后通过 coc 安装相关语言的代码提示：
+
+https://github.com/neoclide/coc-snippets
+:CocInstall coc-snippets
+:CocInstall coc-html
+:CocInstall coc-css
+:CocInstall coc-json
+:CocInstall coc-tsserver
+
+php:CocInstall coc-phpls
+	1. sudo npm i intelephense -g
+	2. :CocInstall coc-phpls
+	3. 因为 coc-phpls 的语言服务功能由 intelephense-docs 提供
+php:CocInstall coc-phpactor
+	1. sudo pacman -S composer
+	2. composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/
+	3. https://phpactor.readthedocs.io/en/develop/usage/standalone.html
+	3. :CocInstall coc-phpactor
+
+:CocInstall coc-python
+	pip3 install pylint
+	pip3 install jedi
+	:CocInstall coc-python
+	然后就可以使用 Python 代码提示里。
+:CocInstall coc-java
+	[coc.nvmi] jdt.ls not found, downloading
+	[coc.nvim] JDT Language Server started
+:CocInstall coc-go
+	sudo pacman -S go
+	go version
+
+	https://github.com/golang/tools/blob/master/gopls/doc/user.md
+	go get golang.org/x/tools/gopls@latest
+	go: cannot use path@version syntax in GOPATH mode
+	go env -w GO111MODULE=on
+	go env -w GOPROXY=https://goproxy.io,direct
+	go get golang.org/x/tools/gopls@latest
+
+	https://github.com/golang/tools/blob/master/gopls/doc/vim.md
+	Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+	let g:go_def_mode='gopls'
+	let g:go_info_mode='gopls'
+
+	出现错误:
+	go: cannot find main module; see 'go help modules'
+	解决
+	go mod init 项目
+
+
+for C/C++/Objective-C
+	https://github.com/clangd/coc-clangd
+	clangd 是 llvm 的一部分，所以直接安装 llvm 即可
+	sudo pacman -S llvm
+	:CocInstall coc-clangd
+	[coc.nvim] clangd was not found on your PATH. :CocCommand clangd.install will install 10.0.0.
+
+
+	[coc.nvim] Failed to install clangd language server: TypeError: Expected signal to be an instanceof Abort Signal
+	You may want to install it manually. See https://clangd.llvm.org/installation.html.
+
+	https://github.com/autozimu/LanguageClient-neovim/wiki/Clangd
+	sudo pacman -Syu clang
+	'header' file not found [clang-diagnostic-error]
+
+
+
+
+
+4、其它插件
+
+fzf 文件模糊搜索
+https://github.com/junegunn/fzf
+Plug 'junegunn/fzf'
+
+ale 语法检查
+https://github.com/dense-analysis/ale
+Plug 'dense-analysis/ale'
+
+悬浮窗 https://www.joyk.com/dig/detail/1555144300715374
+Markdown
+word
+
+	
+NeoVim 错误解决:
+1. symbol lookup error: node: undefined symbol: nghttp2_option_set_max_outbound_ack
+   	https://www.archlinux.org/packages/?q=libnghttp2
+   	sudo pacman -S libnghttp2
+
+highlight Normal guibg=NONE ctermbg=None " 设置背景透明
+
+启动 NeoVim 时，提示 Error on execute python script: request error nvim_command 错误：
+pip3 install -i https://pypi.doubanio.com/simple neovim
+	Successfully built neovim pynvim
+	Installing collected packages: greenlet, pynvim, neovim
+	Successfully installed greenlet-0.4.16 neovim-0.3.1 pynvim-0.4.1
+
+
+
+修改 Python 镜像源
+	临时
+		pip install -i https://pypi.doubanio.com/simple/ pygame
+	永久
+在此目录新建~/.pip/pip.conf文件，使用 vim 或者 nano 编辑器进行如下编辑并保存
+[global]
+timeout =60
+index-url =https://pypi.douban.com/simple/
+[install]
+use-mirrors =true 
+mirrors =https://pypi.douban.com/simple/ 
+trusted-host =pypi.douban.com
+
+
+sudo pacman -S composer
+composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/
+
+Laravel 开发
+composer create-project --prefer-dist laravel/laravel blog
+
+
+
+建立文件夹
+:!mkdir mydir
+建立文件
+:sp mydir/mytest.txt
+

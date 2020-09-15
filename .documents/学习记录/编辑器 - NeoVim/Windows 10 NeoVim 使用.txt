@@ -1,0 +1,63 @@
+打开 https://github.com/neovim/neovim/releases/tag/v0.4.4 进行下载。
+
+然后进行解压缩，把 C:\NeoVim\bin 加入系统的 Path 环境变量，方便通过 cmd 和 cmder 启动编辑器。
+
+打开 https://github.com/junegunn/vim-plug 查看安装方式：
+```
+Windows (PowerShell)
+iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
+    ni "$env:LOCALAPPDATA/nvim-data/site/autoload/plug.vim" -Force
+```
+如下安装过程:
+```
+PS C:\Users\Administrator> iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
+>>     ni "$env:LOCALAPPDATA/nvim-data/site/autoload/plug.vim" -Force                                                   
+
+    目录: C:\Users\Administrator\AppData\Local\nvim-data\site\autoload
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----         2020/9/2     17:12          80754 plug.vim
+```
+可以看出 vim-plug 保存在 C:\Users\Administrator\AppData\Local\nvim-data\site\autoload 目录中。
+
+NeoVim 配置文件的位置在哪里？
+配置文件的路径为: C:\Users\Administrator\AppData\Local\nvim\init.vim。
+
+为了方便管理插件和配置文件，我们在 C:\Users\Administrator 创建一个 NeoVim 的文件夹，
+在 NeoVim 创建 plugged 目录，用于存放插件；给 init.vim 创建个快捷方式，也放在 NeoVim 目录下。
+
+然后我们在配置文件中添加如下代码来启动 vim-plug 插件：
+```
+call plug#begin("~/NeoVim/plugged")
+call plug#end()
+```
+这样就可以启动 vim-plug 插件了。
+
+安装 coc.nvim 插件: https://github.com/neoclide/coc.nvim
+```
+C:\Users\Administrator>node
+Welcome to Node.js v12.16.3.
+Type ".help" for more information.
+>
+```
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+安装 coc.nvim 插件。
+
+安装其它插件:
+
+https://github.com/preservim/nerdtree
+Plug 'preservim/nerdtree'
+
+https://github.com/vim-airline/vim-airline
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
+
+安装 yarn
+https://yarn.bootcss.com/
+下载页面 https://yarn.bootcss.com/docs/install/#windows-stable
+
+安装 coc.nvim 代码提示插件：
+C:\Users\Administrator\AppData\Local\coc\extensions\node_modules

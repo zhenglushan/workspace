@@ -1,0 +1,128 @@
+ls	/sys/firmware/efi/efivars
+dhcpcd(网线链接) | wifi-menu(wifi链接)
+ping -c 5 baidu.com
+timedatectl set-ntp true
+
+fdisk -l
+cfdisk /dev/sda
+gpt
+/dev/sda1   :   EFI 文件系统 512M   :   Type, EFI System
+/dev/sda2   :   linux swap 大于 512M 我配置为 10G   :   Type, Linux swap
+/dev/sda3   :   根目录 剩余空间   :   Linux filesystem
+Write
+yes
+Quit
+
+fdisk -l
+mkfs.fat -F32 /dev/sda1
+mkfs.ext4 /dev/sda3
+mkswap /dev/sda2
+swapon /dev/sda2
+
+mount /dev/sda3 /mnt
+mkdir /mnt/boot
+mount /dev/sda1 /mnt/boot
+
+vim /etc/pacman.d/mirrorlist
+## China
+Server
+两行 按 C 剪切
+退出插入模式
+移动到文件最顶部
+按三次 p 粘贴
+可写多个 Server
+Server = https://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch
+Server = https://mirrors.aliyun.com/archlinux/$repo/os/$arch
+:wq 保存退出
+
+pacstrap /mnt base linux linux-firmware base-devel vim dhcpcd
+genfstab -U /mnt >> /mnt/etc/fstab
+arch-chroot /mnt
+
+设置时区
+ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+
+同步时间
+hwclock --systohc
+
+编辑 /etc/locale.gen 然后移除需要的地区的注释
+vim /etc/locale.gen
+输入 /en_US 回车进行搜索，按 n 转到下一条
+直到找到 #en_US.UTF-8 UTF-8
+按 i 进入插入模式，删除 # 按 Esc 退出插入模式
+输入 /zh_CN 回车进行搜索，按 n 转到下一条
+直到找到 #zh_CN.UTF-8 UTF-8
+按 i 进入插入模式，删除 # 按 Esc 退出插入模式
+:wq 保存退出
+生成 locale 信息:
+locale-gen
+
+创建 locale.conf 并编辑 LANG
+vim /etc/locale.conf
+添加如下一行
+LANG=en_US.UTF-8
+然后保存并退出
+
+设置主机名, "" 里面可以随便写
+echo "sh" >> /etc/hostname
+然后添加对应的信息到 hosts 文件
+vim /etc/hosts
+添加如下内容:
+127.0.0.1   localhost
+::1                  localhost
+127.0.1.1   sh.localdomain   sh
+
+配置 root 密码
+passwd
+a5s7sh4u
+
+pacman -S intel-ucode (仅 intel 处理器的用户安装)
+pacman -S os-prober (硬盘存在其它操作系统的用户安装)
+	比如: 只安装了 arch 则无需安装 os-prober
+
+安装 grub efi 启动管理工具
+pacman -S grub efibootmgr
+
+生成 GRUB EFI 配置信息, 其中最后面的 GRUB 可以自定义
+grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
+如果没问题则输出:
+Installing for x86_64-efi platform.
+Installation finished. No error reported.
+
+使用 grub-mkconfg 工具来生成 /boot/grub/grub.cfg
+grub-mkconfig -o /boot/grub/grub.cfg
+
+------------------------------------------------------------------------------
+笔记本还需要安装如下工具:
+------------------------------------------------------------------------------
+pacman -S iw wpa_supplicant dialog netctl
+------------------------------------------------------------------------------
+
+注册 dhcpcd 服务
+systemctl enable dhcpcd
+
+启动 dhcpcd 服务
+systemctl start dhcpcd
+
+退出
+exit
+
+手动卸载被挂载的分区
+umount -R /mnt
+
+重启或关机
+reboot or shutdown
+
+弹出光盘再启动即可进入 ArchLinux 系统。
+
+以上内容参考视频:
+https://www.bilibili.com/video/BV1Kz411B76D
+
+
+
+
+
+
+
+
+

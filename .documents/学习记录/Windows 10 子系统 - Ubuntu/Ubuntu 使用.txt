@@ -1,0 +1,59 @@
+1、Ubuntu 切换到 root 账号:
+	shanhai@DESKTOP-HHL6619:~$ sudo passwd root
+	Enter new UNIX password:
+	Retype new UNIX password:
+	passwd: password updated successfully
+	shanhai@DESKTOP-HHL6619:~$ su
+	Password:
+	root@DESKTOP-HHL6619:/home/shanhai#
+
+2、查看版本:
+	shanhai@DESKTOP-HHL6619:~$ lsb_release -a
+	No LSB modules are available.
+	Distributor ID: Ubuntu
+	Description:    Ubuntu 18.04.1 LTS
+	Release:        18.04
+	Codename:       bionic
+	shanhai@DESKTOP-HHL6619:~$
+
+3、编辑和更换数据源:
+	root@DESKTOP-HHL6619:/home/shanhai# vi /etc/apt/sources.list
+
+	deb http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse
+	deb http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse
+	deb http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse
+	deb http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse
+	deb http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse
+	deb-src http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse
+	deb-src http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse
+	deb-src http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse
+	deb-src http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse
+	deb-src http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse
+
+	deb http://mirrors.163.com/ubuntu/ bionic main restricted universe multiverse
+	deb http://mirrors.163.com/ubuntu/ bionic-security main restricted universe multiverse
+	deb http://mirrors.163.com/ubuntu/ bionic-updates main restricted universe multiverse
+	deb http://mirrors.163.com/ubuntu/ bionic-proposed main restricted universe multiverse
+	deb http://mirrors.163.com/ubuntu/ bionic-backports main restricted universe multiverse
+	deb-src http://mirrors.163.com/ubuntu/ bionic main restricted universe multiverse
+	deb-src http://mirrors.163.com/ubuntu/ bionic-security main restricted universe multiverse
+	deb-src http://mirrors.163.com/ubuntu/ bionic-updates main restricted universe multiverse
+	deb-src http://mirrors.163.com/ubuntu/ bionic-proposed main restricted universe multiverse
+	deb-src http://mirrors.163.com/ubuntu/ bionic-backports main restricted universe multiverse	
+
+	源: https://blog.csdn.net/xiangxianghehe/article/details/80112149
+
+	在窗口标题栏 → 右键单击 → 编辑 → 粘贴 → 即可 → ESC → wq! → apt-get update && apt-get upgrade → 更新
+
+4、安装图形界面:
+	https://blog.csdn.net/Aerry_ale/article/details/83050628
+	https://blog.csdn.net/li528405176/article/details/82263534
+	https://blog.csdn.net/qq_25005909/article/details/76122702
+	A、打开 https://sourceforge.net/projects/vcxsrv/ 下载 VcXsrv Windows X Server 软件
+	B、把 vcxsrv-64.1.20.1.4.installer.exe 安装到 Windows 10 系统: 安装时选择 full 格式
+	C、打开 XLaunch 软件
+	D、选择 One large window、Display number 0 → 下一步 → 弹出窗口, 此时啥都没有
+	E、打开 Ubuntu 运行 sudo apt-get install ubuntu-desktop unity compizconfig-settings-manager
+	……
+
+

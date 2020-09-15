@@ -1,0 +1,6 @@
+
+gimp 替代 Photoshop
+inkscape 替代 Adobe Illustrator
+krita
+
+https://blog.csdn.net/cune1359/article/details/106842202

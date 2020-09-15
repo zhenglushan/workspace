@@ -1,0 +1,46 @@
+1、计算机 → 管理 → 服务 → Windows Update → 启动: 关闭状态下无法安装应用
+
+2、搜索 → 设置 → 更新和安全 → 开发者选项 → 开发人员模式: 需要几分钟的时间 → 已安装开发人员模式程序包。桌面远程工具现已启用。
+
+3、搜索 → 控制面板 → 程序和功能 → 启用或关闭 Windows 功能 → √ 适用于 Linux 的 Windows 子系统: 需要几分钟的时间 → 重启系统
+
+4、电脑 → 文件 → 选项 → 查看 → 显示隐藏的文件、文件夹和驱动器
+
+5、进入 C:\Program Files 目录，更改 WindowsApps 所有权为 Administrator。
+  更改权限过程请参考: http://www.xitongcheng.com/jiaocheng/win10_article_25698.html
+
+6、找到应用商店安装的配置文件路径为: C:\Program Files\WindowsApps\Microsoft.WindowsStore_11811.1001.27.0_x64__8wekyb3d8bbwe\AppxManifest.xml
+
+7、安装应用商店:
+  A、开始菜单 → Windows PowerShell → 以管理员身份运行 Windows PowerShell
+  B、输入如下命令: 
+  Add-appxpackage -register "C:\Program Files\WindowsApps\Microsoft.WindowsStore_11811.1001.27.0_x64__8wekyb3d8bbwe\AppxManifest.xml" -disabledevelopmentmode
+  过程:
+	PS C:\Windows\system32> Add-appxpackage -register "C:\Program Files\WindowsApps\Microsoft.WindowsStore_11811.1001.27.0_x64__8wekyb3d8bbwe\AppxManifest.xml" -disabledevelopmentmode
+	PS C:\Windows\system32>
+  C、开始菜单 → 出现 Microsoft Store → 安装成功
+
+8、打开应用商店 → 搜索 Linux → Kali Linux → 获取 → 安装 → 启动 → Installing, this may take a few minutes → 输入账号和密码: shanhai a5s7sh4u
+  在安装过程中, 提示登录微软账号可直接略过
+
+9、以上就是整个过程了。
+
+10、通过 Cmder 运行 Linux 系统:
+   A、打开 Cmder
+   B、输入 kali (ubuntu1804.exe) 回车
+   C、即可登录
+
+11、子系统存放路径为: C:\Users\Administrator\AppData\Local\Packages
+
+12、切换到 root 用户:
+shanhai@DESKTOP-HHL6619:~$ su root
+Password:
+su: Authentication failure
+shanhai@DESKTOP-HHL6619:~$ sudo passwd root
+Enter new UNIX password:
+Retype new UNIX password:
+passwd: password updated successfully
+shanhai@DESKTOP-HHL6619:~$ su
+Password:
+root@DESKTOP-HHL6619:/home/shanhai#
+

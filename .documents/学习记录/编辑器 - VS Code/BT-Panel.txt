@@ -1,0 +1,754 @@
+==================================================================
+中文输入法：
+
+Applications - Settings - Regin & Language - Input Sources - + - Chinese 即可。
+Congratulations! Installed successfully!
+==================================================================
+Bt-Panel: http://127.0.0.1:8888/shanhai
+username: shan
+password: a5s7sh4u
+If you cannot access the panel,
+release the following panel port [8888] in the security group
+若无法访问面板，请检查防火墙/安全组是否有放行面板[8888]端口
+==================================================================
+安装如下组件：
+	Apache 2.4
+	PHP 7.4
+	MySQl 5.7
+==================================================================
+[shan@s ~]$ sudo gedit /etc/hosts
+
+127.0.0.1   www.myblog.io
+
+[shan@s wwwroot]$ su root
+[root@s wwwroot]# chmod -R 777 my_blog
+[root@s wwwroot]# chown -R www:www my_blog
+[root@s wwwroot]# 
+
+解决宝塔 Warning: require(): open_basedir restriction in effect
+网站 - 设置 - 网站目录 - 防跨站攻击：取消选中，然后重启网站即可。
+==================================================================
+xxx is not in the sudoers file. This incident will be reported
+
+https://blog.csdn.net/msllws/article/details/102821050
+
+root	ALL=(ALL) 	ALL
+shan	ALL=(ALL) 	ALL 增加此行
+==================================================================
+安装 VSCode 编辑器
+sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+
+sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
+
+sudo dnf check-update
+
+sudo dnf install code
+
+或者下载独立安装包
+
+https://code.visualstudio.com/Download
+
+su yum install <file>.rpm
+
+创建桌面快捷方式
+
+打开 /usr/share/applications 复制桌面图标，并粘贴到桌面，运行，然后选择 Trust and Launch 即可。
+
+项目授权
+sudo chmod -R 777 my_blog
+
+安装插件
+    公共插件
+    Chinese (Simplified) Language Pack for Visual Studio Code
+    Beautify
+    Debugger for Chrome
+    npm
+    Code Runner
+    HTML CSS Support
+    jQuery Code Snippets
+    Path Intellisense
+    SQLite
+    open in browser
+
+    安装主题
+    Material Icon Theme
+
+    PHP 相关插件:
+    PHP Intelephense
+    PHP IntelliSense
+    PHP Debug
+    PHP DocBlocker
+    PHP Extension Pack
+    php cs fixer
+
+    Laravel 相关插件:
+    Laravel Blade Snippets
+    Laravel Snippets
+    Laravel Artisan
+    Laravel goto view
+    Laravel Extension Pack
+    laravel-goto-controller
+    goto-route-controller-laravel
+==================================================================
+更新 git 软件
+
+1、卸载旧版
+sudo yum remove git
+
+2、安装新版
+
+sudo yum -y install zlib-devel curl-devel openssl-devel perl cpio expat-devel gettext-devel openssl zlib autoconf tk perl-ExtUtils-MakeMaker
+
+https://git-scm.com/download/linux 下载最新版本的 tar.gz 压缩包
+
+tar -zxvf git-2.27.0.tar.gz
+
+cd git-2.27.0/
+
+autoconf
+./configure
+make
+sudo make install
+
+git --version
+
+更新参考： 
+https://www.jianshu.com/p/fae802f50315
+==================================================================
+安装 Composer
+su root
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+php composer-setup.php --install-dir=/usr/local/bin --filename=composer
+chmod -R 777 /usr/local/bin/composer
+
+配置全局镜像
+    配置全局生效
+        composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/
+    取消全局配置
+        composer config -g --unset repos.packagist
+    配置过程参考官网说明：
+        https://pkg.phpcomposer.com/
+==================================================================
+安装 Laravel
+su root
+cd /www/
+chmod -R 777 wwwroot/
+cd /www/wwwroot/
+composer create-project --prefer-dist laravel/laravel ./my_blog
+
+出现错误：
+[ErrorException]                                 
+putenv() has been disabled for security reasons
+[Symfony\Component\Process\Exception\RuntimeException]                                   
+The Process class relies on proc_open, which is not available on your PHP installation.
+
+解决办法：
+su root
+cd /www/server/php/74/etc/
+gedit php.ini
+搜索 putenv 和 proc_open 进行删除，然后保存。
+然后退出 root 帐号，用普通帐号重新执行 Laravel 安装命令即可。
+==================================================================
+安装 Redis 服务端
+
+切换到 root 帐号
+https://redis.io/
+
+http://download.redis.io/releases/redis-6.0.5.tar.gz?_ga=2.56275305.395970192.1594779037-880487858.1594779037
+
+CentOS 7 安装 Redis 6 编译错误
+https://www.limstash.com/articles/202005/1633
+
+``````````````````````````````````````````````````````````````````
+yum install centos-release-scl
+yum install devtoolset-7
+scl enable devtoolset-7 bash
+
+yum -y install gcc automake autoconf libtool make
+tar -zxvf redis-6.0.5.tar.gz
+
+[root@s Downloads]# cp -r redis-6.0.5 /usr/local/redis
+[root@s Downloads]# cd /usr/local/redis/
+
+make
+
+cd src # 经过 make 之后，该目录创建了相关命令程序
+
+make install # 安装之后就自动运行了。
+
+make test 编译后的编译测试
+\o/ All tests passed without errors! # 没问题的话则进行配置操作。
+
+在 make 之后已经生成可执行文件了，所以不需要也无法执行安装命令了，直接配置开机启动即可。
+
+``````````````````````````````````````````````````````````````````
+配置开机启动
+
+[root@s ~]# cd /etc/init.d/
+
+[root@s ~]# gedit redis # 详细内容查看下面的《redis 开机启动的配置内容》
+
+[root@s ~]# chmod 755 redis
+
+[root@s ~]# chkconfig redis on
+
+[root@s ~]# gedit /usr/local/redis/redis.conf 
+
+daemonize no -> daemonize yes
+requirepass a5s7sh4u
+
+设置密码之后需要通过 auth a5s7sh4u 才能使用。
+
+[shan@s ~]$ /etc/init.d/redis start
+
+搜索 redis 服务
+ps -ef | grep redis
+
+https://www.cnblogs.com/-zhuang/articles/10599276.html
+
+Laravel 使用 Redis 的过程如下记录:
+
+- 下载 PHP 对应版本的 redis 插件 也就是 phpredis 扩展:
+https://pecl.php.net/package/redis
+
+[root@s Downloads]$ tar -zxvf redis-5.3.1.tgz
+[root@s Downloads]$ cd redis-5.3.1/
+[root@s redis-5.3.1]# phpize
+[root@s redis-5.3.1]# ./configure --with-php-config=/www/server/php/74/bin/php-config
+[root@s redis-5.3.1]# make
+[root@s redis-5.3.1]# make install
+Installing shared extensions: /www/server/php/74/lib/php/extensions/no-debug-non-zts-20190902/
+
+[root@s ~]# gedit /www/server/php/74/etc/php.ini
+在最后一行添加如下代码并保存退出：
+extension = redis.so
+
+然后重启 Web 服务: 
+/etc/init.d/httpd restart
+
+查看 phpinfo() 的输出是否包含:
+Redis Support 和 Redis Version
+如果没有则在 php.ini 加入如下配置试试看。
+extension_dir = "/www/server/php/74/lib/php/extensions/no-debug-non-zts-20190902/"
+
+- 接下来在 Laravel 中引用 Redis 库:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.env 配置
+APP_NAME=my_blog 每个网站要取不同的名字
+CACHE_DRIVER=redis 如果是使用 redis 需要把这里修改为 redis
+REDIS_HOST=127.0.0.1 配置 redis 的相关信息
+REDIS_PASSWORD=a5s7sh4u
+REDIS_PORT=6379
+
+config/cache.php 配置
+'default' => env('CACHE_DRIVER', 'redis'), 该配置项可以修改为 redis 也可以不修改
+
+'redis' => [ 该配置项不用修改
+    'driver' => 'redis',
+    'connection' => 'default', 对应 config/database.php 中 redis 的 default 配置项
+],
+
+配置缓存键值对中键的前缀，可以根据需要修改。
+'prefix' => env('CACHE_PREFIX', Str::slug(env('APP_NAME', 'laravel'), '_').'_cache'),
+
+config/database.php 配置
+
+'redis' => [ redis 的配置，注意，这里的 default 是对应上面的 connection' => 'default' 配置项
+    'cluster'=>false, 表示该 redis 不是集群
+    'default' => [
+        // 'url' => env('REDIS_URL'),
+        'host' => env('REDIS_HOST', '127.0.0.1'),
+        'password' => env('REDIS_PASSWORD', null),
+        'port' => env('REDIS_PORT', '6379'),
+        'database' => env('REDIS_DB', '0'),
+    ],
+],
+
+控制器使用 Cache 代码：
+<?php
+
+namespace App\Http\Controllers;
+
+use Cache;
+
+class TestController extends Controller
+{
+    public function test_redis()
+    {
+        // dd('成功访问');
+        // phpinfo();
+        // Cache::set('name','我使用 Redis 作为 Cache 还曾',11000);
+        // Cache::set('age',38);
+        // Cache::set('collage','');
+        // Cache::put('collage', '大学');
+        // Cache::put('collage', '中学');
+        // $re =  Cache::put('collage', '小学');
+        // dd($re);
+        Cache::putMany(['collage' => ['北京', '天津', '福建'], 'age' => 18, 'name' => 'orange']);
+    }
+}
+以上代码都能正常运行。
+<?php
+
+    // 使用缓存的基本过程
+    $key = '3333';
+    if (Cache::has($key)){             //首先查寻 cache 的键是否存在
+        $values = Cache::get($key);    //如果存在则直接读取 cache 里面的值
+        dd($values);
+    }else{                             //如果 cache 里面没有，则先进行数据库查询操作，再放入缓存
+        $value = '4444';
+        Cache::put($key,$value,500);
+    }
+    dd(Cache::get($key));
+
+- 另外，我在使用时，并没有注释 config/app.php 中的 'Redis' => Illuminate\Support\Facades\Redis::class, 且使用正常。
+
+Laravel 使用 Redis 的相关参考:
+http://www.manongjc.com/detail/5-bqzvizimpgsjexd.html
+https://qianjinyike.com/laravel-%E7%BC%93%E5%AD%98/
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+使用 redis 需要参考 redis 规范手册。
+https://www.redis.net.cn/order/3577.html
+
+- 安装 Redis Desktop Manager 客户端:
+https://redisdesktop.com/ 官网
+https://snapcraft.io/install/redis-desktop-manager/centos#install
+sudo yum install epel-release
+sudo yum install snapd
+sudo systemctl enable --now snapd.socket
+sudo ln -s /var/lib/snapd/snap /snap
+sudo snap install redis-desktop-manager
+
+然后通过 redis-desktop-manager.rdm 即可启动。
+[root@s snap]# find / -name "redis-desk*"
+/var/lib/snapd/desktop/applications/redis-desktop-manager_rdm.desktop
+复制到桌面。
+
+Laravel 安装插件的更新：
+[root@s my_blog]# composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/
+[root@s my_blog]# composer update
+[root@s my_blog]# php artisan ide-helper:generate
+A new helper file was written to _ide_helper.php
+[root@s my_blog]# 
+[root@s my_blog]# chown www:www _ide_helper.php
+==================================================================
+redis 开机启动的配置内容
+------------------------------------------------------------------
+#!/bin/bash
+#
+# chkconfig: 2345 10 90
+# description: Start and Stop redis
+PATH=/usr/local/bin:/sbin:/usr/bin:/bin
+REDISPORT=6379
+EXEC=/usr/local/redis/src/redis-server
+REDIS_CLI=/usr/local/redis/src/redis-cli
+PIDFILE=/var/run/redis.pid
+CONF="/usr/local/redis/redis.conf"
+AUTH="1234"
+case "$1" in
+    start)
+        if [ -f $PIDFILE ]
+        then
+            echo "$PIDFILE exists, process is already running or crashed."
+        else
+            echo "Starting Redis server..."
+            $EXEC $CONF
+        fi
+        if [ "$?"="0" ]
+        then
+            echo "Redis is running..."
+        fi
+        ;;
+    stop)
+        if [ ! -f $PIDFILE ]
+        then
+            echo "$PIDFILE exists, process is not running."
+        else
+            PID=$(cat $PIDFILE)
+            echo "Stopping..."
+            $REDIS_CLI -p $REDISPORT SHUTDOWN
+            sleep 2
+            while [ -x $PIDFILE ]
+            do  
+                echo "Waiting for Redis to shutdown..."
+                sleep 1
+            done
+            echo "Redis stopped"
+        fi
+        ;;
+    restart|force-reload)
+        ${0} stop
+        ${0} start
+        ;;
+    *)
+    echo "Usage: /etc/init.d/redis {start|stop|restart|force-reload}" >&2
+    exit 1
+esac
+------------------------------------------------------------------
+==================================================================
+安装 ElasticSearch
+下载地址 https://www.elastic.co/cn/downloads/elasticsearch
+选择 LINUX X86_64 进行下载。
+https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.8.0-linux-x86_64.tar.gz
+下载下来之后，进行解压缩，然后复制到 /usr/local/elasticsearch
+然后进行授权
+sudo chown -R shan:shan elasticsearch
+然后进行环境变量的配置
+然后就可以运行了，如果要以守护进行方式运行则输入 elasticsearch -d 即可
+浏览器打开 http://127.0.0.1:9200/ 显示如下信息:
+```
+{
+  "name" : "s",
+  "cluster_name" : "elasticsearch",
+  "cluster_uuid" : "1wQUOQbFSVCuPwyqugBcoQ",
+  "version" : {
+    "number" : "7.8.0",
+    "build_flavor" : "default",
+    "build_type" : "tar",
+    "build_hash" : "757314695644ea9a1dc2fecd26d1a43856725e65",
+    "build_date" : "2020-06-14T19:35:50.234439Z",
+    "build_snapshot" : false,
+    "lucene_version" : "8.5.1",
+    "minimum_wire_compatibility_version" : "6.8.0",
+    "minimum_index_compatibility_version" : "6.0.0-beta1"
+  },
+  "tagline" : "You Know, for Search"
+}
+```
+说明 ES 安装成功
+
+出现如下错误:
+could not find java in bundled jdk at /usr/local/elasticsearch/jdk/bin/java
+就是因为没有授权，导致用户没有权限访问 jdk/bin/java
+我们在授权之前进入 elasticsearch/jdk/bin 就会发现没有权限
+
+配置开机启动
+[shan@s bin]$ sudo gedit /etc/init.d/elasticsearch
+
+```
+#!/bin/sh
+#chkconfig: 2345 80 05
+#description: elasticsearch
+
+export JAVA_HOME=/usr/local/elasticsearch/jdk
+export JAVA_BIN=/usr/local/elasticsearch/jdk/bin
+export PATH=$PATH:$JAVA_HOME/bin
+# export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
+# export JAVA_HOME JAVA_BIN PATH CLASSPATH
+export JAVA_HOME JAVA_BIN PATH
+
+case "$1" in
+start)
+    su shan<<!
+    cd /usr/local/elasticsearch/
+    ./bin/elasticsearch -d
+!
+    echo "elasticsearch startup"
+    ;;
+stop)
+    es_pid=`ps aux|grep elasticsearch | grep -v 'grep elasticsearch' | awk '{print $2}'`
+    kill -9 $es_pid
+    echo "elasticsearch stopped"
+    ;;
+restart)
+    es_pid=`ps aux|grep elasticsearch | grep -v 'grep elasticsearch' | awk '{print $2}'`
+    kill -9 $es_pid
+    echo "elasticsearch stopped"
+    su shan<<!
+    cd /usr/local/elasticsearch/
+    ./bin/elasticsearch -d
+!
+    echo "elasticsearch startup"
+    ;;
+*)
+    echo "start|stop|restart"
+    ;;
+esac
+
+exit $?
+
+```
+[shan@s ~]$ cd /etc/init.d/
+[shan@s init.d]$ sudo chown -R shan:shan elasticsearch
+[shan@s init.d]$ chmod +x elasticsearch
+[shan@s init.d]$ sudo chkconfig --add elasticsearch
+
+
+重启机器，检测 elasticsearch 是否自启
+ps -ef | grep elasticsearch
+
+配置 ElasticSearch
+[shan@s ~]$ cd /usr/local/elasticsearch/config/
+[shan@s config]$ sudo gedit elasticsearch.yml
+
+在配置文件的最上面添加如下代码:
+
+```
+cluster.name: es-for-laravel-web
+node.name: node-1
+path.data: /data/elasticsearch/data
+path.logs: /data/elasticsearch/logs
+network.host: 0.0.0.0
+http.port: 9200
+cluster.initial_master_nodes: ["node-1"]
+```
+根据配置文件，我们需要在 /data/ 目录下创建相关目录
+[shan@s /]$ sudo mkdir -p /data/elasticsearch/data/
+[shan@s /]$ sudo mkdir -p /data/elasticsearch/logs/
+
+然后授权和读写权限
+[shan@s /]$ sudo chown -R shan:shan /data/
+[shan@s /]$ chmod -R 777 /data/
+
+重启 ES 服务失败的常见问题以及处理，具体问题查看日志文件 /data/elasticsearch/logs/
+
+``````````````````````````````````````````````
+[1]: max file descriptors [4096] for elasticsearch process is too low, increase to at least [65535]
+
+每个进程最大同时打开文件数太小的问题
+
+sudo gedit /etc/security/limits.conf
+
+//在文件末尾添加下面的参数值
+* soft nofile 131070
+* hard nofile 131070
+
+保存之后，切换到普通用户，输入如下命令进行查看:
+ulimit -Sn
+ulimit -Hn
+
+[2]: max number of threads [3818] for user [shan] is too low, increase to at least [4096]
+
+最大线程数太低的问题
+
+sudo gedit /etc/security/limits.conf
+
+//在文件末尾添加下面的参数值
+* soft nproc 8192
+* hard nproc 8192
+
+保存之后，切换到普通用户，输入如下命令进行查看:
+ulimit -Hu
+ulimit -Su
+
+以上两个加完后如下所示:
++++++++++++++++++++++
+* soft nofile 131070
+* hard nofile 131070
+* soft nproc 8192
+* hard nproc 8192
++++++++++++++++++++++
+
+[3]: max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+
+最大虚拟内存空间
+
+sudo gedit /etc/sysctl.conf
+
+vm.max_map_count=524288
+
+sudo sysctl -p
+``````````````````````````````````````````````
+重启电脑使配置生效。
+``````````````````````````````````````````````
+重新访问:
+
+```
+{
+  "name" : "node-1",
+  "cluster_name" : "es-for-laravel-web",
+  "cluster_uuid" : "mS28X314TIaaCK3zHPyvrg",
+  "version" : {
+    "number" : "7.8.0",
+    "build_flavor" : "default",
+    "build_type" : "tar",
+    "build_hash" : "757314695644ea9a1dc2fecd26d1a43856725e65",
+    "build_date" : "2020-06-14T19:35:50.234439Z",
+    "build_snapshot" : false,
+    "lucene_version" : "8.5.1",
+    "minimum_wire_compatibility_version" : "6.8.0",
+    "minimum_index_compatibility_version" : "6.0.0-beta1"
+  },
+  "tagline" : "You Know, for Search"
+}
+```
+发现显示的是我们配置过的相关配置项的信息，说明我们配置成功。
+
+安装 elasticsearch-head 插件:
+对于 es7 版本来说，安装方式参考:
+https://github.com/mobz/elasticsearch-head#running-with-built-in-server
+
+从安装方式可以看出，需要 node.js 支持。
+
+安装 node.js 支持:
+https://nodejs.org/en/ - 12.18.2 LTS
+https://nodejs.org/dist/v12.18.2/node-v12.18.2-linux-x64.tar.xz
+
+[shan@s ELK]$ tar -xvf node-v12.18.2-linux-x64.tar.xz
+[shan@s ELK]$ mv node-v12.18.2-linux-x64 nodejs
+
+确认一下 nodejs 下 bin 目录是否有 node 和 npm 文件，如果有执行软连接创建，如果没有重新下载并执行下面的步骤:
+
+```创建软连接
+sudo ln -s /home/shan/Downloads/ELK/nodejs/bin/npm /usr/local/bin/
+sudo ln -s /home/shan/Downloads/ELK/nodejs/bin/node /usr/local/bin/
+```
+
+```添加环境变量
+[shan@s bin]$ sudo gedit /etc/profile
+export NODE_HOME=/home/shan/Downloads/ELK/nodejs
+export PATH=${NODE_HOME}/bin:$PATH
+[shan@s bin]$ source /etc/profile
+
+```
+[shan@s ~]$ node -v
+v12.18.2
+
+
+```编译安装
+wget https://npm.taobao.org/mirrors/node/v11.0.0/node-v11.0.0.tar.gz
+
+tar -xvf node-v11.0.0.tar.gz
+
+cd node-v11.0.0
+
+sudo yum install gcc gcc-c++
+
+./configure
+
+make
+
+sudo make install
+
+node -v
+```
+
+接着安装 es-head 插件:
+[shan@s ~]$ cd Downloads/ELK/
+git clone git://github.com/mobz/elasticsearch-head.git
+	- 下载下来后先做个备份
+	- [shan@s ELK]$ zip -r elasticsearch-head.zip elasticsearch-head
+cd elasticsearch-head
+npm install
+	```错误处理:
+	npm install 查看日志发现如下错误:
+	13371 error phantomjs-prebuilt@2.1.16 install: `node install.js`
+	13371 error Exit status 1
+	13372 error Failed at the phantomjs-prebuilt@2.1.16 install script.
+
+	先执行:
+	npm -g install phantomjs-prebuilt@2.1.16 --ignore-script
+	再执行:
+	npm install
+	```
+npm run start
+	```启动成功显示如下信息:
+	[shan@s elasticsearch-head]$ npm run start
+	> elasticsearch-head@0.0.0 start /home/shan/Downloads/ELK/elasticsearch-head
+	> grunt server
+	Running "connect:server" (connect) task
+	Waiting forever...
+	Started connect web server on http://localhost:9100
+	```
+浏览器输入 http://localhost:9100/
+
+配置 elasticsearch.yml 添加如下配置项: 允许 es-head 插件远程访问可以在上面安装和配置 es 时一起配置。
+```
+http.cors.enabled: true
+http.cors.allow-origin: "*"
+```
+然后再重启 es-head 插件，然后可以在 es-head 页面的 Connect 前面的输入框输入 es 的 url 地址:
+http://127.0.0.1:9200/
+显示了 es 的节点名称
+
+es-head 显示中文界面
+http://localhost:9100/?lang=zh
+
+MySQL 数据实时同步
+
+Laravel 使用 ElasticSearch
+https://www.bilibili.com/video/av71511095/
+https://segmentfault.com/a/1190000011690907
+https://segmentfault.com/a/1190000015145850
+
+https://www.freesion.com/article/316473202/
+https://www.jianshu.com/p/78b45f07a1c5
+https://www.jianshu.com/p/1d2ddb92f6fb
+https://blog.csdn.net/qq_29677867/article/details/92839388
+https://learnku.com/articles/25179
+https://learnku.com/articles/37135
+https://www.jb51.net/article/179295.htm
+https://www.haveyb.com/article/229
+
+
+
+MySQL 数据同步到 ElasticSearch
+https://www.cnblogs.com/yqzc/p/12343264.html
+https://blog.csdn.net/u013810234/article/details/105564688
+https://blog.csdn.net/qq_33029793/article/details/103080805
+https://blog.csdn.net/ownfire/article/details/97117562
+https://studygolang.com/articles/20819
+
+
+Laravel 框架实现无限极分类
+https://learnku.com/articles/45643
+快速上手 Laravel 的 100 个小技巧
+https://learnku.com/laravel/t/45370#e5bf5f
+
+PHP+Laravel实战博客项目
+https://edu.csdn.net/course/detail/26605
+Laravel框架基础到项目实战 完整版
+https://edu.csdn.net/course/detail/24680
+
+
+
+==================================================================
+安装 Kibana
+下载地址 https://www.elastic.co/cn/downloads/kibana
+下载版本 LINUX 64-BIT
+https://artifacts.elastic.co/downloads/kibana/kibana-7.8.0-linux-x86_64.tar.gz
+==================================================================
+安装 Logstash
+下载地址 https://www.elastic.co/cn/downloads/logstash
+下载版本 TAR.GZ
+https://artifacts.elastic.co/downloads/logstash/logstash-7.8.0.tar.gz
+==================================================================
+安装 Beats
+下载地址 https://www.elastic.co/cn/downloads/beats
+	Filebeat
+	Packetbeat
+==================================================================
+==================================================================
+==================================================================
+==================================================================
+==================================================================
+==================================================================
+==================================================================
+==================================================================
+==================================================================
+==================================================================
+==================================================================
+==================================================================
+==================================================================
+==================================================================
+==================================================================
+==================================================================
+==================================================================
+==================================================================
+==================================================================
+==================================================================
+==================================================================
+==================================================================
+==================================================================
+==================================================================
+==================================================================
+==================================================================
+==================================================================
+==================================================================
+==================================================================
+==================================================================
+==================================================================
+==================================================================
+==================================================================
+==================================================================
+==================================================================

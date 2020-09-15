@@ -1,0 +1,1288 @@
+drop table if exists `#@__addonarticle`;
+create table `#@__addonarticle` (
+  `aid` mediumint(8) unsigned not null default '0',
+  `typeid` smallint(5) unsigned not null default '0',
+  `body` mediumtext,
+  `redirecturl` varchar(255) not null default '',
+  `templet` varchar(30) not null default '',
+  `userip` char(15) not null default '',
+  primary key  (`aid`),
+  key `typeid` (`typeid`)
+) type=myisam;
+
+drop table if exists `#@__addonimages`;
+create table `#@__addonimages` (
+  `aid` mediumint(8) unsigned not null default '0',
+  `typeid` smallint(5) unsigned not null default '0',
+  `pagestyle` smallint(6) not null default '1',
+  `maxwidth` smallint(6) not null default '600',
+  `imgurls` text,
+  `row` smallint(6) not null default '0',
+  `col` smallint(6) not null default '0',
+  `isrm` smallint(6) not null default '0',
+  `ddmaxwidth` smallint(6) not null default '200',
+  `pagepicnum` smallint(6) not null default '12',
+  `templet` varchar(30) not null default '',
+  `userip` char(15) not null default '',
+  `redirecturl` varchar(255) not null default '',
+  `body` mediumtext,
+  primary key  (`aid`),
+  key `imagesmain` (`typeid`)
+) type=myisam;
+
+drop table if exists `#@__addoninfos`;
+create table `#@__addoninfos` (
+  `aid` int(11) not null default '0',
+  `typeid` int(11) not null default '0',
+  `channel` smallint(6) not null default '0',
+  `arcrank` smallint(6) not null default '0',
+  `mid` mediumint(8) unsigned not null default '0',
+  `click` int(10) unsigned not null default '0',
+  `title` varchar(60) not null default '',
+  `litpic` varchar(60) not null default '',
+  `userip` varchar(15) not null default ' ',
+  `senddate` int(11) not null default '0',
+  `flag` set('c','h','p','f','s','j','a','b') default null,
+  `lastpost` int(10) unsigned not null default '0',
+  `scores` mediumint(8) not null default '0',
+  `goodpost` mediumint(8) unsigned not null default '0',
+  `badpost` mediumint(8) unsigned not null default '0',
+  `nativeplace` smallint(5) unsigned not null default '0',
+  `infotype` char(20) not null default '0',
+  `body` mediumtext,
+  `endtime` int(11) not null default '0',
+  `tel` varchar(50) not null default '',
+  `email` varchar(50) not null default '',
+  `address` varchar(100) not null default '',
+  `linkman` varchar(50) not null default '',
+  primary key  (`aid`),
+  key `typeid` (`typeid`,`nativeplace`,`infotype`),
+  key `channel` (`channel`,`arcrank`,`mid`,`click`,`title`,`litpic`,`senddate`,`flag`,`endtime`)
+) type=myisam;
+
+drop table if exists `#@__addonshop`;
+create table `#@__addonshop` (
+  `aid` mediumint(8) unsigned not null default '0',
+  `typeid` smallint(5) unsigned not null default '0',
+  `body` mediumtext,
+  `price` float not null default '0',
+  `trueprice` float not null default '0',
+  `brand` varchar(250) not null default '',
+  `units` varchar(250) not null default '',
+  `templet` varchar(30) not null,
+  `userip` char(15) not null,
+  `redirecturl` varchar(255) not null,
+  `vocation` char(20) not null default '0',
+  `infotype` char(20) not null default '0',
+  `uptime` int(11) not null default '0',
+  primary key  (`aid`),
+  key `typeid` (`typeid`)
+) type=myisam;
+
+drop table if exists `#@__addonsoft`;
+create table `#@__addonsoft` (
+  `aid` mediumint(8) unsigned not null default '0',
+  `typeid` smallint(5) unsigned not null default '0',
+  `filetype` varchar(10) not null default '',
+  `language` varchar(10) not null default '',
+  `softtype` varchar(10) not null default '',
+  `accredit` varchar(10) not null default '',
+  `os` varchar(30) not null default '',
+  `softrank` mediumint(8) unsigned not null default '0',
+  `officialurl` varchar(30) not null default '',
+  `officialdemo` varchar(50) not null default '',
+  `softsize` varchar(10) not null default '',
+  `softlinks` text,
+  `introduce` text,
+  `daccess` smallint(5) not null default '0',
+  `needmoney` smallint(5) not null default '0',
+  `templet` varchar(30) not null default '',
+  `userip` char(15) not null default '',
+  `redirecturl` varchar(255) not null default '',
+  primary key  (`aid`),
+  key `softmain` (`typeid`)
+) type=myisam;
+
+drop table if exists `#@__addonspec`;
+create table `#@__addonspec` (
+  `aid` mediumint(8) unsigned not null default '0',
+  `typeid` smallint(5) unsigned not null default '0',
+  `note` text,
+  `templet` varchar(30) not null default '',
+  `userip` char(15) not null default '',
+  `redirecturl` varchar(255) not null default '',
+  primary key  (`aid`),
+  key `typeid` (`typeid`)
+) type=myisam;
+
+drop table if exists `#@__admin`;
+create table `#@__admin` (
+  `id` int(10) unsigned not null,
+  `usertype` float unsigned default '0',
+  `userid` char(30) not null default '',
+  `pwd` char(32) not null default '',
+  `uname` char(20) not null default '',
+  `tname` char(30) not null default '',
+  `email` char(30) not null default '',
+  `typeid` text,
+  `logintime` int(10) unsigned not null default '0',
+  `loginip` varchar(20) not null default '',
+  primary key  (`id`)
+) type=myisam;
+
+drop table if exists `#@__admintype`;
+create table `#@__admintype` (
+  `rank` float not null default '1',
+  `typename` varchar(30) not null default '',
+  `system` smallint(6) not null default '0',
+  `purviews` text,
+  primary key  (`rank`)
+) type=myisam;
+
+drop table if exists `#@__advancedsearch`;
+create table `#@__advancedsearch` (
+  `mid` int(11) not null,
+  `maintable` varchar(256) not null default '',
+  `mainfields` text,
+  `addontable` varchar(256) default null,
+  `addonfields` text,
+  `forms` text,
+  `template` varchar(256) not null default '',
+  unique key `mid` (`mid`)
+) type=myisam;
+
+drop table if exists `#@__arcatt`;
+create table `#@__arcatt` (
+  `sortid` smallint(6) not null default '0',
+  `att` char(10) not null default '',
+  `attname` char(30) not null default '',
+  primary key  (`att`)
+) type=myisam;
+
+drop table if exists `#@__arccache`;
+create table `#@__arccache` (
+  `md5hash` char(32) not null default '',
+  `uptime` int(11) not null default '0',
+  `cachedata` mediumtext,
+  primary key  (`md5hash`)
+) type=myisam;
+
+drop table if exists `#@__archives`;
+create table `#@__archives` (
+  `id` mediumint(8) unsigned not null default '0',
+  `typeid` smallint(5) unsigned not null default '0',
+  `typeid2` varchar(90) not null default '0',
+  `sortrank` int(10) unsigned not null default '0',
+  `flag` set('c','h','p','f','s','j','a','b') default null,
+  `ismake` smallint(6) not null default '0',
+  `channel` smallint(6) not null default '1',
+  `arcrank` smallint(6) not null default '0',
+  `click` mediumint(8) unsigned not null default '0',
+  `money` smallint(6) not null default '0',
+  `title` char(255) not null default '', /* zhenglushan 60 修改为 255 */
+  `shorttitle` char(255) not null default '',/* zhenglushan 36 修改为 255 */
+  `color` char(7) not null default '',
+  `writer` char(255) not null default '',/* zhenglushan 20 修改为 255 */
+  `source` char(255) not null default '',/* zhenglushan 30 修改为 255 */
+  `litpic` char(255) not null default '', /* zhenglushan 100 修改为 255 */
+  `pubdate` int(10) unsigned not null default '0',
+  `senddate` int(10) unsigned not null default '0',
+  `mid` mediumint(8) unsigned not null default '0',
+  `keywords` char(255) not null default '', /* zhenglushan 30 修改为 255 */
+  `lastpost` int(10) unsigned not null default '0',
+  `scores` mediumint(8) not null default '0',
+  `goodpost` mediumint(8) unsigned not null default '0',
+  `badpost` mediumint(8) unsigned not null default '0',
+  `voteid` mediumint(8) not null,
+  `notpost` tinyint(1) unsigned not null default '0',
+  `description` varchar(255) not null default '',
+  `filename` varchar(40) not null default '',
+  `dutyadmin` mediumint(8) unsigned not null default '0',
+  `tackid` int(10) not null default '0',
+  `mtype` mediumint(8) unsigned not null default '0',
+  `weight` int(10) not null default '0',
+  primary key  (`id`),
+  key `sortrank` (`sortrank`),
+  key `mainindex` (`arcrank`,`typeid`,`channel`,`flag`,`mid`),
+  key `lastpost` (`lastpost`,`scores`,`goodpost`,`badpost`,`notpost`),
+  key `arcrank_typeid_flag` (`arcrank`,`typeid`,`flag`), /* zhenglushan 增加索引 */
+  key `arcrank_id_flag` (`arcrank`,`id`,`flag`), /* zhenglushan 增加索引 */
+  key `arcrank_flag` (`arcrank`,`flag`)
+) type=myisam;
+
+drop table if exists `#@__arcmulti`;
+create table `#@__arcmulti` (
+  `id` mediumint(8) unsigned not null auto_increment,
+  `tagid` char(60) not null default '',
+  `uptime` int(11) not null default '0',
+  `innertext` varchar(255) not null default '',
+  `pagesize` int(11) not null default '0',
+  `arcids` text not null,
+  `ordersql` varchar(255) default null,
+  `addfieldssql` varchar(255) default null,
+  `addfieldssqljoin` varchar(255) default null,
+  `attstr` text,
+  primary key  (`id`)
+) type=myisam;
+
+drop table if exists `#@__arcrank`;
+create table `#@__arcrank` (
+  `id` smallint(5) unsigned not null auto_increment,
+  `rank` smallint(6) not null default '0',
+  `membername` char(20) not null default '',
+  `adminrank` smallint(6) not null default '0',
+  `money` smallint(8) unsigned not null default '500',
+  `scores` mediumint(8) not null default '0',
+  `purviews` mediumtext,
+  primary key  (`id`)
+) type=myisam;
+
+drop table if exists `#@__arctiny`;
+create table `#@__arctiny` (
+  `id` mediumint(8) unsigned not null auto_increment,
+  `typeid` smallint(5) unsigned not null default '0',
+  `typeid2` varchar(90) not null default '0',
+  `arcrank` smallint(6) not null default '0',
+  `channel` smallint(5) not null default '1',
+  `senddate` int(10) unsigned not null default '0',
+  `sortrank` int(10) unsigned not null default '0',
+  `mid` mediumint(8) unsigned not null,
+  primary key  (`id`),
+  key `sortrank` (`sortrank`)
+) type=myisam;
+
+drop table if exists `#@__arctype`;
+create table `#@__arctype` (
+  `id` smallint(5) unsigned not null auto_increment,
+  `reid` smallint(5) unsigned not null default '0',
+  `topid` smallint(5) unsigned not null default '0',
+  `sortrank` smallint(5) unsigned not null default '50',
+  `typename` char(30) not null default '',
+  `typedir` char(60) not null default '',
+  `isdefault` smallint(6) not null default '0',
+  `defaultname` char(15) not null default 'index.html',
+  `issend` smallint(6) not null default '0',
+  `channeltype` smallint(6) default '1',
+  `maxpage` smallint(6) not null default '-1',
+  `ispart` smallint(6) not null default '0',
+  `corank` smallint(6) not null default '0',
+  `tempindex` char(50) not null default '',
+  `templist` char(50) not null default '',
+  `temparticle` char(50) not null default '',
+  `namerule` char(50) not null default '',
+  `namerule2` char(50) not null default '',
+  `modname` char(20) not null default '',
+  `description` char(150) not null default '',
+  `keywords` varchar(60) not null default '',
+  `seotitle` varchar(80) not null default '',
+  `moresite` tinyint(1) unsigned not null default '0',
+  `sitepath` char(60) not null default '',
+  `siteurl` char(50) not null default '',
+  `ishidden` smallint(6) not null default '0',
+  `cross` tinyint(1) not null default '0',
+  `crossid` text,
+  `content` text,
+  `smalltypes` text,
+  primary key  (`id`),
+  key `reid` (`reid`,`isdefault`,`channeltype`,`ispart`,`corank`,`topid`,`ishidden`),
+  key `sortrank` (`sortrank`)
+) type=myisam;
+
+drop table if exists `#@__area`;
+create table `#@__area` (
+  `id` int(10) unsigned not null auto_increment,
+  `name` varchar(20) not null default '',
+  `reid` int(10) unsigned not null default '0',
+  `disorder` int(10) unsigned not null default '0',
+  primary key  (`id`)
+) type=myisam;
+
+drop table if exists `#@__channeltype`;
+create table `#@__channeltype` (
+  `id` smallint(6) not null default '0',
+  `nid` varchar(20) not null default '',
+  `typename` varchar(30) not null default '',
+  `maintable` varchar(50) not null default '#@__archives',
+  `addtable` varchar(50) not null default '',
+  `addcon` varchar(30) not null default '',
+  `mancon` varchar(30) not null default '',
+  `editcon` varchar(30) not null default '',
+  `useraddcon` varchar(30) not null default '',
+  `usermancon` varchar(30) not null default '',
+  `usereditcon` varchar(30) not null default '',
+  `fieldset` text,
+  `listfields` text,
+  `allfields` text,
+  `issystem` smallint(6) not null default '0',
+  `isshow` smallint(6) not null default '1',
+  `issend` smallint(6) not null default '0',
+  `arcsta` smallint(6) not null default '-1',
+  `usertype` char(10) not null default '',
+  `sendrank` smallint(6) not null default '10',
+  `isdefault` smallint(6) not null default '0',
+  `needdes` tinyint(1) not null default '1',
+  `needpic` tinyint(1) not null default '1',
+  `titlename` varchar(20) not null default '标题',
+  `onlyone` smallint(6) not null default '0',
+  `dfcid` smallint(5) unsigned not null default '0',
+  primary key  (`id`),
+  key `nid` (`nid`,`isshow`,`arcsta`,`sendrank`)
+) type=myisam;
+
+drop table if exists `#@__co_htmls`;
+create table `#@__co_htmls` (
+  `aid` mediumint(8) unsigned not null auto_increment,
+  `nid` mediumint(8) unsigned not null default '0',
+  `typeid` smallint(5) unsigned not null default '0',
+  `title` varchar(60) not null default '',
+  `litpic` varchar(100) not null default '',
+  `url` varchar(100) not null default '',
+  `dtime` int(10) unsigned not null default '0',
+  `isdown` tinyint(1) unsigned not null default '0',
+  `isexport` tinyint(1) not null default '0',
+  `result` mediumtext,
+  primary key  (`aid`),
+  key `nid` (`nid`),
+  key `typeid` (`typeid`,`title`,`url`,`dtime`,`isdown`,`isexport`)
+) type=myisam;
+
+drop table if exists `#@__co_mediaurls`;
+create table `#@__co_mediaurls` (
+  `nid` mediumint(8) unsigned not null default '0',
+  `hash` char(32) not null default '',
+  `tofile` char(60) not null default '',
+  key `hash` (`hash`)
+) type=myisam;
+
+drop table if exists `#@__co_note`;
+create table `#@__co_note` (
+  `nid` mediumint(8) unsigned not null auto_increment,
+  `channelid` smallint(5) unsigned not null default '0',
+  `notename` varchar(50) not null default '',
+  `sourcelang` varchar(10) not null default 'gb2312',
+  `uptime` int(10) unsigned not null default '0',
+  `cotime` int(10) unsigned not null default '0',
+  `pnum` smallint(5) unsigned not null default '0',
+  `isok` tinyint(1) unsigned not null default '0',
+  `usemore` tinyint(1) unsigned not null default '0',
+  `listconfig` text,
+  `itemconfig` text,
+  primary key  (`nid`),
+  key `isok` (`isok`,`channelid`,`cotime`)
+) type=myisam;
+
+drop table if exists `#@__co_onepage`;
+create table `#@__co_onepage` (
+  `id` int(11) not null auto_increment,
+  `url` varchar(60) not null default '',
+  `title` varchar(60) not null default '',
+  `issource` smallint(6) not null default '1',
+  `lang` varchar(10) not null default 'gb2312',
+  `rule` text,
+  primary key  (`id`),
+  key `url` (`url`)
+) type=myisam;
+
+drop table if exists `#@__co_urls`;
+create table `#@__co_urls` (
+  `id` int(10) unsigned not null auto_increment,
+  `hash` varchar(32) not null default '',
+  `nid` smallint(5) unsigned not null default '0',
+  primary key  (`id`)
+) type=myisam;
+
+drop table if exists `#@__diyforms`;
+create table `#@__diyforms` (
+  `diyid` int(10) unsigned not null auto_increment,
+  `name` varchar(50) not null default '',
+  `posttemplate` varchar(50) not null,
+  `viewtemplate` varchar(50) not null,
+  `listtemplate` varchar(50) not null,
+  `table` varchar(50) not null default '',
+  `info` text,
+  `public` tinyint(1) not null default '1',
+  primary key  (`diyid`)
+) type=myisam;
+
+drop table if exists `#@__downloads`;
+create table `#@__downloads` (
+  `hash` char(32) not null,
+  `id` int(10) unsigned not null default '0',
+  `downloads` int(10) unsigned not null default '0',
+  primary key  (`hash`)
+) type=myisam;
+
+drop table if exists `#@__erradd`;
+create table `#@__erradd` (
+  `id` int(10) unsigned not null auto_increment,
+  `aid` mediumint(8) unsigned not null,
+  `mid` mediumint(8) unsigned default null,
+  `title` char(60) not null default '',
+  `type` smallint(6) not null default '0',
+  `errtxt` mediumtext,
+  `oktxt` mediumtext,
+  `sendtime` int(10) unsigned not null default '0',
+  key `id` (`id`)
+) type=myisam;
+
+drop table if exists `#@__feedback`;
+create table `#@__feedback` (
+  `id` int(10) unsigned not null auto_increment,
+  `aid` mediumint(8) unsigned not null default '0',
+  `typeid` smallint(5) unsigned not null default '0',
+  `username` char(20) not null default '',
+  `arctitle` varchar(60) not null default '',
+  `ip` char(15) not null default '',
+  `ischeck` smallint(6) not null default '0',
+  `dtime` int(10) unsigned not null default '0',
+  `mid` mediumint(8) unsigned not null default '0',
+  `bad` mediumint(8) unsigned not null default '0',
+  `good` mediumint(8) unsigned not null default '0',
+  `ftype` set('feedback','good','bad') not null default 'feedback',
+  `face` smallint(5) unsigned not null default '0',
+  `msg` text,
+  primary key  (`id`),
+  key `aid` (`aid`,`ischeck`,`mid`)
+) type=myisam;
+
+drop table if exists `#@__flink`;
+create table `#@__flink` (
+  `id` smallint(5) unsigned not null auto_increment,
+  `sortrank` smallint(6) not null default '0',
+  `url` char(60) not null default '',
+  `webname` char(30) not null default '',
+  `msg` char(200) not null default '',
+  `email` char(50) not null default '',
+  `logo` char(60) not null default '',
+  `dtime` int(10) unsigned not null default '0',
+  `typeid` smallint(5) unsigned not null default '0',
+  `ischeck` smallint(6) not null default '1',
+  primary key  (`id`)
+) type=myisam;
+
+drop table if exists `#@__flinktype`;
+create table `#@__flinktype` (
+  `id` mediumint(8) unsigned not null auto_increment,
+  `typename` varchar(50) not null default '',
+  primary key  (`id`)
+) type=myisam;
+
+drop table if exists `#@__freelist`;
+create table `#@__freelist` (
+  `aid` int(11) not null auto_increment,
+  `title` varchar(50) not null default '',
+  `namerule` varchar(50) not null default '',
+  `listdir` varchar(60) not null default '',
+  `defaultpage` varchar(20) not null default '',
+  `nodefault` smallint(6) not null default '0',
+  `templet` varchar(50) not null default '',
+  `edtime` int(11) not null default '0',
+  `maxpage` smallint(5) unsigned not null default '100',
+  `click` int(11) not null default '1',
+  `listtag` mediumtext,
+  `keywords` varchar(100) not null default '',
+  `description` varchar(250) not null default '',
+  primary key  (`aid`)
+) type=myisam;
+
+drop table if exists `#@__homepageset`;
+create table `#@__homepageset` (
+  `templet` char(50) not null default '',
+  `position` char(30) not null default '',
+  `showmod` tinyint(2) not null default '1'
+) type=myisam;
+
+drop table if exists `#@__keywords`;
+create table `#@__keywords` (
+  `aid` mediumint(8) unsigned not null auto_increment,
+  `keyword` char(16) not null default '',
+  `rank` mediumint(8) unsigned not null default '0',
+  `sta` smallint(6) not null default '1',
+  `rpurl` char(60) not null default '',
+  primary key  (`aid`),
+  key `keyword` (`keyword`,`rank`,`sta`)
+) type=myisam;
+
+drop table if exists `#@__log`;
+create table `#@__log` (
+  `lid` mediumint(8) unsigned not null auto_increment,
+  `adminid` smallint(8) unsigned not null default '0',
+  `filename` char(60) not null default '',
+  `method` char(10) not null default '',
+  `query` char(200) not null default '',
+  `cip` char(15) not null default '',
+  `dtime` int(10) unsigned not null default '0',
+  primary key  (`lid`)
+) type=myisam;
+
+drop table if exists `#@__member`;
+create table `#@__member` (
+  `mid` mediumint(8) unsigned not null auto_increment,
+  `mtype` varchar(20) not null default '个人',
+  `userid` char(20) not null default '',
+  `pwd` char(32) not null default '',
+  `uname` char(36) not null default '',
+  `sex` enum('男','女','保密') not null default '保密',
+  `rank` smallint(5) unsigned not null default '0',
+  `uptime` int(11) not null default '0',
+  `exptime` smallint(6) not null default '0',
+  `money` mediumint(8) unsigned not null default '0',
+  `email` char(50) not null default '',
+  `scores` mediumint(8) unsigned not null default '0',
+  `matt` smallint(5) unsigned not null default '0',
+  `spacesta` smallint(6) not null default '0',
+  `face` char(50) not null default '',
+  `safequestion` smallint(5) unsigned not null default '0',
+  `safeanswer` char(30) not null default '',
+  `jointime` int(10) unsigned not null default '0',
+  `joinip` char(16) not null default '',
+  `logintime` int(10) unsigned not null default '0',
+  `loginip` char(16) not null default '',
+  `checkmail` smallint(6) not null default '-1',
+  primary key  (`mid`),
+  key `userid` (`userid`,`sex`),
+  key `logintime` (`logintime`)
+) type=myisam;
+
+drop table if exists `#@__member_company`;
+create table `#@__member_company` (
+  `mid` mediumint(8) not null auto_increment,
+  `company` varchar(36) not null default '',
+  `product` varchar(50) not null default '',
+  `place` smallint(5) unsigned not null default '0',
+  `vocation` smallint(5) unsigned not null default '0',
+  `cosize` smallint(5) unsigned not null default '0',
+  `tel` varchar(30) not null default '',
+  `fax` varchar(30) not null default '',
+  `linkman` varchar(20) not null default '',
+  `address` varchar(50) not null default '',
+  `mobile` varchar(30) not null default '',
+  `email` varchar(50) not null default '',
+  `url` varchar(50) not null default '',
+  `uptime` int(10) unsigned not null default '0',
+  `checked` tinyint(1) unsigned not null default '0',
+  `introduce` text,
+  `comface` varchar(255) not null default '',
+  primary key  (`mid`)
+) type=myisam;
+
+drop table if exists `#@__member_feed`;
+create table `#@__member_feed` (
+  `fid` mediumint(8) unsigned not null auto_increment,
+  `mid` smallint(8) unsigned not null default '0',
+  `userid` char(20) not null default '',
+  `uname` char(36) not null default '',
+  `type` char(20) character set gb2312 not null default '0',
+  `aid` mediumint(8) not null default '0',
+  `dtime` int(10) unsigned not null default '0',
+  `title` char(253) not null,
+  `note` char(200) not null default '',
+  `ischeck` smallint(6) not null,
+  primary key  (`fid`)
+) type=myisam;
+
+drop table if exists `#@__member_flink`;
+create table `#@__member_flink` (
+  `aid` mediumint(8) unsigned not null auto_increment,
+  `mid` mediumint(8) unsigned not null default '0',
+  `title` varchar(30) not null default '',
+  `url` varchar(100) not null default '',
+  primary key  (`aid`)
+) type=myisam;
+
+drop table if exists `#@__member_friends`;
+create table `#@__member_friends` (
+  `id` int(10) unsigned not null auto_increment,
+  `fid` mediumint(8) unsigned not null default '0',
+  `floginid` char(20) not null default '',
+  `funame` char(36) not null default '',
+  `mid` mediumint(8) not null default '0',
+  `addtime` int(10) unsigned not null default '0',
+  `ftype` tinyint(4) not null default '0',
+  `groupid` int(8) not null default '1',
+  `description` varchar(200) default null,
+  primary key  (`id`),
+  key `fid` (`fid`,`mid`)
+) type=myisam;
+
+drop table if exists `#@__member_group`;
+create table `#@__member_group` (
+  `id` int(10) not null auto_increment,
+  `groupname` varchar(50) not null,
+  `mid` int(8) not null,
+  primary key  (`id`),
+  key `id` (`id`)
+) type=myisam;
+
+drop table if exists `#@__member_guestbook`;
+create table `#@__member_guestbook` (
+  `aid` int(10) unsigned not null auto_increment,
+  `mid` mediumint(8) unsigned not null default '0',
+  `gid` varchar(20) not null default '0',
+  `title` varchar(60) not null default '',
+  `uname` varchar(50) not null default '',
+  `email` varchar(50) not null default '',
+  `qq` varchar(50) not null default '',
+  `tel` varchar(50) not null default '',
+  `ip` varchar(20) not null default '',
+  `dtime` int(10) unsigned not null default '0',
+  `msg` text,
+  primary key  (`aid`),
+  key `mid` (`mid`)
+) type=myisam;
+
+drop table if exists `#@__member_model`;
+create table `#@__member_model` (
+  `id` int(10) not null auto_increment,
+  `name` varchar(20) not null,
+  `table` varchar(30) not null,
+  `description` varchar(50) not null,
+  `state` int(2) not null default '0',
+  `issystem` int(2) not null default '0',
+  `info` text not null,
+  primary key  (`id`)
+) type=myisam;
+
+drop table if exists `#@__member_msg`;
+create table `#@__member_msg` (
+  `id` int(10) unsigned not null auto_increment,
+  `mid` mediumint(8) unsigned not null default '0',
+  `userid` char(20) not null default '',
+  `ip` char(15) not null default '',
+  `ischeck` smallint(6) not null default '0',
+  `dtime` int(10) unsigned not null default '0',
+  `msg` text,
+  primary key  (`id`),
+  key `id` (`ischeck`,`mid`)
+) type=myisam;
+
+drop table if exists `#@__member_operation`;
+create table `#@__member_operation` (
+  `aid` int(11) not null auto_increment,
+  `buyid` varchar(80) not null default '',
+  `pname` varchar(50) not null default '',
+  `product` varchar(10) not null default '',
+  `money` int(11) not null default '0',
+  `mtime` int(11) not null default '0',
+  `pid` int(11) not null default '0',
+  `mid` int(11) not null default '0',
+  `sta` int(11) not null default '0',
+  `oldinfo` varchar(200) not null default '',
+  primary key  (`aid`),
+  key `buyid` (`buyid`),
+  key `pid` (`pid`,`mid`,`sta`)
+) type=myisam;
+
+drop table if exists `#@__member_person`;
+create table `#@__member_person` (
+  `mid` mediumint(8) unsigned not null default '0',
+  `onlynet` tinyint(1) unsigned not null default '1',
+  `sex` enum('男','女','保密') not null default '男',
+  `uname` char(30) not null default '',
+  `qq` char(12) not null default '',
+  `msn` char(50) not null default '',
+  `tel` varchar(15) not null default '',
+  `mobile` varchar(15) not null default '',
+  `place` smallint(5) unsigned not null default '0',
+  `oldplace` smallint(5) unsigned not null default '0',
+  `birthday` date not null default '1980-01-01',
+  `star` smallint(6) unsigned not null default '1',
+  `income` smallint(6) not null default '0',
+  `education` smallint(6) not null default '0',
+  `height` smallint(5) unsigned not null default '160',
+  `bodytype` smallint(6) not null default '0',
+  `blood` smallint(6) not null default '0',
+  `vocation` smallint(6) not null default '0',
+  `smoke` smallint(6) not null default '0',
+  `marital` smallint(6) not null default '0',
+  `house` smallint(6) not null default '0',
+  `drink` smallint(6) not null default '0',
+  `datingtype` smallint(6) not null default '0',
+  `language` set('普通话','上海话','广东话','英语','日语','韩语','法语','意大利语','德语','西班牙语','俄语','阿拉伯语') default null,
+  `nature` set('性格外向','性格内向','活泼开朗','豪放不羁','患得患失','冲动','幽默','稳重','轻浮','沉默寡言','多愁善感','时喜时悲','附庸风雅','能说会道','坚强','脆弱','幼稚','成熟','快言快语','损人利己','狡猾善变','交际广泛','优柔寡断','自私','真诚','独立','依赖','难以琢磨','悲观消极','郁郁寡欢','胆小怕事','乐观向上','任性','自负','自卑','拜金','温柔体贴','小心翼翼','暴力倾向','逆来顺受','不拘小节','暴躁','倔强','豪爽','害羞','敢做敢当','助人为乐','耿直','虚伪','孤僻','老实','守旧','敏感','迟钝','武断','果断','刻薄') default null,
+  `lovemsg` varchar(100) not null default '',
+  `address` varchar(50) not null default '',
+  `uptime` int(10) unsigned not null default '0',
+  primary key  (`mid`)
+) type=myisam;
+
+drop table if exists `#@__member_pms`;
+create table `#@__member_pms` (
+  `id` int(10) unsigned not null auto_increment,
+  `floginid` varchar(20) not null default '',
+  `fromid` mediumint(8) unsigned not null default '0',
+  `toid` mediumint(8) unsigned not null default '0',
+  `tologinid` char(20) not null default '',
+  `folder` enum('inbox','outbox') default 'inbox',
+  `subject` varchar(60) not null default '',
+  `sendtime` int(10) unsigned not null default '0',
+  `writetime` int(10) unsigned not null default '0',
+  `hasview` tinyint(1) unsigned not null default '0',
+  `isadmin` tinyint(1) not null default '0',
+  `message` text,
+  primary key  (`id`),
+  key `sendtime` (`sendtime`)
+) type=myisam;
+
+drop table if exists `#@__member_snsmsg`;
+create table `#@__member_snsmsg` (
+  `id` int(10) unsigned not null auto_increment,
+  `mid` mediumint(8) unsigned not null default '0',
+  `userid` varchar(20) not null,
+  `sendtime` int(10) unsigned not null default '0',
+  `msg` varchar(250) not null,
+  primary key  (`id`)
+) type=myisam;
+
+drop table if exists `#@__member_space`;
+create table `#@__member_space` (
+  `mid` mediumint(8) unsigned not null default '0',
+  `pagesize` smallint(5) unsigned not null default '10',
+  `matt` smallint(6) not null default '0',
+  `spacename` varchar(50) not null default '',
+  `spacelogo` varchar(50) not null default '',
+  `spacestyle` varchar(20) not null default '',
+  `sign` varchar(100) not null default '没签名',
+  `spacenews` text,
+  primary key  (`mid`)
+) type=myisam;
+
+drop table if exists `#@__member_stow`;
+create table `#@__member_stow` (
+  `id` int(10) unsigned not null auto_increment,
+  `mid` mediumint(8) unsigned not null default '0',
+  `aid` mediumint(8) unsigned not null default '0',
+  `title` char(60) not null default '',
+  `addtime` int(10) unsigned not null default '0',
+  `type` varchar(10) default null,
+  primary key  (`id`),
+  key `uid` (`mid`)
+) type=myisam;
+
+drop table if exists `#@__member_stowtype`;
+create table `#@__member_stowtype` (
+  `stowname` varchar(30) not null,
+  `indexname` varchar(30) not null,
+  `indexurl` varchar(50) not null,
+  primary key  (`stowname`)
+) type=myisam;
+
+drop table if exists `#@__member_tj`;
+create table `#@__member_tj` (
+  `mid` mediumint(8) not null auto_increment,
+  `article` smallint(5) unsigned not null default '0',
+  `album` smallint(5) unsigned not null default '0',
+  `archives` smallint(5) unsigned not null default '0',
+  `homecount` int(10) unsigned not null default '0',
+  `pagecount` int(10) unsigned not null default '0',
+  `feedback` mediumint(8) unsigned not null default '0',
+  `friend` smallint(5) unsigned not null default '0',
+  `stow` smallint(5) unsigned not null default '0',
+  `soft` int(10) not null default '0',
+  `info` int(10) not null default '0',
+  `shop` int(10) not null default '0',
+  primary key  (`mid`)
+) type=myisam;
+
+drop table if exists `#@__member_type`;
+create table `#@__member_type` (
+  `aid` int(11) not null auto_increment,
+  `rank` int(11) not null default '0',
+  `pname` varchar(50) not null default '',
+  `money` int(11) not null default '0',
+  `exptime` int(11) not null default '30',
+  primary key  (`aid`)
+) type=myisam;
+
+drop table if exists `#@__member_vhistory`;
+create table `#@__member_vhistory` (
+  `id` int(10) not null auto_increment,
+  `mid` mediumint(8) unsigned not null default '0',
+  `loginid` char(20) not null default '',
+  `vid` mediumint(8) unsigned not null default '0',
+  `vloginid` char(20) not null default '',
+  `count` smallint(5) unsigned not null default '0',
+  `vip` char(15) not null default '',
+  `vtime` int(10) unsigned not null default '0',
+  primary key  (`id`),
+  key `vtime` (`vtime`),
+  key `mid` (`mid`,`vid`)
+) type=myisam;
+
+drop table if exists `#@__moneycard_record`;
+create table `#@__moneycard_record` (
+  `aid` int(11) not null auto_increment,
+  `ctid` int(11) not null default '0',
+  `cardid` varchar(50) not null default '',
+  `uid` int(11) not null default '0',
+  `isexp` smallint(6) not null default '0',
+  `mtime` int(11) not null default '0',
+  `utime` int(11) not null default '0',
+  `money` int(11) not null default '0',
+  `num` int(11) not null default '0',
+  primary key  (`aid`),
+  key `ctid` (`ctid`),
+  key `cardid` (`cardid`),
+  key `uid` (`uid`)
+) type=myisam;
+
+drop table if exists `#@__moneycard_type`;
+create table `#@__moneycard_type` (
+  `tid` int(11) not null auto_increment,
+  `num` int(11) not null default '500',
+  `money` int(11) not null default '50',
+  `pname` varchar(50) not null default '',
+  primary key  (`tid`)
+) type=myisam;
+
+drop table if exists `#@__mtypes`;
+create table `#@__mtypes` (
+  `mtypeid` mediumint(8) unsigned not null auto_increment,
+  `mtypename` char(40) not null,
+  `channelid` smallint(6) not null default '1',
+  `mid` mediumint(8) unsigned not null default '0',
+  primary key  (`mtypeid`)
+) type=myisam;
+
+drop table if exists `#@__multiserv_config`;
+create table `#@__multiserv_config` (
+  `remoteuploads` smallint(6) not null default '0',
+  `remoteupurl` text not null,
+  `rminfo` text,
+  `servinfo` mediumtext,
+  primary key  (`remoteuploads`)
+) type=myisam;
+
+drop table if exists `#@__myad`;
+create table `#@__myad` (
+  `aid` mediumint(8) unsigned not null auto_increment,
+  `clsid` smallint(5) not null default 0,
+  `typeid` smallint(5) unsigned not null default '0',
+  `tagname` varchar(30) not null default '',
+  `adname` varchar(60) not null default '',
+  `timeset` smallint(6) not null default '0',
+  `starttime` int(10) unsigned not null default '0',
+  `endtime` int(10) unsigned not null default '0',
+  `normbody` text,
+  `expbody` text,
+  primary key  (`aid`),
+  key `tagname` (`tagname`,`typeid`,`timeset`,`endtime`,`starttime`)
+) type=myisam;
+
+drop table if exists `#@__mytag`;
+create table `#@__mytag` (
+  `aid` mediumint(8) unsigned not null auto_increment,
+  `typeid` smallint(5) unsigned not null default '0',
+  `tagname` varchar(30) not null default '',
+  `timeset` smallint(6) not null default '0',
+  `starttime` int(10) unsigned not null default '0',
+  `endtime` int(10) unsigned not null default '0',
+  `normbody` text,
+  `expbody` text,
+  primary key  (`aid`),
+  key `tagname` (`tagname`,`typeid`,`timeset`,`endtime`,`starttime`)
+) type=myisam;
+
+drop table if exists `#@__payment`;
+create table `#@__payment` (
+  `id` tinyint(3) unsigned not null auto_increment,
+  `code` varchar(20) not null default '',
+  `name` varchar(120) not null default '',
+  `fee` varchar(10) not null default '0',
+  `description` text not null,
+  `rank` tinyint(3) unsigned not null default '0',
+  `config` text not null,
+  `enabled` tinyint(1) unsigned not null default '0',
+  `cod` tinyint(1) unsigned not null default '0',
+  `online` tinyint(1) unsigned not null default '0',
+  primary key  (`id`),
+  unique key `code` (`code`)
+) type=myisam;
+
+drop table if exists `#@__plus`;
+create table `#@__plus` (
+  `aid` mediumint(8) unsigned not null auto_increment,
+  `plusname` varchar(30) not null default '',
+  `menustring` varchar(200) not null default '',
+  `mainurl` varchar(50) not null default '',
+  `writer` varchar(30) not null default '',
+  `isshow` smallint(6) not null default '1',
+  `filelist` text,
+  primary key  (`aid`)
+) type=myisam;
+
+drop table if exists `#@__purview`;
+create table `#@__purview` (
+  `mid` mediumint(8) default '0',
+  `typeid` smallint(5) default '0',
+  `rank` smallint(6) default null,
+  `pkey` varchar(30) character set latin1 not null,
+  `pvalue` text not null,
+  key `pkey` using btree (`pkey`)
+) type=myisam;
+
+drop table if exists `#@__pwd_tmp`;
+create table `#@__pwd_tmp` (
+  `mid` mediumint(8) not null,
+  `membername` char(16) not null default '',
+  `pwd` char(32) not null default '',
+  `mailtime` int(10) not null default '0',
+  primary key  (`mid`)
+) type=myisam;
+
+drop table if exists `#@__ratings`;
+create table `#@__ratings` (
+  `id` varchar(11) not null,
+  `total_votes` int(11) not null default '0',
+  `total_value` int(11) not null default '0',
+  `used_ips` longtext,
+  primary key  (`id`)
+) type=myisam;
+
+drop table if exists `#@__scores`;
+create table `#@__scores` (
+  `id` int(11) unsigned not null auto_increment,
+  `titles` char(15) not null,
+  `icon` smallint(6) unsigned default '0',
+  `integral` int(10) not null default '0',
+  `isdefault` tinyint(1) unsigned not null default '0',
+  primary key  (`id`),
+  key `integral` (`integral`)
+) type=myisam;
+
+drop table if exists `#@__search_cache`;
+create table `#@__search_cache` (
+  `hash` char(32) not null,
+  `lasttime` int(10) unsigned not null default '0',
+  `rsnum` mediumint(8) unsigned not null default '0',
+  `ids` mediumtext,
+  primary key  (`hash`)
+) type=myisam;
+
+drop table if exists `#@__search_keywords`;
+create table `#@__search_keywords` (
+  `aid` mediumint(8) unsigned not null auto_increment,
+  `keyword` varchar(255) not null default '', /* zhenglushan 修改类型和长度为 255 */
+  `spwords` varchar(255) not null default '', /* zhenglushan 修改类型和长度为 255 */
+  `searchjp` varchar(255) not null default '', /* zhenglushan 增加搜索拼音字段 简拼 */
+  `searchquanpin` varchar(255) not null default '', /* zhenglushan 增加搜索拼音字段 全拼 */
+  `count` mediumint(8) unsigned not null default '1',
+  `result` mediumint(8) unsigned not null default '0',
+  `lasttime` int(10) unsigned not null default '0',
+  `channelid` smallint(5) unsigned not null default '0',
+  `typeid` smallint(5) unsigned not null default '0',
+  primary key  (`aid`),
+  key `searchjp` (`searchjp`),
+  key `searchquanpin` (`searchquanpin`)
+) type=myisam;
+
+drop table if exists `#@__sgpage`;
+create table `#@__sgpage` (
+  `aid` smallint(5) unsigned not null auto_increment,
+  `title` varchar(60) not null default '',
+  `ismake` smallint(6) not null default '1',
+  `filename` varchar(60) not null default '',
+  `keywords` varchar(30) not null default '',
+  `template` varchar(30) not null default '',
+  `likeid` varchar(20) not null default '',
+  `description` varchar(250) not null default '',
+  `uptime` int(10) unsigned not null default '0',
+  `body` mediumtext,
+  primary key  (`aid`),
+  key `ismake` (`ismake`,`uptime`),
+  key `likeid` (`likeid`)
+) type=myisam;
+
+drop table if exists `#@__shops_delivery`;
+create table `#@__shops_delivery` (
+  `pid` int(10) unsigned not null auto_increment,
+  `dname` char(80) not null,
+  `price` float(13,2) not null default '0.00',
+  `des` char(255) default null,
+  `orders` int(10) not null default '0',
+  primary key  (`pid`),
+  key `orders` (`orders`)
+) type=myisam;
+
+drop table if exists `#@__shops_orders`;
+create table `#@__shops_orders` (
+  `oid` varchar(80) not null,
+  `userid` int(10) not null,
+  `pid` int(10) not null default '0',
+  `paytype` tinyint(2) not null default '1',
+  `cartcount` int(10) not null default '0',
+  `dprice` float(13,2) not null default '0.00',
+  `price` float(13,2) not null default '0.00',
+  `pricecount` float(13,2) not null,
+  `state` tinyint(1) not null default '0',
+  `ip` char(15) not null default '',
+  `stime` int(10) not null default '0',
+  key `stime` (`stime`),
+  key `userid` (`userid`),
+  key `oid` (`oid`)
+) type=myisam;
+
+drop table if exists `#@__shops_products`;
+create table `#@__shops_products` (
+  `aid` mediumint(8) not null default '0',
+  `oid` varchar(80) not null default '',
+  `userid` int(10) not null,
+  `title` varchar(80) not null default '',
+  `price` float(13,2) not null default '0.00',
+  `buynum` int(10) not null default '9',
+  key `oid` (`oid`),
+  key `userid` (`userid`)
+) type=myisam;
+
+drop table if exists `#@__shops_userinfo`;
+create table `#@__shops_userinfo` (
+  `userid` int(10) not null,
+  `oid` varchar(80) not null default '',
+  `consignee` char(15) not null default '',
+  `address` varchar(255) not null default '',
+  `zip` int(10) not null default '0',
+  `tel` varchar(255) not null default '',
+  `email` varchar(255) not null default '',
+  `des` varchar(255) not null default '',
+  key `oid` (`oid`),
+  key `userid` (`userid`)
+) type=myisam;
+
+drop table if exists `#@__softconfig`;
+create table `#@__softconfig` (
+  `downtype` smallint(6) not null default '0',
+  `ismoresite` smallint(6) not null default '0',
+  `gotojump` smallint(6) not null default '0',
+  `islocal` smallint(5) unsigned not null default '1',
+  `sites` text,
+  `downmsg` text,
+  `moresitedo` smallint(5) unsigned not null default '1',
+  `dfrank` smallint(5) unsigned not null default '0',
+  `dfywboy` smallint(5) unsigned not null default '0',
+  `argrange` smallint(5) unsigned not null default '0',
+  primary key  (`downtype`)
+) type=myisam;
+
+drop table if exists `#@__sphinx`;
+create table `#@__sphinx` (
+  `countid` int(11) unsigned not null,
+  `maxaid` int(11) unsigned not null,
+  primary key  (`countid`)
+) type=myisam;
+
+drop table if exists `#@__stepselect`;
+create table `#@__stepselect` (
+  `id` mediumint(8) unsigned not null auto_increment,
+  `itemname` char(30) default null,
+  `egroup` char(20) default null,
+  `issign` tinyint(1) unsigned default '0',
+  `issystem` tinyint(1) unsigned not null default '0',
+  primary key  (`id`)
+) type=myisam;
+
+drop table if exists `#@__sys_enum`;
+create table `#@__sys_enum` (
+  `id` smallint(5) unsigned not null auto_increment,
+  `ename` char(30) not null default '',
+  `evalue` char(20) not null default '0',
+  `egroup` char(20) not null default '',
+  `disorder` smallint(5) unsigned not null default '0',
+  `issign` tinyint(1) unsigned not null default '1',
+  primary key  (`id`)
+) type=myisam;
+
+drop table if exists `#@__sys_module`;
+create table `#@__sys_module` (
+  `id` int(11) not null auto_increment,
+  `hashcode` char(32) not null default '',
+  `modname` varchar(30) not null default '',
+  `indexname` varchar(20) not null default '',
+  `indexurl` varchar(30) not null default '',
+  `ismember` tinyint(4) not null default '1',
+  `menustring` text,
+  primary key  (`id`)
+) type=myisam;
+
+drop table if exists `#@__sys_set`;
+create table `#@__sys_set` (
+  `id` smallint(5) unsigned not null auto_increment,
+  `sname` char(20) not null default '',
+  `items` text,
+  primary key  (`id`)
+) type=myisam;
+
+drop table if exists `#@__sys_task`;
+create table `#@__sys_task` (
+  `id` int(10) unsigned not null auto_increment,
+  `taskname` varchar(50) not null,
+  `dourl` varchar(100) not null,
+  `islock` tinyint(1) unsigned not null default '0',
+  `runtype` tinyint(1) unsigned not null default '0',
+  `runtime` varchar(10) default '0000',
+  `starttime` int(10) unsigned not null default '0',
+  `endtime` int(10) unsigned not null default '0',
+  `freq` tinyint(2) unsigned not null default '0',
+  `lastrun` int(10) unsigned not null default '0',
+  `description` varchar(250) not null,
+  `parameter` text,
+  `settime` int(10) unsigned not null default '0',
+  `sta` enum('运行','成功','失败') default null,
+  primary key  (`id`)
+) type=myisam;
+
+drop table if exists `#@__sysconfig`;
+create table `#@__sysconfig` (
+  `aid` smallint(8) unsigned not null default '0',
+  `varname` varchar(100) not null default '', /* zhenglushan 修改长度 */
+  `info` varchar(100) not null default '',
+  `groupid` smallint(6) not null default '1',
+  `type` varchar(10) not null default 'string',
+  `value` text,
+  primary key  (`varname`)
+) type=myisam;
+
+drop table if exists `#@__tagindex`;
+create table `#@__tagindex` (
+  `id` int(10) unsigned not null auto_increment,
+  `tag` char(255) not null default '',
+  `tagjp` varchar(200) not null,/* zhenglushan 增加 tag 简拼 */
+  `tagquanpin` varchar(200) not null,/* zhenglushan 增加 tag 全拼 */
+  `typeid` smallint(5) unsigned not null default '0',
+  `count` int(10) unsigned not null default '0',
+  `total` int(10) unsigned not null default '0',
+  `weekcc` int(10) unsigned not null default '0',
+  `monthcc` int(10) unsigned not null default '0',
+  `weekup` int(10) unsigned not null default '0',
+  `monthup` int(10) unsigned not null default '0',
+  `addtime` int(10) unsigned not null default '0',
+  primary key  (`id`),
+  key `tagjp` (`tagjp`),
+  key `tagquanpin` (`tagquanpin`)
+) type=myisam;
+
+drop table if exists `#@__taglist`;
+create table `#@__taglist` (
+  `tid` int(10) unsigned not null default '0',
+  `aid` int(10) unsigned not null default '0',
+  `arcrank` smallint(6) not null default '0',
+  `typeid` smallint(5) unsigned not null default '0',
+  `tag` varchar(255) not null default '',
+  primary key  (`tid`,`aid`)
+) type=myisam;
+
+drop table if exists `#@__uploads`;
+create table `#@__uploads` (
+  `aid` mediumint(8) unsigned not null auto_increment,
+  `arcid` mediumint(8) unsigned not null default '0',
+  `title` char(60) not null default '',
+  `url` char(80) not null default '',
+  `mediatype` smallint(6) not null default '1',
+  `width` char(10) not null default '',
+  `height` char(10) not null default '',
+  `playtime` char(10) not null default '',
+  `filesize` mediumint(8) unsigned not null default '0',
+  `uptime` int(10) unsigned not null default '0',
+  `mid` mediumint(8) unsigned not null default '0',
+  primary key  (`aid`),
+  key `memberid` (`mid`),
+  key `arcid` (`arcid`)
+) type=myisam;
+
+drop table if exists `#@__verifies`;
+create table `#@__verifies` (
+  `nameid` char(32) not null default '',
+  `cthash` varchar(32) not null default '',
+  `method` enum('local','official') not null default 'official',
+  `filename` varchar(254) not null default '',
+  primary key  (`nameid`)
+) type=myisam;
+
+drop table if exists `#@__vote`;
+create table `#@__vote` (
+  `aid` mediumint(8) unsigned not null auto_increment,
+  `votename` varchar(50) not null default '',
+  `starttime` int(10) unsigned not null default '0',
+  `endtime` int(10) unsigned not null default '0',
+  `totalcount` mediumint(8) unsigned not null default '0',
+  `ismore` tinyint(6) not null default '0',
+  `isallow` tinyint(6) not null default '0',
+  `view` tinyint(6) not null default '0',
+  `spec` int(20) unsigned not null default '0',
+  `isenable` tinyint(6) not null default '0',
+  `votenote` text,
+  primary key  (`aid`)
+) type=myisam;
+
+drop table if exists `#@__vote_member`;
+create table `#@__vote_member` (
+  `id` mediumint(8) unsigned not null auto_increment,
+  `voteid` int(10) unsigned not null default '0',
+  `userid` varchar(50) not null default '',
+  `uptime` int(10) unsigned not null default '0',
+  primary key  (`id`)
+) type=myisam;
+
+drop table if exists `#@__dl_log`;
+create table `#@__dl_log` (
+  `id` mediumint(10) unsigned not null auto_increment,
+  `ip` char(16) not null,
+  `lang` char(6) not null,
+  `dtype` varchar(10) not null,
+  `dltime` int(10) unsigned not null default '0',
+  `referrer` varchar(255) not null default '',
+  `user_agent` varchar(255) not null,
+  primary key  (`id`),
+  key `dltime` (`dltime`),
+  key `dl_ip` (`ip`,`dltime`)
+) type=myisam;
+
+drop table if exists `#@__myadtype`;
+create table `#@__myadtype` (
+  `id` mediumint(8) unsigned not null auto_increment,
+  `typename` varchar(50) not null default '',
+  primary key  (`id`)
+) type=myisam;
+
+drop table if exists `#@__plus_seoinfo`;
+create table `#@__plus_seoinfo` (
+  `id` int(11) not null auto_increment,
+  `create_time` int(11) null default null,
+  `alexa_num` varchar(50) null default null,
+  `alexa_area_num` varchar(50) null default null,
+  `baidu_count` varchar(50) null default null,
+  `sogou_count` varchar(50) null default null,
+  `haosou360_count` varchar(50) null default null,
+  primary key (`id`)
+) type=myisam;
+
+drop table if exists `#@__plus_mda_setting`;
+create table `#@__plus_mda_setting` (
+  `skey` varchar(255) not null default '',
+  `svalue` text not null,
+  `stime` int(10) not null,
+  primary key (`skey`)
+)type=myisam;
+
+/* 创建文章模型档案中间表，中间表的定义 */
+drop table if exists `#@__archives_arctype_addonarticle`;
+create table `#@__archives_arctype_addonarticle` (
+  `id` mediumint(8) unsigned not null default '0',
+  `typeid` smallint(5) unsigned not null default '0',
+  `typename` char(30) not null default '',
+  `typedir` char(60) not null default '',
+  `namerule` char(50) not null default '',
+  `namerule2` char(50) not null default '',
+  `sitepath` char(60) not null default '',
+  `flag` smallint(6) not null default '0', /* 设置的值包括: 1 3 8   16   17 19 24 中的一个*/
+  `title` varchar(255) not null default '',
+  `litpic` varchar(255) not null default '',
+  `pubdate` int(10) unsigned not null default '0',
+  `description` varchar(255) not null default '',
+  `tagidpinyin` varchar(600) not null default '', /* 保存文档的标签,包括标签名称和标签的id,格式为: 标签|id|拼音|||标签|id|拼音 */
+  primary key  (`id`),
+  key `pubdate` (`pubdate`),
+  key `id_flag` (`id`,`flag`),
+  key `typeid_flag_pubdate` (`typeid`,`flag`,`pubdate`),
+  key `typeid_pubdate` (`typeid`,`pubdate`),
+  key `flag_pubdate` (`flag`,`pubdate`)
+) type=myisam;

@@ -1,0 +1,57 @@
+一、安装编程语言环境
+	1、安装和配置 JDK 8 (完成)
+	2、安装和配置 Go (完成)
+	3、安装和配置 C 家族
+		a、安装 Visual Studio 2019 社区版 → 桌面开发工具 (完成)
+		b、安装和配置 CMake (勾选添加 Path 选项, 完成)
+	4、安装和配置 Node.JS (自动添加 Path, 完成)
+	5、安装和配置 Python (勾选添加 Path 选项, 完成)
+	6、安装和配置 PHP (手动添加 Path 环境, 完成)
+
+二、安装依赖软件
+	1、Git (自动添加 Path, 完成)
+
+三、安装 gVim-64 和 vim-plug 插件
+	1、gVim-64 (手动添加 Path 环境变量 C:\Vim\vim82, 完成)
+	2、vim-plug (复制到 C:\Vim\vim82\autoload 目录中)
+	3、做好基本配置和安装基本插件
+
+四、安装 coc.nvim 和 代码提示插件
+
+	0、安装 coc.nvim 插件: Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  通过配置的方式安装以下插件:
+
+  	打开 coc 配置的命令: :CocConfig
+
+	1、php
+		https://github.com/neoclide/coc.nvim/wiki/Language-servers#php
+		:CocInstall coc-phpls
+
+	2、python
+	3、java
+	4、go
+	5、c c++
+	6、c#
+	7、javascript typescript
+	8、html css 没问题
+		:CocInstall coc-html coc-css
+	9、json
+	:CocInstall coc-json
+
+	#10、dart
+
+五、Vim 配置字体、大小、颜色
+	https://blog.csdn.net/sinat_34647203/article/details/90107444
+
+
+
+
+VIM编程环境
+https://www.jianshu.com/p/8b25ead13d0f
+
+
+六、Vim 配置主题
+	这里配置的是 molokai
+	https://github.com/tomasr/molokai/blob/master/colors/molokai.vim 将配色文件 molokai.vim 放在 ~/.vim/colors 中
+	colorscheme molokai
+	然后定位到 65 行，标志为 white，其对应的 cterm 值修改为 248。下面还有个 yellow ，cterm 值修改为 143。保存就 OK。
