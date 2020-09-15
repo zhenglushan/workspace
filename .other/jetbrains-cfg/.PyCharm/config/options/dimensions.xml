@@ -1,0 +1,7 @@
+<application>
+  <component name="DimensionService">
+    <location key="SettingsEditor.0.0.1920.1080" x="550" y="111" />
+    <location key="#Plugins.0.0.1920.1080" x="898" y="112" />
+    <size key="SettingsEditor.0.0.1920.1080" width="1030" height="716" />
+  </component>
+</application>

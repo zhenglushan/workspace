@@ -1,0 +1,146 @@
+2020-09-14 12:24:13,043 [      0]   INFO -        #com.intellij.idea.Main - ------------------------------------------------------ IDE STARTED ------------------------------------------------------ 
+2020-09-14 12:24:13,064 [     21]   INFO -        #com.intellij.idea.Main - IDE: PyCharm (build #PY-192.6817.19, 25 Sep 2019 15:55) 
+2020-09-14 12:24:13,065 [     22]   INFO -        #com.intellij.idea.Main - OS: Windows 10 (10.0, amd64) 
+2020-09-14 12:24:13,065 [     22]   INFO -        #com.intellij.idea.Main - JRE: 11.0.4+10-b304.69 (JetBrains s.r.o) 
+2020-09-14 12:24:13,065 [     22]   INFO -        #com.intellij.idea.Main - JVM: 11.0.4+10-b304.69 (OpenJDK 64-Bit Server VM) 
+2020-09-14 12:24:13,065 [     22]   INFO -        #com.intellij.idea.Main - JVM Args: exit -Xms128m -Xmx750m -XX:ReservedCodeCacheSize=240m -XX:+UseConcMarkSweepGC -XX:SoftRefLRUPolicyMSPerMB=50 -ea -XX:CICompilerCount=2 -Dsun.io.useCanonPrefixCache=false -Djava.net.preferIPv4Stack=true -Djdk.http.auth.tunneling.disabledSchemes="" -XX:+HeapDumpOnOutOfMemoryError -XX:-OmitStackTraceInFastThrow -Djdk.attach.allowAttachSelf -Dkotlinx.coroutines.debug=off -Djdk.module.illegalAccess.silent=true -javaagent:C:\JetBrains\jetbrains-agent.jar -Djb.vmOptionsFile=C:\JetBrains\PyCharm\bin\pycharm64.exe.vmoptions -Djava.library.path=C:\JetBrains\PyCharm\jbr\\bin;C:\JetBrains\PyCharm\jbr\\bin\server -Didea.platform.prefix=Python -Dide.native.launcher=true -Didea.paths.selector=PyCharm2019.2 -XX:ErrorFile=C:\Users\Administrator\java_error_in_pycharm_%p.log -XX:HeapDumpPath=C:\Users\Administrator\java_error_in_pycharm.hprof 
+2020-09-14 12:24:13,066 [     23]   INFO -        #com.intellij.idea.Main - charsets: JNU=GBK file=GBK 
+2020-09-14 12:24:13,100 [     57]   INFO -        #com.intellij.idea.Main - JNA library (64-bit) loaded in 47 ms 
+2020-09-14 12:24:13,103 [     60]   INFO - penapi.util.io.win32.IdeaWin32 - Native filesystem for Windows is operational 
+2020-09-14 12:24:13,223 [    180]   INFO - plication.impl.ApplicationImpl - CPU cores: 6; ForkJoinPool.commonPool: java.util.concurrent.ForkJoinPool@3cc7e723[Running, parallelism = 5, size = 0, active = 0, running = 0, steals = 0, tasks = 0, submissions = 0]; factory: com.intellij.concurrency.IdeaForkJoinWorkerThreadFactory@76d837ba 
+2020-09-14 12:24:15,328 [   2285]   INFO - .intellij.util.io.HttpRequests - Application is not initialized yet; Using default SSL configuration to connect to https://plugins.jetbrains.com/plugins/list/?uuid=706db7d9-f997-4bb1-9273-cf85b05f5eb6&build=PY-192.6817.19 
+2020-09-14 12:24:24,605 [  11562]   INFO - llij.ide.plugins.PluginManager - Plugin 'Configuration Script' can't be loaded because: Plugin does not include any module dependency tags in its plugin.xml therefore is assumed legacy and can be loaded only in IntelliJ IDEA 
+2020-09-14 12:24:24,652 [  11609]   INFO - llij.ide.plugins.PluginManager - Loaded bundled plugins: Angular and AngularJS (192.6817.19), CSS (192.6817.19), CoffeeScript (192.6817.19), Concurrency Visualiser (192.6817.19), Copyright (192.6817.19), Database Tools and SQL (192.6817.19), Datalore (0.1.2-192), Django Database Support Integration (192.6817.19), Docker (192.6817.19), EditorConfig (192.6817.19), File Watchers (192.6817.19), GNU GetText files support (*.po) (192.6817.19), Gherkin (192.6817.19), Git (192.6817.19), GitHub (192.6817.19), HTML Tools (192.6817.19), HTTP Client (192.6817.19), Haml (192.6817.19), IDE Settings Sync (192.6817.19), IDEA CORE (192.6817.19), Ini (192.6817.19), IntelliLang (192.6817.19), JavaScript Debugger (192.6817.19), JavaScript Intention Power Pack (192.6817.19), JavaScript and TypeScript (192.6817.19), Jupyter Notebook (192.6817.19), Less (192.6817.19), Machine Learning Code Completion (192.6817.19), Markdown (192.6817.19), Mercurial (192.6817.19), Perforce (192.6817.19), Performance Testing (192.6817.19), Properties (192.6817.19), Puppet (192.6817.19), Python BDD support for engines, based on Gherkin (cucumber, lettuce, behave) (192.6817.19), Python Copyright (192.6817.19), Python Docker (192.6817.19), Python IntelliLang (192.6817.19), Python JavaScript Debugger Integration (192.6817.19), Python Localization Integration (192.6817.19), Python Profiler (192.6817.19), Python ReStructureText Integration (192.6817.19), Python Remote Interpreter (192.6817.19), Python Terminal (192.6817.19), Python UML Diagrams (192.6817.19), Python WSL Support (192.6817.19), Python pytest-bdd support (192.6817.19), ReStructuredText Support (192.6817.19), Remote Hosts Access (192.6817.19), SSH Remote Run (192.6817.19), Sass (192.6817.19), Settings Repository (192.6817.19), Shell Script (192.6817.19), Stylus (192.6817.19), Subversion (192.6817.19), Task Management (192.6817.19), Terminal (192.6817.19), TextMate bundles (192.6817.19), Time Tracking (192.6817.19), UML (192.6817.19), Vagrant (192.6817.19), WSL Support Framework (192.6817.19), YAML (192.6817.19), tslint (192.6817.19) 
+2020-09-14 12:24:24,652 [  11609]   INFO - llij.ide.plugins.PluginManager - Disabled plugins: Configuration Script (192.6817.19) 
+2020-09-14 12:24:24,661 [  11618]   INFO - tellij.diagnostic.LoadingPhase - Reached SPLASH loading phase 
+2020-09-14 12:24:24,810 [  11767]   INFO - cloudConfig.CloudConfigManager - === Exit: JBA_NOT_FOUND === 
+2020-09-14 12:24:24,826 [  11783]   INFO - tellij.diagnostic.LoadingPhase - Reached CONFIGURATION_STORE_INITIALIZED loading phase 
+2020-09-14 12:24:24,877 [  11834]   INFO - ellij.vfs.persistent.FSRecords - Marking VFS as corrupted: 'C:\Users\Administrator\.PyCharm2019.2\system\caches\names.dat' does not exist 
+2020-09-14 12:24:24,879 [  11836]   INFO - ellij.util.io.PagedFileStorage - lower=100; upper=500; buffer=10; max=705 
+2020-09-14 12:24:24,939 [  11896]   INFO - pl.local.NativeFileWatcherImpl - Starting file watcher: C:\JetBrains\PyCharm\bin\fsnotifier64.exe 
+2020-09-14 12:24:24,974 [  11931]   INFO - pl.local.NativeFileWatcherImpl - Native file watcher is operational. 
+2020-09-14 12:24:25,194 [  12151]   INFO - .history.utils.LocalHistoryLog - local history version mismatch (was: 0, expected: 6), rebuilding... 
+2020-09-14 12:24:25,194 [  12151]   INFO - .history.utils.LocalHistoryLog - FS has been rebuild, rebuilding local history... 
+2020-09-14 12:24:25,260 [  12217]   INFO - til.net.ssl.CertificateManager - Default SSL context initialized 
+2020-09-14 12:24:25,274 [  12231]   INFO - rains.ide.BuiltInServerManager - built-in server started, port 63342 
+2020-09-14 12:24:25,489 [  12446]   INFO - j.ide.ui.OptionsTopHitProvider - 12 ms spent to cache options in application 
+2020-09-14 12:24:25,516 [  12473]   INFO - il.indexing.FileBasedIndexImpl - File index extensions iterated:179 
+2020-09-14 12:24:25,545 [  12502]   INFO - tellij.diagnostic.LoadingPhase - Reached FRAME_SHOWN loading phase 
+2020-09-14 12:24:25,721 [  12678]   INFO - ndex.PrebuiltIndexProviderBase - Using prebuilt id-index from C:\Users\Administrator\.PyCharm2019.2\system\index\.persistent\prebuilt\Python\id-index.input 
+2020-09-14 12:24:25,869 [  12826]   INFO - ij.psi.stubs.StubUpdatingIndex - Following new file types will be indexed:Markdown,CSS,SCSS,Angular Metadata JSON,Vagrantfile,Stylus,ActionScript,HTML,Python,Puppet,Mako,Sass,JSX Harmony,Literate CoffeeScript,TypeScript JSX,Ini,XML,PythonStub,CoffeeScript,JavaScript,SQL,Properties,Less,Jinja2,Cython,Angular2Html,TypeScript,ECMAScript 6,Flow 
+2020-09-14 12:24:25,982 [  12939]   INFO - com.intellij.ide.ui.UISettings - Loaded: fontSize=13, fontScale=1.0; restored: fontSize=13, fontScale=1.0 
+2020-09-14 12:24:25,991 [  12948]   WARN - s.impl.EditorColorsManagerImpl - Cannot find scheme: VibrantInk from plugin: com.intellij.database 
+2020-09-14 12:24:25,991 [  12948]   WARN - s.impl.EditorColorsManagerImpl - Cannot find scheme: WarmNeon from plugin: com.intellij.database 
+2020-09-14 12:24:25,991 [  12948]   WARN - s.impl.EditorColorsManagerImpl - Cannot find scheme: High §ãontrast from plugin: com.intellij.database 
+2020-09-14 12:24:26,288 [  13245]   INFO - pl$FileIndexDataInitialization - Initialization done:951 
+2020-09-14 12:24:27,355 [  14312]   INFO - exImpl$StubIndexInitialization - Initialization done:1066 
+2020-09-14 12:24:32,716 [  19673]   INFO - j.ide.plugins.RepositoryHelper - using cached plugin list (updated at 2020/9/14 12:24) 
+2020-09-14 12:24:38,503 [  25460]   INFO - com.intellij.ide.ui.UISettings - Loaded: fontSize=13, fontScale=1.0; restored: fontSize=13, fontScale=1.0 
+2020-09-14 12:25:47,703 [  94660]   INFO - mponents.impl.stores.StoreUtil - saveProjectsAndApp took 138 ms 
+2020-09-14 12:25:48,899 [  95856]   INFO - stubs.SerializationManagerImpl - START StubSerializationManager SHUTDOWN 
+2020-09-14 12:25:48,900 [  95857]   INFO - stubs.SerializationManagerImpl - END StubSerializationManager SHUTDOWN 
+2020-09-14 12:25:48,900 [  95857]   INFO - il.indexing.FileBasedIndexImpl - START INDEX SHUTDOWN 
+2020-09-14 12:25:48,920 [  95877]   INFO - il.indexing.FileBasedIndexImpl - END INDEX SHUTDOWN 
+2020-09-14 12:25:48,922 [  95879]   INFO - org.jetbrains.io.BuiltInServer - web server stopped 
+2020-09-14 12:25:48,928 [  95885]   INFO - Types.impl.FileTypeManagerImpl - FileTypeManager: 0 auto-detected files
+Elapsed time on auto-detect: 0 ms 
+2020-09-14 12:25:48,940 [  95897]   INFO - pl.local.NativeFileWatcherImpl - Watcher terminated with exit code 0 
+2020-09-14 12:25:48,940 [  95897]   INFO - newvfs.persistent.PersistentFS - VFS dispose started 
+2020-09-14 12:25:48,953 [  95910]   INFO - newvfs.persistent.PersistentFS - VFS dispose completed 
+2020-09-14 12:25:48,955 [  95912]   INFO -        #com.intellij.idea.Main - ------------------------------------------------------ IDE SHUTDOWN ------------------------------------------------------ 
+2020-09-14 12:25:48,957 [  95914]   INFO - org.jetbrains.io.BuiltInServer - web server stopped 
+2020-09-15 12:38:12,049 [      0]   INFO -        #com.intellij.idea.Main - ------------------------------------------------------ IDE STARTED ------------------------------------------------------ 
+2020-09-15 12:38:12,084 [     35]   INFO -        #com.intellij.idea.Main - IDE: PyCharm (build #PY-192.6817.19, 25 Sep 2019 15:55) 
+2020-09-15 12:38:12,086 [     37]   INFO -        #com.intellij.idea.Main - OS: Windows 10 (10.0, amd64) 
+2020-09-15 12:38:12,086 [     37]   INFO -        #com.intellij.idea.Main - JRE: 11.0.4+10-b304.69 (JetBrains s.r.o) 
+2020-09-15 12:38:12,086 [     37]   INFO -        #com.intellij.idea.Main - JVM: 11.0.4+10-b304.69 (OpenJDK 64-Bit Server VM) 
+2020-09-15 12:38:12,087 [     38]   INFO -        #com.intellij.idea.Main - JVM Args: exit -Xms128m -Xmx750m -XX:ReservedCodeCacheSize=240m -XX:+UseConcMarkSweepGC -XX:SoftRefLRUPolicyMSPerMB=50 -ea -XX:CICompilerCount=2 -Dsun.io.useCanonPrefixCache=false -Djava.net.preferIPv4Stack=true -Djdk.http.auth.tunneling.disabledSchemes="" -XX:+HeapDumpOnOutOfMemoryError -XX:-OmitStackTraceInFastThrow -Djdk.attach.allowAttachSelf -Dkotlinx.coroutines.debug=off -Djdk.module.illegalAccess.silent=true -javaagent:C:\JetBrains\jetbrains-agent.jar -Djb.vmOptionsFile=C:\JetBrains\PyCharm\bin\pycharm64.exe.vmoptions -Djava.library.path=C:\JetBrains\PyCharm\jbr\\bin;C:\JetBrains\PyCharm\jbr\\bin\server -Didea.platform.prefix=Python -Dide.native.launcher=true -Didea.paths.selector=PyCharm2019.2 -XX:ErrorFile=C:\Users\Administrator\java_error_in_pycharm_%p.log -XX:HeapDumpPath=C:\Users\Administrator\java_error_in_pycharm.hprof 
+2020-09-15 12:38:12,087 [     38]   INFO -        #com.intellij.idea.Main - charsets: JNU=GBK file=GBK 
+2020-09-15 12:38:12,148 [     99]   INFO -        #com.intellij.idea.Main - JNA library (64-bit) loaded in 72 ms 
+2020-09-15 12:38:12,168 [    119]   INFO - penapi.util.io.win32.IdeaWin32 - Native filesystem for Windows is operational 
+2020-09-15 12:38:13,372 [   1323]   INFO - tellij.diagnostic.LoadingPhase - Reached SPLASH loading phase 
+2020-09-15 12:38:13,381 [   1332]   INFO - plication.impl.ApplicationImpl - CPU cores: 6; ForkJoinPool.commonPool: java.util.concurrent.ForkJoinPool@608a6db2[Running, parallelism = 5, size = 0, active = 0, running = 0, steals = 0, tasks = 0, submissions = 0]; factory: com.intellij.concurrency.IdeaForkJoinWorkerThreadFactory@50425080 
+2020-09-15 12:38:13,484 [   1435]   INFO - llij.ide.plugins.PluginManager - Plugin 'Configuration Script' can't be loaded because: Plugin does not include any module dependency tags in its plugin.xml therefore is assumed legacy and can be loaded only in IntelliJ IDEA 
+2020-09-15 12:38:13,529 [   1480]   INFO - llij.ide.plugins.PluginManager - Loaded bundled plugins: Angular and AngularJS (192.6817.19), CSS (192.6817.19), CoffeeScript (192.6817.19), Concurrency Visualiser (192.6817.19), Copyright (192.6817.19), Database Tools and SQL (192.6817.19), Datalore (0.1.2-192), Django Database Support Integration (192.6817.19), Docker (192.6817.19), EditorConfig (192.6817.19), File Watchers (192.6817.19), GNU GetText files support (*.po) (192.6817.19), Gherkin (192.6817.19), Git (192.6817.19), GitHub (192.6817.19), HTML Tools (192.6817.19), HTTP Client (192.6817.19), Haml (192.6817.19), IDE Settings Sync (192.6817.19), IDEA CORE (192.6817.19), Ini (192.6817.19), IntelliLang (192.6817.19), JavaScript Debugger (192.6817.19), JavaScript Intention Power Pack (192.6817.19), JavaScript and TypeScript (192.6817.19), Jupyter Notebook (192.6817.19), Less (192.6817.19), Machine Learning Code Completion (192.6817.19), Markdown (192.6817.19), Mercurial (192.6817.19), Perforce (192.6817.19), Performance Testing (192.6817.19), Properties (192.6817.19), Puppet (192.6817.19), Python BDD support for engines, based on Gherkin (cucumber, lettuce, behave) (192.6817.19), Python Copyright (192.6817.19), Python Docker (192.6817.19), Python IntelliLang (192.6817.19), Python JavaScript Debugger Integration (192.6817.19), Python Localization Integration (192.6817.19), Python Profiler (192.6817.19), Python ReStructureText Integration (192.6817.19), Python Remote Interpreter (192.6817.19), Python Terminal (192.6817.19), Python UML Diagrams (192.6817.19), Python WSL Support (192.6817.19), Python pytest-bdd support (192.6817.19), ReStructuredText Support (192.6817.19), Remote Hosts Access (192.6817.19), SSH Remote Run (192.6817.19), Sass (192.6817.19), Settings Repository (192.6817.19), Shell Script (192.6817.19), Stylus (192.6817.19), Subversion (192.6817.19), Task Management (192.6817.19), Terminal (192.6817.19), TextMate bundles (192.6817.19), Time Tracking (192.6817.19), UML (192.6817.19), Vagrant (192.6817.19), WSL Support Framework (192.6817.19), YAML (192.6817.19), tslint (192.6817.19) 
+2020-09-15 12:38:13,529 [   1480]   INFO - llij.ide.plugins.PluginManager - Disabled plugins: Configuration Script (192.6817.19) 
+2020-09-15 12:38:14,153 [   2104]   INFO - cloudConfig.CloudConfigManager - === Exit: JBA_NOT_FOUND === 
+2020-09-15 12:38:14,219 [   2170]   INFO - tellij.diagnostic.LoadingPhase - Reached CONFIGURATION_STORE_INITIALIZED loading phase 
+2020-09-15 12:38:14,296 [   2247]   INFO - ellij.util.io.PagedFileStorage - lower=100; upper=500; buffer=10; max=705 
+2020-09-15 12:38:14,414 [   2365]   INFO - pl.local.NativeFileWatcherImpl - Starting file watcher: C:\JetBrains\PyCharm\bin\fsnotifier64.exe 
+2020-09-15 12:38:14,431 [   2382]   INFO - pl.local.NativeFileWatcherImpl - Native file watcher is operational. 
+2020-09-15 12:38:16,201 [   4152]   INFO - til.net.ssl.CertificateManager - Default SSL context initialized 
+2020-09-15 12:38:16,242 [   4193]   INFO - rains.ide.BuiltInServerManager - built-in server started, port 63342 
+2020-09-15 12:38:16,477 [   4428]   INFO - il.indexing.FileBasedIndexImpl - File index extensions iterated:136 
+2020-09-15 12:38:16,542 [   4493]   INFO - j.ide.ui.OptionsTopHitProvider - 21 ms spent to cache options in application 
+2020-09-15 12:38:16,623 [   4574]   INFO - tellij.diagnostic.LoadingPhase - Reached FRAME_SHOWN loading phase 
+2020-09-15 12:38:17,179 [   5130]   INFO - ndex.PrebuiltIndexProviderBase - Using prebuilt id-index from D:\workspace\.other\jetbrains-cfg\.PyCharm\system\index\.persistent\prebuilt\Python\id-index.input 
+2020-09-15 12:38:17,562 [   5513]   INFO - com.intellij.ide.ui.UISettings - Loaded: fontSize=13, fontScale=1.0; restored: fontSize=13, fontScale=1.0 
+2020-09-15 12:38:17,569 [   5520]   INFO - com.intellij.ide.ui.UISettings - Loaded: fontSize=18, fontScale=1.0; restored: fontSize=18, fontScale=1.0 
+2020-09-15 12:38:17,579 [   5530]   WARN - s.impl.EditorColorsManagerImpl - Cannot find scheme: VibrantInk from plugin: com.intellij.database 
+2020-09-15 12:38:17,579 [   5530]   WARN - s.impl.EditorColorsManagerImpl - Cannot find scheme: WarmNeon from plugin: com.intellij.database 
+2020-09-15 12:38:17,579 [   5530]   WARN - s.impl.EditorColorsManagerImpl - Cannot find scheme: High §ãontrast from plugin: com.intellij.database 
+2020-09-15 12:38:18,041 [   5992]   INFO - pl$FileIndexDataInitialization - Initialization done:1701 
+2020-09-15 12:38:18,797 [   6748]   INFO - exImpl$StubIndexInitialization - Initialization done:756 
+2020-09-15 12:41:00,136 [ 168087]   INFO - j.ide.plugins.RepositoryHelper - using cached plugin list (updated at 2020/9/15 12:39) 
+2020-09-15 12:41:08,887 [ 176838]   INFO - com.intellij.ide.ui.UISettings - Loaded: fontSize=13, fontScale=1.0; restored: fontSize=13, fontScale=1.0 
+2020-09-15 12:41:36,713 [ 204664]   INFO - stubs.SerializationManagerImpl - START StubSerializationManager SHUTDOWN 
+2020-09-15 12:41:36,715 [ 204666]   INFO - stubs.SerializationManagerImpl - END StubSerializationManager SHUTDOWN 
+2020-09-15 12:41:36,715 [ 204666]   INFO - il.indexing.FileBasedIndexImpl - START INDEX SHUTDOWN 
+2020-09-15 12:41:36,736 [ 204687]   INFO - il.indexing.FileBasedIndexImpl - END INDEX SHUTDOWN 
+2020-09-15 12:41:36,739 [ 204690]   INFO - org.jetbrains.io.BuiltInServer - web server stopped 
+2020-09-15 12:41:36,742 [ 204693]   INFO - Types.impl.FileTypeManagerImpl - FileTypeManager: 0 auto-detected files
+Elapsed time on auto-detect: 0 ms 
+2020-09-15 12:41:36,748 [ 204699]   INFO - pl.local.NativeFileWatcherImpl - Watcher terminated with exit code 0 
+2020-09-15 12:41:36,748 [ 204699]   INFO - newvfs.persistent.PersistentFS - VFS dispose started 
+2020-09-15 12:41:36,756 [ 204707]   INFO - newvfs.persistent.PersistentFS - VFS dispose completed 
+2020-09-15 12:41:36,757 [ 204708]   INFO -        #com.intellij.idea.Main - ------------------------------------------------------ IDE SHUTDOWN ------------------------------------------------------ 
+2020-09-15 12:41:36,760 [ 204711]   INFO - org.jetbrains.io.BuiltInServer - web server stopped 
+2020-09-15 12:41:43,042 [      0]   INFO -        #com.intellij.idea.Main - ------------------------------------------------------ IDE STARTED ------------------------------------------------------ 
+2020-09-15 12:41:43,065 [     23]   INFO -        #com.intellij.idea.Main - IDE: PyCharm (build #PY-192.6817.19, 25 Sep 2019 15:55) 
+2020-09-15 12:41:43,066 [     24]   INFO -        #com.intellij.idea.Main - OS: Windows 10 (10.0, amd64) 
+2020-09-15 12:41:43,066 [     24]   INFO -        #com.intellij.idea.Main - JRE: 11.0.4+10-b304.69 (JetBrains s.r.o) 
+2020-09-15 12:41:43,066 [     24]   INFO -        #com.intellij.idea.Main - JVM: 11.0.4+10-b304.69 (OpenJDK 64-Bit Server VM) 
+2020-09-15 12:41:43,066 [     24]   INFO -        #com.intellij.idea.Main - JVM Args: exit -Xms128m -Xmx750m -XX:ReservedCodeCacheSize=240m -XX:+UseConcMarkSweepGC -XX:SoftRefLRUPolicyMSPerMB=50 -ea -XX:CICompilerCount=2 -Dsun.io.useCanonPrefixCache=false -Djava.net.preferIPv4Stack=true -Djdk.http.auth.tunneling.disabledSchemes="" -XX:+HeapDumpOnOutOfMemoryError -XX:-OmitStackTraceInFastThrow -Djdk.attach.allowAttachSelf -Dkotlinx.coroutines.debug=off -Djdk.module.illegalAccess.silent=true -javaagent:C:\JetBrains\jetbrains-agent.jar -Djb.vmOptionsFile=C:\JetBrains\PyCharm\bin\pycharm64.exe.vmoptions -Djava.library.path=C:\JetBrains\PyCharm\jbr\\bin;C:\JetBrains\PyCharm\jbr\\bin\server -Didea.platform.prefix=Python -Dide.native.launcher=true -Didea.paths.selector=PyCharm2019.2 -XX:ErrorFile=C:\Users\Administrator\java_error_in_pycharm_%p.log -XX:HeapDumpPath=C:\Users\Administrator\java_error_in_pycharm.hprof 
+2020-09-15 12:41:43,066 [     24]   INFO -        #com.intellij.idea.Main - charsets: JNU=GBK file=GBK 
+2020-09-15 12:41:43,356 [    314]   INFO -        #com.intellij.idea.Main - JNA library (64-bit) loaded in 62 ms 
+2020-09-15 12:41:43,358 [    316]   INFO - penapi.util.io.win32.IdeaWin32 - Native filesystem for Windows is operational 
+2020-09-15 12:41:43,932 [    890]   INFO - tellij.diagnostic.LoadingPhase - Reached SPLASH loading phase 
+2020-09-15 12:41:43,936 [    894]   INFO - plication.impl.ApplicationImpl - CPU cores: 6; ForkJoinPool.commonPool: java.util.concurrent.ForkJoinPool@33949c99[Running, parallelism = 5, size = 0, active = 0, running = 0, steals = 0, tasks = 0, submissions = 0]; factory: com.intellij.concurrency.IdeaForkJoinWorkerThreadFactory@69407135 
+2020-09-15 12:41:44,086 [   1044]   INFO - llij.ide.plugins.PluginManager - Plugin 'Configuration Script' can't be loaded because: Plugin does not include any module dependency tags in its plugin.xml therefore is assumed legacy and can be loaded only in IntelliJ IDEA 
+2020-09-15 12:41:44,137 [   1095]   INFO - llij.ide.plugins.PluginManager - Loaded bundled plugins: Angular and AngularJS (192.6817.19), CSS (192.6817.19), CoffeeScript (192.6817.19), Concurrency Visualiser (192.6817.19), Copyright (192.6817.19), Database Tools and SQL (192.6817.19), Datalore (0.1.2-192), Django Database Support Integration (192.6817.19), Docker (192.6817.19), EditorConfig (192.6817.19), File Watchers (192.6817.19), GNU GetText files support (*.po) (192.6817.19), Gherkin (192.6817.19), Git (192.6817.19), GitHub (192.6817.19), HTML Tools (192.6817.19), HTTP Client (192.6817.19), Haml (192.6817.19), IDE Settings Sync (192.6817.19), IDEA CORE (192.6817.19), Ini (192.6817.19), IntelliLang (192.6817.19), JavaScript Debugger (192.6817.19), JavaScript Intention Power Pack (192.6817.19), JavaScript and TypeScript (192.6817.19), Jupyter Notebook (192.6817.19), Less (192.6817.19), Machine Learning Code Completion (192.6817.19), Markdown (192.6817.19), Mercurial (192.6817.19), Perforce (192.6817.19), Performance Testing (192.6817.19), Properties (192.6817.19), Puppet (192.6817.19), Python BDD support for engines, based on Gherkin (cucumber, lettuce, behave) (192.6817.19), Python Copyright (192.6817.19), Python Docker (192.6817.19), Python IntelliLang (192.6817.19), Python JavaScript Debugger Integration (192.6817.19), Python Localization Integration (192.6817.19), Python Profiler (192.6817.19), Python ReStructureText Integration (192.6817.19), Python Remote Interpreter (192.6817.19), Python Terminal (192.6817.19), Python UML Diagrams (192.6817.19), Python WSL Support (192.6817.19), Python pytest-bdd support (192.6817.19), ReStructuredText Support (192.6817.19), Remote Hosts Access (192.6817.19), SSH Remote Run (192.6817.19), Sass (192.6817.19), Settings Repository (192.6817.19), Shell Script (192.6817.19), Stylus (192.6817.19), Subversion (192.6817.19), Task Management (192.6817.19), Terminal (192.6817.19), TextMate bundles (192.6817.19), Time Tracking (192.6817.19), UML (192.6817.19), Vagrant (192.6817.19), WSL Support Framework (192.6817.19), YAML (192.6817.19), tslint (192.6817.19) 
+2020-09-15 12:41:44,137 [   1095]   INFO - llij.ide.plugins.PluginManager - Loaded custom plugins: Live Coding in Python (4.1.0), MicroPython (1.0.12), Python Annotations (2019.1.2), python-typing-adder (1.1) 
+2020-09-15 12:41:44,137 [   1095]   INFO - llij.ide.plugins.PluginManager - Disabled plugins: Configuration Script (192.6817.19) 
+2020-09-15 12:41:44,296 [   1254]   INFO - cloudConfig.CloudConfigManager - === Exit: JBA_NOT_FOUND === 
+2020-09-15 12:41:44,324 [   1282]   INFO - tellij.diagnostic.LoadingPhase - Reached CONFIGURATION_STORE_INITIALIZED loading phase 
+2020-09-15 12:41:44,367 [   1325]   INFO - ellij.util.io.PagedFileStorage - lower=100; upper=500; buffer=10; max=705 
+2020-09-15 12:41:44,400 [   1358]   INFO - pl.local.NativeFileWatcherImpl - Starting file watcher: C:\JetBrains\PyCharm\bin\fsnotifier64.exe 
+2020-09-15 12:41:44,418 [   1376]   INFO - pl.local.NativeFileWatcherImpl - Native file watcher is operational. 
+2020-09-15 12:41:44,920 [   1878]   INFO - til.net.ssl.CertificateManager - Default SSL context initialized 
+2020-09-15 12:41:44,934 [   1892]   INFO - rains.ide.BuiltInServerManager - built-in server started, port 63342 
+2020-09-15 12:41:45,030 [   1988]   INFO - il.indexing.FileBasedIndexImpl - File index extensions iterated:41 
+2020-09-15 12:41:45,036 [   1994]   INFO - .FrameworkDetectorRegistryImpl - New framework detectors: [MicroPython] 
+2020-09-15 12:41:45,036 [   1994]   INFO - .FrameworkDetectorRegistryImpl - Framework detection index version changed to 1 
+2020-09-15 12:41:45,042 [   2000]   INFO - il.indexing.FileBasedIndexImpl - Version has changed for index FrameworkDetectionIndex. The index will be rebuilt. 
+2020-09-15 12:41:45,070 [   2028]   INFO - j.ide.ui.OptionsTopHitProvider - 12 ms spent to cache options in application 
+2020-09-15 12:41:45,121 [   2079]   INFO - tellij.diagnostic.LoadingPhase - Reached FRAME_SHOWN loading phase 
+2020-09-15 12:41:45,226 [   2184]   INFO - ndex.PrebuiltIndexProviderBase - Using prebuilt id-index from D:\workspace\.other\jetbrains-cfg\.PyCharm\system\index\.persistent\prebuilt\Python\id-index.input 
+2020-09-15 12:41:45,490 [   2448]   INFO - pl$FileIndexDataInitialization - Initialization done:501 
+2020-09-15 12:41:45,581 [   2539]   INFO - exImpl$StubIndexInitialization - Initialization done:90 
+2020-09-15 12:41:45,723 [   2681]   INFO - com.intellij.ide.ui.UISettings - Loaded: fontSize=13, fontScale=1.0; restored: fontSize=13, fontScale=1.0 
+2020-09-15 12:41:45,725 [   2683]   INFO - com.intellij.ide.ui.UISettings - Loaded: fontSize=18, fontScale=1.0; restored: fontSize=18, fontScale=1.0 
+2020-09-15 12:41:45,734 [   2692]   WARN - s.impl.EditorColorsManagerImpl - Cannot find scheme: VibrantInk from plugin: com.intellij.database 
+2020-09-15 12:41:45,734 [   2692]   WARN - s.impl.EditorColorsManagerImpl - Cannot find scheme: WarmNeon from plugin: com.intellij.database 
+2020-09-15 12:41:45,734 [   2692]   WARN - s.impl.EditorColorsManagerImpl - Cannot find scheme: High §ãontrast from plugin: com.intellij.database 
+2020-09-15 12:41:57,995 [  14953]   INFO - j.ide.plugins.RepositoryHelper - using cached plugin list (updated at 2020/9/15 12:39) 
+2020-09-15 12:42:04,818 [  21776]   INFO - stubs.SerializationManagerImpl - START StubSerializationManager SHUTDOWN 
+2020-09-15 12:42:04,820 [  21778]   INFO - stubs.SerializationManagerImpl - END StubSerializationManager SHUTDOWN 
+2020-09-15 12:42:04,820 [  21778]   INFO - il.indexing.FileBasedIndexImpl - START INDEX SHUTDOWN 
+2020-09-15 12:42:04,842 [  21800]   INFO - il.indexing.FileBasedIndexImpl - END INDEX SHUTDOWN 
+2020-09-15 12:42:04,842 [  21800]   INFO - org.jetbrains.io.BuiltInServer - web server stopped 
+2020-09-15 12:42:04,844 [  21802]   INFO - Types.impl.FileTypeManagerImpl - FileTypeManager: 0 auto-detected files
+Elapsed time on auto-detect: 0 ms 
+2020-09-15 12:42:04,856 [  21814]   INFO - pl.local.NativeFileWatcherImpl - Watcher terminated with exit code 0 
+2020-09-15 12:42:04,856 [  21814]   INFO - newvfs.persistent.PersistentFS - VFS dispose started 
+2020-09-15 12:42:04,857 [  21815]   INFO - newvfs.persistent.PersistentFS - VFS dispose completed 
+2020-09-15 12:42:04,859 [  21817]   INFO -        #com.intellij.idea.Main - ------------------------------------------------------ IDE SHUTDOWN ------------------------------------------------------ 
+2020-09-15 12:42:04,869 [  21827]   INFO - org.jetbrains.io.BuiltInServer - web server stopped 

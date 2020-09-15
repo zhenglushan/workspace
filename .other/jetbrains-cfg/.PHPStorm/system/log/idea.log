@@ -1,0 +1,575 @@
+2020-09-14 12:22:37,323 [      0]   INFO -        #com.intellij.idea.Main - ------------------------------------------------------ IDE STARTED ------------------------------------------------------ 
+2020-09-14 12:22:37,388 [     65]   INFO -        #com.intellij.idea.Main - JNA library (64-bit) loaded in 50 ms 
+2020-09-14 12:22:37,407 [     84]   INFO -        #com.intellij.idea.Main - IDE: PhpStorm (build #PS-193.6015.48, 22 Jan 2020 21:02) 
+2020-09-14 12:22:37,407 [     84]   INFO -        #com.intellij.idea.Main - OS: Windows 10 (10.0, amd64) 
+2020-09-14 12:22:37,407 [     84]   INFO -        #com.intellij.idea.Main - JRE: 11.0.5+10-b520.30 (JetBrains s.r.o) 
+2020-09-14 12:22:37,407 [     84]   INFO -        #com.intellij.idea.Main - JVM: 11.0.5+10-b520.30 (OpenJDK 64-Bit Server VM) 
+2020-09-14 12:22:37,408 [     85]   INFO -        #com.intellij.idea.Main - JVM Args: exit -Xms128m -Xmx750m -XX:ReservedCodeCacheSize=240m -XX:+UseConcMarkSweepGC -XX:SoftRefLRUPolicyMSPerMB=50 -ea -XX:CICompilerCount=2 -Dsun.io.useCanonPrefixCache=false -Djava.net.preferIPv4Stack=true -Djdk.http.auth.tunneling.disabledSchemes="" -XX:+HeapDumpOnOutOfMemoryError -XX:-OmitStackTraceInFastThrow -Djdk.attach.allowAttachSelf=true -Dkotlinx.coroutines.debug=off -Djdk.module.illegalAccess.silent=true -javaagent:C:\JetBrains\jetbrains-agent.jar -Djb.vmOptionsFile=C:\JetBrains\PHPStorm\bin\phpstorm64.exe.vmoptions -Djava.library.path=C:\JetBrains\PHPStorm\jbr\\bin;C:\JetBrains\PHPStorm\jbr\\bin\server -Didea.platform.prefix=PhpStorm -Dide.native.launcher=true -Didea.paths.selector=PhpStorm2019.3 -XX:ErrorFile=C:\Users\Administrator\java_error_in_phpstorm_%p.log -XX:HeapDumpPath=C:\Users\Administrator\java_error_in_phpstorm.hprof 
+2020-09-14 12:22:37,408 [     85]   INFO -        #com.intellij.idea.Main - charsets: JNU=GBK file=GBK 
+2020-09-14 12:22:37,527 [    204]   INFO - penapi.util.io.win32.IdeaWin32 - Native filesystem for Windows is operational 
+2020-09-14 12:22:37,838 [    515]   INFO -        #com.intellij.idea.Main - CPU cores: 6; ForkJoinPool.commonPool: java.util.concurrent.ForkJoinPool@47ccb9a[Running, parallelism = 5, size = 0, active = 0, running = 0, steals = 0, tasks = 0, submissions = 0]; factory: com.intellij.concurrency.IdeaForkJoinWorkerThreadFactory@5dd275bf 
+2020-09-14 12:22:45,514 [   8191]   INFO - .intellij.util.io.HttpRequests - Application is not initialized yet; Using default SSL configuration to connect to https://plugins.jetbrains.com/plugins/list/?uuid=706db7d9-f997-4bb1-9273-cf85b05f5eb6&build=PS-193.6015.48 
+2020-09-14 12:22:52,905 [  15582]   INFO - llij.ide.plugins.PluginManager - Loaded bundled plugins: ASP (193.6015.48), Angular and AngularJS (193.6015.48), Apache config (.htaccess) (193.6015.48), Behat Support (193.6015.48), Blade (193.6015.48), CSS (193.6015.48), ChangeReminder (193.6015.48), Codeception Framework (193.6015.48), CoffeeScript (193.6015.48), Command Line Tool (193.6015.48), Configuration Script (193.6015.48), Copyright (193.6015.48), DQL Support (193.6015.48), Database Tools and SQL (193.6015.48), Docker (193.6015.48), Drupal (193.6015.48), EditorConfig (193.6015.48), FTP/SFTP Connectivity (ex. Remote Hosts Access) (193.6015.48), File Watchers (193.6015.48), GNU GetText files support (*.po) (193.6015.48), Gherkin (193.6015.48), Git (193.6015.48), GitHub (193.6015.48), HTML Tools (193.6015.48), HTTP Client (193.6015.48), Haml (193.6015.48), Hunspell (193.6015.48), IDE Settings Sync (193.6015.48), IDEA CORE (193.6015.48), Ini (193.6015.48), IntelliLang (193.6015.48), JavaScript Debugger (193.6015.48), JavaScript Intention Power Pack (193.6015.48), JavaScript and TypeScript (193.6015.48), Joomla! Support (193.6015.48), Less (193.6015.48), Machine Learning Code Completion (193.6015.48), Markdown (193.6015.48), Mercurial (193.6015.48), NodeJS (193.6015.48), PHP (193.6015.48), PHP Docker (193.6015.48), PHP Markdown Integration (193.6015.48), PHP Remote Interpreter (193.6015.48), PHP WSL Support (193.6015.48), PHPSpec BDD Framework (193.6015.48), PHPT Support (193.6015.48), Perforce (193.6015.48), Performance Testing (193.6015.48), Phing (193.6015.48), PhpStorm Workshop (193.6015.48), ReStructuredText Support (193.6015.48), Refactor-X (193.6015.48), SSH Remote Run (193.6015.48), Sass (193.6015.48), Settings Repository (193.6015.48), Shell Script (193.6015.48), Subversion (193.6015.48), Task Management (193.6015.48), Terminal (193.6015.48), TextMate bundles (193.6015.48), Time Tracking (193.6015.48), Twig Support (193.6015.48), UML (193.6015.48), Vagrant (193.6015.48), Vue.js (193.6015.48), W3C Validators (193.6015.48), WSL Support Framework (193.6015.48), WordPress (193.6015.48), XPathView + XSLT (193.6015.48), YAML (193.6015.48), tslint (193.6015.48) 
+2020-09-14 12:22:59,841 [  22518]   INFO - llij.ide.plugins.PluginManager - Loaded bundled plugins: ASP (193.6015.48), Angular and AngularJS (193.6015.48), Apache config (.htaccess) (193.6015.48), Behat Support (193.6015.48), Blade (193.6015.48), CSS (193.6015.48), ChangeReminder (193.6015.48), Codeception Framework (193.6015.48), CoffeeScript (193.6015.48), Command Line Tool (193.6015.48), Configuration Script (193.6015.48), Copyright (193.6015.48), DQL Support (193.6015.48), Database Tools and SQL (193.6015.48), Docker (193.6015.48), Drupal (193.6015.48), EditorConfig (193.6015.48), FTP/SFTP Connectivity (ex. Remote Hosts Access) (193.6015.48), File Watchers (193.6015.48), GNU GetText files support (*.po) (193.6015.48), Gherkin (193.6015.48), Git (193.6015.48), GitHub (193.6015.48), HTML Tools (193.6015.48), HTTP Client (193.6015.48), Haml (193.6015.48), Hunspell (193.6015.48), IDE Settings Sync (193.6015.48), IDEA CORE (193.6015.48), Ini (193.6015.48), IntelliLang (193.6015.48), JavaScript Debugger (193.6015.48), JavaScript Intention Power Pack (193.6015.48), JavaScript and TypeScript (193.6015.48), Joomla! Support (193.6015.48), Less (193.6015.48), Machine Learning Code Completion (193.6015.48), Markdown (193.6015.48), Mercurial (193.6015.48), NodeJS (193.6015.48), PHP (193.6015.48), PHP Docker (193.6015.48), PHP Markdown Integration (193.6015.48), PHP Remote Interpreter (193.6015.48), PHP WSL Support (193.6015.48), PHPSpec BDD Framework (193.6015.48), PHPT Support (193.6015.48), Perforce (193.6015.48), Performance Testing (193.6015.48), Phing (193.6015.48), PhpStorm Workshop (193.6015.48), ReStructuredText Support (193.6015.48), Refactor-X (193.6015.48), SSH Remote Run (193.6015.48), Sass (193.6015.48), Settings Repository (193.6015.48), Shell Script (193.6015.48), Subversion (193.6015.48), Task Management (193.6015.48), Terminal (193.6015.48), TextMate bundles (193.6015.48), Time Tracking (193.6015.48), Twig Support (193.6015.48), UML (193.6015.48), Vagrant (193.6015.48), Vue.js (193.6015.48), W3C Validators (193.6015.48), WSL Support Framework (193.6015.48), WordPress (193.6015.48), XPathView + XSLT (193.6015.48), YAML (193.6015.48), tslint (193.6015.48) 
+2020-09-14 12:22:59,887 [  22564]   INFO - cloudConfig.CloudConfigManager - === Exit: JBA_NOT_FOUND === 
+2020-09-14 12:22:59,963 [  22640]   INFO - til.net.ssl.CertificateManager - Default SSL context initialized 
+2020-09-14 12:23:00,009 [  22686]   INFO - fs.newvfs.persistent.FSRecords - Marking VFS as corrupted: 'C:\Users\Administrator\.PhpStorm2019.3\system\caches\names.dat' does not exist 
+2020-09-14 12:23:00,010 [  22687]   INFO - ellij.util.io.PagedFileStorage - lower=100; upper=500; buffer=10; max=705 
+2020-09-14 12:23:00,013 [  22690]   INFO - com.intellij.ide.ui.UISettings - Loaded: fontSize=13, fontScale=1.0; restored: fontSize=13, fontScale=1.0 
+2020-09-14 12:23:00,020 [  22697]   INFO - rains.ide.BuiltInServerManager - built-in server started, port 63342 
+2020-09-14 12:23:00,043 [  22720]   INFO - gs.impl.UpdateCheckerComponent - channel: release 
+2020-09-14 12:23:00,051 [  22728]   INFO - ateSettings.impl.UpdateChecker - www.jetbrains.com 
+java.net.UnknownHostException: www.jetbrains.com
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:220)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:285)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:177)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:474)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:569)
+	at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:265)
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:372)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:191)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1227)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1081)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:177)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1587)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1515)
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:527)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:334)
+	at com.intellij.util.io.HttpRequests.openConnection(HttpRequests.java:607)
+	at com.intellij.util.io.HttpRequests.access$300(HttpRequests.java:56)
+	at com.intellij.util.io.HttpRequests$RequestImpl.getConnection(HttpRequests.java:376)
+	at com.intellij.util.io.HttpRequests$RequestImpl.getInputStream(HttpRequests.java:385)
+	at com.intellij.util.io.HttpRequests$RequestImpl.getReader(HttpRequests.java:403)
+	at com.intellij.util.io.HttpRequests$RequestImpl.getReader(HttpRequests.java:396)
+	at com.intellij.openapi.updateSettings.impl.UpdateChecker$checkPlatformUpdate$updateInfo$1.process(UpdateChecker.kt:164)
+	at com.intellij.openapi.updateSettings.impl.UpdateChecker$checkPlatformUpdate$updateInfo$1.process(UpdateChecker.kt:50)
+	at com.intellij.util.io.HttpRequests.doProcess(HttpRequests.java:518)
+	at com.intellij.util.io.HttpRequests.process(HttpRequests.java:500)
+	at com.intellij.util.io.HttpRequests.access$100(HttpRequests.java:56)
+	at com.intellij.util.io.HttpRequests$RequestBuilderImpl.connect(HttpRequests.java:350)
+	at com.intellij.openapi.updateSettings.impl.UpdateChecker.checkPlatformUpdate(UpdateChecker.kt:164)
+	at com.intellij.openapi.updateSettings.impl.UpdateChecker.doUpdateAndShowResult(UpdateChecker.kt:119)
+	at com.intellij.openapi.updateSettings.impl.UpdateChecker.access$doUpdateAndShowResult(UpdateChecker.kt:50)
+	at com.intellij.openapi.updateSettings.impl.UpdateChecker$updateAndShowResult$1.run(UpdateChecker.kt:81)
+	at com.intellij.openapi.application.impl.ApplicationImpl$1.run(ApplicationImpl.java:238)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-09-14 12:23:00,052 [  22729]   INFO - .history.utils.LocalHistoryLog - local history version mismatch (was: 0, expected: 6), rebuilding... 
+2020-09-14 12:23:00,057 [  22734]   INFO - .history.utils.LocalHistoryLog - FS has been rebuild, rebuilding local history... 
+2020-09-14 12:23:00,057 [  22734]   INFO - ateSettings.impl.UpdateChecker - Connection failed (www.jetbrains.com). Please check network connection and try again. 
+2020-09-14 12:23:00,086 [  22763]   INFO - pl.local.NativeFileWatcherImpl - Starting file watcher: C:\JetBrains\PHPStorm\bin\fsnotifier64.exe 
+2020-09-14 12:23:00,160 [  22837]   INFO - pl.local.NativeFileWatcherImpl - Native file watcher is operational. 
+2020-09-14 12:23:00,740 [  23417]   INFO - ndex.PrebuiltIndexProviderBase - Using prebuilt id-index from C:\Users\Administrator\.PhpStorm2019.3\system\index\.persistent\prebuilt\PHP\id-index.input 
+2020-09-14 12:23:00,848 [  23525]   INFO - ij.psi.stubs.StubUpdatingIndex - Following new file types will be indexed:JSX Harmony,Sass,CoffeeScript,Angular Metadata JSON,Ini,ECMAScript 6,HTML,Literate CoffeeScript,Vue.js,Markdown,Flow,Twig,htaccess,TypeScript,Angular2Svg,Less,XML,SCSS,ActionScript,Angular2Html,SQL,PHP,CSS,JavaScript,TypeScript JSX 
+2020-09-14 12:23:01,299 [  23976]   INFO - il.indexing.FileBasedIndexImpl - Indices to be built:FrameworkDetectionIndex,TodoIndex,IdIndex,FilenameIndex,filetypes,Stubs,Trigram.Index,fileIncludes,DomFileIndex,RelaxSymbolIndex,XmlTagNames,XmlNamespaces,html5.custom.attributes.index,SchemaTypeInheritance,ImageFileInfoIndex,json.file.root.values,HashFragmentIndex,CssIndex,css.template.selectors,XsltSymbolIndex,js.test.names,js.package.index,js.custom.single.entry.index,js.implicit.elements.index,angularjs.template.cache,angularjs.ui.router.views.index,angularjs.app.index,yaml.keys.name,docker.compose.services,HtmlTagIdIndex,sql.types.count.index,sql.routine.index,http.request.execution.environment,http.request.completion.host,php.class.name,php.constant.name,php.function.name,php.variable.name,php.method.name,php.class.fqn,php.interface.fqn,php.invoke.calls.offsets,php.array.access.offsets,php.serialize.function.calls.offsets,php.namespace.inheritance,php.trait.usage,php.unit.covers,php.class.alias.name,php.class.alias.to.class,php.class.to.class.alias,php.expected.function.arguments,php.expected.function.return.values,drupal.hook.name,wordpress.hook.invocations,editorconfig.index.name,CompassFunctionsIndex 
+2020-09-14 12:23:01,305 [  23982]   INFO - pl$FileIndexDataInitialization - Initialization done: 1252 
+2020-09-14 12:23:02,257 [  24934]   INFO - tellij.psi.stubs.StubIndexImpl - Following stub indices will be built:php.constant.case.sensitive.shortName,php.use.shortName,php.use.referenceName,php.inheritors,php.variable.shortName,php.namespace.shortName,markdown.header,ini.property.key,Less.mixins,Less.variables,Scss.variable,Scss.placeholder.selector,Scss.function,Scss.mixin,vue.components.index,vue.options.index,vue.mixin.binding.index,vue.extends.binding.index,vue.global.directives.index,vue.local.directives.index,vue.url.index,vue.id.index,vue.global.filters.index,vuex.store.index,angularjs.directives.index,angularjs.controller.index,angularjs.module.index,angularjs.filter.index,angularjs.ui.router.states.index,angularjs.directives.doc.index,angularjs.delimiter.index,angularjs.symbol.index,angularjs.ui.router.generic.states.index,angularjs.generic.modules.index,angularjs.templateUrl.index,dom.namespaceKey,dom.elementClass,Css.ampersand.selector,Css.class,Css.id,Css.attr,Css.custom.property,Css.custom.mixin,js.qualified.shortName,js.element.qualifiedName,JS.global.qualified.elements,ts.external.module.index,JS.class.super,JS.class.implements,JS.custom.stub.index,js.symbol.index2,js.typedef.index2,js.generics.index,JS.base.types.index,js.class.index2,js.namespace.index,js.namespace.including.local.members.index,JS.subclass.stub.index,js.symbol.qualified.names.index,amd.baseUrl.index,amd.requirePaths.index,js.global.symbol.index,js.exported.index,es6.exported.index,es6.assignment.index,ts.local.classes,ts.embedded.content.index,js.nonglobal.symbol.index,js.gcl.modules,js.doc.modules,js.amd.modules,angular2.templateUrl.index,angular2.source.pipe.index,angular2.source.directive.index,angular2.source.module.index,angular2.ivy.pipe.index,angular2.ivy.directive.index,angular2.ivy.module.index,angular2.metadata.pipe.index,angular2.metadata.entityClassName.index,angular2.metadata.directive.index,angular2.metadata.node.index,angular2.metadata.function.index,angular2.metadata.module.index,sql.table.shortName,sql.column.name,sql.names,php.class.shortName,php.interface.shortName,php.trait.shortName,php.method.shortName,php.field.shortName,php.classConstant.shortName,php.function.shortName,php.constant.shortName 
+2020-09-14 12:23:02,257 [  24934]   INFO - exImpl$StubIndexInitialization - Initialization done: 952 
+2020-09-14 12:23:14,904 [  37581]   INFO - j.ide.plugins.RepositoryHelper - using cached plugin list (updated at 2020/9/14 12:22) 
+2020-09-14 12:23:17,329 [  40006]   INFO - com.intellij.ide.ui.UISettings - Loaded: fontSize=13, fontScale=1.0; restored: fontSize=13, fontScale=1.0 
+2020-09-14 12:24:07,544 [  90221]   INFO - Types.impl.FileTypeManagerImpl - 0 auto-detected files. Detection took 0 ms 
+2020-09-14 12:24:07,544 [  90221]   INFO - stubs.SerializationManagerImpl - START StubSerializationManager SHUTDOWN 
+2020-09-14 12:24:07,545 [  90222]   INFO - stubs.SerializationManagerImpl - END StubSerializationManager SHUTDOWN 
+2020-09-14 12:24:07,547 [  90224]   INFO - pl.local.NativeFileWatcherImpl - Watcher terminated with exit code 0 
+2020-09-14 12:24:07,547 [  90224]   INFO - il.indexing.FileBasedIndexImpl - START INDEX SHUTDOWN 
+2020-09-14 12:24:07,566 [  90243]   INFO - il.indexing.FileBasedIndexImpl - END INDEX SHUTDOWN 
+2020-09-14 12:24:07,566 [  90243]   INFO - newvfs.persistent.PersistentFS - VFS dispose started 
+2020-09-14 12:24:07,571 [  90248]   INFO - newvfs.persistent.PersistentFS - VFS dispose completed 
+2020-09-14 12:24:07,573 [  90250]   INFO - org.jetbrains.io.BuiltInServer - web server stopped 
+2020-09-14 12:24:07,575 [  90252]   INFO -        #com.intellij.idea.Main - ------------------------------------------------------ IDE SHUTDOWN ------------------------------------------------------ 
+2020-09-14 12:24:07,578 [  90255]   INFO - org.jetbrains.io.BuiltInServer - web server stopped 
+2020-09-15 12:25:59,225 [      0]   INFO -        #com.intellij.idea.Main - ------------------------------------------------------ IDE STARTED ------------------------------------------------------ 
+2020-09-15 12:25:59,291 [     66]   INFO -        #com.intellij.idea.Main - JNA library (64-bit) loaded in 43 ms 
+2020-09-15 12:25:59,378 [    153]   INFO -        #com.intellij.idea.Main - IDE: PhpStorm (build #PS-193.6015.48, 22 Jan 2020 21:02) 
+2020-09-15 12:25:59,379 [    154]   INFO -        #com.intellij.idea.Main - OS: Windows 10 (10.0, amd64) 
+2020-09-15 12:25:59,379 [    154]   INFO -        #com.intellij.idea.Main - JRE: 11.0.5+10-b520.30 (JetBrains s.r.o) 
+2020-09-15 12:25:59,379 [    154]   INFO -        #com.intellij.idea.Main - JVM: 11.0.5+10-b520.30 (OpenJDK 64-Bit Server VM) 
+2020-09-15 12:25:59,379 [    154]   INFO -        #com.intellij.idea.Main - JVM Args: exit -Xms128m -Xmx750m -XX:ReservedCodeCacheSize=240m -XX:+UseConcMarkSweepGC -XX:SoftRefLRUPolicyMSPerMB=50 -ea -XX:CICompilerCount=2 -Dsun.io.useCanonPrefixCache=false -Djava.net.preferIPv4Stack=true -Djdk.http.auth.tunneling.disabledSchemes="" -XX:+HeapDumpOnOutOfMemoryError -XX:-OmitStackTraceInFastThrow -Djdk.attach.allowAttachSelf=true -Dkotlinx.coroutines.debug=off -Djdk.module.illegalAccess.silent=true -javaagent:C:\JetBrains\jetbrains-agent.jar -Djb.vmOptionsFile=C:\JetBrains\PHPStorm\bin\phpstorm64.exe.vmoptions -Djava.library.path=C:\JetBrains\PHPStorm\jbr\\bin;C:\JetBrains\PHPStorm\jbr\\bin\server -Didea.platform.prefix=PhpStorm -Dide.native.launcher=true -Didea.paths.selector=PhpStorm2019.3 -XX:ErrorFile=C:\Users\Administrator\java_error_in_phpstorm_%p.log -XX:HeapDumpPath=C:\Users\Administrator\java_error_in_phpstorm.hprof 
+2020-09-15 12:25:59,379 [    154]   INFO -        #com.intellij.idea.Main - charsets: JNU=GBK file=GBK 
+2020-09-15 12:26:02,883 [   3658]   INFO - penapi.util.io.win32.IdeaWin32 - Native filesystem for Windows is operational 
+2020-09-15 12:26:03,766 [   4541]   INFO - ntellij.idea.ApplicationLoader - CPU cores: 6; ForkJoinPool.commonPool: java.util.concurrent.ForkJoinPool@3498bc0b[Running, parallelism = 5, size = 0, active = 0, running = 0, steals = 0, tasks = 0, submissions = 0]; factory: com.intellij.concurrency.IdeaForkJoinWorkerThreadFactory@4becae1a 
+2020-09-15 12:26:03,903 [   4678]   INFO - llij.ide.plugins.PluginManager - Loaded bundled plugins: ASP (193.6015.48), Angular and AngularJS (193.6015.48), Apache config (.htaccess) (193.6015.48), Behat Support (193.6015.48), Blade (193.6015.48), CSS (193.6015.48), ChangeReminder (193.6015.48), Codeception Framework (193.6015.48), CoffeeScript (193.6015.48), Command Line Tool (193.6015.48), Configuration Script (193.6015.48), Copyright (193.6015.48), DQL Support (193.6015.48), Database Tools and SQL (193.6015.48), Docker (193.6015.48), Drupal (193.6015.48), EditorConfig (193.6015.48), FTP/SFTP Connectivity (ex. Remote Hosts Access) (193.6015.48), File Watchers (193.6015.48), GNU GetText files support (*.po) (193.6015.48), Gherkin (193.6015.48), Git (193.6015.48), GitHub (193.6015.48), HTML Tools (193.6015.48), HTTP Client (193.6015.48), Haml (193.6015.48), Hunspell (193.6015.48), IDE Settings Sync (193.6015.48), IDEA CORE (193.6015.48), Ini (193.6015.48), IntelliLang (193.6015.48), JavaScript Debugger (193.6015.48), JavaScript Intention Power Pack (193.6015.48), JavaScript and TypeScript (193.6015.48), Joomla! Support (193.6015.48), Less (193.6015.48), Machine Learning Code Completion (193.6015.48), Markdown (193.6015.48), Mercurial (193.6015.48), NodeJS (193.6015.48), PHP (193.6015.48), PHP Docker (193.6015.48), PHP Markdown Integration (193.6015.48), PHP Remote Interpreter (193.6015.48), PHP WSL Support (193.6015.48), PHPSpec BDD Framework (193.6015.48), PHPT Support (193.6015.48), Perforce (193.6015.48), Performance Testing (193.6015.48), Phing (193.6015.48), PhpStorm Workshop (193.6015.48), ReStructuredText Support (193.6015.48), Refactor-X (193.6015.48), SSH Remote Run (193.6015.48), Sass (193.6015.48), Settings Repository (193.6015.48), Shell Script (193.6015.48), Subversion (193.6015.48), Task Management (193.6015.48), Terminal (193.6015.48), TextMate bundles (193.6015.48), Time Tracking (193.6015.48), Twig Support (193.6015.48), UML (193.6015.48), Vagrant (193.6015.48), Vue.js (193.6015.48), W3C Validators (193.6015.48), WSL Support Framework (193.6015.48), WordPress (193.6015.48), XPathView + XSLT (193.6015.48), YAML (193.6015.48), tslint (193.6015.48) 
+2020-09-15 12:26:03,981 [   4756]   INFO - cloudConfig.CloudConfigManager - === Exit: JBA_NOT_FOUND === 
+2020-09-15 12:26:04,581 [   5356]   INFO - til.net.ssl.CertificateManager - Default SSL context initialized 
+2020-09-15 12:26:04,625 [   5400]   INFO - ellij.util.io.PagedFileStorage - lower=100; upper=500; buffer=10; max=705 
+2020-09-15 12:26:04,666 [   5441]   INFO - pl.local.NativeFileWatcherImpl - Starting file watcher: C:\JetBrains\PHPStorm\bin\fsnotifier64.exe 
+2020-09-15 12:26:04,707 [   5482]   INFO - pl.local.NativeFileWatcherImpl - Native file watcher is operational. 
+2020-09-15 12:26:04,948 [   5723]   INFO - com.intellij.ide.ui.UISettings - Loaded: fontSize=13, fontScale=1.0; restored: fontSize=13, fontScale=1.0 
+2020-09-15 12:26:04,966 [   5741]   INFO - com.intellij.ide.ui.UISettings - Loaded: fontSize=18, fontScale=1.0; restored: fontSize=18, fontScale=1.0 
+2020-09-15 12:26:05,091 [   5866]   INFO - rains.ide.BuiltInServerManager - built-in server started, port 63342 
+2020-09-15 12:26:05,123 [   5898]   INFO - gs.impl.UpdateCheckerComponent - channel: release 
+2020-09-15 12:26:05,142 [   5917]   INFO - ateSettings.impl.UpdateChecker - www.jetbrains.com 
+java.net.UnknownHostException: www.jetbrains.com
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:220)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:285)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:177)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:474)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:569)
+	at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:265)
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:372)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:191)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1227)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1081)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:177)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1587)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1515)
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:527)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:334)
+	at com.intellij.util.io.HttpRequests.openConnection(HttpRequests.java:607)
+	at com.intellij.util.io.HttpRequests.access$300(HttpRequests.java:56)
+	at com.intellij.util.io.HttpRequests$RequestImpl.getConnection(HttpRequests.java:376)
+	at com.intellij.util.io.HttpRequests$RequestImpl.getInputStream(HttpRequests.java:385)
+	at com.intellij.util.io.HttpRequests$RequestImpl.getReader(HttpRequests.java:403)
+	at com.intellij.util.io.HttpRequests$RequestImpl.getReader(HttpRequests.java:396)
+	at com.intellij.openapi.updateSettings.impl.UpdateChecker$checkPlatformUpdate$updateInfo$1.process(UpdateChecker.kt:164)
+	at com.intellij.openapi.updateSettings.impl.UpdateChecker$checkPlatformUpdate$updateInfo$1.process(UpdateChecker.kt:50)
+	at com.intellij.util.io.HttpRequests.doProcess(HttpRequests.java:518)
+	at com.intellij.util.io.HttpRequests.process(HttpRequests.java:500)
+	at com.intellij.util.io.HttpRequests.access$100(HttpRequests.java:56)
+	at com.intellij.util.io.HttpRequests$RequestBuilderImpl.connect(HttpRequests.java:350)
+	at com.intellij.openapi.updateSettings.impl.UpdateChecker.checkPlatformUpdate(UpdateChecker.kt:164)
+	at com.intellij.openapi.updateSettings.impl.UpdateChecker.doUpdateAndShowResult(UpdateChecker.kt:119)
+	at com.intellij.openapi.updateSettings.impl.UpdateChecker.access$doUpdateAndShowResult(UpdateChecker.kt:50)
+	at com.intellij.openapi.updateSettings.impl.UpdateChecker$updateAndShowResult$1.run(UpdateChecker.kt:81)
+	at com.intellij.openapi.application.impl.ApplicationImpl$1.run(ApplicationImpl.java:238)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-09-15 12:26:05,145 [   5920]   INFO - ateSettings.impl.UpdateChecker - Connection failed (www.jetbrains.com). Please check network connection and try again. 
+2020-09-15 12:26:06,714 [   7489]   INFO - ndex.PrebuiltIndexProviderBase - Using prebuilt id-index from D:\workspace\.jetbrains-cfg\.PHPStorm\system\index\.persistent\prebuilt\PHP\id-index.input 
+2020-09-15 12:26:07,541 [   8316]   INFO - pl$FileIndexDataInitialization - Initialization done: 2814 
+2020-09-15 12:26:08,014 [   8789]   INFO - exImpl$StubIndexInitialization - Initialization done: 473 
+2020-09-15 12:31:13,547 [ 314322]   INFO -              #AgreementUpdater - Error updating privacy policy: Certificate used to sign the license is not signed by JetBrains root certificate 
+2020-09-15 12:31:42,060 [ 342835]   INFO - rationStore.ComponentStoreImpl - Saving appDaemonCodeAnalyzerSettings took 17 ms 
+2020-09-15 12:31:42,163 [ 342938]   INFO - Types.impl.FileTypeManagerImpl - 0 auto-detected files. Detection took 0 ms 
+2020-09-15 12:31:42,166 [ 342941]   INFO - org.jetbrains.io.BuiltInServer - web server stopped 
+2020-09-15 12:31:42,166 [ 342941]   INFO - stubs.SerializationManagerImpl - START StubSerializationManager SHUTDOWN 
+2020-09-15 12:31:42,168 [ 342943]   INFO - stubs.SerializationManagerImpl - END StubSerializationManager SHUTDOWN 
+2020-09-15 12:31:42,172 [ 342947]   INFO - pl.local.NativeFileWatcherImpl - Watcher terminated with exit code 0 
+2020-09-15 12:31:42,173 [ 342948]   INFO - il.indexing.FileBasedIndexImpl - START INDEX SHUTDOWN 
+2020-09-15 12:31:42,190 [ 342965]   INFO - il.indexing.FileBasedIndexImpl - END INDEX SHUTDOWN 
+2020-09-15 12:31:42,190 [ 342965]   INFO - newvfs.persistent.PersistentFS - VFS dispose started 
+2020-09-15 12:31:42,191 [ 342966]   INFO - newvfs.persistent.PersistentFS - VFS dispose completed 
+2020-09-15 12:31:42,194 [ 342969]   INFO -   #com.intellij.util.Restarter - run restarter: [C:\JetBrains\PHPStorm\bin\restarter.exe, 13656, 1, C:\JetBrains\PHPStorm\bin\phpstorm64.exe] 
+2020-09-15 12:31:42,711 [ 343486]   INFO -        #com.intellij.idea.Main - ------------------------------------------------------ IDE SHUTDOWN ------------------------------------------------------ 
+2020-09-15 12:31:42,721 [ 343496]   INFO - org.jetbrains.io.BuiltInServer - web server stopped 
+2020-09-15 12:31:44,406 [      0]   INFO -        #com.intellij.idea.Main - ------------------------------------------------------ IDE STARTED ------------------------------------------------------ 
+2020-09-15 12:31:44,521 [    115]   INFO -        #com.intellij.idea.Main - JNA library (64-bit) loaded in 101 ms 
+2020-09-15 12:31:44,567 [    161]   INFO -        #com.intellij.idea.Main - IDE: PhpStorm (build #PS-193.6015.48, 22 Jan 2020 21:02) 
+2020-09-15 12:31:44,567 [    161]   INFO -        #com.intellij.idea.Main - OS: Windows 10 (10.0, amd64) 
+2020-09-15 12:31:44,567 [    161]   INFO -        #com.intellij.idea.Main - JRE: 11.0.5+10-b520.30 (JetBrains s.r.o) 
+2020-09-15 12:31:44,567 [    161]   INFO -        #com.intellij.idea.Main - JVM: 11.0.5+10-b520.30 (OpenJDK 64-Bit Server VM) 
+2020-09-15 12:31:44,568 [    162]   INFO -        #com.intellij.idea.Main - JVM Args: exit -Xms128m -Xmx750m -XX:ReservedCodeCacheSize=240m -XX:+UseConcMarkSweepGC -XX:SoftRefLRUPolicyMSPerMB=50 -ea -XX:CICompilerCount=2 -Dsun.io.useCanonPrefixCache=false -Djava.net.preferIPv4Stack=true -Djdk.http.auth.tunneling.disabledSchemes="" -XX:+HeapDumpOnOutOfMemoryError -XX:-OmitStackTraceInFastThrow -Djdk.attach.allowAttachSelf=true -Dkotlinx.coroutines.debug=off -Djdk.module.illegalAccess.silent=true -javaagent:C:\JetBrains\jetbrains-agent.jar -Djb.vmOptionsFile=C:\JetBrains\PHPStorm\bin\phpstorm64.exe.vmoptions -Djava.library.path=C:\JetBrains\PHPStorm\jbr\\bin;C:\JetBrains\PHPStorm\jbr\\bin\server -Didea.platform.prefix=PhpStorm -Dide.native.launcher=true -Didea.paths.selector=PhpStorm2019.3 -XX:ErrorFile=C:\Users\Administrator\java_error_in_phpstorm_%p.log -XX:HeapDumpPath=C:\Users\Administrator\java_error_in_phpstorm.hprof 
+2020-09-15 12:31:44,568 [    162]   INFO -        #com.intellij.idea.Main - charsets: JNU=GBK file=GBK 
+2020-09-15 12:31:44,695 [    289]   INFO - penapi.util.io.win32.IdeaWin32 - Native filesystem for Windows is operational 
+2020-09-15 12:31:45,694 [   1288]   INFO - ntellij.idea.ApplicationLoader - CPU cores: 6; ForkJoinPool.commonPool: java.util.concurrent.ForkJoinPool@461f92db[Running, parallelism = 5, size = 0, active = 0, running = 0, steals = 0, tasks = 0, submissions = 0]; factory: com.intellij.concurrency.IdeaForkJoinWorkerThreadFactory@48385cc5 
+2020-09-15 12:31:45,839 [   1433]   INFO - llij.ide.plugins.PluginManager - Loaded bundled plugins: ASP (193.6015.48), Angular and AngularJS (193.6015.48), Apache config (.htaccess) (193.6015.48), Behat Support (193.6015.48), Blade (193.6015.48), CSS (193.6015.48), ChangeReminder (193.6015.48), Codeception Framework (193.6015.48), CoffeeScript (193.6015.48), Command Line Tool (193.6015.48), Configuration Script (193.6015.48), Copyright (193.6015.48), DQL Support (193.6015.48), Database Tools and SQL (193.6015.48), Docker (193.6015.48), Drupal (193.6015.48), EditorConfig (193.6015.48), FTP/SFTP Connectivity (ex. Remote Hosts Access) (193.6015.48), File Watchers (193.6015.48), GNU GetText files support (*.po) (193.6015.48), Gherkin (193.6015.48), Git (193.6015.48), GitHub (193.6015.48), HTML Tools (193.6015.48), HTTP Client (193.6015.48), Haml (193.6015.48), Hunspell (193.6015.48), IDE Settings Sync (193.6015.48), IDEA CORE (193.6015.48), Ini (193.6015.48), IntelliLang (193.6015.48), JavaScript Debugger (193.6015.48), JavaScript Intention Power Pack (193.6015.48), JavaScript and TypeScript (193.6015.48), Joomla! Support (193.6015.48), Less (193.6015.48), Machine Learning Code Completion (193.6015.48), Markdown (193.6015.48), Mercurial (193.6015.48), NodeJS (193.6015.48), PHP (193.6015.48), PHP Docker (193.6015.48), PHP Markdown Integration (193.6015.48), PHP Remote Interpreter (193.6015.48), PHP WSL Support (193.6015.48), PHPSpec BDD Framework (193.6015.48), PHPT Support (193.6015.48), Perforce (193.6015.48), Performance Testing (193.6015.48), Phing (193.6015.48), PhpStorm Workshop (193.6015.48), ReStructuredText Support (193.6015.48), Refactor-X (193.6015.48), SSH Remote Run (193.6015.48), Sass (193.6015.48), Settings Repository (193.6015.48), Shell Script (193.6015.48), Subversion (193.6015.48), Task Management (193.6015.48), Terminal (193.6015.48), TextMate bundles (193.6015.48), Time Tracking (193.6015.48), Twig Support (193.6015.48), UML (193.6015.48), Vagrant (193.6015.48), Vue.js (193.6015.48), W3C Validators (193.6015.48), WSL Support Framework (193.6015.48), WordPress (193.6015.48), XPathView + XSLT (193.6015.48), YAML (193.6015.48), tslint (193.6015.48) 
+2020-09-15 12:31:45,839 [   1433]   INFO - llij.ide.plugins.PluginManager - Loaded custom plugins: Laravel (0.15.4), Laravel Live Templates (1.0), LaravelStorm (1.1), PHP Annotations (6.3.0), PHP composer.json support (1.0.37) 
+2020-09-15 12:31:45,910 [   1504]   INFO - cloudConfig.CloudConfigManager - === Exit: JBA_NOT_FOUND === 
+2020-09-15 12:31:46,014 [   1608]   INFO - til.net.ssl.CertificateManager - Default SSL context initialized 
+2020-09-15 12:31:46,039 [   1633]   INFO - ellij.util.io.PagedFileStorage - lower=100; upper=500; buffer=10; max=705 
+2020-09-15 12:31:46,077 [   1671]   INFO - pl.local.NativeFileWatcherImpl - Starting file watcher: C:\JetBrains\PHPStorm\bin\fsnotifier64.exe 
+2020-09-15 12:31:46,105 [   1699]   INFO - pl.local.NativeFileWatcherImpl - Native file watcher is operational. 
+2020-09-15 12:31:46,114 [   1708]   INFO - com.intellij.ide.ui.UISettings - Loaded: fontSize=13, fontScale=1.0; restored: fontSize=13, fontScale=1.0 
+2020-09-15 12:31:46,133 [   1727]   INFO - com.intellij.ide.ui.UISettings - Loaded: fontSize=18, fontScale=1.0; restored: fontSize=18, fontScale=1.0 
+2020-09-15 12:31:46,194 [   1788]   INFO - rains.ide.BuiltInServerManager - built-in server started, port 63342 
+2020-09-15 12:31:46,228 [   1822]   INFO - gs.impl.UpdateCheckerComponent - channel: release 
+2020-09-15 12:31:46,278 [   1872]   INFO - ateSettings.impl.UpdateChecker - www.jetbrains.com 
+java.net.UnknownHostException: www.jetbrains.com
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:220)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:285)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:177)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:474)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:569)
+	at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:265)
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:372)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:191)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1227)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1081)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:177)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1587)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1515)
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:527)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:334)
+	at com.intellij.util.io.HttpRequests.openConnection(HttpRequests.java:607)
+	at com.intellij.util.io.HttpRequests.access$300(HttpRequests.java:56)
+	at com.intellij.util.io.HttpRequests$RequestImpl.getConnection(HttpRequests.java:376)
+	at com.intellij.util.io.HttpRequests$RequestImpl.getInputStream(HttpRequests.java:385)
+	at com.intellij.util.io.HttpRequests$RequestImpl.getReader(HttpRequests.java:403)
+	at com.intellij.util.io.HttpRequests$RequestImpl.getReader(HttpRequests.java:396)
+	at com.intellij.openapi.updateSettings.impl.UpdateChecker$checkPlatformUpdate$updateInfo$1.process(UpdateChecker.kt:164)
+	at com.intellij.openapi.updateSettings.impl.UpdateChecker$checkPlatformUpdate$updateInfo$1.process(UpdateChecker.kt:50)
+	at com.intellij.util.io.HttpRequests.doProcess(HttpRequests.java:518)
+	at com.intellij.util.io.HttpRequests.process(HttpRequests.java:500)
+	at com.intellij.util.io.HttpRequests.access$100(HttpRequests.java:56)
+	at com.intellij.util.io.HttpRequests$RequestBuilderImpl.connect(HttpRequests.java:350)
+	at com.intellij.openapi.updateSettings.impl.UpdateChecker.checkPlatformUpdate(UpdateChecker.kt:164)
+	at com.intellij.openapi.updateSettings.impl.UpdateChecker.doUpdateAndShowResult(UpdateChecker.kt:119)
+	at com.intellij.openapi.updateSettings.impl.UpdateChecker.access$doUpdateAndShowResult(UpdateChecker.kt:50)
+	at com.intellij.openapi.updateSettings.impl.UpdateChecker$updateAndShowResult$1.run(UpdateChecker.kt:81)
+	at com.intellij.openapi.application.impl.ApplicationImpl$1.run(ApplicationImpl.java:238)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-09-15 12:31:46,284 [   1878]   INFO - ateSettings.impl.UpdateChecker - Connection failed (www.jetbrains.com). Please check network connection and try again. 
+2020-09-15 12:31:46,513 [   2107]   INFO - ndex.PrebuiltIndexProviderBase - Using prebuilt id-index from D:\workspace\.jetbrains-cfg\.PHPStorm\system\index\.persistent\prebuilt\PHP\id-index.input 
+2020-09-15 12:31:47,199 [   2793]   INFO - il.indexing.FileBasedIndexImpl - Indices to be rebuilt after version change:IdIndex,filetypes 
+2020-09-15 12:31:47,199 [   2793]   INFO - il.indexing.FileBasedIndexImpl - Indices to be built:de.espend.idea.laravel.config_keys,de.espend.idea.laravel.template,de.espend.idea.laravel.routes,espend.php.annotation.classes,espend.php.annotation.usage,de.espend.idea.laravel.blade.section,de.espend.idea.laravel.blade.extends,de.espend.idea.laravel.blade.include,de.espend.idea.laravel.blade.stack,de.espend.idea.laravel.blade.each,de.espend.idea.laravel.blade.yield,de.espend.idea.laravel.blade.customs,de.espend.idea.laravel.translation_keys 
+2020-09-15 12:31:47,207 [   2801]   INFO - pl$FileIndexDataInitialization - Initialization done: 1074 
+2020-09-15 12:31:47,272 [   2866]   INFO - exImpl$StubIndexInitialization - Initialization done: 65 
+2020-09-15 12:32:29,436 [  45030]   INFO - rationStore.ComponentStoreImpl - Saving appDaemonCodeAnalyzerSettings took 12 ms 
+2020-09-15 12:32:53,037 [  68631]   INFO - rojectCodeStyleSettingsManager - Initialized from default code style settings. 
+2020-09-15 12:32:53,661 [  69255]   INFO - rnal.statistic.DeviceIdManager - Generating new Device ID 
+2020-09-15 12:32:53,666 [  69260]   INFO - eventLog.EventLogConfiguration - Generating salt for the device 
+2020-09-15 12:32:53,675 [  69269]   INFO - j.ide.script.IdeStartupScripts - 0 startup script(s) found 
+2020-09-15 12:32:53,818 [  69412]   INFO -              PerformancePlugin - Performance Plugin is in silent mode 
+2020-09-15 12:32:54,535 [  70129]   INFO - Tools.base.JsbtStartupActivity - Detecting buildfiles for com.intellij.lang.javascript.buildTools.grunt.GruntfileManager 
+2020-09-15 12:32:54,536 [  70130]   INFO - Tools.base.JsbtStartupActivity - Detecting buildfiles for com.intellij.lang.javascript.buildTools.gulp.GulpfileManager 
+2020-09-15 12:32:54,538 [  70132]   INFO - Tools.base.JsbtStartupActivity - Detecting buildfiles for com.intellij.lang.javascript.buildTools.npm.PackageJsonBuildFileManager 
+2020-09-15 12:32:54,612 [  70206]   INFO - .diagnostic.PerformanceWatcher - Post-startup activities under progress took 752ms; general responsiveness: ok; EDT responsiveness: ok 
+2020-09-15 12:32:55,210 [  70804]   WARN - tartup.impl.StartupManagerImpl - D:/workspace/php/mycms/.idea 
+java.io.FileNotFoundException: D:/workspace/php/mycms/.idea
+	at com.intellij.openapi.util.io.FileUtil.isFileSystemCaseSensitive(FileUtil.java:1470)
+	at com.intellij.ide.startup.impl.StartupManagerImpl.checkFsSanity(StartupManagerImpl.java:322)
+	at com.intellij.ide.startup.impl.StartupManagerImpl.runPostStartupActivities(StartupManagerImpl.java:256)
+	at com.intellij.openapi.project.impl.ProjectManagerImpl.lambda$doLoadProject$10(ProjectManagerImpl.java:464)
+	at com.intellij.openapi.application.TransactionGuardImpl$2.run(TransactionGuardImpl.java:309)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.doRun(LaterInvocator.java:441)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.runNextEvent(LaterInvocator.java:424)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.run(LaterInvocator.java:407)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:313)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:776)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:727)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:721)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:746)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:908)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:781)
+	at com.intellij.ide.IdeEventQueue.lambda$dispatchEvent$8(IdeEventQueue.java:424)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.computePrioritized(CoreProgressManager.java:698)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:423)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+2020-09-15 12:32:55,345 [  70939]   INFO - llij.database.util.SqlDialects - SQL dialects initialized in 17 ms 
+2020-09-15 12:32:56,310 [  71904]   INFO - cript.buildTools.base.JsbtUtil - Iterating over content roots for module D:/workspace/php/mycms/.idea/mycms.iml 
+2020-09-15 12:32:56,310 [  71904]   INFO - cript.buildTools.base.JsbtUtil - Detecting in content root D:/workspace/php/mycms 
+2020-09-15 12:32:56,310 [  71904]   INFO - cript.buildTools.base.JsbtUtil - Detecting by children: [file://D:/workspace/php/mycms/app, file://D:/workspace/php/mycms/.env, file://D:/workspace/php/mycms/tests, file://D:/workspace/php/mycms/config, file://D:/workspace/php/mycms/public, file://D:/workspace/php/mycms/routes, file://D:/workspace/php/mycms/vendor, file://D:/workspace/php/mycms/artisan, file://D:/workspace/php/mycms/storage, file://D:/workspace/php/mycms/项目说明.md, file://D:/workspace/php/mycms/database, file://D:/workspace/php/mycms/bootstrap, file://D:/workspace/php/mycms/README.md, file://D:/workspace/php/mycms/resources, file://D:/workspace/php/mycms/.gitignore, file://D:/workspace/php/mycms/server.php, file://D:/workspace/php/mycms/phpunit.xml, file://D:/workspace/php/mycms/.env.example, file://D:/workspace/php/mycms/.styleci.yml, file://D:/workspace/php/mycms/package.json, file://D:/workspace/php/mycms/.editorconfig, file://D:/workspace/php/mycms/composer.json, file://D:/workspace/php/mycms/composer.lock, file://D:/workspace/php/mycms/.gitattributes, file://D:/workspace/php/mycms/webpack.mix.js] 
+2020-09-15 12:32:56,310 [  71904]   INFO - Tools.base.JsbtStartupActivity - Found [] for com.intellij.lang.javascript.buildTools.grunt.GruntService 
+2020-09-15 12:32:56,310 [  71904]   INFO - cript.buildTools.base.JsbtUtil - Iterating over content roots for module D:/workspace/php/mycms/.idea/mycms.iml 
+2020-09-15 12:32:56,310 [  71904]   INFO - cript.buildTools.base.JsbtUtil - Detecting in content root D:/workspace/php/mycms 
+2020-09-15 12:32:56,311 [  71905]   INFO - cript.buildTools.base.JsbtUtil - Detecting by children: [file://D:/workspace/php/mycms/app, file://D:/workspace/php/mycms/.env, file://D:/workspace/php/mycms/tests, file://D:/workspace/php/mycms/config, file://D:/workspace/php/mycms/public, file://D:/workspace/php/mycms/routes, file://D:/workspace/php/mycms/vendor, file://D:/workspace/php/mycms/artisan, file://D:/workspace/php/mycms/storage, file://D:/workspace/php/mycms/项目说明.md, file://D:/workspace/php/mycms/database, file://D:/workspace/php/mycms/bootstrap, file://D:/workspace/php/mycms/README.md, file://D:/workspace/php/mycms/resources, file://D:/workspace/php/mycms/.gitignore, file://D:/workspace/php/mycms/server.php, file://D:/workspace/php/mycms/phpunit.xml, file://D:/workspace/php/mycms/.env.example, file://D:/workspace/php/mycms/.styleci.yml, file://D:/workspace/php/mycms/package.json, file://D:/workspace/php/mycms/.editorconfig, file://D:/workspace/php/mycms/composer.json, file://D:/workspace/php/mycms/composer.lock, file://D:/workspace/php/mycms/.gitattributes, file://D:/workspace/php/mycms/webpack.mix.js] 
+2020-09-15 12:32:56,311 [  71905]   INFO - Tools.base.JsbtStartupActivity - Found [] for com.intellij.lang.javascript.buildTools.gulp.GulpService 
+2020-09-15 12:32:56,311 [  71905]   INFO - cript.buildTools.base.JsbtUtil - Iterating over content roots for module D:/workspace/php/mycms/.idea/mycms.iml 
+2020-09-15 12:32:56,311 [  71905]   INFO - cript.buildTools.base.JsbtUtil - Detecting in content root D:/workspace/php/mycms 
+2020-09-15 12:32:56,312 [  71906]   INFO - pm.PackageJsonBuildFileManager - Found package.json in D:/workspace/php/mycms: file://D:/workspace/php/mycms/package.json 
+2020-09-15 12:32:56,325 [  71919]   INFO - tor.impl.FileEditorManagerImpl - Project opening took 3547 ms 
+2020-09-15 12:32:56,361 [  71955]   INFO - Tools.base.JsbtStartupActivity - Found [file://D:/workspace/php/mycms/package.json] for com.intellij.lang.javascript.buildTools.npm.NpmScriptsService 
+2020-09-15 12:32:56,528 [  72122]   INFO -  #git4idea.commands.GitHandler - [.] git version 
+2020-09-15 12:32:56,772 [  72366]   INFO -  #git4idea.commands.GitHandler - git version 2.28.0.windows.1 
+2020-09-15 12:32:56,778 [  72372]   INFO - ea.config.GitExecutableManager - Git version for C:\Git\cmd\git.exe : 2.28.0 
+2020-09-15 12:32:56,887 [  72481]   INFO - s.roots.VcsRootProblemNotifier - Auto-registered following mappings: [VcsRootError{UNREGISTERED_ROOT - D:/workspace}] 
+2020-09-15 12:32:56,887 [  72481]   INFO - pl.projectlevelman.NewMappings - VCS Root: [Git] - [D:/workspace] 
+2020-09-15 12:32:57,149 [  72743]   WARN - om.intellij.util.FieldAccessor - Field not found: javafx.embed.swing.JFXPanel.scaleFactor 
+2020-09-15 12:32:58,618 [  74212]   INFO - .diagnostic.PerformanceWatcher - Pushing properties took 3410ms; general responsiveness: ok; EDT responsiveness: ok 
+2020-09-15 12:32:58,640 [  74234]   INFO - .TypeScriptLibraryProviderImpl - Start refreshing typescript libraries 
+2020-09-15 12:32:58,646 [  74240]   INFO - .TypeScriptLibraryProviderImpl - End refreshing typescript libraries 
+2020-09-15 12:32:59,037 [  74631]   INFO - .diagnostic.PerformanceWatcher - Indexable file iteration took 416ms; general responsiveness: ok; EDT responsiveness: ok 
+2020-09-15 12:32:59,040 [  74634]   INFO - indexing.UnindexedFilesUpdater - Unindexed files update started: 7278 files to update 
+2020-09-15 12:32:59,201 [  74795]   WARN - ernallyAddedFilesProcessorImpl - Cannot find project config directory for non-default and non-directory based project mycms 
+2020-09-15 12:32:59,413 [  75007]   INFO - ndex.PrebuiltIndexProviderBase - Using prebuilt sdk-stubs from D:\workspace\.jetbrains-cfg\.PHPStorm\system\index\.persistent\prebuilt\PHP\sdk-stubs.input 
+2020-09-15 12:32:59,980 [  75574]   INFO - ndex.PrebuiltIndexProviderBase - Using prebuilt sdk-stubs from D:\workspace\.jetbrains-cfg\.PHPStorm\system\index\.persistent\prebuilt\JavaScript\sdk-stubs.input 
+2020-09-15 12:33:06,814 [  82408]   WARN - ernallyAddedFilesProcessorImpl - Cannot find project config directory for non-default and non-directory based project mycms 
+2020-09-15 12:33:08,209 [  83803]   INFO - j.ide.plugins.RepositoryHelper - using cached plugin list (updated at 2020/9/15 12:30) 
+2020-09-15 12:33:10,638 [  86232]   INFO - gnostic.MemorySizeConfigurator - Physical memory 16335M, minimum memory size 128M, -Xmx adjusted from 750M to 2041M 
+2020-09-15 12:33:10,751 [  86345]   INFO - ge.ExternalProjectsDataStorage - Load external projects data in 10 millis (read time: 2) 
+2020-09-15 12:33:11,099 [  86693]   INFO - tion.PackageJsonUpdateNotifier - processPackageJsonFiles [file://D:/workspace/php/mycms/package.json] 
+2020-09-15 12:33:24,131 [  99725]   INFO - j.ide.plugins.RepositoryHelper - using cached plugin list (updated at 2020/9/15 12:30) 
+2020-09-15 12:33:24,860 [ 100454]   INFO - openapi.wm.impl.PaintersHelper - (BufferedImageGraphicsConfig) 97x97 non-accelerated non-volatile image created 
+2020-09-15 12:33:24,861 [ 100455]   INFO - openapi.wm.impl.PaintersHelper - (BufferedImageGraphicsConfig) 97x97 non-accelerated non-volatile image created 
+2020-09-15 12:33:24,862 [ 100456]   INFO - openapi.wm.impl.PaintersHelper - (BufferedImageGraphicsConfig) 16x16 non-accelerated non-volatile image created 
+2020-09-15 12:33:32,450 [ 108044]   INFO - openapi.wm.impl.PaintersHelper - (BufferedImageGraphicsConfig) 656x21 non-accelerated non-volatile image created 
+2020-09-15 12:33:36,594 [ 112188]   INFO - .diagnostic.PerformanceWatcher - Unindexed files update took 37553ms; general responsiveness: ok; EDT responsiveness: 0/38 sluggish, 1/38 very slow 
+2020-09-15 12:33:36,595 [ 112189]   INFO - g.FileBasedIndexProjectHandler - Reindexing refreshed files: 0 to update, calculated in 1ms 
+2020-09-15 12:33:37,900 [ 113494]   INFO - cloudConfig.CloudConfigManager - === StatusBar ignored === 
+2020-09-15 12:33:38,001 [ 113595]   INFO - openapi.wm.impl.PaintersHelper - (BufferedImageGraphicsConfig) 1384x992 non-accelerated non-volatile image created 
+2020-09-15 12:33:38,109 [ 113703]   INFO - ser.lib.ComposerLibraryManager - Updated composer include paths. Add [file://D:/workspace/php/mycms/vendor/swiftmailer/swiftmailer, file://D:/workspace/php/mycms/vendor/scrivo/highlight.php, file://D:/workspace/php/mycms/vendor/doctrine/inflector, file://D:/workspace/php/mycms/vendor/doctrine/instantiator, file://D:/workspace/php/mycms/vendor/nikic/php-parser, file://D:/workspace/php/mycms/vendor/doctrine/lexer, file://D:/workspace/php/mycms/vendor/symfony/polyfill-php80, file://D:/workspace/php/mycms/vendor/nesbot/carbon, file://D:/workspace/php/mycms/vendor/facade/ignition, file://D:/workspace/php/mycms/vendor/phpunit/php-token-stream, file://D:/workspace/php/mycms/vendor/symfony/http-foundation, file://D:/workspace/php/mycms/vendor/hamcrest/hamcrest-php, file://D:/workspace/php/mycms/vendor/facade/ignition-contracts, file://D:/workspace/php/mycms/vendor/phpunit/php-text-template, file://D:/workspace/php/mycms/vendor/symfony/routing, file://D:/workspace/php/mycms/vendor/facade/flare-client-php, file://D:/workspace/php/mycms/vendor/phpunit/php-timer, file://D:/workspace/php/mycms/vendor/symfony/event-dispatcher, file://D:/workspace/php/mycms/vendor/phpunit/php-file-iterator, file://D:/workspace/php/mycms/vendor/symfony/css-selector, file://D:/workspace/php/mycms/vendor/theseer/tokenizer, file://D:/workspace/php/mycms/vendor/phpunit/php-code-coverage, file://D:/workspace/php/mycms/vendor/symfony/translation, file://D:/workspace/php/mycms/vendor/phpunit/phpunit, file://D:/workspace/php/mycms/vendor/symfony/polyfill-mbstring, file://D:/workspace/php/mycms/vendor/psy/psysh, file://D:/workspace/php/mycms/vendor/symfony/polyfill-ctype, file://D:/workspace/php/mycms/vendor/symfony/service-contracts, file://D:/workspace/php/mycms/vendor/symfony/mime, file://D:/workspace/php/mycms/vendor/symfony/finder, file://D:/workspace/php/mycms/vendor/symfony/error-handler, file://D:/workspace/php/mycms/vendor/symfony/polyfill-php72, file://D:/workspace/php/mycms/vendor/tijsverkoyen/css-to-inline-styles, file://D:/workspace/php/mycms/vendor/symfony/polyfill-intl-idn, file://D:/workspace/php/mycms/vendor/symfony/http-kernel, file://D:/workspace/php/mycms/vendor/symfony/process, file://D:/workspace/php/mycms/vendor/symfony/event-dispatcher-contracts, file://D:/workspace/php/mycms/vendor/symfony/polyfill-php70, file://D:/workspace/php/mycms/vendor/symfony/debug, file://D:/workspace/php/mycms/vendor/laravel/framework, file://D:/workspace/php/mycms/vendor/symfony/polyfill-php73, file://D:/workspace/php/mycms/vendor/laravel/tinker, file://D:/workspace/php/mycms/vendor/symfony/console, file://D:/workspace/php/mycms/vendor/monolog/monolog, file://D:/workspace/php/mycms/vendor/symfony/translation-contracts, file://D:/workspace/php/mycms/vendor/ramsey/uuid, file://D:/workspace/php/mycms/vendor/symfony/polyfill-iconv, file://D:/workspace/php/mycms/vendor/symfony/var-dumper, file://D:/workspace/php/mycms/vendor/symfony/polyfill-intl-normalizer, file://D:/workspace/php/mycms/vendor/dragonmantank/cron-expression, file://D:/workspace/php/mycms/vendor/myclabs/deep-copy, file://D:/workspace/php/mycms/vendor/vlucas/phpdotenv, file://D:/workspace/php/mycms/vendor/webmozart/assert, file://D:/workspace/php/mycms/vendor/filp/whoops, file://D:/workspace/php/mycms/vendor/fzaninotto/faker, file://D:/workspace/php/mycms/vendor/fideloper/proxy, file://D:/workspace/php/mycms/vendor/league/mime-type-detection, file://D:/workspace/php/mycms/vendor/league/commonmark, file://D:/workspace/php/mycms/vendor/jakub-onderka/php-console-highlighter, file://D:/workspace/php/mycms/vendor/league/flysystem, file://D:/workspace/php/mycms/vendor/jakub-onderka/php-console-color, file://D:/workspace/php/mycms/vendor/paragonie/random_compat, file://D:/workspace/php/mycms/vendor/composer, file://D:/workspace/php/mycms/vendor/dnoegel/php-xdg-base-dir, file://D:/workspace/php/mycms/vendor/phpoption/phpoption, file://D:/workspace/php/mycms/vendor/egulias/email-validator, file://D:/workspace/php/mycms/vendor/sebastian/resource-operations, file://D:/workspace/php/mycms/vendor/sebastian/recursion-context, file://D:/workspace/php/mycms/vendor/phpdocumentor/type-resolver, file://D:/workspace/php/mycms/vendor/sebastian/global-state, file://D:/workspace/php/mycms/vendor/phpdocumentor/reflection-docblock, file://D:/workspace/php/mycms/vendor/sebastian/diff, file://D:/workspace/php/mycms/vendor/phpdocumentor/reflection-common, file://D:/workspace/php/mycms/vendor/sebastian/exporter, file://D:/workspace/php/mycms/vendor/sebastian/object-enumerator, file://D:/workspace/php/mycms/vendor/nunomaduro/collision, file://D:/workspace/php/mycms/vendor/sebastian/environment, file://D:/workspace/php/mycms/vendor/sebastian/comparator, file://D:/workspace/php/mycms/vendor/sebastian/object-reflector, file://D:/workspace/php/mycms/vendor/sebastian/version, file://D:/workspace/php/mycms/vendor/sebastian/code-unit-reverse-lookup, file://D:/workspace/php/mycms/vendor/sebastian/type, file://D:/workspace/php/mycms/vendor/opis/closure, file://D:/workspace/php/mycms/vendor/psr/simple-cache, file://D:/workspace/php/mycms/vendor/phar-io/version, file://D:/workspace/php/mycms/vendor/psr/container, file://D:/workspace/php/mycms/vendor/phar-io/manifest, file://D:/workspace/php/mycms/vendor/phpspec/prophecy, file://D:/workspace/php/mycms/vendor/psr/log, file://D:/workspace/php/mycms/vendor/mockery/mockery],
+remove [],
+deleted files [] 
+2020-09-15 12:33:38,115 [ 113709]   INFO - pl.ProjectRootManagerComponent - project roots have changed 
+2020-09-15 12:33:38,145 [ 113739]   INFO - pl.ProjectRootManagerComponent - project roots have changed 
+2020-09-15 12:33:38,151 [ 113745]   INFO - omposerSettingSyncConfigClient - Composer synchronization is enabled -> update IDE settings based on composer.json 
+2020-09-15 12:33:38,157 [ 113751]   INFO - pl.ProjectRootManagerComponent - project roots have changed 
+2020-09-15 12:33:38,177 [ 113771]   INFO - pl.ProjectRootManagerComponent - project roots have changed 
+2020-09-15 12:33:38,265 [ 113859]   INFO - omposerSettingSyncConfigClient - Composer synchronization is enabled -> update IDE settings based on composer.json 
+2020-09-15 12:33:38,270 [ 113864]   INFO - omposerSettingSyncConfigClient - Composer synchronization is enabled -> update IDE settings based on composer.json 
+2020-09-15 12:33:38,270 [ 113864]   INFO - omposerSettingSyncConfigClient - Composer synchronization is enabled -> update IDE settings based on composer.json 
+2020-09-15 12:33:38,342 [ 113936]   INFO - .diagnostic.PerformanceWatcher - Pushing properties took 5ms; general responsiveness: ok; EDT responsiveness: ok 
+2020-09-15 12:33:38,397 [ 113991]   INFO - .diagnostic.PerformanceWatcher - Indexable file iteration took 54ms; general responsiveness: ok; EDT responsiveness: ok 
+2020-09-15 12:33:38,398 [ 113992]   INFO - indexing.UnindexedFilesUpdater - Unindexed files update started: 2 files to update 
+2020-09-15 12:33:38,424 [ 114018]   INFO - rationStore.ComponentStoreImpl - Saving Module: 'mycms'NewModuleRootManager took 11 ms 
+2020-09-15 12:33:38,503 [ 114097]   INFO - rationStore.ComponentStoreImpl - Saving Project (name=mycms, containerState=ACTIVE, componentStore=D:\workspace\php\mycms) ComposerJsonPluginSettings took 11 ms, XDebuggerManager took 16 ms 
+2020-09-15 12:33:38,742 [ 114336]   INFO - .diagnostic.PerformanceWatcher - Unindexed files update took 344ms; general responsiveness: ok; EDT responsiveness: ok 
+2020-09-15 12:33:38,762 [ 114356]   INFO - pl.ProjectRootManagerComponent - project roots have changed 
+2020-09-15 12:33:38,776 [ 114370]   INFO - .diagnostic.PerformanceWatcher - Pushing properties took 1ms; general responsiveness: ok; EDT responsiveness: ok 
+2020-09-15 12:33:38,778 [ 114372]   INFO - .diagnostic.PerformanceWatcher - Indexable file iteration took 2ms; general responsiveness: ok; EDT responsiveness: ok 
+2020-09-15 12:33:38,806 [ 114400]   WARN - ns.php.phar.PharLibraryManager - Frequent root change. Source class com.jetbrains.php.phar.PharLibraryManager, delta 852.
+Old roots: [phar://D:/workspace/php/mycms/vendor/phar-io/manifest/tests/_fixture/test.phar/]
+New Roots: [] 
+2020-09-15 12:33:38,829 [ 114423]   INFO - pl.ProjectRootManagerComponent - project roots have changed 
+2020-09-15 12:33:38,886 [ 114480]   INFO - .diagnostic.PerformanceWatcher - Pushing properties took 5ms; general responsiveness: ok; EDT responsiveness: ok 
+2020-09-15 12:33:38,922 [ 114516]   INFO - .diagnostic.PerformanceWatcher - Indexable file iteration took 36ms; general responsiveness: ok; EDT responsiveness: ok 
+2020-09-15 12:33:38,932 [ 114526]   INFO - pl.ProjectRootManagerComponent - project roots have changed 
+2020-09-15 12:33:38,950 [ 114544]   INFO - .diagnostic.PerformanceWatcher - Pushing properties took 4ms; general responsiveness: ok; EDT responsiveness: ok 
+2020-09-15 12:33:38,983 [ 114577]   INFO - .diagnostic.PerformanceWatcher - Indexable file iteration took 33ms; general responsiveness: ok; EDT responsiveness: ok 
+2020-09-15 12:33:39,002 [ 114596]   WARN - ns.php.phar.PharLibraryManager - Frequent root change. Source class com.jetbrains.php.phar.PharLibraryManager, delta 196.
+Old roots: []
+New Roots: [phar://D:/workspace/php/mycms/vendor/phar-io/manifest/tests/_fixture/test.phar/] 
+2020-09-15 12:33:39,003 [ 114597]   INFO - pl.ProjectRootManagerComponent - project roots have changed 
+2020-09-15 12:33:39,023 [ 114617]   INFO - .diagnostic.PerformanceWatcher - Pushing properties took 5ms; general responsiveness: ok; EDT responsiveness: ok 
+2020-09-15 12:33:39,032 [ 114626]   INFO - .diagnostic.PerformanceWatcher - Indexable file iteration took 9ms; general responsiveness: ok; EDT responsiveness: ok 
+2020-09-15 12:33:39,612 [ 115206]   INFO - tellij.xml.Html5SchemaProvider - HTML5_SCHEMA_LOCATION = com.intellij.openapi.util.AtomicNotNullLazyValue$1@40de2df6 
+2020-09-15 12:33:43,532 [ 119126]   INFO - ta.index.VcsLogPersistentIndex - Indexing full repository in workspace 
+2020-09-15 12:33:43,724 [ 119318]   INFO - ta.index.VcsLogPersistentIndex - 191ms for indexing 2 commits in workspace 
+2020-09-15 12:34:03,112 [ 138706]   INFO - stubs.SerializationManagerImpl - START StubSerializationManager SHUTDOWN 
+2020-09-15 12:34:03,112 [ 138706]   INFO - stubs.SerializationManagerImpl - END StubSerializationManager SHUTDOWN 
+2020-09-15 12:34:03,112 [ 138706]   INFO - stubs.SerializationManagerImpl - START StubSerializationManager SHUTDOWN 
+2020-09-15 12:34:03,112 [ 138706]   INFO - stubs.SerializationManagerImpl - END StubSerializationManager SHUTDOWN 
+2020-09-15 12:34:03,121 [ 138715]   INFO - org.jetbrains.io.BuiltInServer - web server stopped 
+2020-09-15 12:34:03,121 [ 138715]   INFO - Types.impl.FileTypeManagerImpl - 318 auto-detected files. Detection took 1807 ms 
+2020-09-15 12:34:03,133 [ 138727]   INFO - stubs.SerializationManagerImpl - START StubSerializationManager SHUTDOWN 
+2020-09-15 12:34:03,133 [ 138727]   INFO - stubs.SerializationManagerImpl - END StubSerializationManager SHUTDOWN 
+2020-09-15 12:34:03,147 [ 138741]   INFO - pl.local.NativeFileWatcherImpl - Watcher terminated with exit code 0 
+2020-09-15 12:34:03,147 [ 138741]   INFO - il.indexing.FileBasedIndexImpl - START INDEX SHUTDOWN 
+2020-09-15 12:34:04,652 [ 140246]   INFO - il.indexing.FileBasedIndexImpl - END INDEX SHUTDOWN 
+2020-09-15 12:34:04,653 [ 140247]   INFO - newvfs.persistent.PersistentFS - VFS dispose started 
+2020-09-15 12:34:04,713 [ 140307]   INFO - newvfs.persistent.PersistentFS - VFS dispose completed 
+2020-09-15 12:34:04,715 [ 140309]   INFO -        #com.intellij.idea.Main - ------------------------------------------------------ IDE SHUTDOWN ------------------------------------------------------ 
+2020-09-15 12:34:04,718 [ 140312]   INFO - org.jetbrains.io.BuiltInServer - web server stopped 
+2020-09-15 12:34:06,565 [      0]   INFO -        #com.intellij.idea.Main - ------------------------------------------------------ IDE STARTED ------------------------------------------------------ 
+2020-09-15 12:34:06,638 [     73]   INFO -        #com.intellij.idea.Main - JNA library (64-bit) loaded in 57 ms 
+2020-09-15 12:34:06,659 [     94]   INFO -        #com.intellij.idea.Main - IDE: PhpStorm (build #PS-193.6015.48, 22 Jan 2020 21:02) 
+2020-09-15 12:34:06,659 [     94]   INFO -        #com.intellij.idea.Main - OS: Windows 10 (10.0, amd64) 
+2020-09-15 12:34:06,659 [     94]   INFO -        #com.intellij.idea.Main - JRE: 11.0.5+10-b520.30 (JetBrains s.r.o) 
+2020-09-15 12:34:06,659 [     94]   INFO -        #com.intellij.idea.Main - JVM: 11.0.5+10-b520.30 (OpenJDK 64-Bit Server VM) 
+2020-09-15 12:34:06,660 [     95]   INFO -        #com.intellij.idea.Main - JVM Args: exit -Xms128m -Xmx2041m -XX:ReservedCodeCacheSize=240m -XX:+UseConcMarkSweepGC -XX:SoftRefLRUPolicyMSPerMB=50 -ea -XX:CICompilerCount=2 -Dsun.io.useCanonPrefixCache=false -Djava.net.preferIPv4Stack=true -Djdk.http.auth.tunneling.disabledSchemes="" -XX:+HeapDumpOnOutOfMemoryError -XX:-OmitStackTraceInFastThrow -Djdk.attach.allowAttachSelf=true -Dkotlinx.coroutines.debug=off -Djdk.module.illegalAccess.silent=true -javaagent:C:\JetBrains\jetbrains-agent.jar -Djb.vmOptionsFile=C:\Users\Administrator\.PhpStorm2019.3\config\phpstorm64.exe.vmoptions -Djava.library.path=C:\JetBrains\PHPStorm\jbr\\bin;C:\JetBrains\PHPStorm\jbr\\bin\server -Didea.platform.prefix=PhpStorm -Dide.native.launcher=true -Didea.paths.selector=PhpStorm2019.3 -XX:ErrorFile=C:\Users\Administrator\java_error_in_phpstorm_%p.log -XX:HeapDumpPath=C:\Users\Administrator\java_error_in_phpstorm.hprof 
+2020-09-15 12:34:06,660 [     95]   INFO -        #com.intellij.idea.Main - charsets: JNU=GBK file=GBK 
+2020-09-15 12:34:06,781 [    216]   INFO - penapi.util.io.win32.IdeaWin32 - Native filesystem for Windows is operational 
+2020-09-15 12:34:07,727 [   1162]   INFO - ntellij.idea.ApplicationLoader - CPU cores: 6; ForkJoinPool.commonPool: java.util.concurrent.ForkJoinPool@43ec89a5[Running, parallelism = 5, size = 0, active = 0, running = 0, steals = 0, tasks = 0, submissions = 0]; factory: com.intellij.concurrency.IdeaForkJoinWorkerThreadFactory@2cfc6268 
+2020-09-15 12:34:07,875 [   1310]   INFO - llij.ide.plugins.PluginManager - Loaded bundled plugins: ASP (193.6015.48), Angular and AngularJS (193.6015.48), Apache config (.htaccess) (193.6015.48), Behat Support (193.6015.48), Blade (193.6015.48), CSS (193.6015.48), ChangeReminder (193.6015.48), Codeception Framework (193.6015.48), CoffeeScript (193.6015.48), Command Line Tool (193.6015.48), Configuration Script (193.6015.48), Copyright (193.6015.48), DQL Support (193.6015.48), Database Tools and SQL (193.6015.48), Docker (193.6015.48), Drupal (193.6015.48), EditorConfig (193.6015.48), FTP/SFTP Connectivity (ex. Remote Hosts Access) (193.6015.48), File Watchers (193.6015.48), GNU GetText files support (*.po) (193.6015.48), Gherkin (193.6015.48), Git (193.6015.48), GitHub (193.6015.48), HTML Tools (193.6015.48), HTTP Client (193.6015.48), Haml (193.6015.48), Hunspell (193.6015.48), IDE Settings Sync (193.6015.48), IDEA CORE (193.6015.48), Ini (193.6015.48), IntelliLang (193.6015.48), JavaScript Debugger (193.6015.48), JavaScript Intention Power Pack (193.6015.48), JavaScript and TypeScript (193.6015.48), Joomla! Support (193.6015.48), Less (193.6015.48), Machine Learning Code Completion (193.6015.48), Markdown (193.6015.48), Mercurial (193.6015.48), NodeJS (193.6015.48), PHP (193.6015.48), PHP Docker (193.6015.48), PHP Markdown Integration (193.6015.48), PHP Remote Interpreter (193.6015.48), PHP WSL Support (193.6015.48), PHPSpec BDD Framework (193.6015.48), PHPT Support (193.6015.48), Perforce (193.6015.48), Performance Testing (193.6015.48), Phing (193.6015.48), PhpStorm Workshop (193.6015.48), ReStructuredText Support (193.6015.48), Refactor-X (193.6015.48), SSH Remote Run (193.6015.48), Sass (193.6015.48), Settings Repository (193.6015.48), Shell Script (193.6015.48), Subversion (193.6015.48), Task Management (193.6015.48), Terminal (193.6015.48), TextMate bundles (193.6015.48), Time Tracking (193.6015.48), Twig Support (193.6015.48), UML (193.6015.48), Vagrant (193.6015.48), Vue.js (193.6015.48), W3C Validators (193.6015.48), WSL Support Framework (193.6015.48), WordPress (193.6015.48), XPathView + XSLT (193.6015.48), YAML (193.6015.48), tslint (193.6015.48) 
+2020-09-15 12:34:07,875 [   1310]   INFO - llij.ide.plugins.PluginManager - Loaded custom plugins: Laravel (0.15.4), Laravel Live Templates (1.0), LaravelStorm (1.1), PHP Annotations (6.3.0), PHP composer.json support (1.0.37) 
+2020-09-15 12:34:07,950 [   1385]   INFO - cloudConfig.CloudConfigManager - === Exit: JBA_NOT_FOUND === 
+2020-09-15 12:34:08,066 [   1501]   INFO - ellij.util.io.PagedFileStorage - lower=100; upper=500; buffer=10; max=1972 
+2020-09-15 12:34:08,071 [   1506]   INFO - til.net.ssl.CertificateManager - Default SSL context initialized 
+2020-09-15 12:34:08,104 [   1539]   INFO - pl.local.NativeFileWatcherImpl - Starting file watcher: C:\JetBrains\PHPStorm\bin\fsnotifier64.exe 
+2020-09-15 12:34:08,131 [   1566]   INFO - pl.local.NativeFileWatcherImpl - Native file watcher is operational. 
+2020-09-15 12:34:08,161 [   1596]   INFO - com.intellij.ide.ui.UISettings - Loaded: fontSize=13, fontScale=1.0; restored: fontSize=13, fontScale=1.0 
+2020-09-15 12:34:08,179 [   1614]   INFO - com.intellij.ide.ui.UISettings - Loaded: fontSize=18, fontScale=1.0; restored: fontSize=18, fontScale=1.0 
+2020-09-15 12:34:08,205 [   1640]   INFO - rains.ide.BuiltInServerManager - built-in server started, port 63342 
+2020-09-15 12:34:08,234 [   1669]   INFO - gs.impl.UpdateCheckerComponent - channel: release 
+2020-09-15 12:34:08,253 [   1688]   INFO - ateSettings.impl.UpdateChecker - www.jetbrains.com 
+java.net.UnknownHostException: www.jetbrains.com
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:220)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:285)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:177)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:474)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:569)
+	at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:265)
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:372)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:191)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1227)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1081)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:177)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1587)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1515)
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:527)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:334)
+	at com.intellij.util.io.HttpRequests.openConnection(HttpRequests.java:607)
+	at com.intellij.util.io.HttpRequests.access$300(HttpRequests.java:56)
+	at com.intellij.util.io.HttpRequests$RequestImpl.getConnection(HttpRequests.java:376)
+	at com.intellij.util.io.HttpRequests$RequestImpl.getInputStream(HttpRequests.java:385)
+	at com.intellij.util.io.HttpRequests$RequestImpl.getReader(HttpRequests.java:403)
+	at com.intellij.util.io.HttpRequests$RequestImpl.getReader(HttpRequests.java:396)
+	at com.intellij.openapi.updateSettings.impl.UpdateChecker$checkPlatformUpdate$updateInfo$1.process(UpdateChecker.kt:164)
+	at com.intellij.openapi.updateSettings.impl.UpdateChecker$checkPlatformUpdate$updateInfo$1.process(UpdateChecker.kt:50)
+	at com.intellij.util.io.HttpRequests.doProcess(HttpRequests.java:518)
+	at com.intellij.util.io.HttpRequests.process(HttpRequests.java:500)
+	at com.intellij.util.io.HttpRequests.access$100(HttpRequests.java:56)
+	at com.intellij.util.io.HttpRequests$RequestBuilderImpl.connect(HttpRequests.java:350)
+	at com.intellij.openapi.updateSettings.impl.UpdateChecker.checkPlatformUpdate(UpdateChecker.kt:164)
+	at com.intellij.openapi.updateSettings.impl.UpdateChecker.doUpdateAndShowResult(UpdateChecker.kt:119)
+	at com.intellij.openapi.updateSettings.impl.UpdateChecker.access$doUpdateAndShowResult(UpdateChecker.kt:50)
+	at com.intellij.openapi.updateSettings.impl.UpdateChecker$updateAndShowResult$1.run(UpdateChecker.kt:81)
+	at com.intellij.openapi.application.impl.ApplicationImpl$1.run(ApplicationImpl.java:238)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-09-15 12:34:08,258 [   1693]   INFO - ateSettings.impl.UpdateChecker - Connection failed (www.jetbrains.com). Please check network connection and try again. 
+2020-09-15 12:34:08,958 [   2393]   INFO - pl.projectlevelman.NewMappings - VCS Root: [Git] - [D:/workspace] 
+2020-09-15 12:34:09,002 [   2437]   INFO - rojectCodeStyleSettingsManager - Initialized from default code style settings. 
+2020-09-15 12:34:09,015 [   2450]   INFO - ndex.PrebuiltIndexProviderBase - Using prebuilt id-index from D:\workspace\.jetbrains-cfg\.PHPStorm\system\index\.persistent\prebuilt\PHP\id-index.input 
+2020-09-15 12:34:09,283 [   2718]   INFO - pl$FileIndexDataInitialization - Initialization done: 1109 
+2020-09-15 12:34:09,350 [   2785]   INFO - exImpl$StubIndexInitialization - Initialization done: 66 
+2020-09-15 12:34:09,753 [   3188]   INFO - j.ide.script.IdeStartupScripts - 0 startup script(s) found 
+2020-09-15 12:34:09,822 [   3257]   INFO -              PerformancePlugin - Performance Plugin is in silent mode 
+2020-09-15 12:34:10,377 [   3812]   INFO - llij.database.util.SqlDialects - SQL dialects initialized in 7 ms 
+2020-09-15 12:34:10,555 [   3990]   INFO - .diagnostic.PerformanceWatcher - Post-startup activities under progress took 663ms; general responsiveness: ok; EDT responsiveness: 1/1 sluggish 
+2020-09-15 12:34:10,576 [   4011]   INFO - openapi.wm.impl.PaintersHelper - (BufferedImageGraphicsConfig) 1384x992 non-accelerated non-volatile image created 
+2020-09-15 12:34:10,653 [   4088]   INFO - tartup.impl.StartupManagerImpl - D:/workspace/php/mycms/.idea case-sensitivity: expected=false actual=false 
+2020-09-15 12:34:10,702 [   4137]   INFO - tor.impl.FileEditorManagerImpl - Project opening took 2270 ms 
+2020-09-15 12:34:10,729 [   4164]   INFO -  #git4idea.commands.GitHandler - [.] git version 
+2020-09-15 12:34:10,740 [   4175]   INFO - .diagnostic.PerformanceWatcher - Pushing properties took 756ms; general responsiveness: ok; EDT responsiveness: 1/1 sluggish 
+2020-09-15 12:34:10,811 [   4246]   INFO -  #git4idea.commands.GitHandler - git version 2.28.0.windows.1 
+2020-09-15 12:34:10,839 [   4274]   INFO - ea.config.GitExecutableManager - Git version for C:\Git\cmd\git.exe : 2.28.0 
+2020-09-15 12:34:11,125 [   4560]   INFO - .diagnostic.PerformanceWatcher - Indexable file iteration took 382ms; general responsiveness: ok; EDT responsiveness: ok 
+2020-09-15 12:34:11,155 [   4590]   INFO - cloudConfig.CloudConfigManager - === StatusBar ignored === 
+2020-09-15 12:34:11,222 [   4657]   INFO - omposerSettingSyncConfigClient - Composer synchronization is enabled -> update IDE settings based on composer.json 
+2020-09-15 12:34:11,233 [   4668]   INFO - omposerSettingSyncConfigClient - Composer synchronization is enabled -> update IDE settings based on composer.json 
+2020-09-15 12:34:11,250 [   4685]   INFO - pl.ProjectRootManagerComponent - project roots have changed 
+2020-09-15 12:34:11,348 [   4783]   INFO - .diagnostic.PerformanceWatcher - Pushing properties took 39ms; general responsiveness: ok; EDT responsiveness: ok 
+2020-09-15 12:34:11,611 [   5046]   INFO - .diagnostic.PerformanceWatcher - Indexable file iteration took 263ms; general responsiveness: ok; EDT responsiveness: ok 
+2020-09-15 12:34:11,686 [   5121]   INFO - pl.ProjectRootManagerComponent - project roots have changed 
+2020-09-15 12:34:11,739 [   5174]   INFO - .diagnostic.PerformanceWatcher - Pushing properties took 41ms; general responsiveness: ok; EDT responsiveness: ok 
+2020-09-15 12:34:11,750 [   5185]   INFO - .diagnostic.PerformanceWatcher - Indexable file iteration took 11ms; general responsiveness: ok; EDT responsiveness: ok 
+2020-09-15 12:34:17,075 [  10510]   INFO - j.ide.plugins.RepositoryHelper - using cached plugin list (updated at 2020/9/15 12:30) 
+2020-09-15 12:34:18,720 [  12155]   INFO - ge.ExternalProjectsDataStorage - Load external projects data in 1 millis (read time: 1) 
+2020-09-15 12:34:19,038 [  12473]   INFO - tion.PackageJsonUpdateNotifier - processPackageJsonFiles [file://D:/workspace/php/mycms/package.json] 
+2020-09-15 12:34:33,436 [  26871]   WARN - om.intellij.util.FieldAccessor - Field not found: javafx.embed.swing.JFXPanel.scaleFactor 
+2020-09-15 12:34:43,256 [  36691]   INFO - openapi.wm.impl.PaintersHelper - (BufferedImageGraphicsConfig) 1921x1040 non-accelerated non-volatile image created 
+2020-09-15 12:35:18,111 [  71546]   INFO - org.jetbrains.io.BuiltInServer - web server stopped 
+2020-09-15 12:35:18,111 [  71546]   INFO - Types.impl.FileTypeManagerImpl - 295 auto-detected files. Detection took 100 ms 
+2020-09-15 12:35:18,121 [  71556]   INFO - stubs.SerializationManagerImpl - START StubSerializationManager SHUTDOWN 
+2020-09-15 12:35:18,122 [  71557]   INFO - stubs.SerializationManagerImpl - END StubSerializationManager SHUTDOWN 
+2020-09-15 12:35:18,135 [  71570]   INFO - pl.local.NativeFileWatcherImpl - Watcher terminated with exit code 0 
+2020-09-15 12:35:18,135 [  71570]   INFO - il.indexing.FileBasedIndexImpl - START INDEX SHUTDOWN 
+2020-09-15 12:35:18,193 [  71628]   INFO - il.indexing.FileBasedIndexImpl - END INDEX SHUTDOWN 
+2020-09-15 12:35:18,193 [  71628]   INFO - newvfs.persistent.PersistentFS - VFS dispose started 
+2020-09-15 12:35:18,226 [  71661]   INFO - newvfs.persistent.PersistentFS - VFS dispose completed 
+2020-09-15 12:35:18,229 [  71664]   INFO -        #com.intellij.idea.Main - ------------------------------------------------------ IDE SHUTDOWN ------------------------------------------------------ 
+2020-09-15 12:35:18,230 [  71665]   INFO - org.jetbrains.io.BuiltInServer - web server stopped 
+2020-09-15 12:37:36,719 [      1]   INFO -        #com.intellij.idea.Main - ------------------------------------------------------ IDE STARTED ------------------------------------------------------ 
+2020-09-15 12:37:36,770 [     52]   INFO -        #com.intellij.idea.Main - JNA library (64-bit) loaded in 36 ms 
+2020-09-15 12:37:36,819 [    101]   INFO -        #com.intellij.idea.Main - IDE: PhpStorm (build #PS-193.6015.48, 22 Jan 2020 21:02) 
+2020-09-15 12:37:36,819 [    101]   INFO -        #com.intellij.idea.Main - OS: Windows 10 (10.0, amd64) 
+2020-09-15 12:37:36,819 [    101]   INFO -        #com.intellij.idea.Main - JRE: 11.0.5+10-b520.30 (JetBrains s.r.o) 
+2020-09-15 12:37:36,819 [    101]   INFO -        #com.intellij.idea.Main - JVM: 11.0.5+10-b520.30 (OpenJDK 64-Bit Server VM) 
+2020-09-15 12:37:36,820 [    102]   INFO -        #com.intellij.idea.Main - JVM Args: exit -Xms128m -Xmx2041m -XX:ReservedCodeCacheSize=240m -XX:+UseConcMarkSweepGC -XX:SoftRefLRUPolicyMSPerMB=50 -ea -XX:CICompilerCount=2 -Dsun.io.useCanonPrefixCache=false -Djava.net.preferIPv4Stack=true -Djdk.http.auth.tunneling.disabledSchemes="" -XX:+HeapDumpOnOutOfMemoryError -XX:-OmitStackTraceInFastThrow -Djdk.attach.allowAttachSelf=true -Dkotlinx.coroutines.debug=off -Djdk.module.illegalAccess.silent=true -javaagent:C:\JetBrains\jetbrains-agent.jar -Djb.vmOptionsFile=C:\Users\Administrator\.PhpStorm2019.3\config\phpstorm64.exe.vmoptions -Djava.library.path=C:\JetBrains\PHPStorm\jbr\\bin;C:\JetBrains\PHPStorm\jbr\\bin\server -Didea.platform.prefix=PhpStorm -Dide.native.launcher=true -Didea.paths.selector=PhpStorm2019.3 -XX:ErrorFile=C:\Users\Administrator\java_error_in_phpstorm_%p.log -XX:HeapDumpPath=C:\Users\Administrator\java_error_in_phpstorm.hprof 
+2020-09-15 12:37:36,821 [    103]   INFO -        #com.intellij.idea.Main - charsets: JNU=GBK file=GBK 
+2020-09-15 12:37:36,928 [    210]   INFO - penapi.util.io.win32.IdeaWin32 - Native filesystem for Windows is operational 
+2020-09-15 12:37:37,881 [   1163]   INFO - ntellij.idea.ApplicationLoader - CPU cores: 6; ForkJoinPool.commonPool: java.util.concurrent.ForkJoinPool@49dcf8f3[Running, parallelism = 5, size = 0, active = 0, running = 0, steals = 0, tasks = 0, submissions = 0]; factory: com.intellij.concurrency.IdeaForkJoinWorkerThreadFactory@747a9c0 
+2020-09-15 12:37:38,038 [   1320]   INFO - llij.ide.plugins.PluginManager - Loaded bundled plugins: ASP (193.6015.48), Angular and AngularJS (193.6015.48), Apache config (.htaccess) (193.6015.48), Behat Support (193.6015.48), Blade (193.6015.48), CSS (193.6015.48), ChangeReminder (193.6015.48), Codeception Framework (193.6015.48), CoffeeScript (193.6015.48), Command Line Tool (193.6015.48), Configuration Script (193.6015.48), Copyright (193.6015.48), DQL Support (193.6015.48), Database Tools and SQL (193.6015.48), Docker (193.6015.48), Drupal (193.6015.48), EditorConfig (193.6015.48), FTP/SFTP Connectivity (ex. Remote Hosts Access) (193.6015.48), File Watchers (193.6015.48), GNU GetText files support (*.po) (193.6015.48), Gherkin (193.6015.48), Git (193.6015.48), GitHub (193.6015.48), HTML Tools (193.6015.48), HTTP Client (193.6015.48), Haml (193.6015.48), Hunspell (193.6015.48), IDE Settings Sync (193.6015.48), IDEA CORE (193.6015.48), Ini (193.6015.48), IntelliLang (193.6015.48), JavaScript Debugger (193.6015.48), JavaScript Intention Power Pack (193.6015.48), JavaScript and TypeScript (193.6015.48), Joomla! Support (193.6015.48), Less (193.6015.48), Machine Learning Code Completion (193.6015.48), Markdown (193.6015.48), Mercurial (193.6015.48), NodeJS (193.6015.48), PHP (193.6015.48), PHP Docker (193.6015.48), PHP Markdown Integration (193.6015.48), PHP Remote Interpreter (193.6015.48), PHP WSL Support (193.6015.48), PHPSpec BDD Framework (193.6015.48), PHPT Support (193.6015.48), Perforce (193.6015.48), Performance Testing (193.6015.48), Phing (193.6015.48), PhpStorm Workshop (193.6015.48), ReStructuredText Support (193.6015.48), Refactor-X (193.6015.48), SSH Remote Run (193.6015.48), Sass (193.6015.48), Settings Repository (193.6015.48), Shell Script (193.6015.48), Subversion (193.6015.48), Task Management (193.6015.48), Terminal (193.6015.48), TextMate bundles (193.6015.48), Time Tracking (193.6015.48), Twig Support (193.6015.48), UML (193.6015.48), Vagrant (193.6015.48), Vue.js (193.6015.48), W3C Validators (193.6015.48), WSL Support Framework (193.6015.48), WordPress (193.6015.48), XPathView + XSLT (193.6015.48), YAML (193.6015.48), tslint (193.6015.48) 
+2020-09-15 12:37:38,038 [   1320]   INFO - llij.ide.plugins.PluginManager - Loaded custom plugins: Laravel (0.15.4), Laravel Live Templates (1.0), LaravelStorm (1.1), PHP Annotations (6.3.0), PHP composer.json support (1.0.37) 
+2020-09-15 12:37:38,114 [   1396]   INFO - cloudConfig.CloudConfigManager - === Exit: JBA_NOT_FOUND === 
+2020-09-15 12:37:38,225 [   1507]   INFO - til.net.ssl.CertificateManager - Default SSL context initialized 
+2020-09-15 12:37:38,242 [   1524]   INFO - ellij.util.io.PagedFileStorage - lower=100; upper=500; buffer=10; max=1972 
+2020-09-15 12:37:38,281 [   1563]   INFO - pl.local.NativeFileWatcherImpl - Starting file watcher: C:\JetBrains\PHPStorm\bin\fsnotifier64.exe 
+2020-09-15 12:37:38,320 [   1602]   INFO - pl.local.NativeFileWatcherImpl - Native file watcher is operational. 
+2020-09-15 12:37:38,327 [   1609]   INFO - com.intellij.ide.ui.UISettings - Loaded: fontSize=13, fontScale=1.0; restored: fontSize=13, fontScale=1.0 
+2020-09-15 12:37:38,349 [   1631]   INFO - com.intellij.ide.ui.UISettings - Loaded: fontSize=18, fontScale=1.0; restored: fontSize=18, fontScale=1.0 
+2020-09-15 12:37:38,398 [   1680]   INFO - rains.ide.BuiltInServerManager - built-in server started, port 63342 
+2020-09-15 12:37:38,416 [   1698]   INFO - gs.impl.UpdateCheckerComponent - channel: release 
+2020-09-15 12:37:38,453 [   1735]   INFO - ateSettings.impl.UpdateChecker - www.jetbrains.com 
+java.net.UnknownHostException: www.jetbrains.com
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:220)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:285)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:177)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:474)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:569)
+	at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:265)
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:372)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:191)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1227)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1081)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:177)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1587)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1515)
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:527)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:334)
+	at com.intellij.util.io.HttpRequests.openConnection(HttpRequests.java:607)
+	at com.intellij.util.io.HttpRequests.access$300(HttpRequests.java:56)
+	at com.intellij.util.io.HttpRequests$RequestImpl.getConnection(HttpRequests.java:376)
+	at com.intellij.util.io.HttpRequests$RequestImpl.getInputStream(HttpRequests.java:385)
+	at com.intellij.util.io.HttpRequests$RequestImpl.getReader(HttpRequests.java:403)
+	at com.intellij.util.io.HttpRequests$RequestImpl.getReader(HttpRequests.java:396)
+	at com.intellij.openapi.updateSettings.impl.UpdateChecker$checkPlatformUpdate$updateInfo$1.process(UpdateChecker.kt:164)
+	at com.intellij.openapi.updateSettings.impl.UpdateChecker$checkPlatformUpdate$updateInfo$1.process(UpdateChecker.kt:50)
+	at com.intellij.util.io.HttpRequests.doProcess(HttpRequests.java:518)
+	at com.intellij.util.io.HttpRequests.process(HttpRequests.java:500)
+	at com.intellij.util.io.HttpRequests.access$100(HttpRequests.java:56)
+	at com.intellij.util.io.HttpRequests$RequestBuilderImpl.connect(HttpRequests.java:350)
+	at com.intellij.openapi.updateSettings.impl.UpdateChecker.checkPlatformUpdate(UpdateChecker.kt:164)
+	at com.intellij.openapi.updateSettings.impl.UpdateChecker.doUpdateAndShowResult(UpdateChecker.kt:119)
+	at com.intellij.openapi.updateSettings.impl.UpdateChecker.access$doUpdateAndShowResult(UpdateChecker.kt:50)
+	at com.intellij.openapi.updateSettings.impl.UpdateChecker$updateAndShowResult$1.run(UpdateChecker.kt:81)
+	at com.intellij.openapi.application.impl.ApplicationImpl$1.run(ApplicationImpl.java:238)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-09-15 12:37:38,460 [   1742]   INFO - ateSettings.impl.UpdateChecker - Connection failed (www.jetbrains.com). Please check network connection and try again. 
+2020-09-15 12:37:39,107 [   2389]   INFO - pl.projectlevelman.NewMappings - VCS Root: [Git] - [D:/workspace] 
+2020-09-15 12:37:39,171 [   2453]   INFO - rojectCodeStyleSettingsManager - Initialized from default code style settings. 
+2020-09-15 12:37:39,175 [   2457]   INFO - ndex.PrebuiltIndexProviderBase - Using prebuilt id-index from D:\workspace\.other\jetbrains-cfg\.PHPStorm\system\index\.persistent\prebuilt\PHP\id-index.input 
+2020-09-15 12:37:39,462 [   2744]   INFO - pl$FileIndexDataInitialization - Initialization done: 1123 
+2020-09-15 12:37:39,533 [   2815]   INFO - exImpl$StubIndexInitialization - Initialization done: 70 
+2020-09-15 12:37:39,939 [   3221]   INFO - j.ide.script.IdeStartupScripts - 0 startup script(s) found 
+2020-09-15 12:37:40,002 [   3284]   INFO -              PerformancePlugin - Performance Plugin is in silent mode 
+2020-09-15 12:37:40,439 [   3721]   INFO - llij.database.util.SqlDialects - SQL dialects initialized in 12 ms 
+2020-09-15 12:37:41,626 [   4908]   INFO - .diagnostic.PerformanceWatcher - Pushing properties took 1446ms; general responsiveness: ok; EDT responsiveness: 1/2 sluggish 
+2020-09-15 12:37:41,753 [   5035]   INFO - .diagnostic.PerformanceWatcher - Indexable file iteration took 126ms; general responsiveness: ok; EDT responsiveness: ok 
+2020-09-15 12:37:41,895 [   5177]   INFO - cloudConfig.CloudConfigManager - === StatusBar ignored === 
+2020-09-15 12:37:41,949 [   5231]   INFO - .diagnostic.PerformanceWatcher - Post-startup activities under progress took 1877ms; general responsiveness: ok; EDT responsiveness: 1/2 sluggish 
+2020-09-15 12:37:42,022 [   5304]   INFO - openapi.wm.impl.PaintersHelper - (BufferedImageGraphicsConfig) 1921x1040 non-accelerated non-volatile image created 
+2020-09-15 12:37:42,164 [   5446]   INFO - tartup.impl.StartupManagerImpl - D:/workspace/php/mycms/.idea case-sensitivity: expected=false actual=false 
+2020-09-15 12:37:42,189 [   5471]   WARN - om.intellij.util.FieldAccessor - Field not found: javafx.embed.swing.JFXPanel.scaleFactor 
+2020-09-15 12:37:42,227 [   5509]   INFO -  #git4idea.commands.GitHandler - [.] git version 
+2020-09-15 12:37:42,273 [   5555]   INFO -  #git4idea.commands.GitHandler - git version 2.28.0.windows.1 
+2020-09-15 12:37:42,311 [   5593]   INFO - ea.config.GitExecutableManager - Git version for C:\Git\cmd\git.exe : 2.28.0 
+2020-09-15 12:37:42,458 [   5740]   INFO - omposerSettingSyncConfigClient - Composer synchronization is enabled -> update IDE settings based on composer.json 
+2020-09-15 12:37:42,472 [   5754]   INFO - omposerSettingSyncConfigClient - Composer synchronization is enabled -> update IDE settings based on composer.json 
+2020-09-15 12:37:42,502 [   5784]   INFO - pl.ProjectRootManagerComponent - project roots have changed 
+2020-09-15 12:37:42,524 [   5806]   INFO - tor.impl.FileEditorManagerImpl - Project opening took 3938 ms 
+2020-09-15 12:37:42,951 [   6233]   INFO - .diagnostic.PerformanceWatcher - Pushing properties took 157ms; general responsiveness: ok; EDT responsiveness: ok 
+2020-09-15 12:37:43,222 [   6504]   INFO - .diagnostic.PerformanceWatcher - Indexable file iteration took 270ms; general responsiveness: ok; EDT responsiveness: ok 
+2020-09-15 12:37:43,339 [   6621]   INFO - pl.ProjectRootManagerComponent - project roots have changed 
+2020-09-15 12:37:43,464 [   6746]   INFO - .diagnostic.PerformanceWatcher - Pushing properties took 25ms; general responsiveness: ok; EDT responsiveness: ok 
+2020-09-15 12:37:43,479 [   6761]   INFO - .diagnostic.PerformanceWatcher - Indexable file iteration took 15ms; general responsiveness: ok; EDT responsiveness: ok 
+2020-09-15 12:37:50,450 [  13732]   INFO - j.ide.plugins.RepositoryHelper - using cached plugin list (updated at 2020/9/15 12:30) 
+2020-09-15 12:37:58,849 [  22131]   INFO - ge.ExternalProjectsDataStorage - Load external projects data in 1 millis (read time: 1) 
+2020-09-15 12:37:59,164 [  22446]   INFO - tion.PackageJsonUpdateNotifier - processPackageJsonFiles [file://D:/workspace/php/mycms/package.json] 
+2020-09-15 12:38:04,357 [  27639]   INFO - rationStore.ComponentStoreImpl - Saving Project (name=mycms, containerState=ACTIVE, componentStore=D:\workspace\php\mycms) ChangeListManager took 14 ms 
+2020-09-15 12:38:04,535 [  27817]   INFO - org.jetbrains.io.BuiltInServer - web server stopped 
+2020-09-15 12:38:04,535 [  27817]   INFO - Types.impl.FileTypeManagerImpl - 28 auto-detected files. Detection took 23 ms 
+2020-09-15 12:38:04,546 [  27828]   INFO - stubs.SerializationManagerImpl - START StubSerializationManager SHUTDOWN 
+2020-09-15 12:38:04,547 [  27829]   INFO - stubs.SerializationManagerImpl - END StubSerializationManager SHUTDOWN 
+2020-09-15 12:38:04,557 [  27839]   INFO - pl.local.NativeFileWatcherImpl - Watcher terminated with exit code 0 
+2020-09-15 12:38:04,557 [  27839]   INFO - il.indexing.FileBasedIndexImpl - START INDEX SHUTDOWN 
+2020-09-15 12:38:04,596 [  27878]   INFO - il.indexing.FileBasedIndexImpl - END INDEX SHUTDOWN 
+2020-09-15 12:38:04,596 [  27878]   INFO - newvfs.persistent.PersistentFS - VFS dispose started 
+2020-09-15 12:38:04,650 [  27932]   INFO - newvfs.persistent.PersistentFS - VFS dispose completed 
+2020-09-15 12:38:04,653 [  27935]   INFO -        #com.intellij.idea.Main - ------------------------------------------------------ IDE SHUTDOWN ------------------------------------------------------ 
+2020-09-15 12:38:04,654 [  27936]   INFO - org.jetbrains.io.BuiltInServer - web server stopped 
