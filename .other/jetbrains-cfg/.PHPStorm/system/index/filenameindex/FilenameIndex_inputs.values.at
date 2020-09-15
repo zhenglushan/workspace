@@ -1,224 +1,0 @@
-IsEmptyString.phpMatchesPattern.phpStringContains.phpStringEndsWith.phpStringStartsWith.phpSubstringMatcher.phpIsEqualIgnoringCase.phpStringContainsInOrder.php IsEqualIgnoringWhiteSpace.php!StringContainsIgnoringCase.phpTypeIsArray.phpIsDouble.phpIsObject.phpIsScalar.phpIsString.phpIsBoolean.phpIsInteger.phpIsNumeric.phpIsCallable.phpIsResource.php	ArraysIsArray.phpMatchingOnce.phpIsArrayWithSize.phpIsArrayContaining.phpSeriesMatchingOnce.phpIsArrayContainingKey.phpIsArrayContainingInOrder.php"IsArrayContainingInAnyOrder.php$!IsArrayContainingKeyValuePair.php	NumberIsCloseTo.phpOrderingComparison.phpInternalSelfDescribingValue.phpUtil.php
-CollectionIsEmptyTraversable.phpIsTraversableWithSize.phpMatcher.phpMatchers.phpBaseMatcher.phpDescription.phpMatcherAssert.phpAssertionError.phpFeatureMatcher.phpSelfDescribing.phpBaseDescription.phpNullDescription.phpTypeSafeMatcher.phpDiagnosingMatcher.phpStringDescription.php TypeSafeDiagnosingMatcher.phpHamcrest.php	.gush.yml	generatorpartsfile_header.txtmatchers_footer.txtmatchers_header.txtfunctions_footer.txtfunctions_header.txtmatchers_imports.txtfunctions_imports.txt
-run.phpFactoryCall.phpFactoryFile.phpFactoryClass.phpFactoryMethod.phpFactoryGenerator.phpFactoryParameter.phpStaticMethodFile.phpGlobalFunctionFile.php	README.md
-.gitignore.travis.ymlCHANGES.txtLICENSE.txtcomposer.json.coveralls.yml	fideloperproxysrcTrustProxies.php"TrustedProxyServiceProvider.php	configtrustedproxy.php
-LICENSE.mdcomposer.json	paragonierandom_compatlib
-random.phpdistrandom_compat.phar.pubkey random_compat.phar.pubkey.ascotherbuild_phar.php
-LICENSE	psalm.xmlbuild-phar.shcomposer.jsonpsalm-autoload.php	phpoption	phpoptionsrc	PhpOptionNone.phpSome.php
-Option.phpLazyOption.php
-LICENSEMakefilecomposer.json	sebastiandiffsrc	OutputDiffOnlyOutputBuilder.phpUnifiedDiffOutputBuilder.php!AbstractChunkOutputBuilder.php!DiffOutputBuilderInterface.php%"StrictUnifiedDiffOutputBuilder.phpDiff.phpLine.php	Chunk.php	ExceptionException.phpConfigurationException.phpInvalidArgumentException.php
-Differ.php
-Parser.php)&LongestCommonSubsequenceCalculator.php63TimeEfficientLongestCommonSubsequenceCalculator.php85MemoryEfficientLongestCommonSubsequenceCalculator.phptestsUtilsFileUtils.phpUnifiedDiffAssertTrait.php!UnifiedDiffAssertTraitTest.php,)UnifiedDiffAssertTraitIntegrationTest.php	OutputIntegration.+UnifiedDiffOutputBuilderIntegrationTest.php41StrictUnifiedDiffOutputBuilderIntegrationTest.php DiffOnlyOutputBuilderTest.php# UnifiedDiffOutputBuilderTest.php%"AbstractChunkOutputBuilderTest.php)&StrictUnifiedDiffOutputBuilderTest.php+(UnifiedDiffOutputBuilderDataProvider.php1.StrictUnifiedDiffOutputBuilderDataProvider.phpfixturesout
-.gitignore.editorconfig	patch.txt
-patch2.txt.editorconfigserialized_diff.bin(%UnifiedDiffAssertTraitIntegrationTest
-1_a.txt
-1_b.txt
-2_a.txt
-2_b.txt	Exception!ConfigurationExceptionTest.php# InvalidArgumentExceptionTest.phpDiffTest.phpLineTest.phpChunkTest.phpDifferTest.phpParserTest.php# LongestCommonSubsequenceTest.php&#TimeEfficientImplementationTest.php(%MemoryEfficientImplementationTest.php
-.github	stale.yml
-LICENSE	build.xml	README.md
-.gitignore.travis.ymlphpunit.xml.php_cs.distChangeLog.mdcomposer.jsontypesrcType.php	exceptionException.phpRuntimeException.phpNullType.phpTypeName.phpVoidType.phpObjectType.phpSimpleType.phpUnknownType.phpCallableType.phpIterableType.phpGenericObjectType.php.idea
-php.xml
-vcs.xmlmisc.xmltype.imlmodules.xmlinspectionProfilesProject_Default.xml"php-inspections-ea-ultimate.xmltestsunitTypeTest.phpNullTypeTest.phpTypeNameTest.phpVoidTypeTest.phpObjectTypeTest.phpSimpleTypeTest.phpUnknownTypeTest.phpCallableTypeTest.phpIterableTypeTest.phpGenericObjectTypeTest.php_fixtureIterator.phpChildClass.phpParentClass.phpcallback_function.phpClassWithInvokeMethod.phpClassWithCallbackMethods.php
-.githubFUNDING.yml
-LICENSE	build.xml	phive.xml	psalm.xml	README.md
-.gitignore.travis.ymlphpunit.xml.php_cs.distChangeLog.mdcomposer.json.gitattributes
-versionsrcVersion.php
-.php_cs
-LICENSE	README.md
-.gitignorecomposer.json.gitattributesexportersrcExporter.phptestsExporterTest.php
-.githubFUNDING.yml
-LICENSE	build.xml	README.md
-.gitignore.travis.ymlphpunit.xml.php_cs.distChangeLog.mdcomposer.json
-comparatorsrcFactory.phpComparator.phpTypeComparator.phpArrayComparator.phpDoubleComparator.phpObjectComparator.phpScalarComparator.phpComparisonFailure.phpDOMNodeComparator.phpNumericComparator.phpDateTimeComparator.phpResourceComparator.phpExceptionComparator.phpMockObjectComparator.php!SplObjectStorageComparator.phptests_fixtureBook.php
-Author.php
-Struct.phpTestClass.phpSampleClass.phpClassWithToString.phpTestClassComparator.phpFactoryTest.phpTypeComparatorTest.phpArrayComparatorTest.phpDoubleComparatorTest.phpObjectComparatorTest.phpScalarComparatorTest.phpComparisonFailureTest.phpDOMNodeComparatorTest.phpNumericComparatorTest.phpDateTimeComparatorTest.phpResourceComparatorTest.phpExceptionComparatorTest.phpMockObjectComparatorTest.php%"SplObjectStorageComparatorTest.php
-.github	stale.yml
-LICENSE	build.xml	README.md
-.gitignore.travis.ymlphpunit.xml.php_cs.distChangeLog.mdcomposer.jsonenvironmentsrcConsole.phpRuntime.phpOperatingSystem.phptestsConsoleTest.phpRuntimeTest.phpOperatingSystemTest.php
-.githubFUNDING.yml
-LICENSE	build.xml	README.md
-.gitignore.travis.ymlphpunit.xml.php_cs.distChangeLog.mdcomposer.jsonglobal-statesrc
-exceptionsException.phpRuntimeException.phpRestorer.phpSnapshot.phpBlacklist.phpCodeExporter.phptests_fixtureSnapshotClass.phpSnapshotTrait.phpBlacklistedClass.phpSnapshotFunctions.phpSnapshotDomDocument.phpBlacklistedInterface.phpBlacklistedChildClass.phpBlacklistedImplementor.phpRestorerTest.phpSnapshotTest.phpBlacklistTest.phpCodeExporterTest.php
-.github	stale.yml
-LICENSE	build.xml	README.md
-.gitignore.travis.ymlphpunit.xml.php_cs.distChangeLog.mdcomposer.jsonobject-reflectorsrcException.phpObjectReflector.phpInvalidArgumentException.phptests_fixtureChildClass.phpParentClass.php$!ClassWithIntegerAttributeName.phpObjectReflectorTest.php
-.php_cs
-LICENSE	build.xml	README.md
-.gitignore.travis.ymlphpunit.xmlChangeLog.mdcomposer.jsonobject-enumeratorsrcException.phpEnumerator.phpInvalidArgumentException.phptests_fixtureExceptionThrower.phpEnumeratorTest.php
-.php_cs
-LICENSE	build.xml	README.md
-.gitignore.travis.ymlphpunit.xmlChangeLog.mdcomposer.jsonrecursion-contextsrcContext.phpException.phpInvalidArgumentException.phptestsContextTest.php
-LICENSE	build.xml	README.md
-.gitignore.travis.ymlphpunit.xmlcomposer.jsonresource-operationssrcResourceOperations.phpbuildgenerate.phptestsResourceOperationsTest.php
-.github	stale.yml
-LICENSE	build.xml	README.md
-.gitignore.php_cs.distChangeLog.mdcomposer.jsoncode-unit-reverse-lookupsrc
-Wizard.phptestsWizardTest.php
-.php_cs
-LICENSE	build.xml	README.md
-.gitignore.travis.ymlphpunit.xmlChangeLog.mdcomposer.json	webmozart	assertsrc	Mixin.php
-Assert.php
-LICENSE	psalm.xml	README.mdCHANGELOG.md.editorconfigcomposer.json
-fzaninottofakersrcFakerORMSpotPopulator.phpEntityPopulator.phpColumnTypeGuesser.php	PropelPopulator.phpEntityPopulator.phpColumnTypeGuesser.php
-CakePHPPopulator.phpEntityPopulator.phpColumnTypeGuesser.php
-Propel2Populator.phpEntityPopulator.phpColumnTypeGuesser.phpDoctrinePopulator.phpEntityPopulator.phpColumnTypeGuesser.phpMandangoPopulator.phpEntityPopulator.phpColumnTypeGuesser.php
-GuesserName.phpProviderar_JOText.php
-Person.phpAddress.phpCompany.phpInternet.phpar_SAText.php	Color.php
-Person.phpAddress.phpCompany.phpPayment.phpInternet.phpat_ATPayment.phpbg_BG
-Person.phpPayment.phpInternet.phpPhoneNumber.phpbn_BD	Utils.php
-Person.phpAddress.phpCompany.phpPhoneNumber.phpcs_CZText.php
-Person.phpAddress.phpCompany.phpPayment.phpDateTime.phpInternet.phpPhoneNumber.phpda_DK
-Person.phpAddress.phpCompany.phpPayment.phpInternet.phpPhoneNumber.phpde_ATText.php
-Person.phpAddress.phpCompany.phpPayment.phpInternet.phpPhoneNumber.phpde_CHText.php
-Person.phpAddress.phpCompany.phpPayment.phpInternet.phpPhoneNumber.phpde_DEText.php
-Person.phpAddress.phpCompany.phpPayment.phpInternet.phpPhoneNumber.phpel_CY
-Person.phpAddress.phpCompany.phpPayment.phpInternet.phpPhoneNumber.phpel_GRText.php
-Person.phpAddress.phpCompany.phpPayment.phpPhoneNumber.phpen_AUAddress.phpInternet.phpPhoneNumber.phpen_CAAddress.phpPhoneNumber.phpen_GB
-Person.phpAddress.phpPayment.phpInternet.phpPhoneNumber.phpen_HKAddress.phpInternet.phpPhoneNumber.phpen_IN
-Person.phpAddress.phpInternet.phpPhoneNumber.phpen_NG
-Person.phpAddress.phpInternet.phpPhoneNumber.phpen_NZAddress.phpInternet.phpPhoneNumber.phpen_PHAddress.phpPhoneNumber.phpen_SGAddress.phpPhoneNumber.phpen_UG
-Person.phpAddress.phpInternet.phpPhoneNumber.phpen_USText.php
-Person.phpAddress.phpCompany.phpPayment.phpPhoneNumber.phpen_ZA
-Person.phpAddress.phpCompany.phpInternet.phpPhoneNumber.phpes_AR
-Person.phpAddress.phpCompany.phpPhoneNumber.phpes_ESText.php	Color.php
-Person.phpAddress.phpCompany.phpPayment.phpInternet.phpPhoneNumber.phpes_PE
-Person.phpAddress.phpCompany.phpPhoneNumber.phpes_VE
-Person.phpAddress.phpCompany.phpInternet.phpPhoneNumber.phpet_EE
-Person.phpfa_IRText.php
-Person.phpAddress.phpCompany.phpInternet.phpPhoneNumber.phpfi_FI
-Person.phpAddress.phpCompany.phpPayment.phpInternet.phpPhoneNumber.phpfr_BE
-Person.phpAddress.phpCompany.phpPayment.phpInternet.phpPhoneNumber.phpfr_CAText.php
-Person.phpAddress.phpCompany.phpfr_CHText.php
-Person.phpAddress.phpCompany.phpPayment.phpInternet.phpPhoneNumber.phpfr_FRText.php
-Person.phpAddress.phpCompany.phpPayment.phpInternet.phpPhoneNumber.phphe_IL
-Person.phpAddress.phpCompany.phpPayment.phpPhoneNumber.phphr_HR
-Person.phpAddress.phpCompany.phpPayment.phpPhoneNumber.phphu_HUText.php
-Person.phpAddress.phpCompany.phpPayment.phpPhoneNumber.phphy_AM	Color.php
-Person.phpAddress.phpCompany.phpInternet.phpPhoneNumber.phpid_ID	Color.php
-Person.phpAddress.phpCompany.phpInternet.phpPhoneNumber.phpis_IS
-Person.phpAddress.phpCompany.phpPayment.phpInternet.phpPhoneNumber.phpit_CHText.php
-Person.phpAddress.phpCompany.phpPayment.phpInternet.phpPhoneNumber.phpit_ITText.php
-Person.phpAddress.phpCompany.phpPayment.phpInternet.phpPhoneNumber.phpja_JPText.php
-Person.phpAddress.phpCompany.phpInternet.phpPhoneNumber.phpka_GEText.php	Color.php
-Person.phpAddress.phpCompany.phpPayment.phpDateTime.phpInternet.phpPhoneNumber.phpkk_KZText.php	Color.php
-Person.phpAddress.phpCompany.phpPayment.phpInternet.phpPhoneNumber.phpko_KRText.php
-Person.phpAddress.phpCompany.phpInternet.phpPhoneNumber.phplt_LT
-Person.phpAddress.phpCompany.phpPayment.phpInternet.phpPhoneNumber.phplv_LV	Color.php
-Person.phpAddress.phpPayment.phpInternet.phpPhoneNumber.phpme_ME
-Person.phpAddress.phpCompany.phpPayment.phpPhoneNumber.phpmn_MN
-Person.phpPhoneNumber.phpms_MY
-Person.phpAddress.phpCompany.phpPayment.phpPhoneNumber.phpMiscellaneous.phpnb_NO
-Person.phpAddress.phpCompany.phpPayment.phpPhoneNumber.phpne_NP
-Person.phpAddress.phpInternet.phpPhoneNumber.phpnl_BEText.php
-Person.phpAddress.phpCompany.phpPayment.phpInternet.phpPhoneNumber.phpnl_NLText.php	Color.php
-Person.phpAddress.phpCompany.phpPayment.phpInternet.phpPhoneNumber.phppl_PLText.php
-Person.phpAddress.phpCompany.phpPayment.phpInternet.phpPhoneNumber.phppt_BR
-Person.phpAddress.phpCompany.phpPayment.phpInternet.phpcheck_digit.phpPhoneNumber.phppt_PT
-Person.phpAddress.phpCompany.phpPayment.phpInternet.phpPhoneNumber.phpro_MDText.php
-Person.phpAddress.phpPayment.phpPhoneNumber.phpro_ROText.php
-Person.phpAddress.phpPayment.phpPhoneNumber.phpru_RUText.php	Color.php
-Person.phpAddress.phpCompany.phpPayment.phpInternet.phpPhoneNumber.phpsk_SK
-Person.phpAddress.phpCompany.phpPayment.phpInternet.phpPhoneNumber.phpsl_SI
-Person.phpAddress.phpCompany.phpPayment.phpInternet.phpPhoneNumber.phpsr_RS
-Person.phpAddress.phpPayment.phpsv_SE
-Person.phpAddress.phpCompany.phpPayment.phpPhoneNumber.phpth_TH	Color.php
-Person.phpAddress.phpCompany.phpPayment.phpInternet.phpPhoneNumber.phptr_TR	Color.php
-Person.phpAddress.phpCompany.phpPayment.phpDateTime.phpInternet.phpPhoneNumber.phpuk_UAText.php	Color.php
-Person.phpAddress.phpCompany.phpPayment.phpInternet.phpPhoneNumber.phpvi_VN	Color.php
-Person.phpAddress.phpInternet.phpPhoneNumber.phpzh_CN	Color.php
-Person.phpAddress.phpCompany.phpPayment.phpDateTime.phpInternet.phpPhoneNumber.phpzh_TWText.php	Color.php
-Person.phpAddress.phpCompany.phpPayment.phpDateTime.phpInternet.phpPhoneNumber.phpBase.phpFile.phpText.phpUuid.php	Color.php	Image.php	Lorem.php
-Biased.php
-Person.php
-sr_Cyrl_RS
-Person.phpAddress.phpPayment.php
-sr_Latn_RS
-Person.phpAddress.phpPayment.phpAddress.phpBarcode.phpCompany.phpPayment.phpDateTime.phpInternet.phpHtmlLorem.phpUserAgent.phpPhoneNumber.phpMiscellaneous.php
-Calculator
-Ean.php
-Inn.phpIban.phpLuhn.phpTCNo.phpFactory.phpGenerator.phpDocumentor.phpValidGenerator.phpUniqueGenerator.phpDefaultGenerator.phpautoload.php
-.githubISSUE_TEMPLATEbug_report.md
-.travis	xdebug.sh
-LICENSE	readme.mdCHANGELOG.mdcomposer.json
-nunomaduro	collisionsrcAdapters
-LaravelInspector.phpExceptionHandler.phpCollisionServiceProvider.php
-PhpunitListener.php	ContractsAdapters
-PhpunitListener.php
-Writer.phpHandler.phpProvider.phpHighlighter.phpArgumentFormatter.php
-Writer.phpHandler.phpProvider.phpHighlighter.phpArgumentFormatter.php	README.md
-LICENSE.mdcomposer.jsonphpunit.xml.distphpstan.neon.distswiftmailerswiftmailerdoc	index.rstheaders.rstplugins.rstsending.rstjapanese.rstmessages.rstintroduction.rstlib
-classesSwiftMime
-HeadersDateHeader.phpPathHeader.phpMailboxHeader.phpAbstractHeader.phpOpenDKIMHeader.phpUnstructuredHeader.phpParameterizedHeader.phpIdentificationHeader.php
-Header.phpMimePart.phpHeaderEncoderQpHeaderEncoder.phpBase64HeaderEncoder.phpAttachment.phpContentEncoderQpContentEncoder.phpRawContentEncoder.phpNullContentEncoder.phpPlainContentEncoder.phpBase64ContentEncoder.phpQpContentEncoderProxy.phpNativeQpContentEncoder.phpIdGenerator.phpEmbeddedFile.phpHeaderEncoder.phpSimpleMessage.phpContentEncoder.phpCharsetObserver.phpSimpleHeaderSet.phpEncodingObserver.phpSimpleMimeEntity.phpSimpleHeaderFactory.php	Events	Event.phpSendEvent.phpEventObject.phpCommandEvent.phpSendListener.phpEventListener.phpResponseEvent.phpCommandListener.phpEventDispatcher.phpResponseListener.phpTransportChangeEvent.phpSimpleEventDispatcher.phpTransportChangeListener.phpTransportExceptionEvent.php!TransportExceptionListener.php	MailerRecipientIterator.phpArrayRecipientIterator.php
-EncoderQpEncoder.phpBase64Encoder.phpRfc2231Encoder.php
-PluginsPopPop3Exception.phpPop3Connection.php
-LoggersEchoLogger.phpArrayLogger.php	DecoratorReplacements.php	ReportersHitReporter.phpHtmlReporter.php	Timer.php
-Logger.phpSleeper.phpReporter.phpLoggerPlugin.phpMessageLogger.phpReporterPlugin.phpAntiFloodPlugin.phpDecoratorPlugin.phpThrottlerPlugin.phpImpersonatePlugin.phpRedirectingPlugin.phpPopBeforeSmtpPlugin.phpBandwidthMonitorPlugin.php
-SignersBodySigner.phpDKIMSigner.phpSMimeSigner.phpHeaderSigner.phpOpenDKIMSigner.phpDomainKeySigner.phpKeyCacheDiskKeyCache.phpNullKeyCache.phpArrayKeyCache.phpKeyCacheInputStream.php SimpleKeyCacheInputStream.php	Image.php	Spool.php	TransportEsmtpAuthNTLMAuthenticator.phpLoginAuthenticator.phpPlainAuthenticator.phpCramMd5Authenticator.phpXOAuth2Authenticator.phpAuthHandler.phpAuthenticator.phpSmtpUtf8Handler.phpEightBitMimeHandler.phpIoBuffer.phpSmtpAgent.phpEsmtpHandler.phpStreamBuffer.phpNullTransport.phpEsmtpTransport.phpSpoolTransport.phpFailoverTransport.phpSendmailTransport.phpAbstractSmtpTransport.phpLoadBalancedTransport.php
-ByteStreamFileByteStream.phpArrayByteStream.phpTemporaryFileByteStream.php$!AbstractFilterableInputStream.php
-Mailer.php
-Signer.phpEncoder.phpMessage.phpKeyCache.phpMimePart.phpFileSpool.phpStreamFiltersStringReplacementFilter.php!ByteArrayReplacementFilter.php%"StringReplacementFilterFactory.phpTransport.phpAddressEncoderIdnAddressEncoder.phpUtf8AddressEncoder.phpAttachment.phpFileStream.phpFilterable.phpCharacterReaderUtf8Reader.phpUsAsciiReader.phpGenericFixedWidthReader.phpCharacterStreamNgCharacterStream.phpArrayCharacterStream.phpIdGenerator.phpIoException.phpMemorySpool.phpPreferences.phpEmbeddedFile.phpStreamFilter.phpNullTransport.phpSmtpTransport.phpAddressEncoder.phpSpoolTransport.phpSwiftException.phpCharacterReader.phpCharacterStream.phpInputByteStream.phpOutputByteStream.phpConfigurableSpool.phpFailoverTransport.phpSendmailTransport.phpCharacterReaderFactory# SimpleCharacterReaderFactory.phpTransportException.phpDependencyContainer.phpDependencyException.phpLoadBalancedTransport.phpCharacterReaderFactory.phpRfcComplianceException.phpAddressEncoderException.phpReplacementFilterFactory.php	Swift.phpmime_types.phpdependency_mapsmime_deps.phpcache_deps.phpmessage_deps.phptransport_deps.phppreferences.phpswift_required.php(%swiftmailer_generate_mimes_config.phptestsbugSwiftBug34Test.phpBug35Test.phpBug38Test.phpBug51Test.phpBug71Test.phpBug76Test.phpBug111Test.phpBug118Test.phpBug206Test.phpBug274Test.phpBug518Test.phpBug534Test.phpBug650Test.php0-BugFileByteStreamConsecutiveReadCallsTest.phpunitSwiftMime
-HeadersDateHeaderTest.phpPathHeaderTest.phpMailboxHeaderTest.phpUnstructuredHeaderTest.phpParameterizedHeaderTest.phpIdentificationHeaderTest.phpHeaderEncoderQpHeaderEncoderTest.phpBase64HeaderEncoderTest.phpContentEncoderQpContentEncoderTest.phpPlainContentEncoderTest.phpBase64ContentEncoderTest.phpMimePartTest.phpAttachmentTest.phpIdGeneratorTest.phpEmbeddedFileTest.phpSimpleMessageTest.phpSimpleHeaderSetTest.phpSimpleMimeEntityTest.phpAbstractMimeEntityTest.phpSimpleHeaderFactoryTest.php	EventsSendEventTest.phpEventObjectTest.phpCommandEventTest.phpResponseEventTest.phpTransportChangeEventTest.php SimpleEventDispatcherTest.php"TransportExceptionEventTest.php	Mailer!ArrayRecipientIteratorTest.php
-EncoderQpEncoderTest.phpBase64EncoderTest.phpRfc2231EncoderTest.php
-Plugins
-LoggersEchoLoggerTest.phpArrayLoggerTest.php	ReportersHitReporterTest.phpHtmlReporterTest.phpLoggerPluginTest.phpReporterPluginTest.phpAntiFloodPluginTest.phpDecoratorPluginTest.phpThrottlerPluginTest.phpRedirectingPluginTest.phpPopBeforeSmtpPluginTest.php!BandwidthMonitorPluginTest.php
-SignersDKIMSignerTest.phpSMimeSignerTest.phpOpenDKIMSignerTest.phpKeyCacheArrayKeyCacheTest.php$!SimpleKeyCacheInputStreamTest.php	TransportEsmtpAuthNTLMAuthenticatorTest.phpLoginAuthenticatorTest.phpPlainAuthenticatorTest.phpCramMd5AuthenticatorTest.phpAuthHandlerTest.phpEsmtpTransportExtensionSupportTest.phpAbstractSmtpTest.phpStreamBufferTest.phpEsmtpTransportTest.phpFailoverTransportTest.phpSendmailTransportTest.php LoadBalancedTransportTest.php# AbstractSmtpEventSupportTest.php
-ByteStreamArrayByteStreamTest.phpStreamFilters"StringReplacementFilterTest.php%"ByteArrayReplacementFilterTest.php)&StringReplacementFilterFactoryTest.phpMailerTest.phpCharacterReaderUtf8ReaderTest.phpUsAsciiReaderTest.php"GenericFixedWidthReaderTest.phpCharacterStreamArrayCharacterStreamTest.phpMessageTest.phpDependencyContainerTest.phpsmokeSwiftSmokeBasicSmokeTest.phpAttachmentSmokeTest.phpInternationalSmokeTest.php"HtmlWithAttachmentSmokeTest.php_samplesdkimdkim.test.pubdkim.test.privfilesdata.txttextfile.zipswiftmailer.pngsmime	ca.crt	ca.key	CA.srlsign.crtsign.key	sign2.crt	sign2.keyencrypt.crtencrypt.keyencrypt2.crtencrypt2.keycreate-cert.shintermediate.crtintermediate.keycharsetsutf-8
-one.txt
-two.txt	three.txt
-iso-8859-1
-one.txtiso-2022-jp
-one.txtfixturesMimeEntityFixture.php
-acceptanceSwiftMimeHeaderEncoder(%Base64HeaderEncoderAcceptanceTest.phpContentEncoder%"QpContentEncoderAcceptanceTest.php(%PlainContentEncoderAcceptanceTest.php)&Base64ContentEncoderAcceptanceTest.php+(NativeQpContentEncoderAcceptanceTest.phpMimePartAcceptanceTest.phpAttachmentAcceptanceTest.php!EmbeddedFileAcceptanceTest.php"SimpleMessageAcceptanceTest.php
-EncoderQpEncoderAcceptanceTest.php"Base64EncoderAcceptanceTest.php# Rfc2231EncoderAcceptanceTest.phpKeyCache!DiskKeyCacheAcceptanceTest.php"ArrayKeyCacheAcceptanceTest.php	TransportStreamBufferSocketTimeoutTest.phpProcessAcceptanceTest.phpSslSocketAcceptanceTest.phpTlsSocketAcceptanceTest.php BasicSocketAcceptanceTest.php)&AbstractStreamBufferAcceptanceTest.php
-ByteStream# FileByteStreamAcceptanceTest.phpCharacterReaderFactory1.SimpleCharacterReaderFactoryAcceptanceTest.phpMessageAcceptanceTest.phpMimePartAcceptanceTest.phpAttachmentAcceptanceTest.php!EmbeddedFileAcceptanceTest.php(%DependencyContainerAcceptanceTest.phpbootstrap.phpStreamCollector.phpsmoke.conf.php.defaultSwiftMailerTestCase.phpacceptance.conf.php.defaultSwiftMailerSmokeTestCase.php IdenticalBinaryConstraint.php
-.githubISSUE_TEMPLATE.mdPULL_REQUEST_TEMPLATE.md
-CHANGES
-LICENSE	README.md
-.gitignore.travis.yml.php_cs.distcomposer.json.gitattributesphpunit.xml.distautoload.phptijsverkoyencss-to-inline-stylessrcCssRuleRule.phpProcessor.phpPropertyProperty.phpProcessor.phpProcessor.phpCssToInlineStyles.php
-LICENSE.mdcomposer.jsondragonmantankcron-expressionsrcCronHoursField.phpMonthField.phpFieldFactory.phpMinutesField.phpAbstractField.phpCronExpression.phpDayOfWeekField.phpFieldInterface.phpDayOfMonthField.phptestsCronHoursFieldTest.phpMonthFieldTest.phpFieldFactoryTest.phpMinutesFieldTest.phpAbstractFieldTest.phpCronExpressionTest.phpDayOfWeekFieldTest.phpDayOfMonthFieldTest.php
-LICENSE	README.mdCHANGELOG.md.editorconfigcomposer.jsonjakub-onderkaphp-console-colorsrcConsoleColor.phpInvalidStyleException.phptestsConsoleColorTest.php
-LICENSE	build.xml	README.md
-.gitignore.travis.ymlexample.phpphpunit.xmlcomposer.jsonphp-console-highlightersrcHighlighter.phptestsHigligterTest.php
-LICENSEexamplessnippet.phpwhole_file.phpwhole_file_line_numbers.php	build.xml	README.md
-.gitignore.travis.ymlphpunit.xmlcomposer.jsonphpdocumentortype-resolversrcTypesThis.php	Null_.php	Self_.php	True_.php	Void_.php
-Array_.php
-False_.php
-Float_.php
-Mixed_.php
-Scalar.phpBoolean.phpContext.phpInteger.phpObject_.phpParent_.phpStatic_.phpString_.phpCompound.phpNullable.phpCallable_.phpIterable_.phpResource_.phpCollection.phpExpression.phpClassString.phpAbstractList.phpIntersection.phpAggregatedType.phpContextFactory.phpType.phpTypeResolver.phpFqsenResolver.php
-LICENSE	README.mdcomposer.jsoncomposer.lockphpbench.jsonreflection-commonsrcFile.php	Fqsen.phpElement.phpProject.phpLocation.phpProjectFactory.php
-.github	workflowspush.ymldependabot.yml
-LICENSE	README.mdcomposer.jsonreflection-docblocksrcDocBlockTags
-FactoryStaticMethod.php
-See.phpLink.phpUses.phpVar_.php	FormatterAlignFormatter.phpPassthroughFormatter.php	Param.php	Reference
-Url.php	Fqsen.phpReference.php	Since.php
-Author.php
-Covers.php
-Method.php
-Source.php
-Throws.phpBaseTag.phpExample.phpGeneric.phpReturn_.phpVersion.phpProperty.phpFormatter.phpDeprecated.phpInvalidTag.phpTagWithType.phpPropertyRead.phpPropertyWrite.php
-Tag.phpSerializer.phpTagFactory.phpDescription.phpExampleFinder.phpDescriptionFactory.phpStandardTagFactory.phpDocBlock.phpDocBlockFactory.phpDocBlockFactoryInterface.php
-LICENSE	README.mdcomposer.json
-artisan
-storageapp	public
-.gitignore
-.gitignorelogs
-.gitignore	frameworkcachedata
-.gitignore
-.gitignoreviews
-.gitignore
-testing
-.gitignoresessions
-.gitignore
-.gitignore� 项目说明.mddatabaseseedsDatabaseSeeder.php	factoriesUserFactory.php
-.gitignore
-migrations+(2014_10_12_000000_create_users_table.php1.2019_08_19_000000_create_failed_jobs_table.php522014_10_12_100000_create_password_resets_table.php	bootstrapcache
-.gitignorepackages.phpservices.php
-app.php	README.md	resourcesjs	app.jsbootstrap.jslangenauth.phppasswords.phppagination.phpvalidation.phpsassapp.scssviewswelcome.blade.php
-.gitignore
-server.phpphpunit.xml.env.example.styleci.ymlpackage.json.editorconfigcomposer.jsoncomposer.lock.gitattributeswebpack.mix.js.idea	mycms.imlworkspace.xmlmisc.xml
-vcs.xmlmodules.xml
-.gitignore	test.phar.pharstub.phpsignature.binmanifest.xml
-php.xmlcomposerJson.xmllaravel-plugin.xmlextResources
