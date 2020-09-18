@@ -201,14 +201,151 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 ### 配置 `前端` 代码补全插件
 这里是指包括 `HTML`、`CSS` 和 `JavaScript`、`TypeScript` 四个方面的代码补全：
 
-
 ### 配置 `PHP` 代码补全插件
+
+```shell
+npm i intelephense -g
+```
+
+```shell
+coc-phpls
+```
 
 #### 配置 `Laravel` 代码补全插件
 
+
+
 ### 配置 `Python` 代码补全插件
+
+```shell
+pip install pylint
+pip install jedi
+pip install pynvim
+```
+
 ### 配置 `Java` 代码补全插件
+
+首先，安装 `jdk-8u261-windows-x64.exe` 软件；
+
+然后，配置 `Java` 环境变量：
+
+|           |                                          |      |
+| --------- | ---------------------------------------- | ---- |
+| JAVA_HOME | C:\Java\jdk1.8.0_261                     |      |
+| classpath | .;%JAVA_HOME%\lib                        |      |
+| Path      | %JAVA_HOME%\bin<br />%JAVA_HOME%\jre\bin |      |
+
+接着，安装 `coc-java`；
+
+下一步，编辑 `.java` 文件: 这一步会自动下载 `jdt.ls` 服务。下载时，下载失败，提示如下信息：
+
+```shell
+[coc.nvim] Download jdt.ls failed, you can download it at https://download.eclipse.org/jdtls/snapshots/?d
+```
+
+然后解压缩到 `C:\Users\Administrator\AppData\Local\coc\extensions\coc-java-data\server` 目录下，如下图所示：
+
+![image-20200918092318014](Windows 平台/image-20200918092318014.png)
+
+然后用 `NeoVim` 编辑 `.java` 文件，提示如下错误信息：
+
+```shell
+[coc.nvim] The "java" server crashed 5 times in the last 3 minutes. The server will not be restarted.
+```
+
+调试输出：
+
+```shell
+https://github.com/neoclide/coc.nvim/wiki/Debug-language-server#using-output-channel
+```
+
+
+
+
+
+
+
+配置项参考地址：
+
+```shell
+https://github.com/neoclide/coc-java
+```
+
+
+
 ### 配置 `Go` 代码补全插件
+
+安装 `Go` 软件 ： 会自动把 `C:\Go\bin` 加入 `Path` 环境变量；
+
+配置 `Go` 环境变量 ：
+
+```shell
+GO111MODULE : on
+GOPROXY = https://goproxy.cn
+```
+
+如下图所示：
+
+![image-20200917165732765](Windows 平台/image-20200917165732765.png)
+
+安装 `gopls`：
+
+```shell
+go get golang.org/x/tools/gopls@latest
+```
+
+打开 `coc.nvim` 配置文件添加如下配置：
+
+```shell
+	{
+		"languageserver": {
+			"golang": {
+				"command": "gopls",
+				"rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
+				"filetypes": ["go"]
+			}
+		}
+	}
+```
+
+然后安装 `coc-go` 插件；
+
+创建项目：
+
+```shell
+go mod init 项目
+```
+
+安装其它库文件：
+
+```shell
+go get github.com/beego/bee
+```
+
+示例代码：
+
+```shell
+package main
+fun main(){
+	beego.Run()
+}
+```
+
+```shell
+go get -u github.com/gin-gonic/gin
+```
+
+示例代码：
+
+```shell
+package main
+fun main(){
+	run := gin.Default()
+	run.GET()
+	run.Run()
+}
+```
+
 ### 配置 `C` 和 `C++` 代码补全插件
 ### 配置 `C#` 代码补全插件
 
