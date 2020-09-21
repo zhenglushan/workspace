@@ -29,35 +29,25 @@ FireFox WebDriver 下载地址:
 https://github.com/mozilla/geckodriver/releases/
 
 '''
-import datetime
-import hashlib
+import time
+import re
 import os
+import hashlib
 import shutil
 import random
-import re
-import time
-from bs4 import BeautifulSoup
-import requests
-from selenium.webdriver.chrome.options import Options
-from ScrapyMongoDBForSearch.settings import SQL_DATETIME_FORMAT
-import tldextract
-
-import MySQLdb
-import MySQLdb.cursors
-from ScrapyMongoDBForSearch.settings import MYSQL_HOST, MYSQL_DBNAME, MYSQL_USER, MYSQL_PASSWORD, MYSQL_CHARSET
-from ScrapyMongoDBForSearch.settings import IMAGES_STORE
-
-import time
-import re
-import os
-import hashlib
-from urllib import parse
+import math
 import datetime
 import requests
+from urllib import parse
 from random import choice
-import math
-
-from ScrapyMongoDBForSearch.settings import SQL_DATETIME_FORMAT
+import tldextract
+from bs4 import BeautifulSoup
+from selenium.webdriver.chrome.options import Options
+from common_scrapy.settings import SQL_DATETIME_FORMAT
+import MySQLdb
+import MySQLdb.cursors
+from common_scrapy.settings import MYSQL_HOST, MYSQL_DBNAME, MYSQL_USER, MYSQL_PASSWORD, MYSQL_CHARSET
+from common_scrapy.settings import IMAGES_STORE
 
 '''
     定义变量
@@ -69,7 +59,6 @@ baidu_user_agent = "Mozilla/5.0 (compatible; Baiduspider/2.0;+http://www.baidu.c
 google_user_agent = "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
 firefox_user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0"
 chrome_user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
-
 
 
 def get_s_d_s(fulldomain):
@@ -1118,7 +1107,7 @@ def produce_paging_url(url, pageid, sepa='_'):
         return ''
 
 
-def raplace_domains(str):
+def replace_domains(str):
     '''
     把正文中包含的网址都替换为空
     '''
@@ -1169,7 +1158,6 @@ def replace_qihoo360(str):
 
     str = str.strip()
     return str
-
 
 
 if __name__ == '__main__':

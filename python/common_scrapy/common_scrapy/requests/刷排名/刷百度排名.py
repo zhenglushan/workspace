@@ -11,7 +11,7 @@ import random
 import requests
 from time import sleep
 from scrapy.http import HtmlResponse
-from ScrapyMongoDBForSearch.工具.通用工具 import pc_user_agent_arr, m_user_agent_arr
+from common_scrapy.工具.通用.方法库 import pc_user_agent_arr,m_user_agent_arr
 
 s_word = '厦门SEO'
 s_url = 'www.suyyw.com'

@@ -10,12 +10,13 @@ import requests
 from urllib import parse
 from time import sleep
 from scrapy.http import HtmlResponse
-from scrapy_mongodb_for_search.spiders._5118_cookie import _5118_cookie
+from common_scrapy.requests.五一一八._5118_cookie import _5118_cookie
 
+from common_scrapy.requests.五一一八._5118_关键词加密 import GetConvertKeyword
 """
 挖掘长尾词
 """
-from scrapy_mongodb_for_search.spiders._5118_关键词加密 import GetConvertKeyword
+
 
 ci_url = "https://ci.5118.com/"
 

@@ -29,7 +29,7 @@ import re
 import jieba
 import jieba.analyse
 import jieba.posseg as pseg
-from ScrapyMongoDBForSearch.工具.通用工具 import is_number, returnDictPath, filter_all_html
+from common_scrapy.工具.通用.方法库 import is_number, returnDictPath, filter_all_html
 
 
 class FenCi():

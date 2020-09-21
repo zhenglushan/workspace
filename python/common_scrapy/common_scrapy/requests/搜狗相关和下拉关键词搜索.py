@@ -5,7 +5,6 @@
 # @DATETime   : 2020/4/8 10:50
 # @Author     : 笑看风云
 
-
 import requests
 from urllib import parse
 from scrapy.http import HtmlResponse

@@ -6,7 +6,8 @@
 # @Author     : 笑看风云
 import os
 import re
-from scrapy_mongodb_for_search.spiders.公司爬虫.公共工具._google import Return_tk
+from common_scrapy.requests.公司爬虫.公共工具._google import Return_tk
+
 import time
 
 if __name__ == "__main__":

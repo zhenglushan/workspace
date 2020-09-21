@@ -5,8 +5,8 @@ from urllib import parse
 import requests
 from random import choice
 from scrapy.http import HtmlResponse
-from scrapy_mongodb_for_search.spiders_requests.search_result._step.search_result_tools import raplace_domains
-from scrapy_mongodb_for_search.my_tools.tools.proxy.abuyun.requests_proxy import proxy_requests, is_use_proxy
+from common_scrapy.工具.通用.方法库 import replace_domains
+from common_scrapy.工具.通用.阿布云代理 import is_use_proxy, abuyun_proxy_requests
 
 
 class BaiduCrawlContents():
@@ -36,7 +36,7 @@ class BaiduCrawlContents():
             # 使用代理
             if is_use_proxy:
                 try:
-                    resp = proxy_requests(headers, request_url)
+                    resp = abuyun_proxy_requests(headers, request_url)
                     response = HtmlResponse(url=req_url,
                                             body=resp.text,
                                             encoding='utf8')
@@ -78,7 +78,7 @@ class BaiduCrawlContents():
                                               '').replace(')', '').replace(
                             '【', '').replace('】', '')
                         title = title.replace('...', '')
-                        title = raplace_domains(title)
+                        title = replace_domains(title)
 
                     # 处理正文
                     body_arr = eve_div.css(
@@ -107,7 +107,7 @@ class BaiduCrawlContents():
                         body = re.sub(re_sub, '', body, flags=re.S | re.I)
                         body = body.replace('(', '').replace(')', '').replace(
                             '【', '').replace('】', '')
-                        body = raplace_domains(body)
+                        body = replace_domains(body)
 
                     # # 处理 URL
                     # url_arr = eve_div.css('div.result.c-container h3.t a::attr(href)')

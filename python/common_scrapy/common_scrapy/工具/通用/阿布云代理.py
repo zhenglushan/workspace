@@ -5,8 +5,7 @@
 # @DATETime   : 2020/5/18 15:08
 # @Author     : 笑看风云
 import requests
-
-from ScrapyMongoDBForSearch.settings import PROXY_USER, PROXY_PASS
+from common_scrapy.settings import PROXY_PASS, PROXY_USER
 
 # 是否使用代理
 is_use_proxy = True

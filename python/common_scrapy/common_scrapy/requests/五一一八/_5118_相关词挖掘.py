@@ -10,7 +10,7 @@ import requests
 from urllib import parse
 from time import sleep
 from scrapy.http import HtmlResponse
-from ScrapyMongoDBForSearch.spiders_requests.五一一八._5118_cookie import _5118_cookie
+from common_scrapy.requests.五一一八._5118_cookie import _5118_cookie
 
 """
 获取 5118 相关关键词

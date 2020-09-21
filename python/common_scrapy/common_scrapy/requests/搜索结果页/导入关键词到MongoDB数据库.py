@@ -7,8 +7,8 @@
 
 
 import os
-from ScrapyMongoDBForSearch.工具.通用工具 import generator_file
-from ScrapyMongoDBForSearch.工具.数据库工具 import get_MongoDB_DataBase
+from common_scrapy.工具.通用.方法库 import generator_file
+from common_scrapy.工具.通用.数据库 import get_MongoDB_DataBase
 
 if __name__ == '__main__':
     # 获取 MongoDB 数据库对象

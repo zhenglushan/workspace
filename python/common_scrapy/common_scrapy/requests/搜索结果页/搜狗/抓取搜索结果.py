@@ -9,12 +9,11 @@ import re
 from urllib import parse
 import requests
 import random
-from requests.cookies import RequestsCookieJar
 from random import choice
 from time import sleep
 from scrapy.http import HtmlResponse
-from ScrapyMongoDBForSearch.spiders_requests.search_result.search_result_tools import raplace_domains
-from ScrapyMongoDBForSearch.工具.IP代理工具 import abuyun_proxy_requests, is_use_proxy
+from common_scrapy.工具.通用.方法库 import replace_domains
+from common_scrapy.工具.通用.阿布云代理 import is_use_proxy, abuyun_proxy_requests
 
 
 class SogouCrawlContents():
@@ -93,7 +92,7 @@ class SogouCrawlContents():
                 title = title.replace('(', '').replace(')', '').replace('【', '').replace('】', ''). \
                     replace('[', '').replace(']', '').replace("﹥", '').replace("=", '')
                 title = title.replace('...', '')
-                title = raplace_domains(title)
+                title = replace_domains(title)
                 if key == len(div_arr) - 1:
                     title_all = title_all + title
                 else:
@@ -124,7 +123,7 @@ class SogouCrawlContents():
                 body = re.sub(re_sub, '', body, flags=re.S | re.I)
                 body = body.replace('(', '').replace(')', '').replace('【', '').replace('】', ''). \
                     replace('[', '').replace(']', '').replace("﹥", '').replace("=", '')
-                body = raplace_domains(body)
+                body = replace_domains(body)
                 if key == len(div_arr) - 1:
                     body_all = body_all + body
                 else:

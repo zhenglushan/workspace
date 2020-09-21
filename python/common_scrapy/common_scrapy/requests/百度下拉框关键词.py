@@ -6,7 +6,7 @@
 # @Author     : 笑看风云
 
 import requests, json, time, os
-from ScrapyMongoDBForSearch.工具.通用工具 import generator_file_arr
+from common_scrapy.工具.通用.方法库 import generator_file_arr
 
 """
 本程序为百度搜索下拉框关键词的采集实现代码

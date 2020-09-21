@@ -4,16 +4,10 @@
 # @DATETime   : 2020/4/20 11:34
 # @Author     : 笑看风云
 
-import re, json
-import os
 import scrapy
-from urllib import parse
 from scrapy.http import Request
-from scrapy_mongodb_for_search.settings import IMAGES_STORE
-from scrapy_mongodb_for_search.items import ScrapyMongodbForSearchItem
-from scrapy_mongodb_for_search.my_tools.tools.commons import *
-from scrapy_mongodb_for_search.my_tools.tools.domysql import crate_database_table
-from scrapy_mongodb_for_search.my_tools.tools.do_site_domain import *
+from common_scrapy.settings import SQL_DATETIME_FORMAT
+from common_scrapy.工具.通用.方法库 import *
 
 
 class ScrapySpider(scrapy.Spider):

@@ -9,7 +9,7 @@ import scrapy
 import re
 from urllib import parse
 from scrapy.http import Request
-from scrapy_mongodb_for_search.my_tools.common import get_md5, filter_all_html
+from common_scrapy.工具.通用.方法库 import get_md5, filter_all_html
 
 
 class www_yubaibai_com_cn_spider(scrapy.Spider):

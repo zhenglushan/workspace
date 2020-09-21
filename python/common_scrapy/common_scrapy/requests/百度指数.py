@@ -5,9 +5,7 @@ http://index.baidu.com/v2/index.html#/
 a5s7sh4u
 '''
 
-import requests
-import random
-import math
+import requests, math, random
 
 
 def get_idx(i):

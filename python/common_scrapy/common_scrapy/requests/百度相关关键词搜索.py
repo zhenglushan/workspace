@@ -12,7 +12,7 @@ from urllib import parse
 import requests
 from scrapy.http import HtmlResponse
 from time import sleep
-from ScrapyMongoDBForSearch.工具.通用工具 import generator_file_arr
+from common_scrapy.工具.通用.方法库 import generator_file_arr
 
 # headers = {
 #     "Host": "www.baidu.com",
