@@ -1,0 +1,28 @@
+格式化正文思路:
+1、确定换行的方式是用 <br/>、\n、</p>等常见方式中的哪一种；
+2、在 <img> 标签的前后加上换行符；
+3、使用换行符作为分隔符，对整个正文进行分割；
+4、对分割后的数组的每个元素，删除所有 html 标签 (除了 strong 和 b 标签) 和 html 属性；
+5、在数组每个元素的前后加上 <p> 标签；
+6、使用 "".join(arr) 来把数组串成字符串；
+7、格式化正文的流程完成。
+
+大概如下代码:
+
+body = re.sub(r'(</?img[^>]*>)', r'\n\1\n', body, re.I | re.S)
+body = body.split("\n")
+
+for idx, val in enumerate(body):
+    rex = re.compile(r'</?br[^>]*>', re.S)
+    val = rex.sub('', val)
+    rex = re.compile(r'<(?!img|strong|b|/img|/strong|/b|h\d+|/h\d+)[^>]*>', re.S)
+    val = rex.sub('', val)
+    val = val.strip()
+    if len(val) > 0:
+        result = re.search('</?h\d+[^>]*>', val, flags=re.S | re.I)
+        if not result:
+            val = '<p>' + val + '</p>'
+    body[idx] = val
+
+print(url)
+print(body)

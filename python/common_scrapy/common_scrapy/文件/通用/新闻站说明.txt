@@ -1,0 +1,34 @@
+由于新闻站点没有 tag 和 search 文件，所以在免登陆提交的时候，需要把 tag 判断的相关代码做调整。
+
+具体如下：
+	
+	删除如下 tag 代码
+
+	//zhenglushan tag 关键词 开始
+	$tags_path = dirname(__FILE__)."/../zlslhxconfig/keyword/tags.txt";
+	$tags_arr = array();
+	if (file_exists ($tags_path)) {
+		$fp = fopen($tags_path, 'r');//读取标签文本文件
+		while(!feof($fp)){
+			$tags_kw = trim(fgets($fp));
+			if(strlen($tags_kw) > 0){
+				$tags_arr[] = $tags_kw;
+			}
+		}
+		fclose($fp);
+	}
+	//zhenglushan tag 关键词 结束
+
+	把如下代码:
+
+	elseif (in_array($zlskeyword, $tags_arr)) {//是否为 tags 关键词
+		$save_tags[] = $zlskeyword; # 保持到 save_tags 数组
+	}else{//不是以上三种，则判断为 search 关键词
+		$save_searchs[] = $zlskeyword;
+	}
+
+	修改为:
+	else{//不是以上三种，则判断为 search 关键词
+		$save_tags[] = $zlskeyword; # 保持到 save_tags 数组
+	}
+

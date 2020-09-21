@@ -1,0 +1,48 @@
+
+# 图片居中和缩小样式表
+div.content p.img-center {
+	text-align: center;
+}
+div.content p.img-center img {
+	width: auto;
+	width: 70%;
+	height: 70%;
+}
+
+
+模板需要修改网站地图的链接地址；
+以及调用的栏目数量调整；
+给图片段落加居中样式；
+flag 属性的使用；
+
+$flag_arr = array(
+	"a" => 1,
+	"c" => 3,
+	"h" => 8,
+	'p' => 16,
+	"a,p" => 17,
+	"c,p" => 19,
+	"h,p" => 24
+);
+
+与 orderby ='rand' 不同时使用，最多与 orderby ='pubdate' 同时使用；
+
+随机调用
+{dede:arclist row='10' titlelen='80' orderby ='rand'}
+
+推荐排行
+{dede:arclist row='10' titlelen='80' flag ='c'}
+
+图文
+{dede:arclist row='6' flag='p' titlelen='80' infolen='200'}
+
+最新推荐
+{dede:arclist row='10' titlelen='80' flag ='a'}
+
+
+{dede:arclist row='1' flag='c,p' titlelen='80' infolen='200' orderby ='pubdate'}
+
+{dede:arclist flag='p' limit='0,3' titlelen='80' infolen='200' orderby ='pubdate'}
+
+{dede:arclist flag='p' limit='0,4'}
+

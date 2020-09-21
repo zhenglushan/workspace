@@ -1,0 +1,125 @@
+一、使用说明:
+创建文件夹:
+1、用来去重 URL 地址
+2、用来保存正文中的图片
+
+创建 MySQL 数据库:
+1、用来保存采集的数据
+2、在表结构中用 is_published 来标志是否已经发布
+
+二、环境搭建:
+https://www.python.org/downloads/release/python-370/ → Windows x86-64 executable installer
+mkvirtualenv ScrapyUploadImage
+
+可能需要升级 pip 版本 → python -m pip install --upgrade pip
+
+安装 Twisted
+https://www.lfd.uci.edu/~gohlke/pythonlibs/#twisted
+pip install Twisted-20.3.0-cp38-cp38-win_amd64.whl
+
+安装 pywin32
+https://www.lfd.uci.edu/~gohlke/pythonlibs/#pywin32
+pip install pywin32-228-cp38-cp38-win_amd64.whl
+
+pip install -i https://pypi.doubanio.com/simple/ scrapy
+
+pip install -i https://pypi.doubanio.com/simple/ pillow 图片下载依赖包
+
+pip install -i https://pypi.doubanio.com/simple/ mysqlclient 安装 mysql 驱动
+
+pip install -i https://pypi.doubanio.com/simple/ selenium 模拟浏览器
+
+pip install -i https://pypi.doubanio.com/simple/ requests 安装 requests 包
+
+pip install -i https://pypi.doubanio.com/simple/ jieba 分词操作
+
+pip install -i https://pypi.doubanio.com/simple/ html5lib 使用 html5lib 为解析器
+
+pip install -i https://pypi.doubanio.com/simple/ beautifulsoup4 → HTML 和 XML 的解析库
+
+pip install -i https://pypi.doubanio.com/simple/ tldextract → 提取域名相关信息
+
+pip install -i https://pypi.doubanio.com/simple/ paramiko FTP上传图片操作
+
+pip install -i https://pypi.doubanio.com/simple/ pyexecjs 用来执行 js 脚本
+
+pip install -i https://pypi.doubanio.com/simple/ termcolor 改变控制台输出的颜色
+
+pip install -i https://pypi.doubanio.com/simple/ pymongo 安装 pymongo 库，用来连接 MongoDB 数据库
+
+pip install -i https://pypi.doubanio.com/simple/ pylint 安装 pylint 库，用于代码校验
+
+pip install -i https://pypi.doubanio.com/simple/ aiohttp 安装 aiohttp 库，用于异步请求
+
+pip install -i https://pypi.doubanio.com/simple/ pyquery 网页解析，类似于 Beautifulsoup
+
+pip install -i https://pypi.doubanio.com/simple/ pycryptodome 加密
+
+安装 pycurl
+https://www.lfd.uci.edu/~gohlke/pythonlibs/#pycurl
+pip install pycurl‑7.43.0.4‑cp38‑cp38‑win_amd64.whl
+
+pip install upyun 使用又拍云存储
+pip install -i https://pypi.doubanio.com/simple/ tencentcloud-sdk-python 安装腾讯 SDK
+pip install -i https://pypi.doubanio.com/simple/ baidu-aip 百度自然语言处理 SDK
+
+"""
+在 Scrapy 上面的环境搭建中，可能没有出现如下错误：需要图片上传时，进行测试
+在安装 Scrapy 时，会进行安装 cryptography 版本为 2.6.1
+
+运行时出现 Please use EllipticCurvePublicKey.public_bytes to obtain 警告信息
+原因:
+paramiko 2.4.2 依赖 cryptography，而最新的 cryptography 里有一些弃用的API。
+解决:
+删掉当前的 cryptography 安装 2.4.2 就不会报错了
+pip uninstall cryptography
+pip install -i https://pypi.doubanio.com/simple/ cryptography==2.4.2
+"""
+
+pip install -i https://pypi.doubanio.com/simple/ opencv-python cv2库
+pip install -i https://pypi.doubanio.com/simple/ numpy
+pip install -i https://pypi.doubanio.com/simple/ scipy
+pip install -i https://pypi.doubanio.com/simple/ matplotlib
+pip install -i https://pypi.doubanio.com/simple/ pandas
+pip install -i https://pypi.doubanio.com/simple/ scikit-learn
+pip install -i https://pypi.doubanio.com/simple/ tensorflow
+
+
+说明:
+使用 Scrapy 采集时，把正文原原本本的采集下来，并过滤掉多余的代码，
+只有在上传图片的时候，需要把正文里面的图片只保留一张上传。
+
+目前，内容里面的图片仅保留一张，并上传到服务器，多余的图片过滤删除。
+另外，采集时，不采集时间。
+检查图片是否为内容图片，不是的，则删除。
+
+流量站操作顺序:
+减肥 → 两性 → 丰胸 → 整形 → 美容 → 祛斑 → 祛痘 → 精油 → 脱发 → 植发 → 装修 → 配资
+
+内容页分页: 根据分页结构, 拼接成分页的 URL 地址, 然后在解析正文时, 如果匹配结果为空, 说明是最后一个分页, 这种分析方式更简单粗暴。
+
+采集方式选择:
+1、使用 百度PC 的 UA
+2、使用 谷歌PC 的 UA
+3、使用 百度Mobile 的 UA
+4、使用 谷歌Mobile 的 UA
+
+结巴词性:
+https://www.cnblogs.com/adienhsuan/p/5674033.html
+https://blog.csdn.net/smilejiasmile/article/details/80958010
+
+-----------------------------------------------------------------
+处理 docx 文档，docx 本质上是一个 zip 压缩文件
+pip install -i https://pypi.doubanio.com/simple/ python-docx
+
+https://www.cnblogs.com/51python/p/11033002.html
+https://www.cnblogs.com/geek-arking/p/9300617.html
+-----------------------------------------------------------------
+数据传输：
+1、把抓取的图片预先上传到云存储，文件夹为中文名即可；
+2、使用的建站程序为 dedecms4SearchResult 程序；
+3、复制模型 → 建设栏目并绑定模型 → 修改基本设置；
+4、修改 htaccess 中图片跳转的关键词名称对应云存储中的中文名；
+5、web_sites 中的 key 既对应表名，同时对应分词字典名；
+6、分词字典只包含有指数的关键词；
+-----------------------------------------------------------------

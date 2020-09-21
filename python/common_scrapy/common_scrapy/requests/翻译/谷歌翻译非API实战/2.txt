@@ -1,0 +1,456 @@
+<P>"The new crown epidemic has changed our modern lifestyle, but our understanding of this change has only just begun."</P>
+<P>Bond Capital, a Silicon Valley venture capital firm that has invested in startups such as Slack and Uber, recently told investors via email that the high-speed spread and impact of the New Crown epidemic is similar to the 1906 San Francisco earthquake.</P>
+<P>Bond ’s most famous partner, Mary Meeker, was once a bank analyst and is known for his annual Internet trend report. Many investors and entrepreneurs use it as a touchstone for current and future technological development. She also won the reputation of "Internet Queen". Bond's report to the limited partner is structurally similar to the previous annual Internet report.</P>
+<P>The following are the main points of this report:</P>
+<P>1 The new crown epidemic has changed our modern lifestyle, but our understanding of this change has only just begun.</P>
+<P>2 The previous epic virus has permanently changed the world, but because of the current information sharing and scientific technology, the impact of the new coronavirus may be weakened.</P>
+<P>3 Scientists and experts in other fields are gaining more say.</P>
+<P>4 Due to the large number of people working from home, digital transformation is accelerating. Work and life gradually reach a new balance.</P>
+<P>5 From telemedicine to rapid fixed-point diagnosis, and then to the application of automation and artificial intelligence technology in the field of healthcare, this may sound the horn of strengthening the integration of technology and medical treatment.</P>
+<P>6 "We are optimists and believe that the other side of despair is hope ... We need large-scale interventions by governments, businesses and entrepreneurs (which need to be effectively deployed in a logical manner) to achieve the other side."</P>
+<P>The following is the full report compiled by Tencent Technology (slightly deleted):</P>
+<P>Our new world</P>
+<P>1) The impact and aftermath of the new crown epidemic</P>
+<P>An earthquake is like a high-speed zipper that can tear the ground 138 miles apart in a minute—this is the case of the 1906 San Francisco earthquake. The big earthquake changed people's way of life.</P>
+<P>The shock caused by the high-speed spread / impact of the new crown epidemic has similarities-as of April 16, 2020, the 94th day since the first report of cases outside China, 2.1 million people worldwide were diagnosed with new coronary pneumonia. 145,000 people died. Ninety-three percent of 193 countries / regions have new cases of coronary pneumonia, and the government ’s only option is to impose unprecedented social control measures, hoping to "level out the curve."</P>
+<P>
+<CENTER><IMG alt="" src="https://pics0.baidu.com/feed/9f510fb30f2442a7473a7cb6dd35274dd113026d.jpeg?token=e503fd89a5a1255ecdce1596d7b31411" width=600 height=449></CENTER>
+<P></P>
+<P>The new crown epidemic spread rapidly around the world, and the vertical axis is the number of countries with confirmed cases</P>
+<P>The top 20 countries / regions in GDP have implemented some form of social distance and / or segregation policies, which together account for 80% of global GDP and most of the population. The new crown epidemic has changed our modern lifestyle, but our understanding of this change has only just begun.</P>
+<P>This sudden change has made many of us (except those who are infected or who provide services to people in need) suddenly slow down from the original high-speed sprint. Life around me became imprisoned, everything seemed to be back to another era-except to be able to understand the global appearance through streaming media technology around the clock.</P>
+<P>Faced with our "strong enemy", the United States has come forward. Neighbors take care of each other, and charitable activities (usually local) are carried out one after another, providing expedient measures to those in need until a more sustainable solution is optimized. There are also more than 18 million medical personnel working like heroes on the front to “battle”.</P>
+<P>In the aftershocks, the economy has also stagnated and the number of unemployed has increased rapidly. At the current rate, the unemployment rate may reach its highest level since the Great Depression nearly a century ago in just a few months. Nearly one-quarter of US workers are employed in the most affected face-to-face jobs, such as catering services, hotels, retail and other services. About a month ago, 1/5 of Americans had lost their working hours or jobs. 73% of Americans say their family income has decreased.</P>
+<P>Comparing the data of the past 43 trading days with the U.S. unemployment rate and stock market trends from September 1929 to December 1936, we can find that the stock market trends of the two are very similar, but today the unemployment rate is climbing much faster then. Other advanced economies have encountered similar shocks, and the chain effect in the trade area will worsen the global economy.</P>
+<P>
+<CENTER><IMG alt="" src="https://pics1.baidu.com/feed/472309f7905298229819cf84d0bcf1cd0b46d4c8.jpeg?token=ea40453bc99390d22fa2b8c67d18dbe0" width=600 height=450></CENTER>
+<P></P>
+<P>Comparison of US unemployment rate and stock market trends</P>
+<P>Strict control measures recently adopted around the world have forced governments of various countries / regions to finance various loans, liquidity, and stimulus projects at an unprecedented speed, scope, scale, and complexity. To stabilize and stimulate a weakening economy, the US government has pledged more than $ 2 trillion in assistance to consumers and the economy, and the Fed has pledged up to $ 2.3 trillion to expand existing SME loan programs and purchase municipalities. Bonds. These numbers may continue to rise.</P>
+<P>
+<CENTER><IMG alt="" src="https://pics7.baidu.com/feed/0d338744ebf81a4c209c9049df5cea5f242da604.jpeg?token=2662612a3b157f9ec6ac430cc65793e2" width=600 height=449></CENTER>
+<P></P>
+<P>The US CARES Act (2020) is the largest and fastest stimulus policy ever</P>
+<P>While many things are still buzzing (economic growth / consumer spending / employment / salary ...), such a crisis that is difficult to eradicate has come quietly, but we have not much room for fault tolerance.</P>
+<P>
+<CENTER><IMG alt="" src="https://pics2.baidu.com/feed/9825bc315c6034a84f337527c265c3520823763b.jpeg?token=375e0dcac0aca3c701b5648ec6abc961" width=600 height=447></CENTER>
+<P></P>
+<P>Although the personal deposit rate has risen, it is only 8%, compared with 12% 50 years ago ... The debt to income ratio is 23% and 15% respectively</P>
+<P>
+<CENTER><IMG alt="" src="https://pics5.baidu.com/feed/f703738da97739123ee5583af16f0c1e377ae223.jpeg?token=72e770dff080b4c8e5428d6da2ff6b72" width=600 height=449></CENTER>
+<P></P>
+<P>The U.S. public debt / GDP ratio ranks eighth in the world (2018)</P>
+<P>For reference, the government ’s 4.3 trillion dollar monetary and fiscal stimulus plan is equivalent to 124% of US government revenue and 20% of GDP in 2019. Simply put, this will bring the total US debt to GDP at 127% compared to 107% in 2019. Fortunately, there is some good news: As interest rates are close to historically low levels, the cost of new debt in recent years will be relatively low.</P>
+<P>
+<CENTER><IMG alt="" src="https://pics7.baidu.com/feed/0df3d7ca7bcb0a4675bc969261157c226a60af7f.jpeg?token=236956529d68b98b2b891e4e9e510e27" width=600 height=449></CENTER>
+<P></P>
+<P>US income statement: Over the years, there have been expenditures&gt; income. The average net profit margin for the past 30 years is -19%</P>
+<P>
+<CENTER><IMG alt="" src="https://pics5.baidu.com/feed/3801213fb80e7bec15399c262558333e99506b96.jpeg?token=bd88c342492dbfa64a7273d3e6615af2" width=600 height=447></CENTER>
+<P></P>
+<P>Total US Federal Debt as a percentage of GDP = 107% (2019), still growing</P>
+<P>
+<CENTER><IMG alt="" src="https://pics1.baidu.com/feed/72f082025aafa40fe8304fc6bb12894979f019b7.jpeg?token=3a090bb18eb119f3e9331cf3fcce4d5b" width=600 height=450></CENTER>
+<P></P>
+<P>U.S. interest rates are near historical lows ... total federal debt is historically high</P>
+<P>These numbers are huge. This is the largest / fastest such intervention in the history of the US government, at all costs. For better or worse, in the current situation, we all need to use this booster or rocket launcher (the former US Treasury Secretary Hank Paulson (Hank Paulson) used in the term of the 2008 financial crisis ) To stabilize and restart the rapidly deteriorating economy.</P>
+<P>These huge numbers may not be big enough-after all, the loss of one person's income will also cause the loss of another person, so cyclical ... This multidimensional chain problem is still in its infancy.</P>
+<P>All of us are participating in testing the effectiveness of these unprecedented but unproven fiscal and monetary policies. This response can be described as rapid, large-scale, and a lot of capital mobilized, but can this stabilize the rapidly declining business trend and help companies recover short-term growth? Money is one thing, confidence is another. We will soon know the specific effect-we estimate that the business trend in the third quarter will be better than the second quarter, after all, the performance in the second quarter is too bad.</P>
+<P>The main challenges of this multidimensional situation include:</P>
+<P>1) Understand when people can leave home safely, restore their previous lives to a certain extent and restart the economy ... while balancing privacy and civil liberties</P>
+<P>2) Ensure that government funds are effectively put in place and help the economy to overcome difficulties</P>
+<P>3) Help enterprises gradually resume production and resume work, and pay attention to the possibility of regular closure</P>
+<P>4) Ensure that people have enough creative ways to resume work (and / or get support) to sustain long-term economic growth</P>
+<P>5) Manage government debt—unfortunately this increased during prosperity—to avoid overburdening in the future</P>
+<P>2) Virus + microorganism = consistency + periodic disaster</P>
+<P>The struggle between humans and infectious diseases has never stopped, and the increasingly close links between humans have become an important factor in promoting the spread of the virus. Viruses are commonplace, but epic viruses are rare. The following are the epidemics that changed the world ...</P>
+<P>
+<CENTER><IMG alt="" src="https://pics3.baidu.com/feed/b64543a98226cffcaf09309db277c096f603ea7f.jpeg?token=ef4e313d1ba2de9d9e5a76281cafede4" width=600 height=253></CENTER>
+<P></P>
+<P>Changing epidemic statistics in the world</P>
+<P>The viruses that increased in the last century have become vicious killers. All of these viruses originated outside the United States: the Asian influenza that killed 1.1 million people from 1957 to 1958 was mainly in Asia; the major influenza that killed 1 million people from 1968 to 1970 was mainly In Asia; swine flu from 2009 to 2010 killed 200,000 people worldwide; Ebola virus killed 113,000 people in West Africa from 2014 to 2016, and SARS killed 8,000 people in 2003.</P>
+<P>Although other regions (mainly Asia) have experienced viruses that are easy to spread and have a high mortality rate in the recent historical period, the most recent major pandemic in the United States was the Spanish flu that broke out 100 years ago. Unfortunately, three or four generations are enough to make many people forget their suffering and are not prepared for a new crisis.</P>
+<P>The world's population is becoming denser and denser, creating a perfect breeding base for the new coronavirus.</P>
+<P>With the steady rise in digital connections, air travel, cross-border flows and trade activities, people are no longer constrained by physical constraints and can travel almost without restrictions. In addition, people have moved from remote rural areas to densely populated and interconnected urban areas.</P>
+<P>
+<CENTER><IMG alt="" src="https://pics3.baidu.com/feed/9825bc315c6034a8f927ec71c165c3520b2376f1.jpeg?token=9f980b8fcb5e4784e8dfe8ef5637a026" width=600 height=448></CENTER>
+<P></P>
+<P>The number of Internet users worldwide was 3.8 billion in 2018, less than 15 million 20 years ago</P>
+<P>
+<CENTER><IMG alt="" src="https://pics4.baidu.com/feed/e1fe9925bc315c6018f2857687c7411548547744.jpeg?token=0d8c7decad2866cce901c737818aa231" width=600 height=450></CENTER>
+<P></P>
+<P>Global air passengers exceeded 4.2 billion in 2018, a year-on-year increase of 7%</P>
+<P>
+<CENTER><IMG alt="" src="https://pics5.baidu.com/feed/810a19d8bc3eb13560a84554ac6822d5fc1f446a.jpeg?token=f614ecbb73cdb2e1176f0b9fab7059a2" width=600 height=448></CENTER>
+<P></P>
+<P>The number of global cross-border airlines reached 1.4 million in 2018, a year-on-year increase of 6%</P>
+<P>
+<CENTER><IMG alt="" src="https://pics1.baidu.com/feed/9922720e0cf3d7ca6e3090c4fa69340f6a63a93e.jpeg?token=d78812625a5e800e8658fc766cc8189e" width=600 height=449></CENTER>
+<P></P>
+<P>The global cross-border trade volume in 2018 was US $ 25 trillion, accounting for 29% of global GDP</P>
+<P>
+<CENTER><IMG alt="" src="https://pics4.baidu.com/feed/5882b2b7d0a20cf45d5cb8e37e7fc130adaf99be.jpeg?token=28650433e8e47b5348e51e410abcca29" width=600 height=446></CENTER>
+<P></P>
+<P>Global relative GDP (present value in US dollars): China and the United States are rising ... Europe is falling (2018)</P>
+<P>
+<CENTER><IMG alt="" src="https://pics5.baidu.com/feed/d6ca7bcb0a46f21f706a887cff52e1660d33aec4.jpeg?token=3e1a0419ec5328215b524213c6acf89b" width=600 height=445></CENTER>
+<P></P>
+<P>Global population in 2018: continued migration to urban areas</P>
+<P>All these trends have created an ideal environment for the spread of viruses-hitchhiking on people or various surfaces, crossing hundreds of kilometers per hour, and entering a whole new world through land and sea. Under such circumstances, viruses can multiply quietly, making people unpredictable. The virus is also smart, and has achieved perfect evolution according to the surrounding environment. Its incubation period is very long, many people have no symptoms, and even the symptoms are relatively mild, causing most virus carriers to continue to work and go out.</P>
+<P>It is like a toxic cocktail, it will have unpredictable effects on humans: at first there are no symptoms, then nasal congestion, then coughing, then breathing difficulties, and eventually death.</P>
+<P>This unpredictable nature is frightening, not only worrying about infection, but also alienating human relationships. It makes us feel helpless in this fight against invisible opponents.</P>
+<P>We are all concerned about the duration and severity of the crisis, and we are also concerned / waiting / praying for the ebb of the new crown epidemic so that we can go out with peace of mind.</P>
+<P>The good news is that social distance seems to be working, and governments around the world have accepted this approach. With an unprecedented global response, the top 20 economies in the world are all under some form of blockade, with 19 countries / regions taking action within 4 weeks.</P>
+<P>
+<CENTER><IMG alt="" src="https://pics2.baidu.com/feed/e850352ac65c1038ca47cdfaba671915b07e894d.jpeg?token=af3037d5577f17263e67f81e0bbb6fdd" width=600 height=448></CENTER>
+<P></P>
+<P>The world's top 20 economies quickly implement social distance policies</P>
+<P>By studying epidemiological data around the world, we now have a better understanding of this disaster, faster than ever before:</P>
+<P>1) If no intervention measures are taken, the new crown epidemic will spread exponentially ...</P>
+<P>The early consensus was that every person infected with the new coronavirus will cause another 2 to 3 people to be infected. In a world where ordinary people interact with 10-15 people every day, this can create hundreds of transmission opportunities for viruses in the infectious stage. Before the implementation of the social distance policy, the number of confirmed cases doubled every 3 days. Because of this, early warnings of infections of hundreds of millions of people are issued early.</P>
+<P>2) Extreme social distance prevention and control measures ...</P>
+<P>After the implementation of the control measures, countries / regions have seen signs of improvement. The doubling time of cases within two weeks has been extended to 6 days and within three weeks to 11 days. The countries / regions that first entered the blockade state have now reached the peak of hospitalization and mortality, and it has been four weeks since the most stringent social control measures were implemented. As a result, new daily cases worldwide have basically stabilized in April, and the number of cases in the world has doubled in about 15 days, indicating that it may have reached the peak of the outbreak.</P>
+<P>3) We do n’t know what will happen in the middle ...</P>
+<P>We know the two extremes, but we do n’t know what will happen if we start to relax our guard. To this end, we have taken comprehensive and rapid testing measures, shortening the testing time from a few days to a few minutes. We need to deploy systems and tools one step at a time, measure the impact, and repeatedly find the most effective ways to contain the new crown epidemic until the vaccine is developed.</P>
+<P>
+<CENTER><IMG alt="" src="https://pics5.baidu.com/feed/b151f8198618367ab96c5201260501d2b11ce585.jpeg?token=f42564103d81bad94029b400a3cf85c7" width=600 height=449></CENTER>
+<P></P>
+<P>Social distance greatly reduces the speed of epidemic transmission</P>
+<P>
+<CENTER><IMG alt="" src="https://pics5.baidu.com/feed/50da81cb39dbb6fda9a595a61852211e962b3734.jpeg?token=9b1410bbbc83be066608f71c780cd895" width=600 height=446></CENTER>
+<P></P>
+<P>Daily new cases basically reach the platform stage in April</P>
+<P>
+<CENTER><IMG alt="" src="https://pics4.baidu.com/feed/b219ebc4b74543a995339fa013610084b9011429.jpeg?token=d8cb9096890ed96fa3d257db20ded819" width=600 height=447></CENTER>
+<P></P>
+<P>Case doubling time was significantly extended in April</P>
+<P>A big problem facing the world is how to take the right relaxation measures at the right time and in the right place while avoiding the second outbreak of immunization. We believe that technology can help solve this problem.</P>
+<P>3) Work together to innovate globally to fight viruses</P>
+<P>When people understand the devastating consequences of the plague pandemic of the past few centuries, it is easy to feel fear of the raging epidemic of the new crown.</P>
+<P>The big difference in today ’s world is that all-weather transparency allows people to form a wider sense of consciousness faster than ever, thanks to real-time global connectivity. Scientists and experts have started discussions / debates; citizens, businesses, entrepreneurs, and governments have taken different urgent actions; actions and demands to reach a solution are also increasing at a record rate.</P>
+<P>The world has taken urgent medical and public health measures to stop the spread of the new crown epidemic:</P>
+<P>Global information sharing-about 3000 new crown papers were published, which is 20 times more than infectious diseases at the same stage.</P>
+<P>Rapid mobilization of clinical research measures-about 500 new crown clinical trials are underway or completed in 34 countries / regions worldwide.</P>
+<P>
+<CENTER><IMG alt="" src="https://pics2.baidu.com/feed/e1fe9925bc315c608abe14af84c74115485477c7.jpeg?token=81449804016d849298515d76dd7093b0" width=600 height=447></CENTER>
+<P></P>
+<P>Unprecedented scale-5 million clinical trial participants are expected</P>
+<P>
+<CENTER><IMG alt="" src="https://pics2.baidu.com/feed/e1fe9925bc315c608abe14af84c74115485477c7.jpeg?token=81449804016d849298515d76dd7093b0" width=600 height=447></CENTER>
+<P></P>
+<P>Number of new crown research papers published: the scientific community has responded faster than ever</P>
+<P>
+<CENTER><IMG alt="" src="https://pics4.baidu.com/feed/9825bc315c6034a89f91c6f8cd65c352082376d0.jpeg?token=2fd7dceec9c4e2b7bd69c62a51184edd" width=600 height=447></CENTER>
+<P></P>
+<P>New Crown Clinical Trials: Approximately 500 clinical trials in 34 countries / regions</P>
+<P>
+<CENTER><IMG alt="" src="https://pics0.baidu.com/feed/a08b87d6277f9e2fc31694e312466322b999f3b3.jpeg?token=34bb790f057ff464eb09be8a7726d8a3" width=600 height=449></CENTER>
+<P></P>
+<P>13 million people participated in clinical trials, major drugs / traditional medicine / biological trials</P>
+<P>In sports, we often refer to "dream teams" of different eras, such as the New York Yankees, UCLA Bears, Boston Celtics, Chicago Bulls, New England Patriots, Alabama State Red Storm and Golden State Warriors. Their tactical arrangement, teamwork and great victory are all fascinating.</P>
+<P>It is gratifying that the "dream team" of professional medical personnel around the world is working in an unprecedented way. They respond quickly 24/7, share and iterate information / best practices / feedback on a large scale in real time, and also sort out many relevant information and share it with the outside world at an unprecedented speed.</P>
+<P>We have never taken this kind of global collaborative rapid response to medical-related issues with the assistance of technology, which also includes collaboration and cooperation between the private sector and government / regulatory bodies.</P>
+<P>Can global experts respond quickly to the rapid outbreak of viruses with the help of data, technology, machines, and passion to respond quickly? We will know the answer soon. Although time is running out, we remain optimistic about the probability of success of this campaign.</P>
+<P>4) Rapid changes drive two-way growth ...</P>
+<P>Many of our traditional activities suddenly filled with rhythm, or even stopped completely. But the impact of the new crown epidemic has also brought accelerated growth, allowing us to focus on other areas. Most of them are accelerating the existing trends in recent years. And most of them are related to digital technology.</P>
+<P>Here are some trends we are seeing now ...</P>
+<P>Trend 1: Scientists / engineers / domain experts regain greater say</P>
+<P>In BOND's work, we focus on the powerful role played by technology, innovation and science / engineering / data in the process of progress. We believe that the new crown epidemic has created a brilliant opportunity for the technology industry and its entrepreneurs.</P>
+<P>The industry has been driving growth and value creation in the US economy. If you consider the market value of listed companies as a measure of business momentum / success and look back at the companies with the largest market value growth in the United States over the past 10 years, chances are they have the following in common:</P>
+<P>1) Technology / Innovation</P>
+<P>2) Digital business, usually based on cloud computing</P>
+<P>3) The CEO has an engineering / computer science degree</P>
+<P>4) Founded approximately 30 years ago</P>
+<P>At the forefront are Microsoft, Amazon, Apple, Alphabet / Google and Facebook.</P>
+<P>These successful companies are led by well-planned planners-they will develop short-term and long-term (10-20 years or more) visions and business plans, with a focus on data, execution, iteration, engineering, and science.</P>
+<P>The events of the last three or four months have highlighted the need for large-scale forward-looking planning / execution driven by data, as well as the need for modern technology. Whether in the industry or government departments, we are fully able to increase our focus on forward-looking planning while introducing more scientists / engineers / domain experts and giving them greater say. This is a good thing.</P>
+<P>Trend 2: Work-life rebalance</P>
+<P>For those who are lucky enough to continue to work during this period, it is obviously not enough to say that "at home makes people change their daily routine". Technology investors know that Instagram ’s monthly active users have grown to 100 million in two years, and the “Fortress Night” game has gained 100 million monthly active users in a year and a half, but we have never seen one The software for enterprise users can, like the video collaboration platform Zoom, increase the number of active users from 10 million to 200 million in three months. Zoom has gained a place in the tech industry record book.</P>
+<P>
+<CENTER><IMG alt="" src="https://pics3.baidu.com/feed/8d5494eef01f3a299c73b384915336375d607cb9.jpeg?token=8e64d590b2d55d4768138667fe237214" width=600 height=448></CENTER>
+<P></P>
+<P>Zoom user growth curve: 200 million daily participation in March, 20-fold increase in 3 months</P>
+<P>After the new crown epidemic, the app (mobile chat and collaboration platform) for enterprises also experienced a surge in usage-Slack's number of new paying users tripled in the first quarter, and the number of messages sent per user per day increased 20%. At the same time, Microsoft's Teams gained 44 million daily active users, which was a 3.7-fold increase on the week of March 19 compared with last week.</P>
+<P>In the past many years, we have spent a lot of time observing the evolution of working methods, including entrepreneurs working on online platforms (such as eBay / Etsy / Upwork / Airbnb), and practitioners who make money through new models of on-demand service platforms ( Such as Uber / DoorDash / Instacart), and those who work remotely from companies such as Automattic, Zapier, Gitlab, etc.</P>
+<P>In the past, technology companies tended to have large-scale office spaces, crowded with employees who used laptop computers at standing desks. To avoid noise interference, they even wore headphones. Although these employees are in the same office space, they often use Internet tools to collaborate. We have a question, what percentage of employees need to work in an office space at the same time? Are there other better win-win solutions?</P>
+<P>From March 2nd, due to the impact of the new crown epidemic, technology companies in the California Bay Area began to switch to home work. Many employees packed their laptops and personal belongings in bags, went home along their usual commute route, ate a meal, went to sleep, woke up early in the morning, and then started on a completely different table (Or sofa, kitchen console) began to complete the same work.</P>
+<P>In fact, this started a large-scale experiment that may change the way employees work in the office.</P>
+<P>We tend to invest in companies that were born in the past decade, and these companies often use the most advanced technologies and rely on cloud computing platforms. Forty to fifty percent of the employees of these companies mainly focus on product development and engineering technology.</P>
+<P>We conducted an informal survey of these companies, and we raised questions about the new home working environment:</P>
+<P>At a higher level, do you think your company's operational efficiency has improved?</P>
+<P>Has your team or employees become more efficient?</P>
+<P>Have these business units or teams become more efficient and comfortable?</P>
+<P>Have these business units or teams become more inefficient and frustrated?</P>
+<P>What tools do you use, video conferencing platforms, mobile chat tools or other?</P>
+<P>What positive surprises do you get from working at home?</P>
+<P>How do you maintain your corporate culture in your home work?</P>
+<P>What challenges or negative surprises does home work bring?</P>
+<P>Assuming that your company's basic business will still need to operate according to the previously established plan within the next three to six months, how can you use the lessons learned from home work to adjust the way your business operates?</P>
+<P>Here are some of the phenomena we discovered after working at home for a month and a half from technology companies:</P>
+<P>-It is too early-freshness may disappear, and some businesses may be negatively affected, but now it looks pretty good.</P>
+<P>-In terms of marginal efficiency, work efficiency remains at the same level or higher. Video conferences are still efficient if not abused, but these video conferences must start or end on time (or in advance).</P>
+<P>-Information sharing and co-editing relying on mobile chat tools and video platforms are very effective.</P>
+<P>-Other employees outside the headquarters feel more integrated, it is easy for these employees to join a video discussion.</P>
+<P>-Working hours flexibility, commuting time savings, and family dining together are the greatest benefits to employees.</P>
+<P>-Management bottlenecks that existed in the past-related to employee performance or organizational design-will be magnified in a distributed work environment.</P>
+<P>-The biggest work efficiency and balance challenges come from parents and employees with young children or school-age children. Before the promulgation of the family order, there are other support systems to take care of these children. In addition, we also need to do some work to understand the psychological or physical pressure or challenges brought about by home work, especially in the current environment of home order.</P>
+<P>-Some technology companies value written communication and document work (the so-called "Amazon model"). Their work plans have written text that can be modified or shared. These companies are relatively easy to move to work at home. Many people realize that this written communication can absorb more valuable information feedback and make higher quality decisions.</P>
+<P>-"Creating an office" on the Internet can actually be successfully achieved, which also needs to include regular meetings and offline social experiences, such as work-related training courses or online sports and fitness activities.</P>
+<P>Although most companies already have departments or teams that work from home, many people also believe that after experiencing a forced home work, they will gradually move to a more distributed office in the future.</P>
+<P>Large-scale home office will also bring some problems, especially the following issues need to be dealt with:</P>
+<P>1. How to ensure that employees capture creativity and how to maintain work efficiency.</P>
+<P>2. How to judge which business departments are fully suitable (or occasionally suitable and unsuitable) to work face to face and offline.</P>
+<P>3. How to maintain internal and external communication and corporate culture, recruit / train / develop / retrain employees, and manage human resources.</P>
+<P>4. With the growth of the number of employees working at home, how to manage science and technology and information security.</P>
+<P>5. How to implement staff recruitment when unable to go to the headquarters or branch office.</P>
+<P>6. How to adjust the company's official business travel and entertainment.</P>
+<P>The founder of a technology company said: "For newly-founded companies or companies led by founders, they have a more unconventional awareness and are more likely to accept new things. Working at home is another worthy of embracing and exerting the most energy. New things. We are exploring various ways that will definitely bring many bright spots. "</P>
+<P>Trend 3: Digital transformation is accelerating</P>
+<P>Relatively speaking, when we look back on the business trends in the spring of 2020, the best performing companies have the following characteristics:</P>
+<P>1. Based on the cloud computing office model, employees can hold their computing devices and work anywhere.</P>
+<P>2. The product has a stable demand, and the demand is stronger during the extraordinary period (from Maslow's demand level of food, water, residence, etc., to entertainment needs)</P>
+<P>3. With an online entity that is easy to discover, it can seamlessly connect with consumers.</P>
+<P>4. They have a very efficient way to distribute products to consumers with as little contact as possible.</P>
+<P>5. Products can make enterprises more efficient in digitalization.</P>
+<P>6. There is extensive (or emerging) social media.</P>
+<P>We noticed the following changes:</P>
+<P>Local restaurants have shifted from dine-in to take-out.</P>
+<P>Local stores sell goods on pure information websites.</P>
+<P>The local community feels more cohesive.</P>
+<P>With the suspension of offline services, some major brands have improved their online services or sales.</P>
+<P>Teaching staff has shifted from face-to-face teaching to on-demand services and online classrooms.</P>
+<P>Students switched from physical classrooms to online courses.</P>
+<P>Households and consumers are turning to Internet entertainment.</P>
+<P>Food shop customers have shifted from shop purchases to online orders.</P>
+<P>"Foodies" have gone from dining out to dining at home.</P>
+<P>The doctor saw the lesion from face to face and became a telemedicine reception.</P>
+<P>The company's chief operating officer or chief technology officer is increasing IT spending on cloud computing products.</P>
+<P>Many offline to online trends have continued for some time, and the new crown epidemic has only accelerated this trend.</P>
+<P>
+<CENTER><IMG alt="" src="https://pics3.baidu.com/feed/adaf2edda3cc7cd9e235786b3e77ab39b90e91e0.jpeg?token=00f06ab83cd80bbcb2167e0a8365119f" width=600 height=445></CENTER>
+<P></P>
+<P>Restaurants turned to takeaway</P>
+<P>
+<CENTER><IMG alt="" src="https://pics7.baidu.com/feed/b58f8c5494eef01f89127e99e5881323bd317de0.jpeg?token=9ca2580ea5e97b218f6faf29c190e497" width=600 height=449></CENTER>
+<P></P>
+<P>Shop sells goods online</P>
+<P>
+<CENTER><IMG alt="" src="https://pics3.baidu.com/feed/f9dcd100baa1cd119e057933a86442fac2ce2dea.jpeg?token=dab3e778461dfb62e39fcec48573ff60" width=600 height=447></CENTER>
+<P></P>
+<P>The community feels more united</P>
+<P>
+<CENTER><IMG alt="" src="https://pics3.baidu.com/feed/f11f3a292df5e0fe0f42d1265716beae5edf723f.jpeg?token=529219cce35052eae45415e898f7b319" width=600 height=449></CENTER>
+<P></P>
+<P>Big brands expand network services</P>
+<P>
+<CENTER><IMG alt="" src="https://pics4.baidu.com/feed/4ec2d5628535e5ddd818283c71b02de9cf1b629d.jpeg?token=d1c9897326724996f6e4d96d293d2d79" width=600 height=449></CENTER>
+<P></P>
+<P>Education and training personnel turn to online education</P>
+<P>
+<CENTER><IMG alt="" src="https://pics7.baidu.com/feed/1c950a7b02087bf4366c337ffea5dd2a10dfcf24.jpeg?token=b88de9a23ed05eaa4495179e10ad2968" width=600 height=451></CENTER>
+<P></P>
+<P>Students turn to online courses</P>
+<P>
+<CENTER><IMG alt="" src="https://pics0.baidu.com/feed/e61190ef76c6a7ef13d4bd42f88c2557f2de6664.jpeg?token=c118ac3da8b6e4ed27ae571c740fa2bf" width=600 height=445></CENTER>
+<P></P>
+<P>Students turn to online courses</P>
+<P>
+<CENTER><IMG alt="" src="https://pics2.baidu.com/feed/6609c93d70cf3bc75f369670d97630a7cc112af0.jpeg?token=eed46206068ef5e54828baa5b0f4892a" width=600 height=451></CENTER>
+<P></P>
+<P>Family shifts to internet entertainment</P>
+<P>
+<CENTER><IMG alt="" src="https://pics6.baidu.com/feed/f703738da977391270c002b4f16f0c1e347ae2fa.jpeg?token=1fb461a66d206884c19dc492a6e5f85e" width=600 height=450></CENTER>
+<P></P>
+<P>Food stores turn to online orders</P>
+<P>
+<CENTER><IMG alt="" src="https://pics0.baidu.com/feed/5243fbf2b211931396096430624e86d190238d60.jpeg?token=d7c862fe5f6e76f0d7865d6c1cb800b8" width=600 height=451></CENTER>
+<P></P>
+<P>"Eating goods" instead of dining at home</P>
+<P>
+<CENTER><IMG alt="" src="https://pics7.baidu.com/feed/0dd7912397dda14421d913aabec15aa40df48656.jpeg?token=777f09994ff2ce2772a0c1dcc69c2d25" width=600 height=449></CENTER>
+<P></P>
+<P>Doctors turn to telemedicine</P>
+<P>
+<CENTER><IMG alt="" src="https://pics4.baidu.com/feed/a08b87d6277f9e2fcd9b9bcf0f466322ba99f3cc.jpeg?token=9ea0bbfed6eed18a9fac7f1340aa5a6f" width=600 height=448></CENTER>
+<P></P>
+<P>Companies increase cloud computing expenses</P>
+<P>Trend 4: The rise of on-demand services has become the driving force of economic growth (including consumers and businesses)</P>
+<P>Over the past years, on-demand services have been developing. In this new crown epidemic, many head-on-demand service companies have been negatively impacted.</P>
+<P>Some leading on-demand service platforms, such as Uber and Lyft in the car-hailing area, and Airbnb in the homestay industry, have experienced a decline in business volume due to home orders, social distance, and border closure.</P>
+<P>On the other hand, the demand for on-demand platforms (Instarcart / DoorDash, etc.) for the distribution of groceries and catering has surged, and large-scale recruitment of new employees has also promoted the business of local food stores, restaurants and other necessities stores.</P>
+<P>Overall, we believe that on-demand and home delivery services have permanently expanded their market share through an extraordinary period. The convenience that these on-demand platforms bring to consumers is self-evident. We continue to judge that the importance of on-demand platforms for providing flexible jobs in the United States is underestimated. In many parts of the world, especially in Asia, on-demand services are more popular and advanced than the United States.</P>
+<P>The on-demand economy is huge, and the size of the US market has been growing. According to statistics, in the beginning of 2018, consumers in the US on-demand economy had reached approximately 56 million people. Professional agency Checkr said that its on-demand employee background verification service has received verification applications from 11.5 million employees in 2019. For reference, the statistics of the US Department of Labor in March show that there are 156 million people employed in the United States.</P>
+<P>
+<CENTER><IMG alt="" src="https://pics6.baidu.com/feed/8326cffc1e178a8221409d27ff75f98ba877e8b2.jpeg?token=dbce29d7f6025eb3b869b3c7dc59ca59" width=600 height=449></CENTER>
+<P></P>
+<P>U.S. on-demand economy consumers have tripled in two years</P>
+<P>
+<CENTER><IMG alt="" src="https://pics6.baidu.com/feed/e4dde71190ef76c6e26a7b1b9a6077fcae5167c6.jpeg?token=117c33cee9f20ab5f98bae92cfe3e7a9" width=600 height=451></CENTER>
+<P></P>
+<P>U.S. on-demand economic practitioners grow rapidly</P>
+<P>
+<CENTER><IMG alt="" src="https://pics7.baidu.com/feed/fd039245d688d43f153f0e507468581d0ff43b7e.jpeg?token=caec0afa24f65a2b43ba95926380436a" width=600 height=446></CENTER>
+<P></P>
+<P>Large number of on-demand platforms and rapid growth</P>
+<P>
+<CENTER><IMG alt="" src="https://pics4.baidu.com/feed/78310a55b319ebc48271763f8a5045fa1f171682.jpeg?token=08243aa4e962798be888ca9acc51be44" width=600 height=448></CENTER>
+<P></P>
+<P>On-demand economy brings income generation opportunities and job flexibility</P>
+<P>Although there are many uncertainties in the current world, we have mastered the following phenomena:</P>
+<P>1. The way people work is changing</P>
+<P>2. Many people lost their jobs</P>
+<P>3. Many people are financially insecure</P>
+<P>We believe that the following changes will occur in work:</P>
+<P>-The way you work will continue to evolve rapidly</P>
+<P>We are experiencing a large-scale short-term re-allocation of labor resources that has never occurred since World War II. The impact of the new crown epidemic has caused labor shortages in transportation, supply chain, food retail, health and other fields. On March 19, Wal-Mart announced plans to recruit 150,000 hourly workers. On March 23, CVS announced that it would recruit 50,000 full-time or part-time employees. Recently, recruitment notices from recruitment sites such as ZipRecruiter have shown that jobs in transportation (driving trucks), e-commerce (warehouses, supply chains) and healthcare have grown on a large scale.</P>
+<P>
+<CENTER><IMG alt="" src="https://pics2.baidu.com/feed/6c224f4a20a446232077111c9f54f8080df3d78f.jpeg?token=a9e7a80997cca8efde4e2ef929c5ac9b" width=600 height=449></CENTER>
+<P></P>
+<P>The new crown epidemic has increased the demand for personnel in some industries</P>
+<P>-On-demand work will continue to change and become a more important part of the US economy.</P>
+<P>The on-demand economy allows employees who have been laid off to register on multiple platforms at the same time and arrange their own time (such as taking care of children and learning, etc.). As food, catering, e-commerce and other fields accelerate again, the industry lacks sufficient employees. On March 23, American errand purchasing company Instarcart recently announced that it will recruit 300,000 full-time purchasing staff. On March 16 and April 13, Amazon announced twice that it would recruit a total of 175,000 warehouse and courier workers.</P>
+<P>-At work, multi-party synchronous or asynchronous communication and feedback based on new technologies will become more and more important</P>
+<P>For on-demand service companies, this rapid and focused communication is very important. For example, Uber drivers can quickly obtain information on passenger orders through software. This communication is being used more in traditional jobs (thanks to the recent Use of Zoom, Slack and Microsoft Teams software). This communication has even become an effective training tool. We anticipate that this internal communication will become more important for the operation of various enterprises, which can improve work efficiency and satisfaction.</P>
+<P>In general, the new crown epidemic has become an external force, which has led people to rethink the nature of work and carry out the necessary training and education to maintain vitality. Posts on demand platforms will become an important channel for the government to help people re-employ.</P>
+<P>
+<CENTER><IMG alt="" src="https://pics3.baidu.com/feed/bd3eb13533fa828b65fcf445fa69cb32960a5a31.jpeg?token=3a80fbac6cfbd38181b887c93fb5ce40" width=600 height=447></CENTER>
+<P></P>
+<P>Uber driver's internal communication and feedback platform</P>
+<P>
+<CENTER><IMG alt="" src="https://pics7.baidu.com/feed/fc1f4134970a304ef24bd892d9be2d80c8175ced.jpeg?token=efa14661b74207c5309e69d8482f1246" width=600 height=446></CENTER>
+<P></P>
+<P>Internal communication platform provided by Slack</P>
+<P>Trend 5: The government must rely on new technologies in stabilizing and stimulating the economy and employment</P>
+<P>In the future, we will see debates on many issues, such as whether governments stop the economy, whether it is wise to send people home, whether the timing is correct, and how the government can restart the economy and send people back to their posts.</P>
+<P>But at the moment, governments of all countries face many immediate challenges. As mentioned earlier, they must:</P>
+<P>1. Understand when to let people leave their homes safely, continue their previous lives, and restart the economy, but at the same time, we must balance personal privacy and civil rights.</P>
+<P>2. Ensure that government funds reach the right place effectively to help alleviate the sudden economic slowdown.</P>
+<P>3. Help enterprises to wake up and re-operate, and also consider the possible shutdown in the future.</P>
+<P>4. Make sure that people can return to work (or receive help) through innovation or a variety of sufficient ways to ensure long-term economic growth.</P>
+<P>5. Manage government debt (unfortunately, government debt also rises during normal times), so that some financial risks will not drag our future.</P>
+<P>The new crown epidemic has already attacked human beings. In fact, it has also attacked our system. We know that some groups with existing diseases are the most vulnerable to the new coronavirus. Similarly, our government (US government) also has some "existing symptoms." This issue transcends bipartisan politics: the operating systems or technologies that our government uses every day are too old, too fragile, and inefficient. The new crown epidemic has exposed this. We hope that the new crown epidemic will become a driving force to upgrade the technology and business processes of the government that should be implemented long ago, so that these systems ensure that the government can effectively connect taxpayers, voters and citizens.</P>
+<P>In different regions, the government is already considering the time and process of restarting the economy. As social personnel exchanges increase, there may be new hot spots for virus outbreaks, so we believe that the process of economic restart will be slow and stable. Throughout the world, we have seen successful examples of governments in countries that have used the advantages of technological infrastructure to inform citizens and monitor the spread of the new coronavirus in a highly coordinated manner.</P>
+<P>Singapore uses WhatsApp, Twitter and Telegram to broadcast the daily news of the new crown epidemic to the public in four languages. In South Korea, the government has launched the "Corona 100M" software. If there are people diagnosed with the new crown virus within 100 meters, the software will issue a warning.</P>
+<P>
+<CENTER><IMG alt="" src="https://pics6.baidu.com/feed/562c11dfa9ec8a136877ec88f0751b89a1ecc0e1.jpeg?token=c45d2261d669feede2dc698263057dd5" width=600 height=449></CENTER>
+<P></P>
+<P>Singapore's New Crown Outbreak Notice</P>
+<P>There are currently some software tools to track which people or companies have received government assistance funds and how they obtained them. The efficiency of these tools varies, but we think they will be improved in the future.</P>
+<P>Although the government is still considering how to transfer aid funds to the public, many companies have emerged in the payment industry, and they have established direct, easy-to-use, and large-scale payment channels for consumers. These companies include financial institutions (including credit card and payment companies), communication companies, and Internet companies (including API-based companies).</P>
+<P>Currently, the industry dialogue is very active and has broad prospects. Encouragingly, we have seen the US government undermine the use of traditional checks in the implementation of financial aid programs, and let some Internet finance companies participate in emergency aid loan programs, such as Intuite, PayPal and Square.</P>
+<P>It is now difficult to predict the situation after the US restarts its economy. Many companies will never resume work, and many companies (including large or small companies) will resume normal work. Some companies will become stronger (the performance of companies in some areas will surprise us. ). There will also be new startups that were simply not seen a few years ago.</P>
+<P>Businessmen know that it takes only one day to shut down a company, but it takes years to restart a company. For many companies, 2020 will be a "lost year", and these challenges will continue until 2021, when ideal, many of the well-known business formats will return to the level of normal periods.</P>
+<P>We believe that new technologies related to homework, on-demand platforms, mobile consumer products and software, which were born in the past decade, will play a key role in balancing public health and the restart of the US economy in the future.</P>
+<P>The government ’s current fiscal and monetary stimulus plan and ongoing unemployment relief are not sustainable in the long run. In order to return to a calm state of mind, in order to ease the cost of government and taxpayer financial assistance, people need to return to work. We hope that in the next few weeks, the government ’s work priorities in some areas will be made public, and we hope that some of our excellent companies can help people find traditional or new models of employment opportunities and make their own contribution in the field of health power.</P>
+<P>Trend 6: 2020 = the year of technology + medical?</P>
+<P>The first line in fighting the New Crown epidemic is mainly those medical institutions or individuals that make up the US healthcare system. A large number of medical "heroes" have emerged from these people. They have forgotten the dangers of individuals and families and joined the war against the new coronavirus. The United States needs to thank and honor these medical personnel.</P>
+<P>Unfortunately, this outbreak has exposed many structural problems in the US medical system. The new crown epidemic may become an alarm bell, prompting us to reflect on the huge annual medical and health expenditure. Last year, the US federal health care expenditure was as high as 1.2 trillion US dollars, equivalent to 8% of the US GDP, and accounted for 28% of the US federal government budget.</P>
+<P>In this crisis, we found two important phenomena:</P>
+<P>1. Since the Spanish flu epidemic in 1918, the medical service system in the United States has not improved as we thought.</P>
+<P>Technology and innovation have not affected the course of patients in primary treatment. A patient showed symptoms and he went to see the doctor (if it is in the background of the new coronavirus may also expand the infection), the doctor mainly diagnoses through the exposed symptoms, the doctor let the patient go home to keep the observation, the patient either recovers himself or the condition It deteriorated until it was sent to the emergency room. In primary treatment in the United States, this face-to-face diagnosis and treatment cycle is repeated 500 million times. This medical model has not changed much in a hundred years.</P>
+<P>
+<CENTER><IMG alt="" src="https://pics1.baidu.com/feed/6a63f6246b600c33fce4d0aa133adb09d8f9a1ab.jpeg?token=23f398eedc1272507081ec72d15906d5" width=600 height=447></CENTER>
+<P></P>
+<P>500 million primary visits per year in the United States</P>
+<P>2. The amount of data is abundant, but lack of contact and insight</P>
+<P>In the early days of the new crown epidemic in the United States, the federal and state governments exchanged spreadsheet files to manually monitor hospital utilization. Due to the lack of correlation between these data, public health officials can only rely on traditional index models to make predictions, but small changes in theoretical assumptions can cause these models to undergo very sensitive changes. Although the United States has invested heavily in the field of electronic health records over the past few decades, there are still hundreds of "dark pools" of unrelated medical data. Even with this data, the medical department is overwhelmed by the workload of huge data, so they cannot benefit from the digitization of medical information.</P>
+<P>
+<CENTER><IMG alt="" src="https://pics2.baidu.com/feed/d31b0ef41bd5ad6efb1a708384bdb3ddb7fd3c77.jpeg?token=2032440b15d4f01c41befb91e0fd0d2c" width=600 height=447></CENTER>
+<P></P>
+<P>Electronic health records</P>
+<P>
+<CENTER><IMG alt="" src="https://pics5.baidu.com/feed/f603918fa0ec08fa9337face5198b76b55fbda25.jpeg?token=050e7eb6aceaa227a1a597630f8d4f68" width=600 height=448></CENTER>
+<P></P>
+<P>Workload burden brought by health data</P>
+<P>As the United States continues to promote medical decentralization, weaken the status of hospitals, and allow patients to gain greater capacity like consumption, we believe that many emerging medical technology trends will be accelerated by this new crown epidemic.</P>
+<P>-Remote health: Remote health is faster, provides better service quality, and costs less than traditional methods. In the past few years, telemedicine has developed rapidly, and in the new crown epidemic, telehealth services can allow patients to see a doctor at home, which has flattened the curve of new viral infections and saved people's lives.</P>
+<P>-Networked equipment: If the medical monitoring equipment connected to the Internet is combined with telemedicine, it will be able to compete for treatment effects and obtain better treatment effects in various diseases such as chronic diseases to infectious diseases.</P>
+<P>-Rapid on-site diagnosis: Although molecular testing techniques for rapid and accurate diagnosis have been in existence for more than a decade, molecular testing has not yet entered homes or even some hospitals. Now is the time to look forward to the emergence of the "iPhone" (significant innovation) in the field of diagnostics, where many technology companies have made significant progress. The New Crown epidemic reminds us that some policy and regulatory obstacles in the field of molecular testing and diagnostics need to be transformed into an incentive policy as soon as possible to encourage innovation in this field.</P>
+<P>-Connected data dark pool: The healthcare industry has just begun to embrace modern big data architectures including interoperability and application programming interfaces. In the new crown epidemic, the pressure to connect medical systems is greater than ever. We expect some innovative companies and government support to accelerate the connection of data systems while avoiding the complicated system integration requirements of some projects in the past.</P>
+<P>-Use automation and artificial intelligence: This crisis reminds us enough that our healthcare human resources are already very tight. Automation in the medical field will continue to develop, reducing workload and improving the quality of data acquisition. Applied artificial intelligence has begun to combine with abundant electronic health record data to bring medical institutions the data insight they need at the right time.</P>
+<P>
+<CENTER><IMG alt="" src="https://pics3.baidu.com/feed/e61190ef76c6a7ef308e650bf18c2557f2de66f4.jpeg?token=9ff9ddf3bc2b6031dfecd3b6ef3a2c41" width=600 height=451></CENTER>
+<P></P>
+<P>Google's "telemedicine" search volume</P>
+<P>Trend 7: Traditional sports = The evolution of the post-new crown era provides clues for other industries to interact in real time</P>
+<P>Americans' love for personal contact or "close-to-close" sports is legendary. The most popular sports in the United States are football, baseball, basketball, football, ice hockey and other sports. Other popular sports include sports with limited physical contact, such as motor sports, golf, e-sports, etc.</P>
+<P>In most popular sports, it is difficult for athletes and fans watching the game to maintain a social distance. Sports competition organizations around the world are being forced to rethink how athletes (fans) confront each other in the competition, and how the experience of sports competitions will change in the next 2 to 12 months.</P>
+<P>Before the emergence of the new coronavirus vaccine, will the measures taken by Shanghai Disneyland (such as wearing masks, temperature measurement, and smartphone health codes) become the new normal in sports competitions? Will we biometrically identify fans? What should athletes and team staff do?</P>
+<P>In the new world of the post-new crown, sports competition has experienced rapid evolution, which has brought some inspiration to other industries that require real-time interaction. These new models look a bit like a huge Zoom video conference room. We saw that Twitch and Discord went beyond the traditional game live application scenarios (including connection, sharing and collaboration) and began to enter social or commercial application scenarios. This trend will continue.</P>
+<P>Traditional sports or professional leagues (such as Formula One and NASCAR racing) go online</P>
+<P>On March 17, the racing alliance NASCAR &amp; iRacing announced the launch of the new eNASCAR iRacing Pro Series Invitational, which is a competition that includes the best drivers in the world today. For iRacing, an amateur racing league born in 2010, this is an evolution driven by the new crown epidemic. Racers use a simulator (usually at home) to chase, and the game is broadcast live on Fox Sports Channel, along with social media activities. In summing up the event, NASCAR stated: "Before we can return to the track, the entire NASCAR community decided to provide our passionate fans with a unique, fun and exciting racing experience on the race day."</P>
+<P>On March 22nd, the first virtual racing competition was held on a virtual Holmstead-Miami Speedway. Dunning Hamlin, who won the Daytona 500 championship three times, won the race. He was driving barefoot. , Daughter cheered on the sidelines. It is worth noting that Dale Earnhardt Jr., a legendary driver who has retired, also participated in the race, ranking second.</P>
+<P>The second race held at the virtual Texas Speedway on March 29 attracted 1.3 million spectators (a 43% increase from last week), breaking the eSports TV viewing record created last week. Although the organizers did not award bonuses to the winners of the Pro Series Invitational Tournament, some drivers are also fighting for sponsors for body painting ads. Recently, Payne National Gaming Company announced that it will become a sponsor of the virtual Dover International Speedway competition on May 3, this game will broadcast some of the special content of Payne subsidiary Barstool Sports stars to enhance the interactive experience of fans.</P>
+<P>
+<CENTER><IMG alt="" src="https://pics3.baidu.com/feed/c75c10385343fbf2b1cc5499bf08408664388f20.jpeg?token=b8b7e00fd6692efccb1e82a7d152e272" width=600 height=451></CENTER>
+<P></P>
+<P>Emerging online racing</P>
+<P>
+<CENTER><IMG alt="" src="https://pics4.baidu.com/feed/c8177f3e6709c93d508a3755974b72dad0005497.jpeg?token=ecdfaaba38534c69e37017f9a102194c" width=600 height=450></CENTER>
+<P></P>
+<P>Emerging online racing</P>
+<P>On March 22, Formula One launched an online racing "virtual Grand Slam" event, Formula One drivers and some celebrity stars participated in the virtual Bahrain</P>
+<P>The Sakhir race, which was broadcast live on YouTube, Twitch and Facebook, received 3.2 million viewers.</P>
+<P>Traditional sports tournaments (such as college basketball leagues) turn to the Internet, artificial intelligence predicts results</P>
+<P>On March 11, as an alternative to the March Madness 2020 league, members of the American College Basketball League on the Reddit website sub-community hosted 68 teams to participate in the virtual NCAA Tournament, using the game software College Hoops 2K8. These matches were broadcast live on YouTube. In addition, artificial intelligence technology also predicted the results of the match.</P>
+<P>
+<CENTER><IMG alt="" src="https://pics0.baidu.com/feed/0df3d7ca7bcb0a464ecc4be063157c226960affe.jpeg?token=4766045a9de2e2fd1d671ce3dbaf3bb7" width=600 height=449></CENTER>
+<P></P>
+<P>Emerging Virtual Basketball League</P>
+<P>
+<CENTER><IMG alt="" src="https://pics0.baidu.com/feed/622762d0f703918fab8c9908594bac9158eec40b.jpeg?token=0f09630695930108ac5d2f2da4c6ca3e" width=600 height=451></CENTER>
+<P></P>
+<P>Emerging virtual basketball league, live YouTube</P>
+<P>
+<CENTER><IMG alt="" src="https://pics2.baidu.com/feed/9213b07eca806538b6258a609eab2b42ac348276.jpeg?token=26c4f3c1ff5c5175dd933921e4584972" width=600 height=449></CENTER>
+<P></P>
+<P>Emerging virtual basketball league, live YouTube</P>
+<P>
+<CENTER><IMG alt="" src="https://pics2.baidu.com/feed/9213b07eca806538b6258a609eab2b42ac348276.jpeg?token=26c4f3c1ff5c5175dd933921e4584972" width=600 height=449></CENTER>
+<P></P>
+<P>Traditional players and "game players" (NBA and FIFA) compete online</P>
+<P>On March 18th, some game "players" held a virtual game through FIFA 20 software, and more than 60,000 spectators watched the game on Twitch.</P>
+<P>Starting on April 3, NBA &amp; 2K Sports launched a basketball player to participate in the virtual tour, including Kevin Durant, Trae Young and Harrison Barnes. The tour was broadcast live on the ESPN channel.</P>
+<P>
+<CENTER><IMG alt="" src="https://pics5.baidu.com/feed/d009b3de9c82d158be34ce3a8a7c93debd3e4207.jpeg?token=96488087e301f602774d96b99a93b98c" width=600 height=449></CENTER>
+<P></P>
+<P>Emerging Virtual Basketball League</P>
+<P>
+<CENTER><IMG alt="" src="https://pics5.baidu.com/feed/f9dcd100baa1cd11de9dc141b06442fac3ce2d20.jpeg?token=1cf726cd22a8e7359e6212d5ac73e023" width=600 height=449></CENTER>
+<P></P>
+<P>Emerging virtual football games</P>
+<P>Online competitive games continue to grow</P>
+<P>In March, the game live streaming platform Twitch reached its highest level of use in history, with daily active users peaking at 4.3 million, average concurrent users peaking at 1.9 million, and live video streams reaching 46 million. The number of concurrent users on Steam, another gaming platform, reached a record high, with 20 million people online and 6.2 million games on March 15. Discord ’s video, voice and text chat platform tools for gamers have doubled in downloads over the past month.</P>
+<P>On the Twitch platform, "League of Legends" became the most popular game. In the "League of Legends" championship series that professional players participated in, the peak audience was as high as 430,000, and the live broadcast time in March was 123 million hours. Other more casual game scenes include watching professional player training, celebrity celebrities holding a party to contact fans, or some users watching expert players and learning new technologies.</P>
+<P>Although offline live sports events are forced to be suspended, eSports and games provide a medium for users to integrate into the game (via games or live video tools), connect friends and gamers in a virtual way, and help players Live broadcast enhancement technology.</P>
+<P>
+<CENTER><IMG alt="" src="https://pics7.baidu.com/feed/48540923dd54564e589a9596b8a81684d0584f1a.jpeg?token=148e4fffa4c9f49f775a4c8c91b9bb20" width=600 height=448></CENTER>
+<P></P>
+<P>League of legends</P>
+<P>
+<CENTER><IMG alt="" src="https://pics6.baidu.com/feed/5882b2b7d0a20cf4bf0e9aad7e7fc130adaf99a6.jpeg?token=645b24c12a3b9f9df35162eff64ed47e" width=600 height=451></CENTER>
+<P></P>
+<P>Discord game player communication platform</P>
+<P>Human beings will find various ways to conduct competitive games online and offline, and sports games will continue to prosper. We believe that the media innovations surrounding sports events have the potential to change the consumption patterns of traditional sports and bring a richer interaction and entertainment experience to players and fans. In addition, we believe that as long as the health and safety are guaranteed, fans still prefer the sports competition opposite the line.</P>
+<P>5) "The world will not end often" = we will survive the crisis, but life will be different</P>
+<P>This quote comes from Brian Rogers, chairman and chief information officer of Puxin Group during the 2008 financial crisis.</P>
+<P>We are optimists and believe that the other side of despair is hope. However, the other side will not come too fast.</P>
+<P>Many experts predict that the other side will come within a few months, not a few years, which is relatively good news.</P>
+<P>Although hand washing, social distance, and self-isolation are mandatory, we also need to provide medical personnel with personal protective equipment. We also need to prepare ventilators and antiviral drugs for the next epidemic (and perhaps the next one) , Vaccine and virus testing, virus tracking and rapid diagnosis capabilities.</P>
+<P>We also need large-scale interventions (effectively deploying resources) by governments, businesses, and entrepreneurs to reach the “other side” as early as possible. All of us must unite to ensure that the economy restarts and jobs resume so that people will be able to work, have adequate security, and take care of themselves.</P>
+<P>As former US Secretary of State and National Security Adviser Kissinger wrote, "This epidemic will change the world ’s landscape forever. Global leaders have learned important lessons from the 2008 financial crisis. The current economic crisis is more complicated. The coming economic contraction is almost unprecedented in terms of speed and scale. The United States must protect its citizens from viruses, and at the same time initiate an important task, namely, plan for a new era. "</P>
+<P>Our standard of living has been threatened, some data show that we are rushing to the next "Great Depression", our confidence (and financial statements) will be impacted, and the unemployment rate will be unbearable. The trend of economic growth (partly from globalization) is gone. In addition, the slowdown in economic growth will lead to large-scale social disturbances. Early signals of closing the border against globalization may develop into nationalism, supply chain restructuring, and anti-globalization waves. These may be true, but ...</P>
+<P>Although we feel some fear of what will happen in the next few months or quarters, in the long run, we still belong to the "dark before dawn" camp. We have learned not to underestimate America's global competitive advantage.</P>
+<P>American spirit and optimism, as well as the ability to rapidly evolve, can help this world become a better place.</P>
+<P>If the new crown epidemic becomes a common enemy of mankind and can promote reform and progress in the following areas, what will the world become?</P>
+<P>1. Reform and upgrade the government, medical and health, education and other fields, reduce operating costs and improve efficiency.</P>
+<P>2. To improve communication and coordination between the government and enterprises for the benefit of the people.</P>
+<P>3. Help people find jobs (or receive training) that suit their skills and lifestyle.</P>
+<P>4. Promote more cautious consumption.</P>
+<P>5. Return to the fundamentals of human society, such as being closer to home.</P>
+<P>6. Consolidate family bonds, consolidate communities, beliefs, or purpose concepts.</P>
+<P>None of the things we need to experience are comfortable or fair. The situation may deteriorate before it improves. In order to become a better place, has the US heard the "wake-up bell"?</P>
+<P>We hope so, let us find a better way to enter the "other side of despair" as soon as possible and more consciously.</P>
+<P>At the end of the report, let us quote the observation of a female entrepreneur who was very good in her time:</P>
+<P>"When we entered this crisis, we were at an economic high point and a social low point. As a society, we were extremely divided. However, the New Crown Virus does not make any distinction. To respond to it, we need to take unity actions, uniting the public and private sectors, Neighbors, employees, medical staff, strangers, we entered this crisis at a high economic point. What will happen if we see a more united nation and world when this crisis is over?</P>
+<P>* This article is reproduced by WeChat public account: Tencent Technology (ID: qqtech) authorized Xinya NewSeed, please contact the original source for reprint.</P>
