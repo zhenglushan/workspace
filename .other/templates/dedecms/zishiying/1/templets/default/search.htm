@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="Content-Language" content="zh-CN" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>搜索页_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link rel="stylesheet" rev="stylesheet" href="{dede:global.cfg_cmspath/}/skin/css/style.css" type="text/css" media="all"/>
+<script src="{dede:global.cfg_cmspath/}/skin/js/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script src="{dede:global.cfg_cmspath/}/skin/js/common.js" type="text/javascript"></script>
+<script type="text/javascript">window.tlite={ajaxpager:'on',backtotop:'on'}</script>
+<!--[if lte IE 6]>
+	<script type="text/javascript" src="{dede:global.cfg_cmspath/}/skin/js/transparent.js"></script>
+	<script>
+		DD_belatedPNG.fix("*");
+	</script>
+	<![endif]-->
+</head>
+<body class="index">
+<div class="wrapper"> {dede:include filename="head.htm"/}
+  <div class="main">
+    <div class="wrap">
+      <div class="nav2">
+        <ul>
+        </ul>
+      </div>
+      <div>
+        <div class="listcon"> {dede:list pagesize ='10'}
+          <div class="post cate1 auth1">
+            <div class="postimg"><a href="[field:arcurl/]"><img src="[field:picname/]" alt="[field:title/]"/></a></div>
+            <div class="postcon">
+              <h3><a href="[field:arcurl/]">[field:title/]</a></h3>
+              <div class="postinfo"><span class="infocate"><a href="[field:typeurl/]">[field:typename/]</a></span><span class="infodate">[field:pubdate runphp='yes']
+                $today = Floor(time()/(3600 * 24));
+                $senday= Floor(@me/(3600 * 24));
+                $updays = $today-$senday;
+                if($updays==0) @me = "今日";
+                else @me = $updays."天前";
+                [/field:pubdate] ([field:pubdate function="MyDate('m-d',@me)"/])</span></div>
+              <div class="postintro">[field:description function="cn_substr(@me,300)"/]...</div>
+            </div>
+          </div>
+          {/dede:list}
+          <div class="pagebar"> {dede:pagelist listitem="index,end,pre,next,pageno" listsize="1"/} </div>
+        </div>
+        <div class="sidebar">
+          <div class="sidebox" id="divCatalog">
+            <div class="sidetitle">
+              <h3>网站分类</h3>
+            </div>
+            <div class="sidecon">
+              <ul>
+                {dede:channel type='top' currentstyle="
+                <li><a href='~typelink~'>~typename~</a></li>
+                "}
+                <li><a href="[field:typeurl/]">[field:typename/]</a></li>
+                {/dede:channel}
+              </ul>
+            </div>
+          </div>
+          <div class="sidebox" id="divPrevious">
+            <div class="sidetitle">
+              <h3>热门浏览</h3>
+            </div>
+            <div class="sidecon">
+              <ul>
+                {dede:arclist row='5' titlelen='50' orderby='click'}
+                <li><a href="[field:arcurl/]">[field:title/]</a></li>
+                {/dede:arclist}
+              </ul>
+            </div>
+          </div>
+          <div class="sidebox" id="divLinkage">
+            <div class="sidetitle">
+              <h3>友情链接</h3>
+            </div>
+            <div class="sidecon">
+              <ul>
+                {dede:flink titlelen='20' row='20' type='text'}
+                <li>[field:link /]</li>
+                {/dede:flink}
+              </ul>
+            </div>
+          </div>
+          <div class="sidebox" id="adr4">
+            <table width="100%" height="300" bgcolor="#ccc">
+              <tbody>
+                <tr align="center">
+                  <td style="text-align: center;color: #fff;line-height: 300px;">广告位</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {dede:include filename="footer.htm"/} </div>
+<script src="{dede:global.cfg_cmspath/}/skin/js/sidebar-follow-jquery.js"></script> 
+<script>
+/* <![CDATA[ */
+(new SidebarFollow()).init({
+ element: jQuery('#adr4'),
+ distanceToTop: 15
+});
+/* ]]> */
+</script>
+</body>
+</html>

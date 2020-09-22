@@ -1,0 +1,38 @@
+<div class="header">
+  <div class="wrap"> <i class="menuico"></i>
+    <div class="logo"> <a href="{dede:global.cfg_cmspath/}/"><img src="{dede:global.cfg_cmspath/}/skin/images/logo.png" alt="{dede:global.cfg_webname/}"/></a> </div>
+    <i class="searchico2"></i> </div>
+</div>
+<div class="menu">
+  <div class="wrap">
+    <ul>
+      <li><a href="{dede:global.cfg_cmspath/}/" {dede:field name=typeid runphp="yes"}(@me=="")? @me=" class='active'":@me="";{/dede:field}>首页</a></li>
+      {dede:channel type='top' currentstyle="
+      <li><a href='~typelink~' class='active'>~typename~</a></li>
+      "}
+      <li><a href="[field:typeurl/]"> [field:typename/] </a></li>
+      {/dede:channel}
+      <li class="searchico"></li>
+    </ul>
+  </div>
+</div>
+<div class="searchbox">
+  <div class="search">
+    <div class="searchcon">
+      <form  name="formsearch" action="{dede:global.cfg_cmsurl/}/plus/search.php">
+        <input type="hidden" name="kwtype" value="0" />
+        <input type="text" name="q" placeholder="搜索其实很简单" class="searchtxt">
+        <input type="submit" value="" class="searchbtn">
+      </form>
+    </div>
+    <div class="searchhot">
+      <p>热门标签:</p>
+      <ul>
+        {dede:tag row='16' sort='rand' getall='1'}
+        <li><a href="[field:link/]">[field:tag /]</a></li>
+        <em></em> {/dede:tag}
+      </ul>
+    </div>
+    <i class="close"></i> </div>
+  <iframe class="mask" scrolling="0" frameborder="0"></iframe>
+</div>
