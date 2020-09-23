@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<meta name="renderer" content="webkit">
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<meta name="description" content="{dede:global.cfg_description/} " />
+<title>{dede:global.cfg_webname/}</title>
+<link rel="stylesheet" rev="stylesheet" href="{dede:global.cfg_templets_skin/}/css/style.css" type="text/css" media="all" />
+<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/font-awesome.min.css" media="screen" type="text/css" />
+<link rel="icon" href="{dede:global.cfg_templets_skin/}/images/favicon_example.ico" type="image/x-icon">
+<script src="{dede:global.cfg_templets_skin/}/js/jquery-2.2.4.min.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/swiper.min.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+	$(function(){
+		$("a[_for]").mouseover(function(){
+			$(this).parents().children("a[_for]").removeClass("thisclass").parents().children("dd").hide();
+			$(this).addClass("thisclass").blur();
+			$("#"+$(this).attr("_for")).show();
+		});
+		$("a[_for=uc_member]").mouseover();
+		$("a[_for=flink_1]").mouseover();
+	});
+	
+	function CheckLogin(){
+	  var taget_obj = document.getElementById('_userlogin');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("{dede:global.cfg_cmspath/}/member/ajax_loginsta.php");
+	  DedeXHTTP = null;
+	}
+-->
+</script>
+<style type="text/css">
+body {
+	background-image: url({dede:global.cfg_templets_skin/}/img/bg_001.jpg);
+}
+</style>
+<style type="text/css">
+a.fancybox img {
+	width: auto!important;
+	height: auto!important;
+}
+</style>
+<!--[if lte IE 7]><link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/font-awesome-ie7.min.css"><![endif]-->
+<!--[if lte IE 8]><script src="{dede:global.cfg_templets_skin/}/js/respond.min.js"></script><![endif]-->
+</head>
+<body class="home-index">
+{dede:include filename="head.htm"/}
+
+<div class="container-fluid home-fluid">
+  <div class="site-content">
+    <nav class="gonggao navcates">
+      <div class="bull"><i class="fa fa-volume-up"></i></div>
+      <div id="callboard" >
+        <ul class="menu">
+             {dede:arclist flag='s' titlelen=42 row='16'}
+                    <li><a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
+              {/dede:arclist}
+        </ul>
+      </div>
+    </nav>
+    <div class="site-main">
+      <div class="content-wrap left">
+        <div class="slide-main"><!--幻灯片-->
+          <div class="swiper-container swiper-home">
+            <div class="swiper-wrapper">
+			{dede:arclist flag='f' row='5'}
+			<article class='swiper-slide slide-single'>
+                <div class='swiper-image'><a href='[field:arcurl/]' title='[field:title/]' target='_blank'><img src='[field:litpic/]' alt='[field:title/]' width="960" height="384"></a></div>
+                <div class='swiper-post'>
+                  <h3><a href='[field:arcurl/]' target='_blank' title='[field:title/]'>[field:title/]</a></h3>
+                  <div class='clearfix'></div>
+                </div>
+             </article>
+			{/dede:arclist} 
+             
+               </div>
+            <div class="swiper-pagination swiper-home-pagination"></div>
+            <div class="swiper-button swiper-home-button-next swiper-button-next"><i class="fa fa-chevron-right"></i></div>
+            <div class="swiper-button swiper-home-button-prev swiper-button-prev"><i class="fa fa-chevron-left"></i></div>
+          </div>
+        </div>
+      </div>
+	  
+		
+	  
+	  
+	  
+      <div class="widget-box blog-layout">
+        <div class="post_box_title"><h3><i class="fa "></i>最近更新</h3>
+		
+        </div>
+		{dede:arclist row=15 orderby=pubdate titlelen=80 infolen='230'}
+        <article class="post_box" id="post_box1">
+        <div class="post-img col-xs-4"><a href="[field:arcurl/]" style="display: block;zoom:1;"><img class="img-responsive img-rounded imgs" src="[field:litpic/]" alt="[field:title/]" title="[field:title/]" style="display: block;" original="[field:litpic/]"><em></em></a></div>
+          <div class="post-left">
+             <h3><a href="[field:arcurl/]" title="[field:title/]">[field:title/]</a></h3>
+         <div class="post-con">
+             <a href="[field:arcurl/]" title="查看《[field:title/]》全文">[field:info/]...</a>
+         </div>
+		 <aside class="item-meta">
+			  <span class="mu-ml"><i class="fa fa-list-alt"></i><a href="[field:typeurl/]">[field:typename/]</a></span>
+			  <span class="mu-ml-clock"><i class="fa fa-calendar"></i>[field:pubdate function="MyDate('Y-m-d',@me)"/]</span>
+			  <span class="mu-ml-eye"><i class="fa fa-paw"></i>[field:click/]次浏览</span>
+			  <span class="mu-ml-comment"><i class="fa fa-comment"></i><a href="[field:arcurl/]#comments">[field:id runphp='yes'] $aid = @me; $row = $GLOBALS['dsql']->GetOne("Select count(id) as c from dede_feedback where aid=".@me); @me=$row['c'];[/field:id]条评论</a></span>
+			  <a class="read-more right" href="[field:arcurl/]" title="详细阅读：[field:title/]">阅读全文</a>
+		</aside>
+       </div>
+      </article>
+  {/dede:arclist}
+      </div>
+    </div>
+    <!--侧栏-->
+    {dede:include filename="right.htm"/}
+  </div>
+  <div class="clear"></div>
+</div>
+<div class="container-fluid yidong links ">
+  <div class="links-box">
+    <ul>
+     {dede:flink/}
+     <li><a href='http://www.fuxing5.cc' target='_blank'>玩游戏赚钱</a> </li>
+    </ul>
+    <div class="clear"></div>
+  </div>
+</div>
+{dede:include filename="footer.htm"/}
+</body>
+</html>

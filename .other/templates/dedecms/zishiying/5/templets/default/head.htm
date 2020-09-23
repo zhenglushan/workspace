@@ -1,0 +1,74 @@
+<script language="javascript" type="text/javascript" src="{dede:global.cfg_cmsurl/}/include/dedeajax2.js"></script> 
+<script language="javascript" type="text/javascript"> 
+    function CheckLogin(){  
+      var taget_obj = document.getElementById('userlogin');  
+      myajax = new DedeAjax(taget_obj,false,false,'','','');  
+      myajax.SendGet2("{dede:global.cfg_cmspath/}/member/ajax_loginsta.php");  
+      DedeXHTTP = null;  
+    }  
+</script>
+<header class="site-header">
+  <div id="header" class="navbar fixed-nav">
+    <nav id="top-header">
+      <div class="top-nav">
+        <div class="menu-container">
+          <div id="userlogin">
+            <ul class="top-menu">
+             <li> <i class="fa fa-github-square"></i>您好，欢迎到访{dede:global.cfg_webname/}!<a href="{dede:global.cfg_memberurl/}/index_do.php?fmdo=user&dopost=regnew" rel="nofollow"><i class="fa fa-user"></i>  登录</a> <a href="{dede:global.cfg_memberurl/}/login.php" rel="nofollow"><i class="fa fa-plus-square"></i>  注册</a></li>
+             <li><i class="fa fa-github-square"></i></li>
+            </ul>
+          </div>
+          <script language="javascript" type="text/javascript">CheckLogin();</script>
+        </div>
+        <div id="inf-d">
+          <div id="inf-b"> Hi,<script type="text/javascript">today=new Date();var day; var date; var hello;hour=new Date().getHours();if(hour < 6){ hello=' 凌晨好！ ';}else if(hour < 9){ hello=' 早上好！';}else if(hour < 12){ hello=' 上午好！';}else if(hour < 14){ hello=' 中午好！ ';}else if(hour < 17){ hello=' 下午好！ ';}else if(hour < 19){ hello=' 傍晚好！';}else if(hour < 22){ hello=' 晚上好！ ';}else{ hello='夜深了！ ';}function GetCookie(sName) { var arr = document.cookie.match(new RegExp("(^| )"+sName+"=([^;]*)(;|$)")); if(arr !=null){return unescape(arr[2])}; return null;}var Guest_Name = decodeURIComponent(GetCookie('author'));var webUrl = webUrl;if (Guest_Name != "null" && Guest_Name != "" ){ hello = Guest_Name+' , '+hello+' 欢迎回来。';}document.write(' '+hello);</script> 
+            今天是： <span id="localtime"> 
+            <script type="text/javascript">today=new Date(); var tdate,tday, x,year; var x = new Array("星期日", "星期一", "星期二", "星期三", "星期四", "星期五","星期六");var MSIE=navigator.userAgent.indexOf("MSIE");if(MSIE != -1){ year =(today.getFullYear());} else { year = (today.getYear()+1900);} tdate= year+ "年" + (today.getMonth() + 1 ) + "月" + today.getDate() + "日" + " " + x[today.getDay()];document.write(tdate);</script> 
+            </span><!----> 
+          </div>
+          <div id="inf-e"></div>
+        </div>
+      </div>
+    </nav>
+    <div class="header">
+      <h1 id="logo"> <a href="/"><img src="{dede:global.cfg_templets_skin/}/img/logo.png" title="{dede:global.cfg_webname/}" alt="{dede:global.cfg_webname/}" ></a> </h1>
+      <div class="search">
+        <form onSubmit="return checkSearchForm()" method="post" name="formsearch" class="searchform" action="{dede:global.cfg_cmsurl/}/plus/search.php" >
+           <input type="hidden" name="kwtype" value="0" />
+          <input type="text" name="q" placeholder="搜索..." class="text" id="search-keyword">
+          <input type="submit" class="btn" value="搜索">
+        </form>
+      </div>
+      <!-- mobile nav -->
+      <div class="nav-sjlogo"><i class="fa fa-navicon"></i></div>
+      <div class="nav-sousuo">
+        <div class="mini_search">
+          <form onSubmit="return checkSearchForm()" method="post" name="formsearch" class="searchform" action="{dede:global.cfg_cmsurl/}/plus/search.php">
+            <input class="searchInput" type="text" name="q" size="11" placeholder="请输入搜索内容..." id="search-keyword"/>
+            <button type="submit" class="btn-search dtb2" value=""><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+        <a id="mo-so" href="javascript:void(0);"><i class="fa fa-search icon-search"></i></a> </div>
+      <div class="header-nav" data-type="index"  data-infoid="index">
+        <aside class="mobile_aside mobile_nav">
+          <div class="mobile-menu">
+            <ul id="nav" class="nav-pills">
+              <li class="item{dede:field name=typeid runphp="yes"}(@me=="")? @me=" current-menu-item":@me="";{/dede:field}"> <a href="{dede:global.cfg_cmsurl/}/" >{dede:global.cfg_webname/}</a> </li>
+			  {dede:channel type='top' row='10' currentstyle="<li class='item current-menu-item'><a href='~typelink~' ~rel~>~typename~</a></li>"}
+              <li class="item"> <a href="[field:typeurl/]" >[field:typename/]</a></li>
+			  {/dede:channel}
+              <li class="item" title="聚享游"><a href='http://www.fuxing5.cc/jxy/' target="_blank">聚享游</a></li>
+              <li class="item" title="天天钻"><a href='http://www.fuxing5.cc/ttz/' target="_blank">天天钻</a></li>
+              <li class="item" title="蹦蹦网"><a href='http://www.fuxing5.cc/bbw/' target="_blank">蹦蹦网</a></li>
+              <li class="item" title="有赚网"><a href='http://www.fuxing5.cc/yzw/' target="_blank">有赚网</a></li>
+              <li class="item" title="石头村"><a href='http://www.fuxing5.cc/stc/' target="_blank">石头村</a></li>       
+              <li class="item" title="集趣网"><a href='http://www.fuxing5.cc/ji7/' target="_blank">集趣网</a></li>
+              <li class="item" title="趣钻钻"><a href='http://www.fuxing5.cc/7zz/' target="_blank">趣钻钻</a></li>  
+              <li class="item" title="星球联盟"><a href='http://www.fuxing5.cc/xqlm/' target="_blank">星球联盟</a></li> 
+			</ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+</header>

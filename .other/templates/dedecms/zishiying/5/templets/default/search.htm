@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<meta name="renderer" content="webkit">
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<title>搜索{dede:global name='keyword' function='RemoveXSS(@me)'/}结果页_{dede:global.cfg_webname/}</title>
+<link rel="stylesheet" rev="stylesheet" href="{dede:global.cfg_templets_skin/}/css/style.css" type="text/css" media="all" />
+<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/font-awesome.min.css" media="screen" type="text/css" />
+<link rel="icon" href="{dede:global.cfg_templets_skin/}/img/favicon_example.ico" type="image/x-icon">
+<script src="{dede:global.cfg_templets_skin/}/js/jquery-2.2.4.min.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/swiper.min.js"></script>
+<style type="text/css">
+body {
+	background-image: url({dede:global.cfg_templets_skin/}/img/bg_001.jpg);
+}
+</style>
+<style type="text/css">
+a.fancybox img {
+	width: auto!important;
+	height: auto!important;
+}
+</style>
+<!--[if lte IE 7]><link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/font-awesome-ie7.min.css"><![endif]-->
+<!--[if lte IE 8]><script src="{dede:global.cfg_templets_skin/}/js/respond.min.js"></script><![endif]-->
+</head>
+<body class="home-category">
+{dede:include filename="head.htm"/}
+<div class="container-fluid home-fluid">
+  <div class="site-content">
+    <nav class="navcates"> 当前位置：<i class="fa fa-home"></i> 搜索 {dede:global name='keyword' function='RemoveXSS(@me)'/} 的结果</nav>
+    <div class="site-main"> 
+      <!--文章列表-->
+      <div class="widget-box blog-layout">
+        <div class="post_box_title">
+          <h3><i class="fa "></i>{dede:global name='keyword' function='RemoveXSS(@me)'/}</h3>
+        </div>
+        
+		{dede:list pagesize='20'}
+        <article class="post_box" id="post_box1">
+        <div class="post-img col-xs-4"><a href="[field:arcurl/]" style="display: block;zoom:1;"><img class="img-responsive img-rounded imgs" src="[field:litpic/]" alt="[field:title/]" title="[field:title/]" style="display: block;" original="[field:litpic/]"><em></em></a></div>
+          <div class="post-left">
+             <h3><a href="[field:arcurl/]" title="[field:title/]">[field:title/]</a></h3>
+         <div class="post-con">
+             <a href="[field:arcurl/]" title="查看《[field:title/]》全文">[field:description/]... </a>
+         </div>
+		 <aside class="item-meta">
+			  <span class="mu-ml"><i class="fa fa-list-alt"></i><a href="[field:typeurl/]">[field:typename/]</a></span>
+			  <span class="mu-ml-clock"><i class="fa fa-calendar"></i>[field:pubdate function="MyDate('Y-m-d',@me)"/]</span>
+			  <span class="mu-ml-eye"><i class="fa fa-paw"></i>[field:click/]次浏览</span>
+			  <span class="mu-ml-comment"><i class="fa fa-comment"></i><a href="[field:arcurl/]#comments">[field:id runphp='yes'] $aid = @me; $row = $GLOBALS['dsql']->GetOne("Select count(id) as c from dede_feedback where aid=".@me); @me=$row['c'];[/field:id]条评论</a></span>
+			  <a class="read-more right" href="[field:arcurl/]" title="详细阅读：[field:title/]">阅读全文</a>
+		</aside>
+       </div>
+      </article>
+      {/dede:list}
+        <div class="pagination">
+          <div class="page-list">
+               {dede:pagelist listitem="index,end,pre,next,pageno" listsize="5"/}
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--侧栏-->
+    {dede:include filename="right.htm"/}
+  </div>
+  <div class="clear"></div>
+</div>
+{dede:include filename="footer.htm"/}
+</body>
+</html>

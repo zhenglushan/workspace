@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<meta name="renderer" content="webkit">
+<meta name="keywords" content="{dede:field.keywords/}" />
+<meta name="description" content="{dede:field.description function='html2text(@me)'/}" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<link rel="stylesheet" rev="stylesheet" href="{dede:global.cfg_templets_skin/}/css/style.css" type="text/css" media="all" />
+<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/font-awesome.min.css" media="screen" type="text/css" />
+<link rel="icon" href="{dede:global.cfg_templets_skin/}/img/favicon_example.ico" type="image/x-icon">
+<script src="{dede:global.cfg_templets_skin/}/js/jquery-2.2.4.min.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/swiper.min.js"></script>
+<style type="text/css">
+body {
+	background-image: url({dede:global.cfg_templets_skin/}/img/bg_001.jpg);
+}
+@media screen and (max-width: 560px){
+.pagination {
+    display: block;
+}
+}
+a.fancybox img {
+	width: auto!important;
+	height: auto!important;
+}
+</style>
+<!--[if lte IE 7]><link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/font-awesome-ie7.min.css"><![endif]-->
+<!--[if lte IE 8]><script src="{dede:global.cfg_templets_skin/}/js/respond.min.js"></script><![endif]-->
+</head>
+<body class="home-article">
+{dede:include filename="head.htm"/}
+<div class="container-fluid home-fluid">
+  <div class="site-content">
+    <nav class="navcates"> 当前位置：<i class="fa fa-home"></i>{dede:field name='position'/}<a href="{dede:field.url/}" rel="bookmark" target="_blank" title="正在阅读{dede:field.title/}">{dede:field.title/}</a> </nav>
+    <div class="site-main content-left">
+      <div class="widget-box post-single">
+        <article id="post-20574" class="widget-content single-post">
+        <header id="post-header">
+          <div class="post-meta"> <span class="time">{dede:field.pubdate function="MyDate('Y年m月d日',@me)"/}</span> <span class="eye"><i class="fa fa-eye"></i><script src="{dede:field name='phpurl'/}/count.php?view=yes&aid={dede:field name='id'/}&mid={dede:field name='mid'/}" type='text/javascript' language="javascript"></script></span> <span class="comm"><a href="{dede:global.cfg_basehost/}/plus/feedback.php?aid={dede:field.id/}"><i class="fa fa-comment-o"></i>{dede:field.id runphp='yes'} $aid = @me; $row = $GLOBALS['dsql']->GetOne("Select count(id) as c from dede_feedback where aid=".@me); @me=$row['c'];{/dede:field.id}</a></span> <span class="r-hide"><a title="侧边栏"><i class="fa fa-caret-left"></i><i class="fa fa-caret-right"></i></a></span> </div>
+          <div id="font-change" class="left"> <span id="font-dec"><a href="#" title="减小字体">-</a></span> <span id="font-n"><a href="#" title="默认大小">N</a></span> <span id="font-inc"><a href="#" title="增大字体">+</a></span> </div>
+          <h2 class="post-title"><a href="{dede:field.url/}" title="正在阅读：{dede:field.title/}" rel="bookmark">{dede:field.title/}</a></h2>
+          <div class="clear"></div>
+        </header>
+<div class="pcd_ad">
+<table width="100%" height="90" style="background-color: #d43d3d;">
+    <tr align="center">
+      <td style="color: #fff;">电脑广告位-内容正文顶部</td>
+    </tr>
+  </table>
+</div>
+<div class="mbd_ad">
+<table width="100%" height="90" style="background-color: #d43d3d;">
+    <tr align="center">
+      <td style="color: #fff;">手机广告位-内容正文顶部</td>
+    </tr>
+  </table>
+  </div>
+        <div class="entry">
+          {dede:field.body/}
+          {dede:field.vote/}
+          (责任编辑：{dede:adminname/})
+        <div class="pagination">
+          <div class="page-list">
+          {dede:pagebreak/}
+          </div>
+        </div>
+        </div>
+        <div class="pcd_ad">
+          <table width="100%" height="90" style="background-color: #d43d3d;">
+            <tr align="center">
+              <td style="color: #fff;">电脑广告位-内容正文底部</td>
+            </tr>
+          </table>
+        </div>
+        <div class="mbd_ad">
+          <table width="100%" height="90" style="background-color: #d43d3d;">
+            <tr align="center">
+              <td style="color: #fff;">手机广告位-内容正文底部</td>
+            </tr>
+          </table>
+        </div>
+        <div class="entry-meta">
+          <p class="post-tag">标签：{dede:tag table='dede_search_keywords' sort='keyword'}<a href="[field:link/]" target="_blank">[field:tag /]</a> &nbsp; 　{/dede:tag}</p>
+        </div>
+        <div class="post-navigation"> <a href="{dede:type row=1}[field:typelink /]{/dede:type}" class="backtolist">返回{dede:field.typename/}列表</a>
+          <div class="post-previous">{dede:prenext get='pre'/}</div>
+          <div class="post-next">{dede:prenext get='next'/}</div>
+        </div>
+        <div class="nav-links"><!--全局上下篇-->
+          <div class="nav-previous"><a href="{dede:prenext get='pre' runphp="yes"}   
+preg_match_all('/<a.*?(?: |\\t|\\r|\\n)?href=[\'"]?(.+?)[\'"]?(?:(?: |\\t|\\r|\\n)+.*?)?>(.+?)<\/a.*?>/sim', @me, $strResult, PREG_PATTERN_ORDER);   
+@me=$strResult[1][0];   
+{/dede:prenext}  " rel="prev"><span class="meta-nav-r"><i class="fa fa-angle-left"></i></span></a>
+</div>
+          
+          <div class="nav-next"><a href="{dede:prenext get='next' runphp="yes"}   
+preg_match_all('/<a.*?(?: |\\t|\\r|\\n)?href=[\'"]?(.+?)[\'"]?(?:(?: |\\t|\\r|\\n)+.*?)?>(.+?)<\/a.*?>/sim', @me, $strResult, PREG_PATTERN_ORDER);   
+@me=$strResult[1][0];   
+{/dede:prenext}  " rel="next"><span class="meta-nav-l"><i class="fa fa-angle-right"></i></span>
+</a>
+</div>
+          
+        </div>
+        <div id="related-posts" class="related-posts">
+          <h3><span class="h3line">相关文章</span>
+            <div class="post-tags-key"> <span class="post-keyword"> 关键词：{dede:tag table='dede_search_keywords' sort='keyword'}<a href="[field:link/]" target="_blank">[field:tag /]</a> &nbsp; 　{/dede:tag} </span> </div>
+          </h3>
+          <ul class="widget-content">
+           {dede:likearticle row='8' titlelen=50 eregtype=all|tag|keyword}
+            <li class="related-item post-thumbnail"> 
+            <a href="[field:arcurl/]" title="详细阅读[field:title/]" rel="bookmark"><img src="[field:litpic/]" alt="[field:title/]" width="330" height="200"><span>[field:title/]</span></a> </li>
+           {/dede:likearticle}   
+            </ul>
+        </div>
+       <section id="comments">
+        {dede:include file='plus/comment.htm' /}       
+        </section>
+      </article>
+    </div>
+  </div>
+  {dede:include filename="right.htm"/}
+</div>
+<div class="clear"></div>
+</div>
+{dede:include filename="footer.htm"/}
+</body>
+</html>

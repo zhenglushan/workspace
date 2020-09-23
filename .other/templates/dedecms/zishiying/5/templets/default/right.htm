@@ -1,0 +1,83 @@
+    <aside class="sidebar-right">
+     <div class="widget-box widget" id="tabcelan">
+        <ul class="widget-content tabcelan">
+          <li id="con_title" class="con_post_title">
+            <ul id="tab">
+              <li id="one1" class="tabhover">推荐</li>
+              <li id="one2">热门</li>
+              <li id="one3">热评</li>
+            </ul>
+          </li>
+          <li id="con_one" class="con_one_list">
+            <ul id="con_one_1" style="display:block;">
+			{dede:arclist flag='a' row='8' orderby='pubdate' titlelen=54}
+                          <li><span class="li-icon li-icon-[field:global.autoindex/]">[field:global.autoindex/]</span><a href="[field:arcurl/]" title="[field:title/]">[field:title/]</a></li>
+            {/dede:arclist}
+                        </ul>
+            <ul id="con_one_2" style="display:none">
+			{dede:arclist sort='hot' titlelen=54 row=8}
+                            <li><span class="li-icon li-icon-[field:global.autoindex/]">[field:global.autoindex/]</span><a href="[field:arcurl/]" title="[field:title/]([field:click/]次浏览)">[field:title/]</a></li>
+            {/dede:arclist}
+                        </ul>
+            <ul id="con_one_3" style="display:none">
+			{dede:arclist row='8' orderby='scores' titlelen=54}
+                             <li><span class="li-icon li-icon-[field:global.autoindex/]">[field:global.autoindex/]</span><a href="[field:arcurl/]" title="[field:title/]([field:id runphp='yes'] $aid = @me; $row = $GLOBALS['dsql']->GetOne("Select count(id) as c from dede_feedback where aid=".@me); @me=$row['c'];[/field:id]条评论)">[field:title/]</a></li>
+            {/dede:arclist}
+                        </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="widget-box widget" id="cead">
+      <table width="330" height="250"  style="background-color:#33B0CA;">
+	    <tr align="center">
+		  <td style="text-align: center;color: #666;line-height: 250px;color:#fff">电脑端全部右侧广告位一</td>
+		</tr>
+	  </table>
+      </div>
+      
+      <div class="widget-box widget" id="side_new">
+        <h3 class="widget-title"><i class="fa fa-th"></i>最新文章</h3>
+        <ul class="widget-content side_new">
+            {dede:arclist row=6 titlelen=50}
+            <li class="clr"><a href="[field:arcurl/]"  title="[field:title/]">
+            <div class="time"><span class="r">[field:pubdate function="MyDate('d',@me)"/]</span>/<span class="y">[field:pubdate function="MyDate('m月',@me)"/]</span></div>
+            <div class="title">[field:title/]</div>
+            </a></li>
+            {/dede:arclist}
+          </ul>
+        </div>
+        
+      <div class="widget-box widget" id="cead">
+      <table width="330" height="250"  style="background-color:#33B0CA;">
+	    <tr align="center">
+		  <td style="text-align: center;color: #666;line-height: 250px;color:#fff">电脑端全部右侧广告位一</td>
+		</tr>
+	  </table>
+      </div>
+      
+      <div class="widget-box widget" id="hottags">
+        <h3 class="widget-title"><i class="fa fa-th"></i>热门标签</h3>
+        <ul class="widget-content hottags">
+		{dede:tag row='30' sort='new' getall='1'}
+            <li><a href="[field:link/]" title="[field:tag /]">[field:tag /]<span class="tag-count"> ([field:total/])</span></a></li>
+		　{/dede:tag}
+		</ul>
+      </div>
+      <div class="widget-box widget" id="cead">
+      <table width="330" height="250"  style="background-color:#33B0CA;">
+	    <tr align="center">
+		  <td style="text-align: center;color: #666;line-height: 250px;color:#fff">电脑端全部右侧广告位一</td>
+		</tr>
+	  </table>
+      </div>
+      <div class="widget-box widget" id="divComments">
+        <h3 class="widget-title"><i class="fa fa-th"></i>最新留言</h3>
+        <ul class="widget-content divComments">
+		{dede:feedback row='5' titlelen='24' infolen='80'}
+          <li><span class="zb_avatar"><a href="[field:global.cfg_phpurl/]/view.php?aid=[field:aid/]"><img src="[field:face/]" alt="[field:uname /]" title="[field:uname /]"></a></span>
+<p><a href="[field:global.cfg_phpurl/]/view.php?aid=[field:aid/]" title="查看评论内容">[field:msg/]</a></p>
+<small>[field:username function="（@me=='guest' ? '游客' : @me）"/] 评论于：[field:pubdate function="Date(@me)"/]</small></li>
+         {/dede:feedback}
+      </ul>
+      </div>
+    </aside>
