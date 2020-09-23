@@ -4,6 +4,26 @@ www.fjgs0591.com 网站分析:
 	1. 博客形式
 	2. 自适应模板
 	3. 页脚: <li>由<a href="https://www.baidu.com/" rel="nofollow">百度一下</a>提供技术支持</li>
+	4. meta 使用 og 协议
+		主要的 og 标签属性：
+			og:type 表示页面的类型，常用值:article、news、book、movie、product……
+			og:site_name 页面所在网站名
+			og:image 略缩图地址
+			og:release_date 发布时间
+			og:url 页面地址
+			og:title 页面的标题
+			og:description 页面的简单描述
+			og:videosrc 视频或者Flash地址
+			og:audiosrc 音频地址
+		示例:
+			<meta property="og:type" content="article"/>
+			<meta property="og:site_name"content="福建股票信息网" />
+			<meta property="og:image" content="https://tu.sem6.cn/%E8%82%A1%E7%A5%A8228.jpg"/>
+			<meta property="og:release_date" content="2020-09-16 06:24:28"/>
+			<meta property="og:url" content="https://www.fjgs0591.com"/>
+			<meta property="og:title" content="福建股票信息网"/>
+			<meta property="og:description" content="福建股票信息网……"/>
+
 首页:
 	1. 热门文章 10 篇
 	2. 推荐文章 10 篇
@@ -64,6 +84,11 @@ www.fjgs0591.com 网站分析:
 
 查找相关站点:
 	搜索正文中的某个句子可以找到更多相关的网站。
+
+robots.txt:
+	https://www.fjgs0591.com/robots.txt
+
+为了方便查看是否自己网站 所有关键词站点的 favicon 设置为 山
 
 示例网站：
 site:www.fjgs0591.com
